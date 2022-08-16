@@ -1,15 +1,17 @@
 import type { NextLayoutPage } from 'next'
 import React from 'react';
+import HomeHeader from '../components/headers/home-header';
 import BaseLayout from '../layouts/base-layout';
-import styles from '../styles/Home.module.css'
+import styles from '..//styles/Home.module.css'
 
 const Home: NextLayoutPage = ({ }) => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        Uai parece que deu certoaa
+    <>
+      <main>
+        <HomeHeader></HomeHeader>
       </main>
-    </div>
+
+    </>
 
   )
 }
