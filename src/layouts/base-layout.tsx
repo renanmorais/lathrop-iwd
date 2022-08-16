@@ -14,8 +14,7 @@ const BaseLayout: React.FC<BaseLayout> = ({ children }) => {
         <>
             <div id="base-layout" className="main-content">
                 {children}
-                s
-                fsdfs
+
             </div>
             <Container fluid>
                 < Footer name={configValues.name} />

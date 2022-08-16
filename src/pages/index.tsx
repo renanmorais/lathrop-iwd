@@ -2,7 +2,7 @@ import type { NextLayoutPage } from 'next'
 import React from 'react';
 import HomeHeader from '../components/headers/home-header';
 import BaseLayout from '../layouts/base-layout';
-import styles from '..//styles/Home.module.css'
+import SpeakersSection from '../components/speakers-section/speakers-section';
 
 const Home: NextLayoutPage = ({ }) => {
   return (
@@ -10,7 +10,9 @@ const Home: NextLayoutPage = ({ }) => {
       <main>
         <HomeHeader></HomeHeader>
       </main>
-
+      <section>
+        <SpeakersSection />
+      </section>
     </>
 
   )
