@@ -31,7 +31,7 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
     return (
         <>
             <div className={styles.bgWrap}>
-                <Image src="/Header.svg" layout='fill' objectFit="contain" alt=""></Image>
+                <img src="/Header.svg" alt=""></img>
             </div>
             <div className={styles.mainInner}>
                 <Image src='/elements.svg' width={400} height={400}></Image>
