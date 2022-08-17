@@ -10,7 +10,56 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
+
+.BgWrap {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.BgImageFull {
+  background: url('/Header.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.BgImageMin {
+  display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .BgImageMin {
+    display: block;
+    background: url('/Header.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+  .cardCounter {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 120px;
+  }
+
+  .cardCounter span {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
 
 .mainInner {
   width: 100%;
@@ -18,88 +67,17 @@
   text-align: right;
 }
 
-.bgWrap {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  max-width: 1440px;
-  overflow: hidden;
-  /* margin-left: -200px; */
-  z-index: -1;
-}
 
 .counter {
   height: 35vh;
   width: 100%;
   background-color: #1A1D1C;
-  z-index: 10;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #FFF
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
 
 .cardCounter {
   margin: 1rem;
@@ -109,9 +87,8 @@
   justify-content: space-around;
   flex-direction: column;
   color: inherit;
-  text-decoration: none;
   width: 200px;
-  height: 130px;
+  text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;

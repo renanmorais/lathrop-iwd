@@ -1,12 +1,13 @@
 /*eslint-disable*/
-import React, { useState } from "react";
-
 import Image from 'next/image'
+import React, { useState } from "react";
+import { Col, Row, Container } from "reactstrap";
+
 
 import styles from '../../styles/Home.module.css'
 import configValues from "../../../config-values";
-import { counter } from "./counter";
-import { changeTimeZone } from "../../helpers/date";
+import { changeTimeZone, calcDateDistance } from "../../helpers/date";
+
 
 interface HomeHeaderProps {
 }
@@ -20,7 +21,7 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
         seconds: 0
     });
     const _interval = setInterval(function () {
-        const _result = counter(changeTimeZone(configValues.eventDate, 'America/Sao_Paulo'));
+        const _result = calcDateDistance(changeTimeZone(configValues.eventDate, 'America/Sao_Paulo'));
         if (_result.distance < 0) {
             clearInterval(_interval)
             return
@@ -30,18 +31,27 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
 
     return (
         <>
-            <div className={styles.bgWrap}>
-                <img src="/Header.svg" alt=""></img>
+            <div className={styles.BgWrap}>
+                <div className={styles.BgImageFull}></div>
             </div>
+
+            <div className={styles.BgWrap}>
+                <div className={styles.BgImageMin}></div>
+            </div>
+
             <div className={styles.mainInner}>
-                <Image src='/elements.svg' width={400} height={400}></Image>
+
             </div>
-            <div className={styles.counter}>
-                <div className={styles.cardCounter}><span>{_dateDistance.days}</span>dias</div>
-                <div className={styles.cardCounter}><span>{_dateDistance.hours} </span>horas</div>
-                <div className={styles.cardCounter}><span>{_dateDistance.minutes} </span>minutos</div>
-                <div className={styles.cardCounter}><span>{_dateDistance.seconds} </span>segundos</div>
-            </div>
+            <Container fluid>
+                <div className={styles.counter}>
+                    <Row style={{ display: 'flex' }}>
+                        <Col><div className={styles.cardCounter}><span>{_dateDistance.days}</span>dias</div></Col>
+                        <Col><div className={styles.cardCounter}><span>{_dateDistance.hours} </span>horas</div></Col>
+                        <Col className={styles.hideSmall}><div className={styles.cardCounter}><span>{_dateDistance.minutes} </span>minutos</div></Col>
+                        <Col className={styles.hideSmall}><div className={styles.cardCounter}><span>{_dateDistance.seconds} </span>segundos</div></Col>
+                    </Row>
+                </div>
+            </Container>
         </>
     );
 }

@@ -10,9 +10,9 @@ const Home: NextLayoutPage = ({ }) => {
       <main>
         <HomeHeader></HomeHeader>
       </main>
-      <section>
+      {/*<section>
         <SpeakersSection />
-      </section>
+  </section>*/}
     </>
 
   )
