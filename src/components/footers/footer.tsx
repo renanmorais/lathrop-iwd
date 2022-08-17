@@ -1,67 +1,41 @@
 /*eslint-disable*/
 import React from "react";
-
+import LogoGDG from "../../assets/images/LogoGDG";
 // reactstrap components
-import { Row, Col, Nav, NavItem, NavLink } from "reactstrap";
+import { Nav, NavItem, NavLink } from "reactstrap";
+import styles from "../../styles/Footer.module.css";
+interface FooterProps {}
 
-
-interface FooterProps {
-    name: string;
-}
-
-const Footer: React.FC<FooterProps> = ({ name }) => {
-    return (
-        <footer className="footer">
-            <Row className="align-items-center justify-content-xl-between">
-                <Col xl="6">
-                    <div className="copyright text-center text-xl-left text-muted">
-                        © {new Date().getFullYear()}{" "}
-                        <a
-                            className="font-weight-bold ml-1"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            {name}
-                        </a>
-                    </div>
-                </Col>
-
-                <Col xl="6">
-                    <Nav className="nav-footer justify-content-center justify-content-xl-end">
-                        <NavItem>
-                            <NavLink
-                                href=""
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                {name}
-                            </NavLink>
-                        </NavItem>
-
-                        <NavItem>
-                            <NavLink
-                                href="#about-us"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                Sobre nós
-                            </NavLink>
-                        </NavItem>
-
-                        <NavItem>
-                            <NavLink
-                                href="#code"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                Código de conduta
-                            </NavLink>
-                        </NavItem>
-                    </Nav>
-                </Col>
-            </Row>
-        </footer>
-    );
-}
+const Footer: React.FC<FooterProps> = ({}) => {
+  return (
+    <>
+          <div className={styles.container}>
+          
+        <Nav className={styles.footer_content}>
+          <NavItem>
+            <NavLink active href="#">
+            <LogoGDG />
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Palestrantes</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Agenda</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Patrocinadores</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Organizadores</NavLink>
+          </NavItem>
+          <NavItem className={styles.footer_register}>
+            <NavLink href="#">Se cadastrar</NavLink>
+          </NavItem>
+        </Nav>
+      </div>
+    </>
+  );
+};
 
 export default Footer;
