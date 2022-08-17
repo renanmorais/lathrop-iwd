@@ -21,3 +21,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+@media only screen and (max-width: 1026px) {
+  .hideSmall {
+    display: none;
+  }
+}
