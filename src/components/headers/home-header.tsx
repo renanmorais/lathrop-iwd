@@ -42,8 +42,8 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
             <div className={styles.mainInner}>
 
             </div>
-            <Container fluid>
-                <div className={styles.counter}>
+            <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
+                <div className={styles.counter} >
                     <Row style={{ display: 'flex' }}>
                         <Col><div className={styles.cardCounter}><span>{_dateDistance.days}</span>dias</div></Col>
                         <Col><div className={styles.cardCounter}><span>{_dateDistance.hours} </span>horas</div></Col>
