@@ -1,0 +1,13 @@
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.nav_link {
+    color: gray;
+}
+
+.collapse_menu {
+    display: grid;
+    margin-right: 10px;
+}
