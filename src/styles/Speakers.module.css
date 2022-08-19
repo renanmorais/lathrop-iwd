@@ -1,5 +1,4 @@
 .container {
-  padding: 0 10rem;
   width: 100%;
   height: 45rem;
 }
@@ -7,17 +6,18 @@
 .cards {
   width: 100%;
   height: 50%;
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   margin: 2rem 0 0 0;
 }
 
 .card_container {
   border: 1px solid #dedede;
   border-radius: 5%;
-  height: 16rem;
-  width: 16rem;
-  margin: 0;
+  height: 18rem;
+  width: 14rem;
   padding: 1rem 1rem;
 }
 
@@ -64,4 +64,13 @@
   margin: 0.8rem 0 0 0;
   text-decoration: none;
   color: #298Ae4;
+}
+
+.carousel {
+  height: 35rem;
+}
+
+.carousel_indicators button {
+  margin-top: 2rem;
+  background-color: #000;
 }
