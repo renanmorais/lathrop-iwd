@@ -1,13 +1,38 @@
+.main_navbar {
+    height: 100px
+}
+
+.navbar_fixed_scrolling{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(32,33,36,.3), transparent);
+}
+
 .navbar_fixed {
+    color: rgba(0,0,0,.55);
     position: fixed;
     width: 100%;
 }
 
+.nav_brand {
+    margin-left: 5%;
+    zoom: 1.3;
+}
+
 .nav_link {
-    color: gray;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }
 
 .collapse_menu {
     display: grid;
     margin-right: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    margin-right: 5%;
 }
