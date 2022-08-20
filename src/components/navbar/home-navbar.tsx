@@ -9,6 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import LogoGDG from "../../assets/images/LogoGDG";
+import LogoMenu from "../../assets/images/MenuLogo"
 import styles from "../../styles/Navbar.module.css";
 
 const NavbarHome = () => {
@@ -16,7 +17,7 @@ const NavbarHome = () => {
   const [isScrolling, setScrolling] = useState(false);
 
   // TODO: update with correct menu
-  const menu = [{name: "Sobre", ref: "#"}, {name: "Palestrantes", ref: "#"}, {name: "Patrocinadores", ref: "#"}]
+  const menu = [{name: "Sobre", ref: "#"}, {name: "Palestrantes", ref: "#speakers"}, {name: "Patrocinadores", ref: "#"}]
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -36,14 +37,14 @@ const NavbarHome = () => {
 
   return (
     <div className={isScrolling? styles.navbar_fixed_scrolling : styles.navbar_fixed}>
-      <Navbar className={styles.main_navbar} color="faded" light expand="md">
-        {isScrolling ? <NavbarBrand className={styles.nav_brand}><LogoGDG color="white"/></NavbarBrand> : null}
-        <NavbarToggler onClick={toggle} className="mr-2" />
-        <Collapse className={styles.collapse_menu} isOpen={isOpen} navbar>
+      <Navbar className={styles.main_navbar} color="faded" light expand="lg">
+        <NavbarBrand className={styles.nav_brand}>{isScrolling ? <LogoGDG color="white"/>: ''}</NavbarBrand> 
+        <NavbarToggler onClick={toggle} className={["mr-2", styles.toggler_btn, isScrolling ? styles.shadow_scrolling: ''].join(' ')}><LogoMenu color={isScrolling ? "white" : "rgba(0,0,0,.55)"} /></NavbarToggler>
+        <Collapse className={[styles.collapse_menu, isOpen? styles.opened_menu: ""].join(' ')} isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
             {menu.map((menuItems, index) =>
                 <NavItem key={"nav-item-" + index}>
-                    <NavLink className={styles.nav_link} style={{ color: isScrolling ? 'white': 'rgba(0,0,0,.55)' }} href={menuItems.ref}>{menuItems.name}</NavLink>
+                    <NavLink className={isScrolling ? [styles.nav_link, styles.shadow_scrolling].join(' ') : styles.nav_link} style={{ color: isScrolling || isOpen? 'white': 'rgba(0,0,0,.55)' }} href={menuItems.ref}>{menuItems.name}</NavLink>
                 </NavItem>
             )}
           </Nav>
