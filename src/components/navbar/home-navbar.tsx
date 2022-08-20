@@ -11,7 +11,7 @@ import {
 import LogoGDG from "../../assets/images/LogoGDG";
 import styles from "../../styles/Navbar.module.css";
 
-const NavbarHome = (args) => {
+const NavbarHome = (args: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
