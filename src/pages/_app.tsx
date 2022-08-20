@@ -4,7 +4,7 @@ import type { AppContext, AppInitialProps, AppLayoutProps } from 'next/app'
 import React, { ReactNode } from "react";
 import { NextComponentType } from 'next';
 import Head from 'next/head';
-import configValues from '../../config-values';
+import configValues from 'helpers/config';
 
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
