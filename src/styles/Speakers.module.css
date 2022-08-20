@@ -70,7 +70,13 @@
   height: 35rem;
 }
 
-.carousel_indicators button {
+.carousel_indicators {
   margin-top: 2rem;
   background-color: #000;
+}
+
+.carousel_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
