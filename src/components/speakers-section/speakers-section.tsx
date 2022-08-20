@@ -67,7 +67,7 @@ const SpeakersSection: React.FC = ({ }) => {
   return (
     <>
       <Container>
-        <div className={styles.container}>
+        <div id="speakers" className={styles.container}>
           <h1>Palestrantes</h1>
           <p>
             As pessoas palestrantes do Devfest possuem uma variedade de experiências, que vão desde pessoas desenvolvedoras experientes à lideres de comunidades. As pessoas que palestram com frenquência se engajam em conversas técnicas em suas empresas, cidades e países. No Devfest você pode esperar palestras de Google Developer Experts, Tech Leads, pessoas desenvolvedoras e resolvedores de problemas.
