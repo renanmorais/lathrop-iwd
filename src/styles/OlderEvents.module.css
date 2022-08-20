@@ -1,0 +1,29 @@
+.Descrition {
+    padding-right: 100px;
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.ConstructItems {
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 60px;
+}
+
+.ConstructItem {
+    padding: 20px 30px;
+    white-space: nowrap;
+    color: var(--white)
+}
+
+.ConstructItem:nth-child(3n+0) {
+    background-color: var(--orange);
+}
+
+.ConstructItem:nth-child(3n+1) {
+    background-color: var(--red);
+}
+
+.ConstructItem:nth-child(3n+2) {
+    background-color: var(--blue);
+}

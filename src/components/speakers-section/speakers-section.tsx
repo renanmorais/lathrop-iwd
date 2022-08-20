@@ -6,7 +6,6 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselControl,
   Button,
 } from "reactstrap";
 import speakers from '../../hooks/useSpeakers';
@@ -14,21 +13,7 @@ import speakers from '../../hooks/useSpeakers';
 import styles from '../../styles/Speakers.module.css'
 import SpeakerCard from "./speaker-card";
 
-type Speaker = {
-  id: number;
-  speaker_name: string;
-  location: {
-    city: string;
-    uf: string;
-  };
-  topic: string;
-  title: string;
-}
-
-interface SpeakersSectionProps {
-}
-
-const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
+const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const keyNumber = activeIndex + 1;
 
@@ -84,7 +69,9 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
       <Container>
         <div className={styles.container}>
           <h1>Palestrantes</h1>
-          <p>Speakers at DevFests range from experienced developers to budding leaders of local tech communities all over the world. The individuals that speak at DevFest often drive technical conversations within their companies, cities, countries, and worldwide. At a DevFest near you, expect talks from Googlers, Google Developer Experts, leading engineers, developers, and problem solvers in your own technical communities.</p>
+          <p>
+            As pessoas palestrantes do Devfest possuem uma variedade de experiências, que vão desde pessoas desenvolvedoras experientes à lideres de comunidades. As pessoas que palestram com frenquência se engajam em conversas técnicas em suas empresas, cidades e países. No Devfest você pode esperar palestras de Google Developer Experts, Tech Leads, pessoas desenvolvedoras e resolvedores de problemas.
+          </p>
           <div className={styles.cards}>
             <Carousel
               activeIndex={activeIndex}

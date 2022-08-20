@@ -5,16 +5,8 @@ import React, { useState } from "react";
 import ProfileImage from '../../assets/images/ProfileImage.svg';
 import styles from '../../styles/Speakers.module.css'
 
-interface SpeakerCardProps {
-  id: number;
-  speaker_name: string;
-  location: {
-    city: string;
-    uf: string;
-  };
-  topic: string;
-  title: string;
-}
+
+interface SpeakerCardProps extends Speaker { }
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({
   id,

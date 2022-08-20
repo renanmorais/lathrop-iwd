@@ -1,18 +1,27 @@
-import type { NextLayoutPage } from 'next'
 import React from 'react';
 import HomeHeader from '../components/headers/home-header';
 import BaseLayout from '../layouts/base-layout';
 import SpeakersSection from '../components/speakers-section/speakers-section';
+import OlderEvenstsSection from 'components/older-events-section/older-events-section';
 
-const Home: NextLayoutPage = ({ }) => {
+const Home = ({ }) => {
+  const sectionStyle = {
+    marginTop: '60px'
+  }
+
   return (
     <>
-      <main>
+      <div>
         <HomeHeader></HomeHeader>
-      </main>
-      <section>
-        <SpeakersSection />
-      </section>
+
+        <section style={sectionStyle}>
+          <OlderEvenstsSection />
+        </section>
+        <section style={sectionStyle}>
+          <SpeakersSection />
+        </section>
+
+      </div>
     </>
 
   )
