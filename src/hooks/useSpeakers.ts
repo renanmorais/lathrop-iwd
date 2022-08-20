@@ -119,6 +119,16 @@ const speakers = [
     topic: 'IA',
     title: 'Noonly'
   },
+  {
+    id: 13,
+    speaker_name: 'Luis Leão',
+    location: {
+      city: 'São Paulo',
+      uf: 'SP',
+    },
+    topic: 'Javascript',
+    title: 'Twillio'
+  }
 ]
 
 export default speakers;
