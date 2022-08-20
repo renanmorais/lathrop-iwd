@@ -7,6 +7,7 @@ import {
   CarouselItem,
   CarouselIndicators,
   CarouselControl,
+  Button,
 } from "reactstrap";
 import speakers from '../../hooks/useSpeakers';
 
@@ -29,15 +30,15 @@ interface SpeakersSectionProps {
 
 const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const keyNumber = activeIndex + 1;
 
   const speakersChunk = (array: Array<Speaker>, size: number) => {
     return Array.from({ length: Math.ceil(array.length / size) }, (v, i) =>
-      array.slice(i * size, i * size + size),
+      array.slice(i * size, i * size + size,),
     )
   };
 
   const speakersChunkByFive = speakersChunk(speakers, 5);
-  console.log(speakersChunkByFive[2]);
 
   const next = () => {
     const nextIndex = activeIndex === speakersChunkByFive.length - 1 ? 0 : activeIndex + 1;
@@ -57,7 +58,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
   const displaySpeakers = speakersChunkByFive.map(speaker => {
     return (
       <CarouselItem
-        key={speaker.length}
+        key={speaker[activeIndex].id}
       >
         <div className={styles.carousel_inner}>
           {speaker.map(speaker => {
@@ -95,20 +96,18 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
                 items={speakersChunkByFive}
                 activeIndex={activeIndex}
                 onClickHandler={goToIndex}
+                className={styles.carousel_indicators}
               />
-
               {displaySpeakers}
-              <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-              />
-              <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-              />
             </Carousel>
+          </div>
+          <div className={styles.button_container}>
+            <Button
+              color="info"
+              outline
+            >
+              Ver todos
+            </Button>
           </div>
         </div>
       </Container>

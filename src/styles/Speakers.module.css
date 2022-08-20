@@ -17,8 +17,9 @@
   border: 1px solid #dedede;
   border-radius: 5%;
   height: 18rem;
-  width: 14rem;
+  width: 15rem;
   padding: 1rem 1rem;
+  margin-right: 1rem;
 }
 
 .card_content {
@@ -71,11 +72,26 @@
 }
 
 .carousel_indicators {
-  margin-top: 2rem;
-  background-color: #000;
+  margin-top: 1rem;
+}
+
+.carousel_indicators button {
+  opacity: none !important;
+  background-color: #298Ae4 !important;
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  border-radius: 50% !important;
 }
 
 .carousel_inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button_container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
