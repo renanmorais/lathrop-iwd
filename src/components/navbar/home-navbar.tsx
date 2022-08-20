@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -9,29 +9,44 @@ import {
   NavLink,
 } from 'reactstrap';
 import LogoGDG from "../../assets/images/LogoGDG";
+import LogoMenu from "../../assets/images/MenuLogo"
 import styles from "../../styles/Navbar.module.css";
 
-const NavbarHome = (args: any) => {
+const NavbarHome = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolling, setScrolling] = useState(false);
+
+  // TODO: update with correct menu
+  const menu = [{ name: "Sobre", ref: "#" }, { name: "Palestrantes", ref: "#speakers" }, { name: "Patrocinadores", ref: "#" }]
 
   const toggle = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.pageYOffset === 0) {
+        setScrolling(false);
+      } else {
+        setScrolling(true);
+      }
+    };
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <div className={styles.navbar_fixed}>
-      <Navbar {...args} color="faded" light expand="md">
-        <NavbarBrand href="/"><LogoGDG /></NavbarBrand>
-        <NavbarToggler onClick={toggle} className="mr-2" />
-        <Collapse className={styles.collapse_menu} isOpen={isOpen} navbar>
+    <div className={isScrolling ? styles.navbar_fixed_scrolling : styles.navbar_fixed}>
+      <Navbar className={styles.main_navbar} color="faded" light expand="lg">
+        <NavbarBrand className={styles.nav_brand}>{isScrolling ? <LogoGDG color="white" /> : ''}</NavbarBrand>
+        <NavbarToggler onClick={toggle} className={["mr-2", styles.toggler_btn, isScrolling ? styles.shadow_scrolling : ''].join(' ')}><LogoMenu color={isScrolling ? "white" : "rgba(0,0,0,.55)"} /></NavbarToggler>
+        <Collapse className={[styles.collapse_menu, isOpen ? styles.opened_menu : ""].join(' ')} isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
-            <NavItem >
-              <NavLink className={styles.nav_link} href="/about/">Sobre</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className={styles.nav_link} href="/speakers/">Palestrantes</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className={styles.nav_link} href="/sponsors/">Patrocinadores</NavLink>
-            </NavItem>
+            {menu.map((menuItems, index) =>
+              <NavItem key={"nav-item-" + index}>
+                <NavLink className={isScrolling ? [styles.nav_link, styles.shadow_scrolling].join(' ') : styles.nav_link} style={{ color: isScrolling || isOpen ? 'white' : 'rgba(0,0,0,.55)' }} href={menuItems.ref}>{menuItems.name}</NavLink>
+              </NavItem>
+            )}
           </Nav>
         </Collapse>
       </Navbar>
