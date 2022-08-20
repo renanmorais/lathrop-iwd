@@ -6,6 +6,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
+  CarouselControl,
 } from "reactstrap";
 import speakers from '../../hooks/useSpeakers';
 
@@ -36,17 +37,15 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
   };
 
   const speakersChunkByFive = speakersChunk(speakers, 5);
-  const speakersByGroup = speakersChunkByFive.map(item => item.map(item => item));
-  const filterSpeakers = speakersByGroup.filter(item => item.map(item => { item }))
-  console.log(filterSpeakers);
+  console.log(speakersChunkByFive[2]);
 
   const next = () => {
-    const nextIndex = activeIndex === speakers.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === speakersChunkByFive.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
 
   const previous = () => {
-    const nextIndex = activeIndex === 0 ? speakers.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? speakersChunkByFive.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
 
@@ -55,20 +54,26 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
   };
 
 
-  const displaySpeakers = speakers.map((speaker) => {
+  const displaySpeakers = speakersChunkByFive.map(speaker => {
     return (
       <CarouselItem
-        key={speaker.id}
+        key={speaker.length}
       >
-        <Col key={speaker.id} className={styles.card_container}>
-          <SpeakerCard
-            id={speaker.id}
-            speaker_name={speaker.speaker_name}
-            location={speaker.location}
-            topic={speaker.topic}
-            title={speaker.title}
-          />
-        </Col>
+        <div className={styles.carousel_inner}>
+          {speaker.map(speaker => {
+            return (
+              <Col key={speaker.id} className={styles.card_container}>
+                <SpeakerCard
+                  id={speaker.id}
+                  speaker_name={speaker.speaker_name}
+                  location={speaker.location}
+                  topic={speaker.topic}
+                  title={speaker.title}
+                />
+              </Col>
+            )
+          })}
+        </div>
       </CarouselItem>
     )
   })
@@ -87,12 +92,22 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ }) => {
               className={styles.carousel}
             >
               <CarouselIndicators
-                items={speakers}
+                items={speakersChunkByFive}
                 activeIndex={activeIndex}
                 onClickHandler={goToIndex}
-                className={styles.carousel_indicators}
               />
+
               {displaySpeakers}
+              <CarouselControl
+                direction="prev"
+                directionText="Previous"
+                onClickHandler={previous}
+              />
+              <CarouselControl
+                direction="next"
+                directionText="Next"
+                onClickHandler={next}
+              />
             </Carousel>
           </div>
         </div>
