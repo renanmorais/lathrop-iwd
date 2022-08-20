@@ -32,55 +32,28 @@
   display: none;
 }
 
-@media only screen and (max-width: 1026px) {
-  .BgImageFull {
-    display: none;
-  }
-
-  .BgImageMin {
-    display: block;
-    background: url('/Header.svg');
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-
-
-  .cardCounter {
-    margin: .5rem;
-    padding: 1rem;
-    text-align: center;
-    width: 120px;
-  }
-
-  .cardCounter span {
-    font-size: 30px;
-    font-weight: 400;
-  }
-}
-
-
 .mainInner {
   width: 100%;
   height: 65vh;
   text-align: right;
 }
 
-
 .Counter {
   align-items: center;
   background-color: #1A1D1C;
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  height: 245px;
   justify-content: center;
+  padding: 43px 0;
 }
 
 .CounterList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .CounterListItem {
@@ -155,9 +128,44 @@
   margin-left: 0.5rem;
 }
 
+@media only screen and (max-width: 1026px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .BgImageMin {
+    display: block;
+    background: url('/Header.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .cardCounter {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 120px;
+  }
+
+  .cardCounter span {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .CounterList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .CounterList {
+    grid-template-columns: 1fr;
   }
 }
