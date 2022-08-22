@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
   return (
     <>
       <Container fluid>
-        <Nav className={styles.footer_content}>
+        <Nav className={styles.FooterContent}>
           <NavItem>
             <NavLink active href="#">
               <LogoGDG />
@@ -22,15 +22,16 @@ const Footer: React.FC<FooterProps> = ({ }) => {
           <NavItem>
             <NavLink href="/sponsors">Patrocinadores</NavLink>
           </NavItem>
+          <NavItem className={styles.FooterRegister}>
+            <NavLink href="#">Se cadastrar</NavLink>
+          </NavItem>
           {/*<NavItem>
             <NavLink href="#">Agenda</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#">Organizadores</NavLink>
   </NavItem>
-          <NavItem className={styles.footer_register}>
-            <NavLink href="#">Se cadastrar</NavLink>
-  </NavItem>*/}
+          */}
         </Nav>
       </Container>
     </>

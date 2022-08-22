@@ -1,4 +1,4 @@
-.footer_content {
+.FooterContent {
   width: 100%;
   margin-bottom: 41px;
   font-weight: 600;
@@ -7,15 +7,28 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 240px;
-
   list-style: none;
 }
-.footer_logo {
+
+
+.FooterContent .nav-link {
+  color: var(--black);
+}
+
+@media only screen and (max-width: 1026px) {
+  .FooterContent {
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+
+}
+
+.FooterLogo {
   width: 155px;
   height: 33px;
 }
 
-.footer_register {
+.FooterRegister {
   display: flex;
   justify-content: center;
   align-items: center;

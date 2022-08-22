@@ -1,8 +1,3 @@
-.container {
-  padding: 0 2rem;
-}
-
-
 .BgWrap {
   position: absolute;
   height: 100vh;
@@ -26,6 +21,8 @@
   width: 100%;
   height: 65vh;
   text-align: right;
+  padding-top: 10%;
+  padding-right: 8%
 }
 
 .Counter {
@@ -158,4 +155,26 @@
   .CounterList {
     grid-template-columns: 1fr;
   }
+}
+
+
+.path {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: dash 5s linear forwards infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.RegisterButton {
+  padding: 10px 10px;
+  background-color: #fdd46d;
+  width: 164px;
+  height: 33px;
+  border-radius: 10px;
 }

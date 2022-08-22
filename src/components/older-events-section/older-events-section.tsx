@@ -13,9 +13,9 @@ const OlderEvenstsSection: React.FC = ({ }) => {
 
     return (
         <>
-            <Container>
+            <Container id="about">
                 <Row>
-                    <Col>
+                    <Col lg={6} sm={12}>
                         <h1> O que é o Devfest? </h1>
 
                         <p className={styles.Description}>
@@ -23,22 +23,27 @@ const OlderEvenstsSection: React.FC = ({ }) => {
                             O DevFest é um evento organizado por comunidades do Google Developers Group (GDG), para a troca de conhecimento e fomento tecnológico das regiões. A conferência é preparada para profissionais, estudiosos, pessoas desenvolvedoras e demais pessoas com interesse em aprendizado, ambiente de troca de experiências e networking.
                         </p>
                     </Col>
-                    <Col>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8VbKty9jtdM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <Col lg={6} sm={12}>
+                        <div className={styles.VideoContainer}><iframe src='https://www.youtube.com/embed/8VbKty9jtdM' allowFullScreen></iframe></div>
+
                     </Col>
                 </Row>
 
             </Container>
-            <Row>
-                <div className={styles.ConstructItems}>
-                    <div className={styles.ConstructItem}>Construa seu app em Flutter</div>
-                    <div className={styles.ConstructItem}>Construa seu app em Angular</div>
-                    <div className={styles.ConstructItem}>Fez o deploy usando Google Cloud?</div>
-                    <div className={styles.ConstructItem}>Já utilizou Tensor Flow?</div>
-                    <div className={styles.ConstructItem}>Construa seu app em Android</div>
-                    <div className={styles.ConstructItem}>Já criou sua action para o Google Assistant?</div>
+
+            <div className={styles.MarqueeOuter}>
+                <div className={styles.MarqueeInner}>
+                    <div className={styles.ConstructItems}>
+                        <div className={styles.ConstructItem}>Construa seu app em Flutter</div>
+                        <div className={styles.ConstructItem}>Construa seu app em Angular</div>
+                        <div className={styles.ConstructItem}>Fez o deploy usando Google Cloud?</div>
+                        <div className={styles.ConstructItem}>Já utilizou Tensor Flow?</div>
+                        <div className={styles.ConstructItem}>Construa seu app em Android</div>
+                        <div className={styles.ConstructItem}>Já criou sua action para o Google Assistant?</div>
+                        <div className={styles.ConstructItem}>Integrou as APIs do Maps?</div>
+                    </div>
                 </div>
-            </Row>
+            </div>
         </>
     );
 }
