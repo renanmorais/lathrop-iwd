@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Col,
   Container,
@@ -9,13 +9,21 @@ import {
   Button,
 } from "reactstrap";
 import speakers from '../../hooks/useSpeakers';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
+
 
 import styles from '../../styles/Speakers.module.css'
 import SpeakerCard from "./speaker-card";
 
 const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isSSR, setIsSSR] = useState(true);
+  const { width } = useWindowDimensions();
   const keyNumber = activeIndex + 1;
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
 
   const speakersChunk = (array: Array<Speaker>, size: number) => {
     return Array.from({ length: Math.ceil(array.length / size) }, (v, i) =>
@@ -23,15 +31,18 @@ const SpeakersSection: React.FC = ({ }) => {
     )
   };
 
-  const speakersChunkByFive = speakersChunk(speakers, 5);
+
+  let _chunckSize = 5;
+  if (!isSSR && width != null && width < 1076) _chunckSize = 1;
+  const _speakersChuncked = speakersChunk(speakers, _chunckSize);
 
   const next = () => {
-    const nextIndex = activeIndex === speakersChunkByFive.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === _speakersChuncked.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
 
   const previous = () => {
-    const nextIndex = activeIndex === 0 ? speakersChunkByFive.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? _speakersChuncked.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
 
@@ -40,17 +51,19 @@ const SpeakersSection: React.FC = ({ }) => {
   };
 
 
-  const displaySpeakers = speakersChunkByFive.map(speaker => {
+  const displaySpeakers = _speakersChuncked.map((speakersList: Array<Speaker>, index: number) => {
+
     return (
       <CarouselItem
-        key={speaker[activeIndex].id}
+        key={`${index}-carousel-item`}
       >
         <div className={styles.carousel_inner}>
-          {speaker.map(speaker => {
+          {speakersList.map((speaker: Speaker) => {
+            const _itemId: number = speaker.id;
             return (
-              <Col key={speaker.id} className={styles.card_container}>
+              <Col key={`${_itemId}-carousel-col`} className={styles.card_container}>
                 <SpeakerCard
-                  id={speaker.id}
+                  id={_itemId}
                   speaker_name={speaker.speaker_name}
                   location={speaker.location}
                   topic={speaker.topic}
@@ -77,25 +90,20 @@ const SpeakersSection: React.FC = ({ }) => {
               activeIndex={activeIndex}
               next={next}
               previous={previous}
+              ride='carousel'
               className={styles.carousel}
             >
-              <CarouselIndicators
-                items={speakersChunkByFive}
-                activeIndex={activeIndex}
-                onClickHandler={goToIndex}
-                className={styles.carousel_indicators}
-              />
               {displaySpeakers}
             </Carousel>
           </div>
-          <div className={styles.button_container}>
-            <Button
+          {/*<div className={styles.button_container}>
+            <a
               color="info"
-              outline
+              href="/speakers"
             >
               Ver todos
-            </Button>
-          </div>
+            </a>
+  </div>*/}
         </div>
       </Container>
     </>
