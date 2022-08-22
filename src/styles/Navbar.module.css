@@ -2,14 +2,14 @@
     height: 100px
 }
 
-.navbar_fixed_scrolling{
+.navbar_fixed_scrolling {
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(32,33,36,.3), transparent);
+    background-image: linear-gradient(to bottom, rgba(32, 33, 36, .8), transparent);
 }
 
 .navbar_fixed {
-    color: rgba(0,0,0,.55);
+    color: rgba(0, 0, 0, .80);
     position: fixed;
     width: 100%;
 }
@@ -47,7 +47,7 @@
     margin-right: 5%;
 }
 
-.opened_menu ul{
+.opened_menu ul {
     background-color: rgb(43 44 47/1);
     border-radius: 1rem;
     padding: 10px;
