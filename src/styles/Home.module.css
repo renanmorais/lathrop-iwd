@@ -5,6 +5,50 @@
   z-index: -1;
 }
 
+.BgWrap2 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.HappyFaceImg {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.ContentImg {
+  position: absolute;
+  right: 50%;
+  top: 35%;
+}
+
+.CommunityImg {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+}
+
+.BellImg {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.GlobalImg {
+  position: absolute;
+  right: 1%;
+  top: 30%;
+}
+
+.ComplexImg {
+  position: absolute;
+  right: 20%;
+  top: 18%;
+}
+
+
 .BgImageFull {
   background: url('/Header.svg');
   background-position: left top;
@@ -162,7 +206,7 @@
   .MainDescriptionMin {
     padding: 30px 30px;
     text-align: center;
-    background-image: radial-gradient(#4385F3 2px, transparent 0);
+    background-image: radial-gradient(var(--blue) 2px, transparent 0);
     background-size: 26px 26px;
     background-position: -10px -10px;
   }
@@ -195,24 +239,18 @@
   }
 }
 
-
-.path {
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: dash 5s linear forwards infinite;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-
 .RegisterButton {
-  padding: 10px 10px;
-  background-color: #fdd46d;
+  padding: 15px 15px;
+  background-color: var(--red);
+  color: white;
   width: 164px;
   height: 33px;
+  font-size: 20px;
   border-radius: 10px;
+}
+
+.RegisterButton:hover {
+  border: 3px var(--red) solid;
+  color: var(--red);
+  background-color: var(--white);
 }

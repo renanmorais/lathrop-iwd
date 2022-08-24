@@ -4,6 +4,7 @@
 
 .navbar_fixed_scrolling {
     position: fixed;
+    z-index: 1000;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(32, 33, 36, .8), transparent);
 }
