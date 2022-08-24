@@ -1,9 +1,8 @@
 /*eslint-disable*/
 import { Speaker } from "models/speaker";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
-import ProfileImage from '../../assets/images/ProfileImage.svg';
 import styles from '../../styles/Speakers.module.css'
 
 

@@ -1,11 +1,13 @@
 import '../styles/globals.css'
-import type { AppContext, AppInitialProps, AppLayoutProps } from 'next/app'
+import type { AppContext, AppInitialProps, AppProps } from 'next/app'
 
 import React, { ReactNode } from "react";
-import { NextComponentType } from 'next';
+import { NextComponentType, NextPageContext } from 'next';
 import Head from 'next/head';
 import configValues from 'helpers/config';
 
+
+import { AppLayoutProps } from '../../types';
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
   props: AppLayoutProps,
