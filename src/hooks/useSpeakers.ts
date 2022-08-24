@@ -1,134 +1,66 @@
 const speakers = [
   {
     id: 1,
-    speaker_name: 'Jéssica Costa',
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fjessica-costa.jpg?alt=media',
+    name: 'Jéssica Costa',
     location: {
-      city: 'Uberlândia',
-      uf: 'MG'
+      city: '',
+      uf: ''
     },
     topic: 'Machine Learning',
-    title: 'GDE'
+    title: 'GDE',
+    companyTitle: 'Analista de dados na Loggi'
   },
   {
     id: 2,
-    speaker_name: 'Keilla Menezes',
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fkeilla-menezes.png?alt=media',
+    name: 'Keilla Menezes',
     location: {
-      city: 'Uberlândia',
-      uf: 'MG'
+      city: '',
+      uf: ''
     },
-    topic: 'WEB',
-    title: 'GDE'
+    topic: 'Web',
+    title: 'GDE',
+    companyTitle: 'Lead Software Engineer at Nubank'
   },
   {
     id: 3,
-    speaker_name: 'Hulgo Leornardo',
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Farnaldo-gualberto.jpg?alt=media',
+    name: 'Arnaldo Gualberto',
     location: {
-      city: 'Itumbiara',
-      uf: 'GO'
+      city: '',
+      uf: ''
     },
-    topic: 'Data Science',
-    title: 'GDE'
+    topic: 'Machine Learning',
+    title: 'GDE',
+    companyTitle: 'Machine Learning Engineer at Clicampo'
   },
   {
     id: 4,
-    speaker_name: 'João Pedro',
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fwilson-mendes.jpeg?alt=media',
+    name: 'Will Mendes',
     location: {
-      city: 'Itumbiara',
-      uf: 'GO'
+      city: '',
+      uf: ''
     },
-    topic: 'WEB',
-    title: 'GDE'
+    topic: 'Web',
+    title: 'GDE',
+    companyTitle: 'Lead Software Engineer at Nubank'
   },
-  {
+  /*{
     id: 5,
-    speaker_name: 'Renan Morais',
+    photo: '',
+    name: 'Nelson Glauber',
     location: {
-      city: 'Goiânia',
-      uf: 'GO'
+      city: '',
+      uf: ''
     },
-    topic: 'Angular',
-    title: 'Gupy'
-  },
-  {
-    id: 6,
-    speaker_name: 'Erika Conca',
-    location: {
-      city: 'Goiânia',
-      uf: 'GO'
-    },
-    topic: 'Java',
-    title: 'Zup'
-  },
-  {
-    id: 7,
-    speaker_name: 'Tacio Medeiros',
-    location: {
-      city: 'Uberlândia',
-      uf: 'MG'
-    },
-    topic: 'Flutter',
-    title: 'Vita'
-  },
-  {
-    id: 8,
-    speaker_name: 'Elisabeth Mamede',
-    location: {
-      city: 'Uberlândia',
-      uf: 'MG'
-    },
-    topic: 'QA',
-    title: 'PicPay'
-  },
-  {
-    id: 9,
-    speaker_name: 'Sandro Moreira',
-    location: {
-      city: 'Rio Verde',
-      uf: 'Go'
-    },
-    topic: 'Tensor Flow',
-    title: 'UFG'
-  },
-  {
-    id: 10,
-    speaker_name: 'Alvaro Viebrantz',
-    location: {
-      city: 'Cuiabá',
-      uf: 'MT'
-    },
-    topic: 'IoT',
-    title: 'Google'
-  },
-  {
-    id: 11,
-    speaker_name: 'Fernando Sedrez',
-    location: {
-      city: 'Pelotas',
-      uf: 'Rio Grande do Sul'
-    },
-    topic: 'Data Science',
-    title: 'Globo'
-  },
-  {
-    id: 12,
-    speaker_name: 'Fernando Foster',
-    location: {
-      city: 'São José do Rio Preto',
-      uf: 'SP'
-    },
-    topic: 'IA',
-    title: 'Noonly'
-  },
-  {
-    id: 13,
-    speaker_name: 'Luis Leão',
-    location: {
-      city: 'São Paulo',
-      uf: 'SP',
-    },
-    topic: 'Javascript',
-    title: 'Twillio'
-  }
+    topic: 'Android',
+    title: 'GDE',
+    companyTitle: 'Lead Software Engineer at Nubank'
+  },*/
+
 ]
+
 
 export default speakers;

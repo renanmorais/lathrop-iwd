@@ -1,15 +1,16 @@
 .main_navbar {
-    height: 100px
+    height: 100px;
 }
 
 .navbar_fixed_scrolling {
     position: fixed;
-    z-index: 1000;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(32, 33, 36, .8), transparent);
+    z-index: 1000;
 }
 
 .navbar_fixed {
+    z-index: 1000;
     color: rgba(0, 0, 0, .80);
     position: fixed;
     width: 100%;
