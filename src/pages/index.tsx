@@ -4,6 +4,9 @@ import BaseLayout from '../layouts/base-layout';
 import SpeakersSection from '../components/speakers-section/speakers-section';
 import OlderEvenstsSection from 'components/older-events-section/older-events-section';
 
+
+// https://alvarotrigo.com/blog/css-animations-scroll/
+
 const Home = ({ }) => {
   const sectionStyle = {
     marginTop: '60px'
