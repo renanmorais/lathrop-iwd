@@ -13,7 +13,7 @@ const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
             <div className={styles.SponsorCard}>
                 <a href={sponsor.url} target="_blank">
                     <div className={styles.SponsorCardBody}>
-                        <Image src={sponsor.logo} layout="fill"
+                        <Image unoptimized src={sponsor.logo} layout="fill"
                             objectFit="contain"></Image>
                     </div>
                 </a>
