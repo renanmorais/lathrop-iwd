@@ -1,4 +1,5 @@
 /*eslint-disable*/
+import { Speaker } from "models/speaker";
 import React, { useEffect, useState } from "react";
 import {
   Col,
@@ -63,11 +64,7 @@ const SpeakersSection: React.FC = ({ }) => {
             return (
               <Col key={`${_itemId}-carousel-col`} className={styles.card_container}>
                 <SpeakerCard
-                  id={_itemId}
-                  speaker_name={speaker.speaker_name}
-                  location={speaker.location}
-                  topic={speaker.topic}
-                  title={speaker.title}
+                  {...speaker}
                 />
               </Col>
             )
@@ -83,7 +80,7 @@ const SpeakersSection: React.FC = ({ }) => {
         <div id="speakers" className={styles.container}>
           <h1>Palestrantes</h1>
           <p>
-            As pessoas palestrantes do Devfest possuem uma variedade de experiências, que vão desde pessoas desenvolvedoras experientes à lideres de comunidades. As pessoas que palestram com frenquência se engajam em conversas técnicas em suas empresas, cidades e países. No Devfest você pode esperar palestras de Google Developer Experts, Tech Leads, pessoas desenvolvedoras e resolvedores de problemas.
+            O time de palestrantes do Devfest Cerrado 2022 trás grandes nomes da área técnica e referências em liderança de comunidades. Reunimos em um só evento Google Developer Experts (GDEs), Tech Leads, pessoas desenvolvedoras e principalmente pessoas resolvedoras de problemas. Esse é um evento que visa fomentar a comunidade de tecnologia, indo além de conhecimento técnico, contando com muita interatividade, conexões e diversidade.
           </p>
           <div className={styles.cards}>
             <Carousel
