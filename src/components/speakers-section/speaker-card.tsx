@@ -13,7 +13,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
   return (
     <>
       <div className={styles.card_content}>
-        <Image className={styles.card_image} src={speaker.photo} alt={`Foto ${speaker.name}`} width="90%" height="90%" />
+        <Image unoptimized className={styles.card_image} src={speaker.photo} alt={`Foto ${speaker.name}`} width="90%" height="90%" />
         <h2 className={styles.card_name}>{speaker.name}</h2>
         {/*<p className={styles.card_topic}>Tema</p>*/}
         <p className={styles.card_topic}>{speaker.topic}</p>
