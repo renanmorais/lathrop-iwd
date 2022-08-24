@@ -13,7 +13,7 @@ const BaseLayout: React.FC<BaseLayout> = ({ children }) => {
 
     return (
         <>
-            <main>
+            <main className="absolute-position">
                 <NavbarHome />
                 <div >
                     {children}
