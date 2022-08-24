@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
 import SpeakerCard from 'components/speakers-section/speaker-card';
+import { Speaker } from 'models/speaker';
 
 const SpeakersPage = ({ }) => {
     const sectionStyle = {
@@ -18,11 +19,7 @@ const SpeakersPage = ({ }) => {
         return (
             <Col lg="4" style={{ margin: "20px 20px" }} key={_speaker.id} className={styles.card_container}>
                 <SpeakerCard
-                    id={_speaker.id}
-                    speaker_name={_speaker.speaker_name}
-                    location={_speaker.location}
-                    topic={_speaker.topic}
-                    title={_speaker.title}
+                    {..._speaker}
                 />
             </Col>);
     }
