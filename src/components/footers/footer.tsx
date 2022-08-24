@@ -4,6 +4,7 @@ import LogoGDG from "../../assets/images/LogoGDG";
 // reactstrap components
 import { Nav, NavItem, NavLink, Container } from "reactstrap";
 import styles from "../../styles/Footer.module.css";
+import configValues from '../../helpers/config'
 interface FooterProps { }
 
 const Footer: React.FC<FooterProps> = ({ }) => {
@@ -17,13 +18,13 @@ const Footer: React.FC<FooterProps> = ({ }) => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/speakers">Palestrantes</NavLink>
+            <NavLink href="#speakers">Palestrantes</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/sponsors">Patrocinadores</NavLink>
+            <NavLink href="#sponsors">Patrocinadores</NavLink>
           </NavItem>
           <NavItem className={styles.FooterRegister}>
-            <NavLink href="#">Se cadastrar</NavLink>
+            <NavLink href={configValues.eventLinkRegistrationUrl}>Se cadastrar</NavLink>
           </NavItem>
           {/*<NavItem>
             <NavLink href="#">Agenda</NavLink>
