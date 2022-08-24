@@ -4,15 +4,14 @@ import React, { useState, useEffect } from "react";
 import styles from 'styles/Home.module.css';
 import configValues from "helpers/config";
 import { changeTimeZone, calcDateDistance } from "helpers/date";
-
-
-import HappyFace from '../../assets/images/happy-face.svg';
 import { Col, Row } from "reactstrap";
-
-import Image from 'next/image'
 
 interface HomeHeaderProps {
 }
+
+
+
+
 
 const DATE_DISTANCE_LABELS: Record<string, string> = {
     days: 'dias',
@@ -21,7 +20,7 @@ const DATE_DISTANCE_LABELS: Record<string, string> = {
     seconds: 'segundos',
 }
 
-const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
+const HomeHeader: React.FC = ({ }) => {
     const [_dateDistance, _setDateDistance] = useState({
         distance: 0,
         days: 0,
@@ -53,22 +52,31 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
             <div className={styles.BgWrap}>
                 <div className={styles.BgImageFull} />
             </div>
+
+            <div className={styles.BgWrap2}>
+                <img className={styles.HappyFaceImg} src='happy-face.svg' width="100" height="100" />
+                <img className={styles.ContentImg} src='content.svg' width="148" height="121" />
+                <img className={styles.CommunityImg} src='community.svg' width="170" height="87" />
+                <img className={styles.BellImg} src='bell.svg' width="170" height="107" />
+                <img className={styles.GlobalImg} src='global.svg' width="110" height="109" />
+                <img className={styles.ComplexImg} src='complex.svg' width="378" height="157" />
+            </div>
             <div className={styles.BgWrap}>
                 <div className={styles.BgImageMin} />
             </div>
             <div className={styles.MainInnerFull}>
-                {/*<Image src={HappyFace} width="100" height="100" />*/}
+                {/**/}
                 <div className={styles.MainInnerFullContent}>
                     <Col className={styles.MainInnerFullDescription}>
                         <h2>
-                            Dia 26 Novembro 2022
+                            {configValues.formattedDate}
                         </h2>
                         <h3>
-                            Local: Varanda 42 - Uberlândia
+                            {configValues.place}
                         </h3>
                     </Col>
                     <Row style={{ marginTop: '15px' }}>
-                        <Col> <a className={styles.RegisterButton} href="#">Inscreva-se</a> </Col>
+                        <Col> <a className={styles.RegisterButton} href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a> </Col>
                     </Row>
                 </div>
 
@@ -80,10 +88,10 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ }) => {
                     <div className={styles.MainDescriptionMin}>
                         <Col className={styles.MainInnerFullDescription}>
                             <h4>
-                                Dia 26 Novembro 2022
+                                {configValues.formattedDate}
                             </h4>
                             <p>
-                                Local: Varanda 42 - Uberlândia
+                                {configValues.place}
                             </p>
                         </Col>
                         <Row style={{ marginTop: '15px' }}>
