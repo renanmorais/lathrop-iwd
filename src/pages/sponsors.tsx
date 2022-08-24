@@ -17,22 +17,13 @@ const SpeakersPage = ({ }) => {
 
     return (
         <>
-            <div style={{ margin: "60px 60px", height: '100vh' }}>
-                <Container fluid>
+            <Container>
+                <div id="sponsors" style={{ margin: "60px", height: '90vh' }}>
                     <h1>Patrocinadores e Apoiadores</h1>
 
-                    <p style={{ marginTop: '60px' }}>
-
-                    </p>
-                    <section style={sectionStyle}>
-                        <Row style={_center}>
 
 
-                        </Row>
-                    </section>
-                </Container>
-                <Container fluid>
-                    <Row style={{ ..._center, textAlign: 'center' }}>
+                    <Row style={{ ..._center, textAlign: 'center', marginTop: '120px' }}>
                         <h4> Que tal colocar sua marca neste evento?</h4>
                         <p>
                             <a style={{ textDecoration: 'underline' }} href="https://docs.google.com/presentation/d/18L58cFLqdb2kV4rjxGnXthOSjwuHb_duosIOJNBehZ4">
@@ -44,8 +35,8 @@ const SpeakersPage = ({ }) => {
                             <a href="mailto:gdg.uberlandia@gmail.com" target="_blank" rel="noreferrer">gdg.uberlandia@gmail.com</a>
                         </p>
                     </Row>
-                </Container>
-            </div>
+                </div>
+            </Container>
         </>
     )
 }

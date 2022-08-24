@@ -91,7 +91,7 @@
   display: flex;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
-  padding: 43px 0;
+  padding: 38px 0;
 }
 
 .CounterList {
@@ -253,4 +253,49 @@
   border: 3px var(--red) solid;
   color: var(--red);
   background-color: var(--white);
+}
+
+.ScrollDown {
+  margin-top: 30px;
+  color: currentColor;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ScrollDownSvg {
+  width: 24px;
+  opacity: 0.6;
+}
+
+.ScrollDownStroke {
+  stroke: currentColor;
+}
+
+.ScrollDownScroller {
+  fill: currentColor;
+  animation: updown 2s infinite;
+}
+
+@media (min-height: 500px) {
+  .ScrollDown {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(0, 5px)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
 }
