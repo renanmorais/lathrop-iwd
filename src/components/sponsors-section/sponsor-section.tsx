@@ -29,13 +29,13 @@ const SponsorsSection: React.FC = ({ }) => {
         <>
             <Container style={{ marginBottom: '60px' }}>
                 <div id="sponsors">
-                    <h1>Patrocínio</h1>
+                    {/*<h1>Patrocínio</h1>
                     <p style={{ margin: '30px 0px' }}>
                         Estas são as empresas que nos ajudaram a fazer este evento acontecer!
-                    </p>
+                    </p>*/}
 
                     <h4>
-                        Diamante
+                        Apoio
                     </h4>
 
                     <div>
@@ -51,7 +51,7 @@ const SponsorsSection: React.FC = ({ }) => {
                     </div>
 
                     <h4>
-                        Apoio
+                        Organização
                     </h4>
 
                     <div>
