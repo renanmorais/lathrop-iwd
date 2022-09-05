@@ -29,7 +29,9 @@ const sponsors = {
   },
   ametista: {
     name: 'Quejo trança',
-    items: []
+    items: [
+      { name: 'Jetbrains', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fjetbrains.svg?alt=media', url: 'https://www.jetbrains.com/' }
+    ]
   }
 }
 
