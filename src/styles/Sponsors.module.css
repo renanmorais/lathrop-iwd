@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 8px;
-    padding: 20px 0px
+    padding: 20px 0px;
+    margin: 0px 5px;
 }
 
 @media (min-width: 812px) {
@@ -31,5 +32,13 @@
 .SponsorCardBody {
     position: relative;
     width: 180px;
-    height: 60px
+    height: 60px;
+}
+
+.SponsorCardBodyImage {
+    padding: 0px 10px !important;
+}
+
+#sponsors {
+    margin: 10px 0px;
 }
