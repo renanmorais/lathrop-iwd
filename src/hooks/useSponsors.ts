@@ -18,17 +18,17 @@ const sponsors = {
     items: []
   },
   bronze: {
-    name: 'Meia cura',
+    name: 'Meia Cura',
     items: []
   },
   ruby: {
-    name: 'Quejo Curado',
+    name: 'Queijo Curado',
     items: [
       { name: 'Globo', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fglobo.png?alt=media', url: 'https://vempraglobo.g.globo' }
     ]
   },
   ametista: {
-    name: 'Quejo trança',
+    name: 'Queijo Trança',
     items: [
       { name: 'Jetbrains', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fjetbrains.svg?alt=media', url: 'https://www.jetbrains.com/' }
     ]
