@@ -6,13 +6,20 @@ import {
     Row,
     Col,
 } from "reactstrap";
-import sponsors from '../../hooks/useSponsors';
+import _sponsors from '../../hooks/useSponsors';
+import _supports from '../../hooks/userSupports';
 
 
 import styles from '../../styles/Sponsors.module.css'
 import SponsorCard from "./sponsor-card";
+import { SponsorLevel } from "models/sponsor-level";
+
+interface StringMap { [key: string]: any; }
 
 const SponsorsSection: React.FC = ({ }) => {
+
+    const sponsors: StringMap = _sponsors;
+    const supports: StringMap = _supports;
 
     useEffect(() => {
     }, []);
@@ -22,6 +29,24 @@ const SponsorsSection: React.FC = ({ }) => {
         if (sponsor.logo)
             return (<Col><SponsorCard {...sponsor}></SponsorCard></Col>)
         return <Col></Col>
+    }
+
+
+    const mapSponsorLevel = (sponsorLevel: SponsorLevel) => {
+        if (sponsorLevel.items.length > 0)
+            return (<div>
+                <h4>
+                    {sponsorLevel.name}
+                </h4>
+                <Row>
+                    <div className={styles.SponsorWrapper}>
+                        {
+                            sponsorLevel.items.map(mapSponsorCard)
+                        }
+                    </div>
+                </Row>
+            </div>)
+        return <></>
     }
 
 
@@ -38,17 +63,7 @@ const SponsorsSection: React.FC = ({ }) => {
                         Apoio
                     </h4>
 
-                    <div>
-
-                        <Row>
-
-                            <div className={styles.SponsorWrapper}>
-                                {
-                                    sponsors['diamond'].items.map(mapSponsorCard)
-                                }
-                            </div>
-                        </Row>
-                    </div>
+                    {Object.keys(sponsors).map((el) => mapSponsorLevel(sponsors[el]))}
 
                     <h4>
                         Organização
@@ -59,7 +74,7 @@ const SponsorsSection: React.FC = ({ }) => {
 
                             <div className={styles.SponsorWrapper}>
                                 {
-                                    sponsors['support'].items.map(mapSponsorCard)
+                                    supports.items.map(mapSponsorCard)
                                 }
                             </div>
                         </Row>
