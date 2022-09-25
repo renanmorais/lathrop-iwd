@@ -2,8 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  compilerOptions: {
-    baseUrl: "./src"
+  images: {
+    loader: 'akamai',
+    path: '',
+    domains: ['firebasestorage.googleapis.com'],
+  },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/sponsors': { page: '/sponsors' },
+      '/speakers': { page: '/speakers' },
+    }
   },
 }
 
