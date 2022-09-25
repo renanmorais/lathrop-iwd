@@ -1,16 +1,26 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
-  }
+:root {
+  --blue: #3270EB;
+  --red: #CB4538;
+  --orange: #E59F38;
+  --white: #FFF;
+  --black: #1A1D1C;
 }
+
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Inter var', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
 a {
@@ -20,4 +30,36 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 1026px) {
+  .hideSmall {
+    display: none;
+  }
+}
+
+
+#__next {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }

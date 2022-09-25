@@ -1,0 +1,52 @@
+{
+    "database": {
+        "rules": "database.rules.json"
+    },
+    "firestore": {
+        "rules": "firestore.rules",
+        "indexes": "firestore.indexes.json"
+    },
+    "hosting": {
+        "public": "out",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "function": "prerender"
+            }
+        ],
+        "headers": [
+            {
+                "source": "**",
+                "headers": [
+                    {
+                        "key": "X-Content-Type-Options",
+                        "value": "nosniff"
+                    },
+                    {
+                        "key": "X-Frame-Options",
+                        "value": "sameorigin"
+                    },
+                    {
+                        "key": "X-XSS-Protection",
+                        "value": "1; mode=block"
+                    },
+                    {
+                        "key": "Referrer-Policy",
+                        "value": "same-origin"
+                    }
+                ]
+            }
+        ]
+    },
+    "functions": {
+        "predeploy": [
+            "npm run build",
+            "npm run export"
+        ]
+    }
+}
