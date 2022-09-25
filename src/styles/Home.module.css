@@ -76,13 +76,13 @@
   background: white;
   background-image: radial-gradient(#4385F3 2px, transparent 0);
   background-size: 26px 26px;
-  background-position: -10px -10px;
+  background-position: -12px -12px;
   padding: 30px
 }
 
 .MainInnerFullDescription {
   background: white;
-  padding: 10px 10px;
+  padding: 20px 20px;
 }
 
 .Counter {
