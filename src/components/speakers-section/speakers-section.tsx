@@ -33,7 +33,7 @@ const SpeakersSection: React.FC = ({ }) => {
   };
 
 
-  let _chunckSize = 5;
+  let _chunckSize = 4;
   if (!isSSR && width != null && width < 1076) _chunckSize = 1;
   const _speakersChuncked = speakersChunk(speakers, _chunckSize);
 

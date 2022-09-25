@@ -19,12 +19,16 @@ const sponsors = {
   },
   bronze: {
     name: 'Meia Cura',
-    items: []
+    items: [
+      { name: 'Zup', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fzup.png?alt=media', url: 'https://www.zup.com.br' },
+      { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' }
+    ]
   },
   ruby: {
     name: 'Queijo Curado',
     items: [
-      { name: 'Globo', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fglobo.png?alt=media', url: 'https://vempraglobo.g.globo' }
+      { name: 'Globo', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fglobo.png?alt=media', url: 'https://vempraglobo.g.globo' },
+      { name: 'ZG Soluções', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fzg-solucoes.png?alt=media', url: 'https://zgsolucoes.com.br/' }
     ]
   },
   ametista: {
