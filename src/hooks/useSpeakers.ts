@@ -8,7 +8,7 @@ const speakers = [
       uf: ''
     },
     topic: 'Machine Learning',
-    title: 'GDE',
+    title: 'Google Developer Expert',
     companyTitle: 'Analista de dados na Loggi'
   },
   {
@@ -20,7 +20,7 @@ const speakers = [
       uf: ''
     },
     topic: 'Web',
-    title: 'GDE',
+    title: 'Google Developer Expert',
     companyTitle: 'Lead Software Engineer at Nubank'
   },
   {
@@ -32,7 +32,7 @@ const speakers = [
       uf: ''
     },
     topic: 'Machine Learning',
-    title: 'GDE',
+    title: 'Google Developer Expert',
     companyTitle: 'Machine Learning Engineer at Clicampo'
   },
   {
@@ -44,8 +44,32 @@ const speakers = [
       uf: ''
     },
     topic: 'Web',
-    title: 'GDE',
+    title: 'Google Developer Expert',
     companyTitle: 'Lead Software Engineer at Nubank'
+  },
+  {
+    id: 5,
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Ffellyph-cintra.jpeg?alt=media',
+    name: 'Fellyph Cintra',
+    location: {
+      city: '',
+      uf: ''
+    },
+    topic: 'Web',
+    title: 'Google Developer Expert',
+    companyTitle: 'Community Manager at rtCamp'
+  },
+  {
+    id: 6,
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fmikaeri-ohana.jpeg?alt=media',
+    name: 'Mikaeri Ohana',
+    location: {
+      city: '',
+      uf: ''
+    },
+    topic: 'Machine Learning',
+    title: 'Google Developer Expert',
+    companyTitle: 'Data Product Manager at CI&T'
   },
   /*{
     id: 5,
@@ -56,7 +80,7 @@ const speakers = [
       uf: ''
     },
     topic: 'Android',
-    title: 'GDE',
+    title: 'Google Developer Expert',
     companyTitle: 'Lead Software Engineer at Nubank'
   },*/
 

@@ -102,7 +102,7 @@ const HomeHeader: React.FC = ({ }) => {
                             </p>
                         </Col>
                         <Row style={{ marginTop: '15px' }}>
-                            <Col> <a className={styles.RegisterButton} href="#">Inscreva-se</a> </Col>
+                            <Col> <a className={styles.RegisterButton} href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a> </Col>
                         </Row>
                     </div>
                 </div>
