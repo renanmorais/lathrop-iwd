@@ -59,9 +59,8 @@
   font-size: 14px;
   margin: 0.8rem 0 0 0;
   text-decoration: none;
-  color: #298Ae4;
+  color: #298ae4;
 }
-
 
 .carousel_indicators {
   margin-top: 1rem;
@@ -69,7 +68,7 @@
 
 .carousel_indicators button {
   opacity: none !important;
-  background-color: #298Ae4 !important;
+  background-color: #298ae4 !important;
   width: 0.6rem !important;
   height: 0.6rem !important;
   border-radius: 50% !important;
@@ -87,4 +86,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+.button_container a {
+  background: #298ae4;
+  color: #fff;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.5rem;
 }
