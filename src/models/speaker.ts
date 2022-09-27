@@ -4,6 +4,7 @@ export interface Speaker {
     tech: string;
     topic: string;
     title: string;
+    mini_bio: string;
     photo: string;
     companyTitle: string;
 }
