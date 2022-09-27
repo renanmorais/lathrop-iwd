@@ -8,6 +8,7 @@ import {
   CarouselItem,
   CarouselIndicators,
   Button,
+  CarouselControl,
 } from "reactstrap";
 import speakers from "../../hooks/useSpeakers";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
@@ -15,7 +16,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import styles from "../../styles/Speakers.module.css";
 import SpeakerCard from "./speaker-card";
 
-const SpeakersSection: React.FC = ({}) => {
+const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSSR, setIsSSR] = useState(true);
   const { width } = useWindowDimensions();
@@ -96,6 +97,20 @@ const SpeakersSection: React.FC = ({}) => {
               className={styles.carousel}
             >
               {displaySpeakers}
+              <div className={styles.carousel_prev}>
+                <CarouselControl
+                  direction="prev"
+                  directionText="Previous"
+                  onClickHandler={previous}
+                />
+              </div>
+              <div className={styles.carousel_next}>
+                <CarouselControl
+                  direction="next"
+                  directionText="Next"
+                  onClickHandler={next}
+                />
+              </div>
             </Carousel>
           </div>
           <div className={styles.button_container}>
