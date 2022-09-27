@@ -115,30 +115,57 @@
   border-radius: 0.5rem;
 }
 
-.speaker_info_container {
+.modal_header {
+  padding: 1rem 2rem 0 2rem;
+}
+
+.modal_header button {
+  margin: 0 0 4rem 0 !important;
+}
+
+.modal_speaker_info_container {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.speaker_info_content {
+.modal_speaker_info_content {
   width: 90%;
   margin-left: 1rem;
 }
 
-.speaker_info_content h1 {
+.modal_speaker_info_content h1 {
   font-size: 1.6rem;
   margin: 0;
 }
 
-.speaker_info_content p {
+.modal_speaker_info_content p {
   margin: 0;
   font-size: 1rem;
 }
 
-.speaker_content h2 {
+.modal_body {
+  padding: 1rem 2rem 0 2rem;
+}
+
+.modal_body h2 {
   font-size: 1.35rem;
+}
+
+.modal_footer {
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_footer a {
+  padding: 1rem;
+}
+
+.modal_footer a svg {
+  color: #000 !important;
 }
 
 @media (max-width: 360px) {
