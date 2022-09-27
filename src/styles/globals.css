@@ -63,3 +63,28 @@ a {
   transform: translateY(0);
   opacity: 1;
 }
+
+
+.DangerButton {
+  padding: 15px 15px;
+  background-color: var(--red);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.DangerButton:hover {
+  border: 3px var(--red) solid;
+  color: var(--red);
+  background-color: var(--white);
+}
+
+.DisableButton {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.TicketFeatures::before {
+  content: url('/check.svg');
+  padding-right: 0.5rem;
+}
