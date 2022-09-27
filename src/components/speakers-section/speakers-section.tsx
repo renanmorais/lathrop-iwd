@@ -20,7 +20,7 @@ const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSSR, setIsSSR] = useState(true);
   const { width } = useWindowDimensions();
-  const keyNumber = activeIndex + 1;
+
 
   useEffect(() => {
     setIsSSR(false);
@@ -31,7 +31,6 @@ const SpeakersSection: React.FC = ({ }) => {
       array.slice(i * size, i * size + size,),
     )
   };
-
 
   let _chunckSize = 4;
   if (!isSSR && width != null && width < 1076) _chunckSize = 1;

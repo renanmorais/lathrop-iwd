@@ -21,16 +21,11 @@ const SponsorsSection: React.FC = ({ }) => {
     const sponsors: StringMap = _sponsors;
     const supports: StringMap = _supports;
 
-    useEffect(() => {
-    }, []);
-
-
     const mapSponsorCard = (sponsor: Sponsor) => {
         if (sponsor.logo)
-            return (<Col><SponsorCard {...sponsor}></SponsorCard></Col>)
+            return (<Col key={sponsor.id}><SponsorCard {...sponsor}></SponsorCard></Col>)
         return <Col></Col>
     }
-
 
     const mapSponsorLevel = (sponsorLevel: SponsorLevel) => {
         if (sponsorLevel.items.length > 0)

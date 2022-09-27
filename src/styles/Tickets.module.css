@@ -1,0 +1,95 @@
+.TicketsList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 5em;
+    display: flex;
+}
+
+.TicketItem {
+    position: relative;
+    padding: 2.5em 3em;
+    -webkit-flex-basis: 250px;
+    -ms-flex-basis: 250px;
+    flex-basis: 250px;
+    margin-right: 4em;
+    overflow: hidden;
+    margin-bottom: 2em;
+    max-width: 260px;
+
+
+    border: 1px solid #dedede;
+    border-radius: 5%;
+}
+
+.TicketItemPrice {
+    margin-bottom: 70px;
+    font-size: 1.5rem;
+}
+
+.TicketItem:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    background: #dedede;
+    top: 50%;
+    right: -25px;
+}
+
+.TicketItemTitle {
+    font-size: 1.8rem;
+    padding-bottom: 0.1em;
+}
+
+.TicketItemDescription {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px
+}
+
+.TicketItemOff {
+    pointer-events: none;
+    background-color: rgba(204, 204, 204, 0.428);
+}
+
+.TicketItemOff:after {
+    content: 'Esgotado';
+    display: block;
+    position: absolute;
+    width: 400px;
+    -webkit-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    left: -75px;
+    top: 90px;
+    background: rgb(240, 141, 126);
+    text-align: center;
+    color: #fff;
+    padding: 0.3em 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 580px) {
+
+    .TicketsList {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .TicketItem {
+        margin-right: 0;
+        margin-bottom: 2em;
+        max-width: 260px;
+    }
+}
+
+
+.TicketsDisclaimer {
+    color: #ddd
+}
