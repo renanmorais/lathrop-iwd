@@ -7,7 +7,9 @@ const sponsors = {
   },
   diamond: {
     name: 'Queijo Minas',
-    items: []
+    items: [
+      { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
+    ]
   },
   golden: {
     name: 'Canastra',
@@ -15,7 +17,9 @@ const sponsors = {
   },
   silver: {
     name: 'Minas Frescal',
-    items: []
+    items: [
+      { name: 'Sankhya', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fsankhya.png?alt=media', url: 'https://www.sankhya.com.br/' },
+    ]
   },
   bronze: {
     name: 'Meia Cura',
