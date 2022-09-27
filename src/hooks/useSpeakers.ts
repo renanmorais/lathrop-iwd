@@ -7,7 +7,7 @@ const speakers = [
     topic: 'Análise de Dados no Mundo das Proteínas',
     mini_bio: 'Sit voluptate consectetur aliquip velit laboris. Laboris veniam occaecat exercitation officia veniam est reprehenderit. Ea deserunt ad nostrud ea commodo elit. Sunt deserunt laborum voluptate mollit occaecat anim. Officia enim mollit cillum in.',
     title: 'Google Developer Expert',
-    companyTitle: 'Analista de dados na Loggi'
+    companyTitle: 'Analista de dados na Loggi',
   },
   {
     id: 2,
