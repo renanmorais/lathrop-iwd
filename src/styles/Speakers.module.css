@@ -115,6 +115,32 @@
   border-radius: 0.5rem;
 }
 
+.speaker_info_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.speaker_info_content {
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.speaker_info_content h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.speaker_info_content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.speaker_content h2 {
+  font-size: 1.35rem;
+}
+
 @media (max-width: 360px) {
   .carousel_prev a {
     background-color: transparent !important;
