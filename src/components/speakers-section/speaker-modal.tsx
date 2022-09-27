@@ -21,10 +21,22 @@ const SpeakerModal: React.FC<ModalProps> = ({ id, modalOpen, modalToggle }) => {
   });
 
   return (
-    <Modal isOpen={modalOpen} toggle={modalToggle}>
-      <ModalHeader toggle={modalToggle}>{speaker?.name}</ModalHeader>
+    <Modal isOpen={modalOpen} toggle={modalToggle} centered size="lg" scrollable>
+      <ModalHeader toggle={modalToggle}>
+        <div className={styles.speaker_info_container}>
+          <Image unoptimized className={styles.card_image} src={speaker!.photo} alt={`Foto ${speaker!.name}`} width="90%" height="90%" />
+          <div className={styles.speaker_info_content}>
+            <h1>{speaker!.name}</h1>
+            <p>{speaker!.tech}</p>
+            <p>{speaker!.title}</p>
+          </div>
+        </div>
+      </ModalHeader>
       <ModalBody>
-        <Image unoptimized className={styles.card_image} src={speaker?.photo} alt={`Foto ${speaker?.name}`} width="90%" height="90%" />
+        <div className={styles.speaker_content}>
+          <h2>{speaker!.topic}</h2>
+          <p>{speaker!.mini_bio}</p>
+        </div>
       </ModalBody>
     </Modal>
   );
