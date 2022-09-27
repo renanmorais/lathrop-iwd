@@ -1,10 +1,7 @@
 export interface Speaker {
     id: number;
     name: string;
-    location: {
-        city: string;
-        uf: string;
-    };
+    tech: string;
     topic: string;
     title: string;
     photo: string;
