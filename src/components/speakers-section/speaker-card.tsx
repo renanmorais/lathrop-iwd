@@ -3,11 +3,10 @@ import { Speaker } from "models/speaker";
 import Image from "next/image";
 import React, { useState } from "react";
 
-import styles from '../../styles/Speakers.module.css'
+import styles from "../../styles/Speakers.module.css";
 import SpeakerModal from "./speaker-modal";
 
-interface SpeakerCardProps extends Speaker {
-}
+interface SpeakerCardProps extends Speaker {}
 
 const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -16,19 +15,25 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
   return (
     <>
       <div className={styles.card_content} onClick={modalToggle}>
-        <Image unoptimized className={styles.card_image} src={speaker.photo} alt={`Foto ${speaker.name}`} width="90%" height="90%" />
+        <Image
+          unoptimized
+          className={styles.card_image}
+          src={speaker.photo}
+          alt={`Foto ${speaker.name}`}
+          width="100%"
+          height="100%"
+        />
         <h2 className={styles.card_name}>{speaker.name}</h2>
         <p className={styles.card_topic}>{speaker.tech}</p>
         <p className={styles.card_profile}>{speaker.title}</p>
       </div>
       <SpeakerModal
-        id={speaker.id}
+        speaker={speaker}
         modalOpen={modalOpen}
         modalToggle={modalToggle}
       />
     </>
   );
-}
+};
 
 export default SpeakerCard;
-
