@@ -11,7 +11,6 @@
 .carousel_prev a {
   background-color: transparent !important;
   left: -7rem !important;
-
 }
 
 .carousel_next a {
@@ -34,6 +33,7 @@
   width: 15rem;
   padding: 1rem 1rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .card_content {
@@ -111,16 +111,30 @@
 .button_container a {
   background: #298ae4;
   color: #fff;
-  padding: 0.6rem 0.5rem;
-  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.7rem;
+  border: 3px solid #298ae4;
+}
+
+.button_container a:hover {
+  background: transparent;
+  color: #298ae4;
+  border: 3px solid #298ae4;
 }
 
 .modal_header {
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .modal_header button {
   margin: 0 0 4rem 0 !important;
+}
+
+.modal_header .card_image img {
+  min-width: 110% !important;
+  min-height: 110% !important;
+  background: #dedede;
 }
 
 .modal_speaker_info_container {
@@ -131,7 +145,7 @@
 }
 
 .modal_speaker_info_content {
-  width: 90%;
+  width: 80%;
   margin-left: 1rem;
 }
 
@@ -146,7 +160,7 @@
 }
 
 .modal_body {
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .modal_body h2 {
@@ -154,7 +168,7 @@
 }
 
 .modal_footer {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,6 +176,7 @@
 
 .modal_footer a {
   padding: 1rem;
+  cursor: pointer;
 }
 
 .modal_footer a svg {
@@ -172,12 +187,16 @@
   .carousel_prev a {
     background-color: transparent !important;
     left: -2.5rem !important;
-  
   }
-  
+
   .carousel_next a {
     background-color: transparent !important;
     right: -1.8rem !important;
+  }
+
+  .modal_footer a {
+    padding: 0.5rem;
+    cursor: pointer;
   }
 }
 
@@ -185,12 +204,15 @@
   .carousel_prev a {
     background-color: transparent !important;
     left: -3rem !important;
-  
   }
-  
+
   .carousel_next a {
     background-color: transparent !important;
     right: -2rem !important;
   }
-}
 
+  .modal_footer a {
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+}
