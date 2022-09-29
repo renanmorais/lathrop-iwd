@@ -19,20 +19,14 @@ import { Speaker } from "models/speaker";
 interface ModalProps {
   modalOpen: boolean;
   modalToggle: () => void;
-  id: number;
+  speaker: Speaker;
 }
 
-const SpeakerModal: React.FC<ModalProps> = ({ id, modalOpen, modalToggle }) => {
-  const [speaker, setSpeaker] = useState<Speaker>({} as Speaker);
-
-  useEffect(() => {
-    for (let speaker of speakers) {
-      if (speaker.id === id) {
-        setSpeaker(speaker);
-      }
-    }
-  }, []);
-
+const SpeakerModal: React.FC<ModalProps> = ({
+  speaker,
+  modalOpen,
+  modalToggle,
+}) => {
   return (
     <Modal
       isOpen={modalOpen}
