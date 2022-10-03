@@ -40,7 +40,15 @@ const sponsors = {
     items: [
       { name: 'Jetbrains', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fjetbrains.svg?alt=media', url: 'https://www.jetbrains.com/' }
     ]
+  },
+  support: {
+    name: 'Apoio',
+    items: [
+      { name: 'Brain', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fbrain.png?alt=media', url: 'http://inovacaobrain.com.br/' },
+      { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' }
+    ]
   }
+
 }
 
 export default sponsors;
