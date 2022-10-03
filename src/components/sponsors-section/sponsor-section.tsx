@@ -60,7 +60,7 @@ const SponsorsSection: React.FC = ({ }) => {
                     </p>*/}
 
                     <h4>
-                        Apoio
+                        Patrocinador oficial
                     </h4>
 
                     {Object.keys(sponsors).map((el) => mapSponsorLevel(sponsors[el]))}
