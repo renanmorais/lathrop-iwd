@@ -10,7 +10,6 @@ import {
   Button,
   CarouselControl,
 } from "reactstrap";
-import speakers from "../../hooks/useSpeakers";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import styles from "../../styles/Speakers.module.css";
@@ -19,10 +18,16 @@ import SpeakerCard from "./speaker-card";
 const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSSR, setIsSSR] = useState(true);
+  const [speakers, setSpeakers] = useState([])
   const { width } = useWindowDimensions();
   const keyNumber = activeIndex + 1;
 
   useEffect(() => {
+    fetch('/api/v1/speakers')
+      .then((res) => res.json())
+      .then((data) => {
+        setSpeakers(data)
+      })
     setIsSSR(false);
   }, []);
 
