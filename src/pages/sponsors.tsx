@@ -1,5 +1,4 @@
 import React from 'react';
-import speakers from '../hooks/useSpeakers';
 import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
