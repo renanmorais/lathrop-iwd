@@ -88,6 +88,7 @@ const SpeakersSection: React.FC = ({ }) => {
               previous={previous}
               ride='carousel'
               className={styles.carousel}
+              style={{ width: '100%' }}
             >
               {displaySpeakers}
             </Carousel>
