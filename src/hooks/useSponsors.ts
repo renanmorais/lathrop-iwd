@@ -7,7 +7,9 @@ const sponsors = {
   },
   diamond: {
     name: 'Queijo Minas',
-    items: []
+    items: [
+      { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
+    ]
   },
   golden: {
     name: 'Canastra',
@@ -15,13 +17,16 @@ const sponsors = {
   },
   silver: {
     name: 'Minas Frescal',
-    items: []
+    items: [
+      { name: 'Sankhya', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fsankhya.png?alt=media', url: 'https://www.sankhya.com.br/' },
+    ]
   },
   bronze: {
     name: 'Meia Cura',
     items: [
       { name: 'Zup', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fzup.png?alt=media', url: 'https://www.zup.com.br' },
-      { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' }
+      { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' },
+      { name: 'Aliare', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Faliare.png?alt=media', url: 'https://www.aliare.co/' }
     ]
   },
   ruby: {
@@ -36,7 +41,15 @@ const sponsors = {
     items: [
       { name: 'Jetbrains', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fjetbrains.svg?alt=media', url: 'https://www.jetbrains.com/' }
     ]
+  },
+  support: {
+    name: 'Apoio',
+    items: [
+      { name: 'Brain', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fbrain.png?alt=media', url: 'http://inovacaobrain.com.br/' },
+      { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' }
+    ]
   }
+
 }
 
 export default sponsors;
