@@ -67,6 +67,10 @@
   margin-top: 1rem;
 }
 
+.carousel {
+  width: 100%;
+}
+
 .carousel_indicators button {
   opacity: none !important;
   background-color: #298Ae4 !important;
