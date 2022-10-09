@@ -1,7 +1,10 @@
 import { Ticket } from 'models/ticket'
 import Head from 'next/head'
 
-interface TicketLayoutProps extends Ticket { }
+import Image from 'next/image'
+
+interface TicketLayoutProps extends Ticket {
+}
 
 export default function TicketLayout(props: TicketLayoutProps) {
     return (
@@ -11,7 +14,7 @@ export default function TicketLayout(props: TicketLayoutProps) {
 
                 <meta name="description" content={props.description} />
 
-                <meta property="og:site_name" content="Blog do Diego" />
+                <meta property="og:site_name" content="Devfest Cerrado" />
 
                 <meta property="og:title" content={props.title} />
                 <meta property="og:description" content={props.description} />
@@ -27,11 +30,15 @@ export default function TicketLayout(props: TicketLayoutProps) {
                 <meta name="twitter:description" content={props.description} />
                 <meta name="twitter:image" content={props.thumbnailUrl} />
             </Head>
-            <article>
-                <h1>{props.title}</h1>
-                <img width="600" src={props.thumbnailUrl} alt={props.title} />
-                <div dangerouslySetInnerHTML={{ __html: props.content }} />
-            </article>
+
+
+            <div>
+                <Image alt="background" layout="fill" src='/og.png' sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw" />
+
+            </div>
+
+
+            teste
         </main>
     )
 }

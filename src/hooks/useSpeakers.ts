@@ -113,6 +113,42 @@ const speakers = [
       website: "https://www.google.com/",
     },
   },
+  {
+    id: 7,
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fnelson-glauber.jpeg?alt=media',
+    name: 'Nelson Glauber',
+    location: {
+      city: '',
+      uf: ''
+    },
+    topic: 'Android',
+    title: 'Google Developer Expert',
+    companyTitle: 'Senior Android Developer Nagarro'
+  },
+  {
+    id: 8,
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Ffernando-sedrez.jpeg?alt=media',
+    name: 'Fernando Sedrez',
+    location: {
+      city: '',
+      uf: ''
+    },
+    topic: 'Engenharia de dados',
+    title: 'Senior Data Engineer na Act Digital',
+    companyTitle: 'Senior Data Engineer na Act Digital'
+  },
+  {
+    id: 9,
+    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fgabul.png?alt=media',
+    name: 'Gabul Dev',
+    location: {
+      city: '',
+      uf: ''
+    },
+    topic: 'Flutter',
+    title: 'Flutter Google Mentor',
+    companyTitle: 'TechLead no Grupo Boticário'
+  }
 ];
 
 export default speakers;
