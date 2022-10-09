@@ -148,6 +148,7 @@ const speakers = [
     topic: 'Flutter',
     title: 'Flutter Google Mentor',
     companyTitle: 'TechLead no Grupo Boticário'
-  }];
+  }
+];
 
 export default speakers;
