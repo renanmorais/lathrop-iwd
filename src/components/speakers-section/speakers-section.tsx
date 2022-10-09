@@ -20,7 +20,7 @@ const SpeakersSection: React.FC = ({ }) => {
   const [isSSR, setIsSSR] = useState(true);
   const [speakers, setSpeakers] = useState([])
   const { width } = useWindowDimensions();
-  const keyNumber = activeIndex + 1;
+
 
   useEffect(() => {
     fetch('/api/v1/speakers')
@@ -100,6 +100,7 @@ const SpeakersSection: React.FC = ({ }) => {
               previous={previous}
               ride="carousel"
               className={styles.carousel}
+              style={{ width: '100%' }}
             >
               {displaySpeakers}
               <div className={styles.carousel_prev}>
