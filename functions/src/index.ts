@@ -21,9 +21,9 @@ app.post("/speakers", async (request, response) => {
 
     try {
 
-        const {key, id, companyTitle, mini_bio, name, photo, tech, title, topic} = request.body;
+        const {key, id, companyTitle, mini_bio, name, photo, tech, title, topic, location} = request.body;
         const data = {
-            id, companyTitle, mini_bio, name, photo, tech, title, topic,
+            id, companyTitle, mini_bio, name, photo, tech, title, topic, location,
         };
 
         if (key) {
