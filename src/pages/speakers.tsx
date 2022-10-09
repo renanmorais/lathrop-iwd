@@ -1,5 +1,4 @@
-import React from 'react';
-import speakers from '../hooks/useSpeakers';
+import React, { useEffect, useState } from "react";
 import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
@@ -7,6 +6,16 @@ import SpeakerCard from 'components/speakers-section/speaker-card';
 import { Speaker } from 'models/speaker';
 
 const SpeakersPage = ({ }) => {
+    const [speakers, setSpeakers] = useState([])
+
+    useEffect(() => {
+        fetch('/api/v1/speakers')
+          .then((res) => res.json())
+          .then((data) => {
+            setSpeakers(data)
+          })
+      }, []);
+
     const sectionStyle = {
         marginTop: '60px'
     }
