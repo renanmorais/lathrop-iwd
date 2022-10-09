@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
   images: {
     loader: 'akamai',
     path: '',
@@ -13,6 +14,7 @@ const nextConfig = {
   ) {
     return {
       '/': { page: '/' },
+      '/admin': { page: '/admin' },
       '/sponsors': { page: '/sponsors' },
       '/speakers': { page: '/speakers' },
     }
