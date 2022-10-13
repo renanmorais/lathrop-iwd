@@ -19,7 +19,8 @@ const sponsors = {
     name: 'Minas Frescal',
     items: [
       { name: 'Sankhya', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fsankhya.png?alt=media', url: 'https://www.sankhya.com.br/' },
-      { name: 'Aliare', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Faliare.png?alt=media', url: 'https://www.aliare.co/' }
+      { name: 'Aliare', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Faliare.png?alt=media', url: 'https://www.aliare.co/' },
+      { name: 'Asa Consultoria', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fasa-consultoria.png?alt=media', url: 'https://www.asaconsultoria.com.br/' }
     ]
   },
   bronze: {
