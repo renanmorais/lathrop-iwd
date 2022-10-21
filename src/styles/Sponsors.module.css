@@ -17,6 +17,28 @@
     .SponsorWrapper {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .StaffWrapper{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .StaffCardBody{
+        width: 130px;
+    }
+}
+
+.StaffWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 8px;
+    padding: 20px 0px;
+    margin: 0px 5px;
+}
+
+.StaffCardBody{
+    position: relative;
+    width: 100px;
+    height: 90px;
 }
 
 .SponsorCard {
