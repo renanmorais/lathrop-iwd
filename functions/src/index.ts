@@ -16,6 +16,7 @@ main.use(bodyParser.json());
 export const webApi = functions.https.onRequest(main);
 
 const SPEAKERS_COLLECTION = "speakers";
+const SPONSORS_COLLECTION = "sponsors";
 
 app.post("/speakers", async (request, response) => {
 
@@ -76,6 +77,8 @@ app.post("/speakers", async (request, response) => {
 
 app.get("/speakers", async (request, response) => {
 
+    response.set("Access-Control-Allow-Origin", "*");
+
     try {
 
         const speakersQuerySnapshot = await db.collection(SPEAKERS_COLLECTION).get();
@@ -88,6 +91,27 @@ app.get("/speakers", async (request, response) => {
         );
 
         response.json(speakers);
+
+    } catch (error) {
+
+        response.status(500).send(error);
+
+    }
+
+});
+
+app.get("/sponsors", async (request, response) => {
+
+    response.set("Access-Control-Allow-Origin", "*");
+
+    try {
+
+        const sponsorsQuerySnapshot = await db.collection(SPONSORS_COLLECTION).get();
+        const sponsors: any = {}; // eslint-disable-line
+        sponsorsQuerySnapshot.forEach(
+            (doc) => sponsors[doc.id.trim()] = {...doc.data()}
+        );
+        response.json(sponsors);
 
     } catch (error) {
 
