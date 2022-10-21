@@ -5,14 +5,16 @@ import styles from '../../styles/Sponsors.module.css'
 import Image from 'next/image'
 
 
-interface SponsorCardProps extends Sponsor { }
+interface SponsorCardProps extends Sponsor {
+    isStaff?: boolean;
+ }
 
 const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
     return (
         <>
             <div className={styles.SponsorCard}>
                 <a href={sponsor.url} target="_blank">
-                    <div className={styles.SponsorCardBody}>
+                    <div className={sponsor.isStaff? styles.StaffCardBody: styles.SponsorCardBody}>
                         <Image unoptimized src={sponsor.logo} layout="fill"
                             objectFit="contain"
 
