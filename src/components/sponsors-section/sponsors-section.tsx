@@ -13,6 +13,8 @@ import styles from '../../styles/Sponsors.module.css'
 import SponsorCard from "./sponsor-card";
 import { SponsorLevel } from "models/sponsor-level";
 
+import { ENDPOINT } from "../../helpers/config";
+
 interface StringMap { [key: string]: any; }
 
 const SPONSORS_LIST =  ["superior", "diamond", "golden", "silver", "bronze", "ruby", "ametista", "support", "staff"];
@@ -23,7 +25,7 @@ const SponsorsSection: React.FC = ({ }) => {
     const supports: StringMap = _supports;
 
     useEffect(() => {
-        fetch('/api/v1/sponsors')
+        fetch(ENDPOINT + '/api/v1/sponsors')
           .then((res) => res.json())
           .then((data) => {
             setSponsors(data)
