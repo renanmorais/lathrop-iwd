@@ -4,12 +4,13 @@ import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
 import SpeakerCard from 'components/speakers-section/speaker-card';
 import { Speaker } from 'models/speaker';
+import { ENDPOINT } from "../helpers/config";
 
 const SpeakersPage = ({ }) => {
     const [speakers, setSpeakers] = useState([])
 
     useEffect(() => {
-        fetch('/api/v1/speakers')
+        fetch(ENDPOINT + '/api/v1/speakers')
           .then((res) => res.json())
           .then((data) => {
             setSpeakers(data)
