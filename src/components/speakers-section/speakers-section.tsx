@@ -15,6 +15,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import styles from "../../styles/Speakers.module.css";
 import SpeakerCard from "./speaker-card";
 
+import { ENDPOINT } from "../../helpers/config";
+
 const SpeakersSection: React.FC = ({ }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSSR, setIsSSR] = useState(true);
@@ -23,7 +25,7 @@ const SpeakersSection: React.FC = ({ }) => {
 
 
   useEffect(() => {
-    fetch('/api/v1/speakers')
+    fetch(ENDPOINT + '/api/v1/speakers')
       .then((res) => res.json())
       .then((data) => {
         setSpeakers(data)
