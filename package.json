@@ -7,8 +7,13 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy_staging": "npm run build && npm run export && firebase use default && firebase deploy --only hosting",
-    "deploy_prod": "npm run build && npm run export && firebase use production && firebase deploy --only hosting",
+    "copy_root": "cp out/index.html functions/",
+    "deploy": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "build_export": "npm run build && npm run export && npm run copy_root",
+    "deploy_staging": "npm run build_export && firebase use default && npm run deploy",
+    "deploy_staging:functions": "firebase use default && npm run deploy:functions",
+    "deploy_prod": "npm run build_export && firebase use production && npm run deploy",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +21,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "firebase-admin": "^11.2.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -19,7 +19,7 @@ const TicketsSection: React.FC = ({ }) => {
         const _classes = [styles.TicketItem];
 
         if (ticket.isOutOfSale()) _classes.push(styles.TicketItemOff);
-        return (<li className={_classes.join(' ')} >
+        return (<li key={ticket.title} className={_classes.join(' ')} >
             <TicketCard
                 ticket={ticket}
             ></TicketCard>

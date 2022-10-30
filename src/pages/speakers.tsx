@@ -4,18 +4,15 @@ import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
 import SpeakerCard from 'components/speakers-section/speaker-card';
 import { Speaker } from 'models/speaker';
-import { ENDPOINT } from "../helpers/config";
+import { NextLayoutComponentType, NextLayoutPage } from "../../types";
+import { getSpeakers } from "front-features/speakers";
 
-const SpeakersPage = ({ }) => {
-    const [speakers, setSpeakers] = useState([])
 
-    useEffect(() => {
-        fetch(ENDPOINT + '/api/v1/speakers')
-          .then((res) => res.json())
-          .then((data) => {
-            setSpeakers(data)
-          })
-      }, []);
+interface SpeakersPageProps {
+    speakers: Array<Speaker>
+}
+
+const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
 
     const sectionStyle = {
         marginTop: '60px'
@@ -60,6 +57,22 @@ const SpeakersPage = ({ }) => {
         </>
     )
 }
+
+
+export async function getServerSideProps() {
+    try {
+        return {
+            props: {
+                speakers: await getSpeakers(),
+            }
+        }
+    } catch (error) {
+        console.error(error)
+        return ({ props: { speakers: [] } });
+    }
+
+}
+
 
 SpeakersPage.layout = BaseLayout;
 

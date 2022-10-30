@@ -14,9 +14,10 @@ const nextConfig = {
   ) {
     return {
       '/': { page: '/' },
-      '/admin': { page: '/admin' },
+      '/home': { page: '/' },
       '/sponsors': { page: '/sponsors' },
       '/speakers': { page: '/speakers' },
+      '/campaigns': { page: '/campaigns' },
     }
   },
 }
