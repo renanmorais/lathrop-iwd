@@ -5,11 +5,20 @@ import SpeakersSection from '../components/speakers-section/speakers-section';
 import OlderEvenstsSection from 'components/older-events-section/older-events-section';
 import SponsorsSection from 'components/sponsors-section/sponsors-section';
 import TicketsSection from 'components/tickets-section/tickets-section';
+import { Speaker } from 'models/speaker';
+import { getSpeakers } from 'front-features/speakers';
+import { getSponsors } from 'front-features/sponsors';
+import { SponsorLevel } from 'models/sponsor-level';
+
 
 
 // https://alvarotrigo.com/blog/css-animations-scroll/
 
-const Home = ({ }) => {
+interface HomePageProps {
+  speakers: Array<Speaker>, sponsors: { [key: string]: SponsorLevel }
+}
+
+const Home = ({ speakers, sponsors }: HomePageProps) => {
   const sectionStyle = {
     marginTop: '60px'
   }
@@ -41,13 +50,13 @@ const Home = ({ }) => {
           <OlderEvenstsSection />
         </section>
         <section style={sectionStyle}>
-          <SpeakersSection />
+          <SpeakersSection speakers={speakers} />
         </section>
         <section style={sectionStyle}>
           <TicketsSection />
         </section>
         <section style={sectionStyle}>
-          <SponsorsSection />
+          <SponsorsSection sponsors={sponsors} />
         </section>
 
       </div>
@@ -55,6 +64,22 @@ const Home = ({ }) => {
 
   )
 }
+
+export async function getServerSideProps() {
+  try {
+    return {
+      props: {
+        speakers: await getSpeakers(),
+        sponsors: await getSponsors(),
+      }
+    }
+  } catch (error) {
+    console.error(error)
+    return ({ props: { speakers: [], sponsors: [] } });
+  }
+
+}
+
 
 Home.layout = BaseLayout;
 

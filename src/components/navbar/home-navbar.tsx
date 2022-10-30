@@ -8,11 +8,13 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import { useRouter } from 'next/router'
 import LogoGDG from "../../assets/images/LogoGDG";
 import LogoMenu from "../../assets/images/MenuLogo"
 import styles from "../../styles/Navbar.module.css";
 
 const NavbarHome = () => {
+  const router = useRouter()
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setScrolling] = useState(false);
 
@@ -20,6 +22,10 @@ const NavbarHome = () => {
   const menu = [{ name: "Sobre", ref: "#about" }, { name: "Palestrantes", ref: '#speakers' }, { name: "Patrocinadores", ref: '#sponsors' }]
 
   const toggle = () => setIsOpen(!isOpen);
+
+  const generateRef = (ref: string) => {
+    return (router.pathname != '/') ? `/${ref}` : ref;
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -44,7 +50,7 @@ const NavbarHome = () => {
           <Nav className="ms-auto" navbar>
             {menu.map((menuItems, index) =>
               <NavItem key={"nav-item-" + index}>
-                <NavLink className={isScrolling ? [styles.nav_link, styles.shadow_scrolling].join(' ') : styles.nav_link} style={{ color: isScrolling || isOpen ? 'white' : 'rgba(0,0,0,.55)' }} href={menuItems.ref}>{menuItems.name}</NavLink>
+                <NavLink className={isScrolling ? [styles.nav_link, styles.shadow_scrolling].join(' ') : styles.nav_link} style={{ color: isScrolling || isOpen ? 'white' : 'rgba(0,0,0,.55)' }} href={generateRef(menuItems.ref)}>{menuItems.name}</NavLink>
               </NavItem>
             )}
           </Nav>
