@@ -1,6 +1,5 @@
 /*eslint-disable*/
 import { Sponsor } from "models/sponsor";
-import React, { useEffect, useState } from "react";
 import {
     Container,
     Row,
@@ -13,28 +12,22 @@ import styles from '../../styles/Sponsors.module.css'
 import SponsorCard from "./sponsor-card";
 import { SponsorLevel } from "models/sponsor-level";
 
-import { ENDPOINT } from "../../helpers/config";
 
 interface StringMap { [key: string]: any; }
 
-const SPONSORS_LIST =  ["superior", "diamond", "golden", "silver", "bronze", "ruby", "ametista", "support", "staff"];
+const SPONSORS_LIST: string[] = ["superior", "diamond", "golden", "silver", "bronze", "ruby", "ametista", "support", "staff"];
 
-const SponsorsSection: React.FC = ({ }) => {
+interface SponsorsSectionProps {
+    sponsors: { [key: string]: SponsorLevel },
+}
 
-    const [sponsors, setSponsors] = useState<StringMap>({});
+const SponsorsSection: React.FC<SponsorsSectionProps> = ({ sponsors }) => {
+
     const supports: StringMap = _supports;
-
-    useEffect(() => {
-        fetch(ENDPOINT + '/api/v1/sponsors')
-          .then((res) => res.json())
-          .then((data) => {
-            setSponsors(data)
-          })
-    }, []);
 
     const mapSponsorCard = (sponsor: Sponsor, isStaff: boolean) => {
         if (sponsor.logo)
-            return (<Col key={sponsor.id}><SponsorCard {...sponsor} isStaff></SponsorCard></Col>)
+            return (<Col key={sponsor.id}><SponsorCard {...sponsor} isStaff={isStaff}></SponsorCard></Col>)
         return <Col></Col>
     }
 
@@ -45,7 +38,7 @@ const SponsorsSection: React.FC = ({ }) => {
                     {sponsorLevel.name}
                 </h4>
                 <Row>
-                    <div className={isStaff? styles.StaffWrapper: styles.SponsorWrapper}>
+                    <div className={isStaff ? styles.StaffWrapper : styles.SponsorWrapper}>
                         {
                             sponsorLevel.items.map((item) => mapSponsorCard(item, isStaff))
                         }
@@ -80,7 +73,7 @@ const SponsorsSection: React.FC = ({ }) => {
 
                             <div className={styles.SponsorWrapper}>
                                 {
-                                    supports.items.map(mapSponsorCard)
+                                    supports.items.map((item: Sponsor) => mapSponsorCard(item, false))
                                 }
                             </div>
                         </Row>

@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import { useRouter } from 'next/router'
 import LogoGDG from "../../assets/images/LogoGDG";
 // reactstrap components
 import { Nav, NavItem, NavLink, Container } from "reactstrap";
@@ -8,20 +9,25 @@ import configValues from '../../helpers/config'
 interface FooterProps { }
 
 const Footer: React.FC<FooterProps> = ({ }) => {
+  const router = useRouter()
+  const generateRef = (ref: string) => {
+    return (router.pathname != '/') ? `/${ref}` : ref;
+  }
+
   return (
     <>
       <Container fluid>
         <Nav className={styles.FooterContent}>
           <NavItem>
-            <NavLink active href="#">
+            <NavLink active href={generateRef("#")}>
               <LogoGDG />
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#speakers">Palestrantes</NavLink>
+            <NavLink href={generateRef("#speakers")}>Palestrantes</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#sponsors">Patrocinadores</NavLink>
+            <NavLink href={generateRef("#sponsors")}>Patrocinadores</NavLink>
           </NavItem>
           <NavItem className={styles.FooterRegister}>
             <NavLink href={configValues.eventLinkRegistrationUrl}>Se cadastrar</NavLink>
