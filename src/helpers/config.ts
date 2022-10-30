@@ -7,7 +7,8 @@ const configValues = {
   email: 'gdg.uberlandia@gmail.com',
 }
 
-// TODO: hardcoded URL in order to work locally
-export const ENDPOINT = process.env.NODE_ENV === "production" ? "" : "https://devfestcerrado-2022-staging.web.app";
+const dev = process.env.NODE_ENV !== 'production';
+
+export const server = dev ? 'http://localhost:3000' : 'https://your_deployment.server.com';
 
 export default configValues;
