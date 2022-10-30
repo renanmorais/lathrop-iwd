@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
 import SpeakerCard from 'components/speakers-section/speaker-card';
 import { Speaker } from 'models/speaker';
-import { NextLayoutComponentType, NextLayoutPage } from "../../types";
 import { getSpeakers } from "front-features/speakers";
 
 

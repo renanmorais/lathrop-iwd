@@ -2,8 +2,15 @@ import React from 'react';
 import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
 import { getSponsors } from 'front-features/sponsors';
+import { SponsorLevel } from 'models/sponsor-level';
 
-const SponsorsPage = ({ sponsors }) => {
+
+interface SponsorsPageProps {
+    sponsors: { [key: string]: SponsorLevel };
+}
+
+
+const SponsorsPage = ({ sponsors }: SponsorsPageProps) => {
     const sectionStyle = {
         marginTop: '60px'
     }
@@ -56,4 +63,4 @@ SponsorsPage.layout = BaseLayout;
 
 
 
-export default SpeakersPage
+export default SponsorsPage
