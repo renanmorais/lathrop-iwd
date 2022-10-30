@@ -7,6 +7,7 @@ const configValues = {
   email: 'gdg.uberlandia@gmail.com',
 }
 
+console.log('Server url', process.env.NEXT_PUBLIC_VERCEL_URL);
 export const server = process.env.NEXT_PUBLIC_VERCEL_URL ?? process.env.NEXT_PUBLIC_SITE_URL;
 
 export default configValues;
