@@ -3,7 +3,20 @@ import db from '../utils/db';
 const SPEAKERS_COLLECTION = "speakers";
 
 
-const createSpeaker = async ({ key, id, companyTitle, mini_bio, name, photo, tech, title, topic, location }) => {
+interface SpeakerPayload {
+    key: string,
+    id: string,
+    companyTitle: string,
+    mini_bio: string,
+    name: string,
+    photo: string,
+    tech: string,
+    title: string,
+    topic: string,
+    location: string
+}
+
+const createSpeaker = async ({ key, id, companyTitle, mini_bio, name, photo, tech, title, topic, location }: SpeakerPayload) => {
 
 
     const data = {
