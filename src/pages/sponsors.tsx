@@ -1,10 +1,9 @@
 import React from 'react';
 import BaseLayout from '../layouts/base-layout';
 import { Col, Row, Container } from 'reactstrap';
-import styles from '../styles/Speakers.module.css'
-import SpeakerCard from 'components/speakers-section/speaker-card';
+import { getSponsors } from 'front-features/sponsors';
 
-const SpeakersPage = ({ }) => {
+const SponsorsPage = ({ sponsors }) => {
     const sectionStyle = {
         marginTop: '60px'
     }
@@ -39,8 +38,21 @@ const SpeakersPage = ({ }) => {
         </>
     )
 }
+export async function getServerSideProps() {
+    try {
+        return {
+            props: {
+                sponsors: await getSponsors(),
+            }
+        }
+    } catch (error) {
+        console.error(error)
+        return ({ props: { sponsors: [] } });
+    }
 
-SpeakersPage.layout = BaseLayout;
+}
+
+SponsorsPage.layout = BaseLayout;
 
 
 
