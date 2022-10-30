@@ -7,8 +7,8 @@ const configValues = {
   email: 'gdg.uberlandia@gmail.com',
 }
 
-const dev = process.env.NODE_ENV !== 'production';
+const dev = process.env.NODE_ENV == 'development';
 
-export const server = dev ? 'http://localhost:3000' : 'https://your_deployment.server.com';
+export const server = dev ? 'http://localhost:3000' : '';
 
 export default configValues;
