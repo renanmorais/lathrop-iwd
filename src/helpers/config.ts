@@ -15,6 +15,8 @@ const resolveURL = () => {
     finalUrl += `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
   }
 
+  return finalUrl;
+
 }
 
 
