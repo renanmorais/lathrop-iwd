@@ -10,28 +10,18 @@ import {
   Button,
   CarouselControl,
 } from "reactstrap";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import styles from "../../styles/Speakers.module.css";
 import SpeakerCard from "./speaker-card";
 
-import { ENDPOINT } from "../../helpers/config";
+interface SpeakersSectionProps {
+  speakers: Array<Speaker>,
+}
 
-const SpeakersSection: React.FC = ({ }) => {
+const SpeakersSection: React.FC<SpeakersSectionProps> = ({ speakers }) => {
+
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isSSR, setIsSSR] = useState(true);
-  const [speakers, setSpeakers] = useState([])
-  const { width } = useWindowDimensions();
 
-
-  useEffect(() => {
-    fetch(ENDPOINT + '/api/v1/speakers')
-      .then((res) => res.json())
-      .then((data) => {
-        setSpeakers(data)
-      })
-    setIsSSR(false);
-  }, []);
 
   const speakersChunk = (array: Array<Speaker>, size: number) => {
     return Array.from({ length: Math.ceil(array.length / size) }, (v, i) =>
@@ -40,7 +30,6 @@ const SpeakersSection: React.FC = ({ }) => {
   };
 
   let _chunckSize = 4;
-  if (!isSSR && width != null && width < 1076) _chunckSize = 1;
   const _speakersChuncked = speakersChunk(speakers, _chunckSize);
 
   const next = () => {
@@ -131,5 +120,6 @@ const SpeakersSection: React.FC = ({ }) => {
     </>
   );
 };
+
 
 export default SpeakersSection;
