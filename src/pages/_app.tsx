@@ -3,6 +3,7 @@ import type { AppContext, AppInitialProps, AppProps } from 'next/app'
 
 import React, { ReactNode } from "react";
 import { NextComponentType, NextPageContext } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 import configValues from 'helpers/config';
 
@@ -19,6 +20,7 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
   return (<React.Fragment>
     <Layout>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   </React.Fragment>);
 
