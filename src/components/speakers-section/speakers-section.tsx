@@ -54,7 +54,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({ speakers }) => {
         <CarouselItem key={`${index}-carousel-item`}>
           <div className={styles.carousel_inner}>
             {speakersList.map((speaker: Speaker) => {
-              const _itemId: number = speaker.id;
+              const _itemId: number | undefined = speaker.id;
               return (
                 <Col
                   key={`${_itemId}-carousel-col`}
