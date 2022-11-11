@@ -5,20 +5,25 @@ import SpeakersSection from '../components/speakers-section/speakers-section';
 import OlderEvenstsSection from 'components/older-events-section/older-events-section';
 import SponsorsSection from 'components/sponsors-section/sponsors-section';
 import TicketsSection from 'components/tickets-section/tickets-section';
+import ScheduleSection from 'components/schedule-section/schedule-section';
 import { Speaker } from 'models/speaker';
+import { Schedule } from 'models/schedule';
 import { getSpeakers } from 'front-features/speakers';
 import { getSponsors } from 'front-features/sponsors';
+import { getSchedule } from 'front-features/schedule'
 import { SponsorLevel } from 'models/sponsor-level';
+
+
 
 
 
 // https://alvarotrigo.com/blog/css-animations-scroll/
 
 interface HomePageProps {
-  speakers: Array<Speaker>, sponsors: { [key: string]: SponsorLevel }
+  speakers: Array<Speaker>, sponsors: { [key: string]: SponsorLevel }, schedule: Array<Schedule>
 }
 
-const Home = ({ speakers, sponsors }: HomePageProps) => {
+const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
   const sectionStyle = {
     marginTop: '60px'
   }
@@ -56,6 +61,9 @@ const Home = ({ speakers, sponsors }: HomePageProps) => {
           <TicketsSection />
         </section>
         <section style={sectionStyle}>
+          <ScheduleSection speakers={speakers} schedule={schedule} />
+        </section>
+        <section style={sectionStyle}>
           <SponsorsSection sponsors={sponsors} />
         </section>
 
@@ -71,6 +79,7 @@ export async function getServerSideProps() {
       props: {
         speakers: await getSpeakers(),
         sponsors: await getSponsors(),
+        schedule: await getSchedule()
       }
     }
   } catch (error) {
