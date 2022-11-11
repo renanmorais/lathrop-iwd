@@ -18,7 +18,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
         <Image
           unoptimized
           className={styles.card_image}
-          src={speaker.photo}
+          src={speaker.photo ? speaker.photo : ""}
           alt={`Foto ${speaker.name}`}
           width="100%"
           height="100%"
