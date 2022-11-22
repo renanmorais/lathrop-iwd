@@ -54,6 +54,9 @@ const SpeakerModal: React.FC<ModalProps> = ({
       </ModalHeader>
       <ModalBody className={styles.modal_body}>
         <h2>{speaker.topic}</h2>
+        <p>{speaker.content}</p>
+
+        <h2>Mini bio</h2>
         <p>{speaker.mini_bio}</p>
       </ModalBody>
       <ModalFooter className={styles.modal_footer}>
