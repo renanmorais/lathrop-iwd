@@ -4,11 +4,12 @@ export interface Speaker {
   tech?: string;
   topic?: string;
   title?: string;
+  content?: string;
   mini_bio?: string;
   path?: string;
   photo?: string;
   community?: string;
-  company?:string;
+  company?: string;
   companyTitle?: string;
   social_media?: {
     instagram: string;
