@@ -30,6 +30,10 @@ const NavbarHome = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   const generateRef = (ref: string) => {
+    if (ref.includes('www')) {
+      return ref
+
+    }
     return (router.pathname != '/') ? `/${ref}` : ref;
   }
 
