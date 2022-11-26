@@ -24,13 +24,13 @@ const NavbarHome = () => {
     { name: "Palestrantes", ref: '#speakers' },
     { name: "Agenda", ref: '#schedule' },
     { name: "Patrocinadores", ref: '#sponsors' },
-    { name: "Devdex", ref: 'www.pokedex.devfestcerrado.com.br' }
+    { name: "Devdex", ref: 'https://www.pokedex.devfestcerrado.com.br' }
   ]
 
   const toggle = () => setIsOpen(!isOpen);
 
   const generateRef = (ref: string) => {
-    if (ref.includes('www')) {
+    if (ref.includes('https')) {
       return ref
 
     }
