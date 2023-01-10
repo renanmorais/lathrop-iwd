@@ -22,7 +22,6 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
     </Layout>
   </React.Fragment>);
 
-
 };
 
 export default MyApp;
