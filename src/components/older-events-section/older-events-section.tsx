@@ -16,11 +16,10 @@ const OlderEvenstsSection: React.FC = ({ }) => {
             <Container id="about">
                 <Row>
                     <Col lg={6} sm={12}>
-                        <h1> O que é o Devfest? </h1>
+                        <h1> O que é o IWD? </h1>
 
                         <p className={styles.Description}>
-
-                            O DevFest é um evento organizado por comunidades do Google Developers Group (GDG), para a troca de conhecimento e fomento tecnológico das regiões. A conferência é preparada para profissionais, estudiosos, pessoas desenvolvedoras e demais pessoas com interesse em aprendizado, ambiente de troca de experiências e networking.
+                            O IWD é um evento anual realizado pelos WTMs de todo o mundo com o objetivo de celebrar as conquistas das mulheres em tecnologia. A grade deste evento não aborda apenas tecnologias Google, mas toda e qualquer pauta de interesse da comunidade para essa celebração.
                         </p>
                     </Col>
                     <Col lg={6} sm={12}>

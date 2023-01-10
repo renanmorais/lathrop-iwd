@@ -1,10 +1,10 @@
 const configValues = {
-  name: 'Devfest Cerrado 2022',
-  eventDate: '2022-11-26T08:00:00',
+  name: 'IWD Cerrado 2023',
+  eventDate: '2023-04-15T08:00:00',
   eventLinkRegistrationUrl: 'https://doity.com.br/devfest-cerrado-2022',
-  place: 'Local: Varanda 402 - Uberlândia',
-  formattedDate: 'Dia 26 Novembro 2022',
-  email: 'gdg.uberlandia@gmail.com',
+  place: 'Local: Unialfa Perimetral - Goiânia',
+  formattedDate: 'Dia 15 Abril 2023',
+  email: 'gdggoiania@gmail.com',
 }
 
 const resolveURL = () => {
