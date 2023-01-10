@@ -69,8 +69,6 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
 
       </div>
     </>
-
-
   )
 }
 
