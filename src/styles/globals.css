@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
 :root {
-  --blue: #3270EB;
-  --red: #CB4538;
-  --orange: #E59F38;
+  --green: #09ccb1;
+  --blue: #46B3DC;
+  --orange: #487BD6;
   --white: #FFF;
-  --black: #1A1D1C;
+  --black: #2be7b6;
 }
 
 
@@ -67,15 +67,15 @@ a {
 
 .DangerButton {
   padding: 15px 15px;
-  background-color: var(--red);
+  background-color: var(--green);
   color: white;
   font-size: 20px;
   border-radius: 10px;
 }
 
 .DangerButton:hover {
-  border: 3px var(--red) solid;
-  color: var(--red);
+  border: 3px var(--green) solid;
+  color: var(--green);
   background-color: var(--white);
 }
 
