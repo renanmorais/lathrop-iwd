@@ -14,7 +14,6 @@
 .VideoContainer {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px;
     height: 0;
     overflow: hidden;
 }
@@ -79,7 +78,7 @@
 }
 
 .ConstructItem:nth-child(3n+1) {
-    background-color: var(--red);
+    background-color: var(--green);
 }
 
 .ConstructItem:nth-child(3n+2) {

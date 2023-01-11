@@ -58,11 +58,11 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = ({ sponsors }) => {
                         Estas são as empresas que nos ajudaram a fazer este evento acontecer!
                     </p>*/}
 
-                    <h4>
-                        Patrocinador oficial
-                    </h4>
+                    {/*<h4>*/}
+                    {/*    Patrocinador oficial*/}
+                    {/*</h4>*/}
 
-                    {SPONSORS_LIST.map((el) => mapSponsorLevel(sponsors[el], el === "staff"))}
+                    {/*{SPONSORS_LIST.map((el) => mapSponsorLevel(sponsors[el], el === "staff"))}*/}
 
                     <h4>
                         Organização

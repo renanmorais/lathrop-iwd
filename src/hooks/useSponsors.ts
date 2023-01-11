@@ -2,7 +2,7 @@ const sponsors = {
   superior: {
     name: '',
     items: [
-      { name: 'Google Developers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fgoogle-developers.png?alt=media', url: 'https://developers.google.com' }
+      { name: 'Google Developers', logo: '/gdg-goiania.png', url: 'https://developers.google.com' }
     ]
   },
   diamond: {

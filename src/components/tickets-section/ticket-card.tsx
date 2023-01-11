@@ -16,7 +16,7 @@ const TicketCard: React.FC<TicketProps> = ({ ticket }) => {
     if (ticket.isOutOfSale()) buttonClasses.push('DisableButton');
 
     const mapPurchaseButton = () => {
-        if (ticket.firstSaleDate > new Date()) {
+        if (new Date() < ticket.firstSaleDate) {
             return (
                 <>
                     <span>* Não iniciado </span>

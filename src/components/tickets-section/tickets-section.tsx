@@ -30,11 +30,11 @@ const TicketsSection: React.FC = ({ }) => {
 
     return (
         <>
-            <Container style={{ marginBottom: '60px' }}>
+            <Container id="tickets" style={{ marginBottom: '60px' }}>
                 <div id={styles.Tickets}>
-                    <h4>
+                    <h2>
                         Ingressos
-                    </h4>
+                    </h2>
                     <div>
                         <Row style={{ justifyContent: 'center' }}>
                             <ul className={styles.TicketsList}>
