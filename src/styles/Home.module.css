@@ -1,15 +1,23 @@
 .BgWrap {
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 65%;
   z-index: -1;
 }
 
 .BgWrap2 {
   position: absolute;
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
+  height: 14%;
+  width: 170%;
+  z-index: 1;
+  padding-top: 80px;
+}
+
+.BgWrap3 {
+  position: absolute;
+  height: 50%;
+  width: 96%;
+  z-index: 1;
 }
 
 .HappyFaceImg {
@@ -50,7 +58,7 @@
 
 
 .BgImageFull {
-  background: url('/Header.svg');
+  background: url('/IWD2023_DareToBe_HeroGraphic.png');
   background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -63,20 +71,21 @@
 
 .MainInnerFull {
   width: 100%;
-  height: 65vh;
-  text-align: right;
+  height: 71.4vh;
+  text-align: center;
   padding-top: 10%;
-  padding-right: 8%;
+  padding-right: 85px;
+  padding-bottom: 2%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .MainInnerFullContent {
-  background: white;
-  background-image: radial-gradient(#4385F3 2px, transparent 0);
-  background-size: 26px 26px;
-  background-position: -12px -12px;
+  /*background: white;*/
+  /*background-image: radial-gradient(#4385F3 2px, transparent 0);*/
+  /*background-size: 26px 26px;*/
+  /*background-position: -12px -12px;*/
   padding: 30px
 }
 
@@ -87,7 +96,13 @@
 
 .Counter {
   align-items: center;
-  background-color: #1A1D1C;
+  /*//background-color: black;*/
+  /*background: linear-gradient(var(--green), var(--blue) 60%, var(--orange));*/
+  background:
+  linear-gradient(217deg, var(--green), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, var(--blue), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, var(--orange), rgba(0,0,255,0) 70.71%);
+
   display: flex;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
@@ -128,7 +143,7 @@
 }
 
 .CounterListItem:nth-child(2) {
-  background: var(--red);
+  background: var(--green);
 }
 
 .CounterListItem:nth-child(3) {
@@ -149,8 +164,8 @@
 }
 
 .CounterListItem:nth-child(2):hover {
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 .CounterListItem:nth-child(3):hover {
@@ -186,7 +201,7 @@
 
   .BgImageMin {
     display: block;
-    background: url('/Header.svg');
+    background: url('/IWD2023_DareToBe_HeroGraphic.png');
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,7 +256,7 @@
 
 .RegisterButton {
   padding: 15px 15px;
-  background-color: var(--red);
+  background:var(--blue);
   color: white;
   width: 164px;
   height: 33px;
@@ -250,8 +265,8 @@
 }
 
 .RegisterButton:hover {
-  border: 3px var(--red) solid;
-  color: var(--red);
+  border: 3px var(--green) solid;
+  color: var(--green);
   background-color: var(--white);
 }
 
