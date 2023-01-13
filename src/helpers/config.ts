@@ -1,7 +1,7 @@
 const configValues = {
   name: 'IWD Cerrado 2023',
   eventDate: '2023-04-15T08:00:00',
-  eventLinkRegistrationUrl: 'https://doity.com.br/devfest-cerrado-2022',
+  eventLinkRegistrationUrl: 'https://doity.com.br/iwd-cerrado-2023',
   place: 'Local: Unialfa Perimetral - Goiânia',
   formattedDate: 'Dia 15 Abril 2023',
   email: 'gdggoiania@gmail.com',
