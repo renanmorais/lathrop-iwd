@@ -81,14 +81,14 @@ const HomeHeader: React.FC = ({}) => {
                 <div className={styles.MainInnerFullContent}>
                     <Col className={styles.MainInnerFullDescription}>
                         <Row style={{textAlign: 'center'}}>
-                            <Col> <img src='logoiwdcerrado.png' width="333" height="333"/>
+                            <Col> <img src='logoiwdcerrado.png' className={styles.logoIwd}/>
                             </Col>
                         </Row>
                         <Row style={{textAlign: 'center', paddingBottom: '20px'}}>
-                            <Col> <img src='logowtm.png' width="360" height="46"/> </Col>
+                            <Col> <img src='logowtm.png' className={styles.logoIwdText}/> </Col>
                         </Row>
                         <Row style={{textAlign: 'center'}}>
-                            <Col>
+                            <Col className={styles.localDateInfo}>
                                 <h1>
                                     {configValues.formattedDate}
                                 </h1>
@@ -110,7 +110,7 @@ const HomeHeader: React.FC = ({}) => {
                 <div className={styles.MainDescriptionMinWrapper}>
 
                     <div className={styles.MainDescriptionMin}>
-                        <Col className={styles.MainInnerFullDescription}>
+                        <Col className={styles.MainInnerFullDescriptionMin}>
                             <h4>
                                 {configValues.formattedDate}
                             </h4>
@@ -118,23 +118,25 @@ const HomeHeader: React.FC = ({}) => {
                                 {configValues.place}
                             </p>
                         </Col>
-                        <Row style={{marginTop: '15px'}}>
-                            <Col> <a className={styles.RegisterButton}
-                                     href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a> </Col>
-                        </Row>
+                        {/*<Row style={{marginTop: '15px'}}>*/}
+                        {/*    <Col> <a className={styles.RegisterButton}*/}
+                        {/*             href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a> </Col>*/}
+                        {/*</Row>*/}
                     </div>
                 </div>
             </section>
 
             <section className={styles.Counter}>
-                <ul className={styles.CounterList}>
-                    {Object.keys(DATE_DISTANCE_LABELS).map(key => (
-                        <li className={styles.CounterListItem} key={key}>
-                            <span className={styles.CounterListItem__time}>{_dateDistance[key]}</span>
-                            {DATE_DISTANCE_LABELS[key]}
-                        </li>
-                    ))}
-                </ul>
+                <div>
+                    <ul className={styles.CounterList}>
+                        {Object.keys(DATE_DISTANCE_LABELS).map(key => (
+                            <li className={styles.CounterListItem} key={key}>
+                                <span className={styles.CounterListItem__time}>{_dateDistance[key]}</span>
+                                {DATE_DISTANCE_LABELS[key]}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </section>
 
 
