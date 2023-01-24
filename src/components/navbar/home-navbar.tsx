@@ -54,7 +54,7 @@ const NavbarHome = () => {
     return (
         <div className={isScrolling ? styles.navbar_fixed_scrolling : styles.navbar_fixed}>
             <Navbar className={styles.main_navbar} color="faded" light expand="lg">
-                <NavbarBrand className={styles.nav_brand}>{isScrolling ? <LogoGDG color="white"/> : ''}</NavbarBrand>
+                <NavbarBrand className={styles.nav_brand}>{isScrolling ? <LogoGDG height={30} color="white"/> : ''}</NavbarBrand>
                 <NavbarToggler onClick={toggle}
                                className={["mr-2", styles.toggler_btn, isScrolling ? styles.shadow_scrolling : ''].join(' ')}><LogoMenu
                     color={isScrolling ? "white" : "rgba(0,0,0,.55)"}/></NavbarToggler>
