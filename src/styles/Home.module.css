@@ -199,21 +199,69 @@
     height: 46px;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1399px) {
-    .BgImageFull {
-        display: none;
+@media only screen and (min-width: 2510px) and (max-width: 3000px) {
+    .BgWrap {
+        position: absolute;
+        height: 100vh;
+        width: 50%;
+        z-index: -1;
     }
 
     .MainInnerFull {
-        width: 90%;
-        height: 75vh;
+        width: 89%;
+        height: 79.8vh;
         text-align: center;
         padding-top: 10%;
-        padding-right: 48px;
-        padding-bottom: 1%;
+        padding-right: 60px;
+        padding-bottom: 0%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+    }
+
+    .MainInnerFullContent {
+        padding: 60px
+    }
+
+    .RegisterButton {
+        padding: 15px 15px;
+        background: var(--blue);
+        color: white;
+        width: 164px;
+        height: 33px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .RegisterButton:hover {
+        border: 3px var(--green) solid;
+        color: var(--green);
+        background-color: var(--white);
+    }
+}
+
+@media only screen and (min-width: 1750px) and (max-width: 2500px) {
+    .BgWrap {
+        position: absolute;
+        height: 100vh;
+        width: 60%;
+        z-index: -1;
+    }
+
+    .MainInnerFull {
+        width: 97%;
+        height: 75.1vh;
+        text-align: center;
+        padding-top: 10%;
+        padding-right: 60px;
+        padding-bottom: 0%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .MainInnerFullContent {
+        padding: 60px
     }
 
     .RegisterButton {
@@ -293,28 +341,21 @@
 
 }
 
-@media only screen and (min-width: 1750px) and (max-width: 2500px) {
-    .BgWrap {
-        position: absolute;
-        height: 100vh;
-        width: 60%;
-        z-index: -1;
+@media only screen and (min-width: 1026px) and (max-width: 1399px) {
+    .BgImageFull {
+        display: none;
     }
 
     .MainInnerFull {
-        width: 97%;
-        height: 75.1vh;
+        width: 90%;
+        height: 75vh;
         text-align: center;
         padding-top: 10%;
-        padding-right: 60px;
-        padding-bottom: 0%;
+        padding-right: 48px;
+        padding-bottom: 1%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-    }
-
-    .MainInnerFullContent {
-        padding: 60px
     }
 
     .RegisterButton {

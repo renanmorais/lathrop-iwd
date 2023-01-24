@@ -33,17 +33,20 @@ const OlderEvenstsSection: React.FC = ({ }) => {
             <div className={styles.MarqueeOuter}>
                 <div className={styles.MarqueeInner}>
                     <div className={styles.ConstructItems}>
-                        <div className={styles.ConstructItem}>Ouse ser Feliz !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Única !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Diferente !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Você mesma !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Sonhadora !</div>
-                        <div className={styles.ConstructItem}>Ouse ser A primeira !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Otimista !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Destemida !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Feliz !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Única !</div>
-                        <div className={styles.ConstructItem}>Ouse ser Diferente !</div>
+                        <div className={styles.ConstructItem}>Ouse ser feliz!</div>
+                        <div className={styles.ConstructItem}>Ouse ser única!</div>
+                        <div className={styles.ConstructItem}>Ouse ser diferente!</div>
+                        <div className={styles.ConstructItem}>Ouse ser você mesma!</div>
+                        <div className={styles.ConstructItem}>Ouse ser sonhadora!</div>
+                        <div className={styles.ConstructItem}>Ouse ser a primeira!</div>
+                        <div className={styles.ConstructItem}>Ouse ser otimista!</div>
+                        <div className={styles.ConstructItem}>Ouse ser destemida!</div>
+                        <div className={styles.ConstructItem}>Ouse ser feliz!</div>
+                        <div className={styles.ConstructItem}>Ouse ser única!</div>
+                        <div className={styles.ConstructItem}>Ouse ser diferente!</div>
+                        <div className={styles.ConstructItem}>Ouse ser você mesma!</div>
+                        <div className={styles.ConstructItem}>Ouse ser sonhadora!</div>
+                        <div className={styles.ConstructItem}>Ouse ser a primeira!</div>
                     </div>
                 </div>
             </div>
