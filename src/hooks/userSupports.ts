@@ -6,6 +6,7 @@ const supports = {
         { name: 'GDG Itumbiara', logo: '/gdg-itumbiara.png', url: 'https://gdg.community.dev/gdg-itumbiara/' },
         { name: 'GDG Jatai', logo: '/gdg-jatai.png', url: 'https://gdg.community.dev/gdg-jatai/' },
         { name: 'GDG Mogi Guaçu', logo: '/gdg-mogi-guacu.png', url: 'https://gdg.community.dev/gdg-mogi-guacu/' },
+        { name: 'GDSC UFG', logo: '/gdsc-ufg.png', url: 'https://gdsc.community.dev/federal-university-of-goias/' },
     ]
 }
 
