@@ -204,7 +204,7 @@
 
     .MainInnerFull {
         width: 89%;
-        height: 79.8vh;
+        height: 73.4vh;
         text-align: center;
         padding-top: 10%;
         padding-right: 60px;
@@ -296,7 +296,7 @@
 
     .MainInnerFull {
         width: 97%;
-        height: 75.1vh;
+        height: 73.5vh;
         text-align: center;
         padding-top: 10%;
         padding-right: 60px;
@@ -325,6 +325,10 @@
         color: var(--green);
         background-color: var(--white);
     }
+
+    .logoIwd {
+        width: 330px;
+    }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1750px) {
@@ -341,11 +345,6 @@
 
     .localDateInfo h4 {
         font-size: 16px;
-    }
-
-    .logoIwd {
-        width: 222px;
-        height: 222px;
     }
 
     .logoIwdText {
@@ -383,6 +382,10 @@
         border: 3px var(--green) solid;
         color: var(--green);
         background-color: var(--white);
+    }
+
+    .logoIwd {
+        width: 230px;
     }
 
 }
