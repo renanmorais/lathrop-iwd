@@ -6,14 +6,57 @@
     margin: 0px 5px;
 }
 
+
 @media (min-width: 812px) {
     .SponsorWrapper {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 
 @media (min-width: 640px) {
+    .SponsorWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .StaffWrapper{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .StaffCardBody{
+        width: 130px;
+    }
+}
+
+@media (min-width: 382px) {
+    .SponsorWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .StaffWrapper{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .StaffCardBody{
+        width: 130px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .SponsorWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .StaffWrapper{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .StaffCardBody{
+        width: 130px;
+    }
+}
+
+@media (min-width: 1300px) {
     .SponsorWrapper {
         grid-template-columns: repeat(4, 1fr);
     }

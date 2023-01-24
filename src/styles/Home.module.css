@@ -189,11 +189,6 @@
     display: none;
 }
 
-.logoIwd {
-    width: 333px;
-    height: 333px;
-}
-
 .logoIwdText {
     width: 360px;
     height: 46px;
@@ -238,9 +233,60 @@
         color: var(--green);
         background-color: var(--white);
     }
+
+    .logoIwd {
+        width: 330px;
+    }
+
 }
 
-@media only screen and (min-width: 1750px) and (max-width: 2500px) {
+
+@media only screen and (min-width: 2101px) and (max-width: 2509px) {
+    .BgWrap {
+        position: absolute;
+        height: 100vh;
+        width: 54%;
+        z-index: -1;
+    }
+
+    .MainInnerFull {
+        width: 92%;
+        height: 75.6vh;
+        text-align: center;
+        padding-top: 10%;
+        padding-right: 60px;
+        padding-bottom: 0%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .MainInnerFullContent {
+        padding: 60px
+    }
+
+    .RegisterButton {
+        padding: 15px 15px;
+        background: var(--blue);
+        color: white;
+        width: 164px;
+        height: 33px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .RegisterButton:hover {
+        border: 3px var(--green) solid;
+        color: var(--green);
+        background-color: var(--white);
+    }
+
+    .logoIwd {
+        width: 330px;
+    }
+}
+
+@media only screen and (min-width: 1750px) and (max-width: 2100px) {
     .BgWrap {
         position: absolute;
         height: 100vh;
@@ -341,7 +387,46 @@
 
 }
 
-@media only screen and (min-width: 1026px) and (max-width: 1399px) {
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .BgImageFull {
+        display: none;
+    }
+
+    .MainInnerFull {
+        width: 73%;
+        height: 75vh;
+        text-align: center;
+        padding-top: 10%;
+        padding-right: 48px;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .RegisterButton {
+        padding: 15px 15px;
+        background: var(--blue);
+        color: white;
+        width: 164px;
+        height: 33px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .RegisterButton:hover {
+        border: 3px var(--green) solid;
+        color: var(--green);
+        background-color: var(--white);
+    }
+
+    .logoIwd {
+        width: 330px;
+    }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1199px) {
     .BgImageFull {
         display: none;
     }
@@ -375,7 +460,96 @@
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1026px) {
+
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+    .BgImageFull {
+        display: none;
+    }
+
+    .RegisterButton {
+        padding: 15px 15px;
+        background: var(--blue);
+        color: white;
+        width: 164px;
+        height: 33px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .RegisterButton:hover {
+        border: 3px var(--green) solid;
+        color: var(--green);
+        background-color: var(--white);
+    }
+
+    .localDateInfo {
+        display: none;
+    }
+
+    .logoIwd {
+        width: 222px;
+        height: 222px;
+    }
+
+    .logoIwdText {
+        width: 252px;
+        height: 32px;
+    }
+
+    .MainInnerFullDescription {
+        background: white;
+        padding: 35px 20px 20px;
+    }
+
+    .MainInnerFullDescriptionMin {
+        background: white;
+        padding: 35px 20px 20px;
+    }
+
+    .MainInnerFull {
+        width: 71%;
+        height: 52.9vh;
+        text-align: center;
+        padding-top: 6%;
+        padding-right: 35px;
+        padding-bottom: 0%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .MainDescriptionMinWrapper {
+        display: block;
+        background-color: var(--white);
+        padding: 25px 10px;
+    }
+
+    .MainDescriptionMin {
+        padding: 30px 30px;
+        text-align: center;
+        background-image: radial-gradient(var(--blue) 2px, transparent 0);
+        background-size: 26px 26px;
+        background-position: -10px -10px;
+    }
+
+    .cardCounter {
+        margin: .5rem;
+        padding: 1rem;
+        text-align: center;
+        width: 120px;
+    }
+
+    .cardCounter span {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .CounterList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
     .BgImageFull {
         display: none;
     }
