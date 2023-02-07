@@ -24,7 +24,7 @@ const NavbarHome = () => {
         {name: "Inscreva-se", ref: '#tickets'},
         // { name: "Palestrantes", ref: '#speakers' },
         // { name: "Agenda", ref: '#schedule' },
-        // { name: "Patrocinadores", ref: '#sponsors' },
+        { name: "Patrocinadores", ref: '#sponsors' },
     ]
 
     const toggle = () => setIsOpen(!isOpen);
