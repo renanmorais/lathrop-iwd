@@ -1,18 +1,19 @@
 import React from "react";
 import BaseLayout from '../layouts/base-layout';
-import { Col, Row, Container } from 'reactstrap';
+import {Col, Row, Container} from 'reactstrap';
 import styles from '../styles/Speakers.module.css'
 import SpeakerCard from 'components/speakers-section/speaker-card';
-import { Speaker } from 'models/speaker';
-import { getSpeakers } from "front-features/speakers";
-
+import {Speaker} from 'models/speaker';
+import {getSpeakers} from "front-features/speakers";
+import _speakers from '../hooks/useSpeakers';
 
 interface SpeakersPageProps {
     speakers: Array<Speaker>
 }
 
-const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
-
+// const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
+const SpeakersPage = ({}: SpeakersPageProps) => {
+    const speakers: Array<Speaker> = _speakers;
     const sectionStyle = {
         marginTop: '60px'
     }
@@ -23,7 +24,7 @@ const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
 
     const constructSpeakerCol = (_speaker: Speaker) => {
         return (
-            <Col lg="4" style={{ margin: "20px 20px" }} key={_speaker.id} className={styles.card_container}>
+            <Col lg="4" style={{margin: "20px 20px"}} key={_speaker.id} className={styles.card_container}>
                 <SpeakerCard
                     {..._speaker}
                 />
@@ -32,12 +33,16 @@ const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
 
     return (
         <>
-            <div style={{ margin: "60px 60px" }}>
+            <div style={{margin: "60px 60px"}}>
                 <Container fluid>
                     <h1>Palestrantes</h1>
 
-                    <p style={{ marginTop: '60px' }}>
-                        As pessoas palestrantes do Devfest possuem uma variedade de experiências, que vão desde pessoas desenvolvedoras experientes à lideres de comunidades. As pessoas que palestram com frenquência se engajam em conversas técnicas em suas empresas, cidades e países. No Devfest você pode esperar palestras de Google Developer Experts, Tech Leads, pessoas desenvolvedoras e resolvedores de problemas.
+                    <p style={{marginTop: '60px'}}>
+                        As pessoas palestrantes do Devfest possuem uma variedade de experiências, que vão desde pessoas
+                        desenvolvedoras experientes à lideres de comunidades. As pessoas que palestram com frenquência
+                        se engajam em conversas técnicas em suas empresas, cidades e países. No Devfest você pode
+                        esperar palestras de Google Developer Experts, Tech Leads, pessoas desenvolvedoras e
+                        resolvedores de problemas.
                     </p>
                     <section style={sectionStyle}>
                         <Row style={_center}>
@@ -47,7 +52,7 @@ const SpeakersPage = ({ speakers }: SpeakersPageProps) => {
                     </section>
                 </Container>
                 <Container fluid>
-                    <Row style={{ ..._center, textAlign: 'center' }}>
+                    <Row style={{..._center, textAlign: 'center'}}>
                         <h4> Mais palestrantes a confirmar ...</h4>
 
                     </Row>
@@ -67,14 +72,13 @@ export async function getServerSideProps() {
         }
     } catch (error) {
         console.error(error)
-        return ({ props: { speakers: [] } });
+        return ({props: {speakers: []}});
     }
 
 }
 
 
 SpeakersPage.layout = BaseLayout;
-
 
 
 export default SpeakersPage

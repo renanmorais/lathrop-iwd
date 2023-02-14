@@ -14,13 +14,12 @@ import { getSchedule } from 'front-features/schedule'
 import { SponsorLevel } from 'models/sponsor-level';
 
 
-
-
-
 // https://alvarotrigo.com/blog/css-animations-scroll/
 
 interface HomePageProps {
-  speakers: Array<Speaker>, sponsors: { [key: string]: SponsorLevel }, schedule: Array<Schedule>
+  speakers: Array<Speaker>,
+  sponsors: { [key: string]: SponsorLevel },
+  schedule: Array<Schedule>
 }
 
 const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
@@ -54,9 +53,9 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
         <section style={sectionStyle}>
           <OlderEvenstsSection />
         </section>
-        {/*<section style={sectionStyle}>*/}
-        {/*  <SpeakersSection speakers={speakers} />*/}
-        {/*</section>*/}
+        <section style={sectionStyle}>
+          <SpeakersSection speakers={speakers} />
+        </section>
         <section style={sectionStyle}>
           <TicketsSection />
         </section>

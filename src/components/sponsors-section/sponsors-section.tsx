@@ -12,7 +12,7 @@ import _sponsors from '../../hooks/useSponsors';
 import styles from '../../styles/Sponsors.module.css'
 import SponsorCard from "./sponsor-card";
 import { SponsorLevel } from "models/sponsor-level";
-import sponsors from "../../hooks/useSponsors";
+// import sponsors from "../../hooks/useSponsors";
 
 
 interface StringMap { [key: string]: any; }
