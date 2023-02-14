@@ -10,6 +10,7 @@ const sponsors = {
     name: 'Cora Coralina',
     items: [
       { name: 'Unialfa', logo: 'unialfa.jpeg', url: 'https://www.unialfa.com.br/' },
+      { name: 'Pod Café da Ti', logo: 'LogoPodCafe.png', url: 'https://podcafeti.com.br/' },
       // { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
     ]
   },
