@@ -2,18 +2,18 @@ const speakers = [
   {
     id: 1,
     photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fjessica-costa.jpg?alt=media",
-    name: "Jéssica Costa",
-    tech: "Machine Learning",
-    topic: "Análise de Dados no Mundo das Proteínas",
+        "/speakers/silvia_coelho.jpeg",
+    name: "Silvia Coelho",
+    tech: "Carreira",
+    topic: "",
     mini_bio:
-      "Sit voluptate consectetur aliquip velit laboris. Laboris veniam occaecat exercitation officia veniam est reprehenderit. Ea deserunt ad nostrud ea commodo elit. Sunt deserunt laborum voluptate mollit occaecat anim. Officia enim mollit cillum in.",
-    title: "Google Developer Expert",
-    companyTitle: "Analista de dados na Loggi",
+        "Silvia Coelho é uma engenheira paraense de apenas 49 anos, mãe de dois e idealizadora da comunidade Elas Programam. Após quase 10 anos de pausa na carreira, decidiu retornar ao mercado de tecnologia. Foi aí que se deparou com o gap de gênero no setor e criou a Elas Programam em 2017 para mudar esse cenário. 05 anos depois, Elas Programam conta com uma comunidade engajada de mais de 100 mil pessoas em diversos canais digitais. Em março de 2022, Silvia foi reconhecida pelo LinkedIn como LinkedIn Top Voices e LinkedIn Creator. Hoje ela é CTO da startup jurídica Forum Hub.",
+    title: "LinkedIn Top Voices e LinkedIn Creator",
+    companyTitle: "CTO da Forum Hub",
     social_media: {
-      instagram: "https://instagram.com/",
-      twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
+      instagram: "https://instagram.com/elasprogramam",
+      twitter: "https://twitter.com/silvia_rcr",
+      linkedIn: "https://www.linkedin.com/in/silvia-coelho/",
       github: "https://github.com/",
       website: "https://www.google.com/",
     },
@@ -21,18 +21,17 @@ const speakers = [
   {
     id: 2,
     photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fkeilla-menezes.png?alt=media",
-    name: "Keilla Menezes",
-    tech: "Web",
-    topic: "Backend-Driven UI",
+        "/speakers/giulia_bordignon.jpg",
+    name: "Giulia Bordignon",
+    tech: "Mestra em engenharia de computação e desenvolvedora backend",
+    topic: "Falando sobre desigualdades de gênero: Obstáculos à participação plena das mulheres na tecnologia",
     mini_bio:
-      "Amet tempor aliqua in deserunt ad culpa ea commodo deserunt excepteur ullamco duis. Qui in dolor laborum pariatur do cupidatat ad minim tempor nostrud. Nostrud amet nulla ad velit. Aute id magna aliqua dolor incididunt enim irure do quis sit aliqua laborum sunt. Excepteur cillum mollit commodo pariatur in est eiusmod tempor qui aliquip in quis. Adipisicing sit consequat excepteur nulla id consequat commodo do dolore eu commodo veniam aliquip.",
-    title: "Google Developer Expert",
-    companyTitle: "Lead Software Engineer at Nubank",
+        "Mestra em engenharia de computação e desenvolvedora backend. Através da criação de conteúdos, sonho impactar vidas de forma positiva com rompimento de barreiras e empoderamento tecnológico, reconstruindo a área tecnológica como um espaço acessível e pertencente a todas as pessoas. ",
+    companyTitle: "Spacecoding",
     social_media: {
-      instagram: "https://instagram.com/",
+      instagram: "https://instagram.com/elasprogramam",
       twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
+      linkedIn: "https://www.linkedin.com/in/spacecoding/",
       github: "https://github.com/",
       website: "https://www.google.com/",
     },
@@ -40,115 +39,22 @@ const speakers = [
   {
     id: 3,
     photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Farnaldo-gualberto.jpg?alt=media",
-    name: "Arnaldo Gualberto",
-    tech: "Machine Learning",
-    topic: "Como sobreviver ao Largados & Pelados com um Autoencoder",
+        "/speakers/mikaeri_ohana.jpg",
+    name: "Mikaeri Ohana Estevam Candido",
+    tech: "Machine learning/TensorFlow",
+    topic: "Creating scalable ML solutions to support big techs evolution",
     mini_bio:
-      "Lorem aliquip ullamco et sit. Magna labore sint enim in ut labore id velit exercitation enim cupidatat magna esse ipsum. Duis eiusmod et reprehenderit aute est sint. Ullamco proident sint laboris adipisicing eu eiusmod deserunt dolore esse dolor sit ullamco. Minim tempor adipisicing et eiusmod. Exercitation aute aute ea ex.",
-    title: "Google Developer Expert",
-    companyTitle: "Machine Learning Engineer at Clicampo",
+        "Mikaeri Ohana é formada em análise e desenvolvimento de sistemas pela FATEC e faz mestrado na Unicamp. Ela é a primeira mulher brasileira indicada como Microsoft Most Valuable Professional em Inteligência Artificial e Google Developer Expert em Machine Learning. Trabalha com tecnologia desde 2015, e focou sua carreira em ciência de dados e machine learning em 2019. Atualmente ela trabalha com ciência de dados na CI&T e é criadora de conteúdo na @explicami, ajudando a aumentar o número de pessoas especializadas em dados no Brasil e no mundo ",
+    title: "Google Developer Expert ",
+    companyTitle: "Data Product Manager|Data Science, Artificial Intelligence and Machine Learning ",
     social_media: {
-      instagram: "https://instagram.com/",
+      instagram: "https://www.instagram.com/explicami/",
       twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
+      linkedIn: "https://www.linkedin.com/in/mikaeriohana/",
       github: "https://github.com/",
       website: "https://www.google.com/",
     },
   },
-  {
-    id: 4,
-    photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fwilson-mendes.jpeg?alt=media",
-    name: "Will Mendes",
-    tech: "Web",
-    topic: "Web",
-    mini_bio:
-      "Consequat incididunt dolor eiusmod laborum cillum Lorem magna duis. Lorem ad aliquip ipsum voluptate sint qui Lorem tempor consequat eiusmod adipisicing. Reprehenderit id enim occaecat elit non non nisi est reprehenderit qui. Velit consequat anim aliqua ipsum incididunt proident Lorem mollit duis proident esse esse.",
-    title: "Google Developer Expert",
-    companyTitle: "Lead Software Engineer at Nubank",
-    social_media: {
-      instagram: "https://instagram.com/",
-      twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
-      github: "https://github.com/",
-      website: "https://www.google.com/",
-    },
-  },
-  {
-    id: 5,
-    photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Ffellyph-cintra.jpeg?alt=media",
-    name: "Fellyph Cintra",
-    tech: "Web",
-    topic: "CSS 2022 um mundo de novas possibilidades",
-    mini_bio:
-      "Magna proident labore amet ut dolore adipisicing excepteur enim irure ad incididunt irure. Magna veniam nostrud nisi reprehenderit esse amet enim id. Cupidatat do voluptate ut nulla esse anim quis commodo voluptate ipsum ipsum culpa. Ullamco elit nulla adipisicing sit.",
-    title: "Google Developer Expert",
-    companyTitle: "Community Manager at rtCamp",
-    social_media: {
-      instagram: "https://instagram.com/",
-      twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
-      github: "https://github.com/",
-      website: "https://www.google.com/",
-    },
-  },
-  {
-    id: 6,
-    photo:
-      "https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fmikaeri-ohana.jpeg?alt=media",
-    name: "Mikaeri Ohana",
-    tech: "Machine Learning",
-    topic: "O que Machine Learning e bolos têm em comum?",
-    mini_bio:
-      "Velit fugiat eu cillum elit exercitation dolore sit aliquip dolor ea. Dolore amet adipisicing labore qui proident. Eiusmod laboris nisi officia sit.",
-    title: "Google Developer Expert",
-    companyTitle: "Data Product Manager at CI&T",
-    social_media: {
-      instagram: "https://instagram.com/",
-      twitter: "https://twitter.com/",
-      linkedIn: "https://linkedin.com/",
-      github: "https://github.com/",
-      website: "https://www.google.com/",
-    },
-  },
-  {
-    id: 7,
-    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fnelson-glauber.jpeg?alt=media',
-    name: 'Nelson Glauber',
-    location: {
-      city: '',
-      uf: ''
-    },
-    topic: 'Android',
-    title: 'Google Developer Expert',
-    companyTitle: 'Senior Android Developer Nagarro'
-  },
-  {
-    id: 8,
-    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Ffernando-sedrez.jpeg?alt=media',
-    name: 'Fernando Sedrez',
-    location: {
-      city: '',
-      uf: ''
-    },
-    topic: 'Engenharia de dados',
-    title: 'Senior Data Engineer na Act Digital',
-    companyTitle: 'Senior Data Engineer na Act Digital'
-  },
-  {
-    id: 9,
-    photo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/speakers%2Fgabul.png?alt=media',
-    name: 'Gabul Dev',
-    location: {
-      city: '',
-      uf: ''
-    },
-    topic: 'Flutter',
-    title: 'Flutter Google Mentor',
-    companyTitle: 'TechLead no Grupo Boticário'
-  }
 ];
 
 export default speakers;
