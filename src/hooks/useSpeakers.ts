@@ -21,7 +21,7 @@ const speakers = [
   {
     id: 2,
     photo:
-        "/speakers/giulia_bordignon.jpg",
+        "/speakers/giulia_bordignon.png",
     name: "Giulia Bordignon",
     tech: "Mestra em engenharia de computação e desenvolvedora backend",
     topic: "Falando sobre desigualdades de gênero: Obstáculos à participação plena das mulheres na tecnologia",
