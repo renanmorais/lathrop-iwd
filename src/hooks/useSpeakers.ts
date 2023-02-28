@@ -55,6 +55,44 @@ const speakers = [
       website: "https://www.google.com/",
     },
   },
+  {
+    id: 4,
+    photo:
+        "/speakers/nina.jpg",
+    name: "Karina Tronkos ",
+    tech: "UX Design",
+    topic: "",
+    mini_bio:
+        "Karina Tronkos (mais conhecida como Nina) é mentora de design na Apple Developer Academy e já trabalhou em empresas como Globo, Accenture e Hurb. Foi 5x vencedora do Scholarship da Apple (2017-2021), é TEDx speaker e criadora de conteúdo no Nina Talks que conta com +120mil entusiastas e apaixonados por design e tecnologia.",
+    title: "Mentora de design na Apple Developer Academy ",
+    companyTitle: "",
+    social_media: {
+      instagram: "https://www.instagram.com/ninatalks/ ",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://www.linkedin.com/in/karinatronkos/",
+      github: "https://github.com/",
+      website: "https://www.google.com/",
+    },
+  },
+  {
+    id: 4,
+    photo:
+        "/speakers/bianca.jpeg",
+    name: "Bianca Ximenes",
+    tech: "Machine learning/TensorFlow",
+    topic: "Creating scalable ML solutions to support big techs evolution",
+    mini_bio:
+        "Mikaeri Ohana é formada em análise e desenvolvimento de sistemas pela FATEC e faz mestrado na Unicamp. Ela é a primeira mulher brasileira indicada como Microsoft Most Valuable Professional em Inteligência Artificial e Google Developer Expert em Machine Learning. Trabalha com tecnologia desde 2015, e focou sua carreira em ciência de dados e machine learning em 2019. Atualmente ela trabalha com ciência de dados na CI&T e é criadora de conteúdo na @explicami, ajudando a aumentar o número de pessoas especializadas em dados no Brasil e no mundo ",
+    title: "Google Developer Expert ",
+    companyTitle: "Data Product Manager|Data Science, Artificial Intelligence and Machine Learning ",
+    social_media: {
+      instagram: "https://www.instagram.com/explicami/",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://www.linkedin.com/in/mikaeriohana/",
+      github: "https://github.com/",
+      website: "https://www.google.com/",
+    },
+  },
 ];
 
 export default speakers;

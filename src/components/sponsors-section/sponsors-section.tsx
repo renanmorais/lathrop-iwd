@@ -54,7 +54,7 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
 
     return (
         <>
-            <Container style={{ marginBottom: '60px' }}>
+            <Container style={{ marginBottom: '60px',textAlign: "center" }}>
                 <div id="sponsors">
                     {/*<h1>Patrocínio</h1>
                     <p style={{ margin: '30px 0px' }}>
@@ -62,7 +62,7 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
                     </p>*/}
 
                     <h4>
-                        Patrocinador oficial
+                        Patrocinadores
                     </h4>
 
                     {SPONSORS_LIST.map((el) => mapSponsorLevel(sponsors[el], el === "staff"))}
