@@ -18,6 +18,7 @@ const sponsors = {
     name: 'Marília Mendonça',
     items: [
       { name: 'Globo', logo: 'globo.png', url: 'https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~' },
+      { name: 'Happy', logo: 'patrocinio/logoHappy.jpg', url: 'https://www.vemserhappy.com.br/' },
     ]
   },
   silver: {
@@ -38,7 +39,8 @@ const sponsors = {
   support: {
     name: 'Apoio',
     items: [
-      // { name: 'Brain', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fbrain.png?alt=media', url: 'http://inovacaobrain.com.br/' },
+      { name: 'Acieg', logo: 'patrocinio/acieg.jpg' },
+      { name: 'Aliança pela inovação em Goiás', logo: 'patrocinio/sindinformática.jpeg' },
       // { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' },
       // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
     ]

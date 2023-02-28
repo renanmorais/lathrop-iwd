@@ -38,7 +38,7 @@
 
 .MarqueeInner {
     animation-name: marquee;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: relative;
@@ -47,15 +47,15 @@
 
 @keyframes marquee {
     0% {
-        left: -20%;
+        left: -11%;
     }
 
     50% {
-        left: -1%;
+        left: -5%;
     }
 
     100% {
-        left: -20%
+        left: -11%
     }
 }
 
