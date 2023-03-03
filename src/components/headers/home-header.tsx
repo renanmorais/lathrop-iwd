@@ -46,44 +46,25 @@ const HomeHeader: React.FC = ({}) => {
 
     return (
         <>
-            <div className={styles.BgWrap}>
-                <div className={styles.BgImageFull}/>
+            <div className={styles.MainInnerNoteBook}>
+                <div className={styles.MainInnerFullContent}>
+                    <Row style={{textAlign: 'center'}}>
+                        <Col>
+                            <img alt="header" className={styles.headerImg} src='/headerWtmMin.png'/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <a className={styles.RegisterButton}
+                               href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a>
+                        </Col>
+                    </Row>
+                </div>
             </div>
 
-            {/*<div className={styles.BgWrap2}>*/}
-            {/*    /!*<img className={styles.HappyFaceImg} src='happy-face.svg' width="100" height="100" />*!/*/}
-            {/*    /!*<img className={styles.ContentImg} src='content.svg' width="148" height="121" />*!/*/}
-            {/*    /!*<img className={styles.CommunityImg} src='community.svg' width="170" height="87" />*!/*/}
-            {/*    /!*<img className={styles.BellImg} src='bell.svg' width="170" height="107" />*!/*/}
-            {/*    <img className={styles.GlobalImg} src='logoiwdcerrado.png' width="333" height="333" />*/}
-            {/*    /!*<img className={styles.ComplexImg} src='complex.svg' width="378" height="157" />*!/*/}
-            {/*</div>*/}
-
-            {/*<div className={styles.BgWrap3}>*/}
-            {/*    <img className={styles.GlobalImg} src='logowtm.png' width="360" height="46" />*/}
-            {/*</div>*/}
-
-            {/*<div className={styles.BgWrap2}>*/}
-            {/*    <div>*/}
-            {/*        <Row style={{textAlign: 'center'}}>*/}
-            {/*            <Col> <img src='logoiwdcerrado.png' width="333" height="333"/>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*        <Row style={{textAlign: 'center'}}>*/}
-            {/*            <Col> <img src='logowtm.png' width="360" height="46"/> </Col>*/}
-            {/*        </Row>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-
-
             <div className={styles.MainInnerFull}>
-                {/**/}
                 <div className={styles.MainInnerFullContent}>
                     <Col className={styles.MainInnerFullDescription}>
-                        {/*<Row style={{textAlign: 'center'}}>*/}
-                        {/*    <Col> <img src='logoiwdcerrado.png' className={styles.logoIwd}/>*/}
-                        {/*    </Col>*/}
-                        {/*</Row>*/}
                         <Row style={{textAlign: 'center', paddingBottom: '20px'}}>
                             <Col>
                                 <svg className={styles.logoIwd} viewBox="0 0 184 208" fill="none"
@@ -161,7 +142,6 @@ const HomeHeader: React.FC = ({}) => {
                                  href={configValues.eventLinkRegistrationUrl}>Inscreva-se</a> </Col>
                     </Row>
                 </div>
-
             </div>
 
             <section>
@@ -199,7 +179,8 @@ const HomeHeader: React.FC = ({}) => {
 
 
         </>
-    );
+    )
+        ;
 }
 
 export default HomeHeader;
