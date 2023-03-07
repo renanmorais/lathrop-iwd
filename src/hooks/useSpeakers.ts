@@ -96,7 +96,7 @@ const speakers = [
     {
     id: 5,
     photo:
-        "/speakers/ana_neri.jpeg",
+        "/speakers/ana_neri.jpg",
     name: "Ana Neri ",
     tech: "Tecnologias web",
     topic: "",
