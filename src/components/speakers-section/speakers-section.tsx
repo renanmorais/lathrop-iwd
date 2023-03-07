@@ -32,7 +32,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
         );
     };
 
-    let _chunckSize = 4;
+    let _chunckSize = 3;
     const _speakersChuncked = speakersChunk(speakers, _chunckSize);
 
     const next = () => {
