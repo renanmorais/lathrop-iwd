@@ -191,7 +191,7 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 3000px) {
     .MainInnerNoteBook {
-        width: 95%;
+        width: 99%;
         height: 60vh;
         text-align: center;
         padding-top: 26%;
@@ -228,7 +228,7 @@
     }
 
     .MainInnerNoteBook {
-        width: 95%;
+        width: 99%;
         height: 60vh;
         text-align: center;
         padding-top: 35%;
@@ -271,7 +271,7 @@
     }
 
     .MainInnerNoteBook {
-        width: 95%;
+        width: 99%;
         height: 60vh;
         text-align: center;
         padding-top: 35%;
@@ -314,8 +314,8 @@
     }
 
     .MainInnerFull {
-        width: 90%;
-        height: 75vh;
+        width: 78%;
+        height: 95vh;
         text-align: center;
         padding-top: 10%;
         padding-right: 48px;
@@ -477,7 +477,7 @@
     }
 
     .MainInnerFull {
-        width: 100%;
+        width: 90%;
         height: 52.9vh;
         text-align: center;
         padding-top: 6%;
