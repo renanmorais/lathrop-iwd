@@ -171,7 +171,7 @@ const speakers = [
   {
     id: 10,
     photo:
-      "/speakers/thielle.JPG",
+      "/speakers/thielle.jpg",
     name: "Thielle Cathia de Paula dos Santos",
     tech: "Gestão e metodologias ágeis, Carreira e desenvolvimento pessoal",
     topic: "Gestão do Tempo: O dia tem 24 horas para todos você que não sabe administrar. Será?",
@@ -190,7 +190,7 @@ const speakers = [
   {
     id: 11,
     photo:
-      "/speakers/jessicaCosta.JPG",
+      "/speakers/jessicaCosta.jpg",
     name: "Jéssica da Silva Costa",
     tech: "Análise de dados, Cloud",
     topic: "Otimizando Custos no BigQuery",
