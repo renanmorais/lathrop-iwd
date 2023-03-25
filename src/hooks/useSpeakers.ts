@@ -171,7 +171,7 @@ const speakers = [
   {
     id: 10,
     photo:
-      "/speakers/thielle.jpeg",
+      "/speakers/thielle.JPG",
     name: "Thielle Cathia de Paula dos Santos",
     tech: "Gestão e metodologias ágeis, Carreira e desenvolvimento pessoal",
     topic: "Gestão do Tempo: O dia tem 24 horas para todos você que não sabe administrar. Será?",
@@ -190,7 +190,7 @@ const speakers = [
   {
     id: 11,
     photo:
-      "/speakers/jess.jpeg",
+      "/speakers/jessicaCosta.JPG",
     name: "Jéssica da Silva Costa",
     tech: "Análise de dados, Cloud",
     topic: "Otimizando Custos no BigQuery",
@@ -228,7 +228,7 @@ const speakers = [
   {
     id: 13,
     photo:
-      "/speakers/beatrizk.jpeg",
+      "/speakers/beatriz.jpeg",
     name: "Beatriz Kaylene Sardeiro Pereira",
     tech: "Gestão e metodologias ágeis, Carreira e desenvolvimento pessoal, Diversidade e inclusão, OKRs",
     topic: "Apertem o cinto, o piloto é LEAN!",
@@ -284,7 +284,7 @@ const speakers = [
   {
     id: 17,
     photo:
-      "/speakers/amanda.jpeg",
+      "/speakers/amanda.jpg",
       name: "Amanda Pereira Santos",
       tech: "UX/UI",
       topic: "UX Writing: escrita para produtos digitais",
@@ -303,7 +303,7 @@ const speakers = [
   {
     id: 18,
     photo:
-      "/speakers/francielly.jpeg",
+      "/speakers/francielly.jpg",
     name: "Francielly de Moraes Santos",
     tech: "Mobile, Carreira e desenvolvimento pessoal",
     topic: "Como escolher uma arquitetura para aplicações Android?",
