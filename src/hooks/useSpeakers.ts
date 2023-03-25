@@ -209,7 +209,7 @@ const speakers = [
   {
     id: 12,
     photo:
-      "/speakers/vanessacamargo.jpeg",
+      "/speakers/WanessaCamargo.jpg",
     name: "Vanessa Camargo",
     tech: "Carreira e desenvolvimento pessoal",
     topic: "O que não te contam sobre transição de carreira",
