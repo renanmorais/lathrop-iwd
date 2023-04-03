@@ -337,6 +337,78 @@ const speakers = [
       website: "",
     },
   },
+  {
+    id: 20,
+    photo: "/speakers/alyce.jpeg",
+    name: "Alyce Fernandes Silva",
+    tech: "Tecnologias web, Infra/DevOps, Análise de dados",
+    topic: "Pode me hackear, não tenho nada a perder!",
+    mini_bio:
+      "Analista de Cibersegurança Ofensiva - Pentester na Totvs. Com foco em ambientes clouds e web. Palestrante, pesquisadora e professora nas horas vagas.",
+    title: "Pentester e Cibersegurança Ofensiva",
+	companyTitle: "TOTVS",
+    social_media: {
+      instagram: "https://www.instagram.com/alycesuza/",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://https://www.linkedin.com/in/alyce-suza/",
+      github: "https://github.com/",
+      website: "",
+    },
+   },
+   {
+    id: 21,
+    photo: "/speakers/Elienerosa.jpeg",
+    name: "Eliene Ribeiro Rosa ",
+    tech: "Carreira e desenvolvimento pessoal",
+    topic: "Do técnico ao doutorado, uma trajetória em TI.",
+    mini_bio:
+      "Técnico em Informática e Técnico em Contabilidade (90%).Bacharel em Sistemas de Informação. Especialista em Análise e Desenvolvimento de Sistemas Especialistas. Mestre em Ciência da Computação. Aluna especial no Doutorado. Programadora Sênior",
+    title: "Programador Sênior Delphi",
+	companyTitle: "PageGroup e UniRV ",
+    social_media: {
+      instagram: "https://www.instagram.com/elieneribeirorosa/",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://www.linkedin.com/in/eliene-ribeiro-rosa/",
+      github: "https://github.com/",
+      website: "",
+    },
+   },
+   {
+    id: 22,
+    photo: "/speakers/isabelalefol.jpeg",
+    name: "Isabela Lefol Arruda",
+    tech: "UX/UI",
+    topic: "Operação de Pesquisa em ambientes incertos",
+    mini_bio:
+      "Mais conhecida como Lefol, atualmente atua como UX Researcher na Trinus. Formada em Publicidade e Propaganda (UFG) e mestre em Comunicação (UFG). Sempre atenta em novas referências, tendências e informações. Apaixonada por um cafezinho e animaizinhos!",
+    title: "UX Researcher",
+	companyTitle: "Trinus",
+    social_media: {
+      instagram: "https://www.instagram.com/",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://www.linkedin.com/in/isabelalefol/",
+      github: "https://github.com/",
+      website: "https://www.odisseialab.com/",
+    },
+   }, 
+   {
+    id: 23,
+    photo: "/speakers/lorenacarvalho.jpeg",
+    name: "Lorena Carvalho Clemente",
+    tech: "Gestão e metodologias ágeis, Carreira e desenvolvimento pessoal, Diversidade e inclusão",
+    topic: "Construindo minha autoridade! ",
+    mini_bio:
+      "Empresária. Especialista em negócios e inovação. Cidadã da Capital do Futuro. Agente de inovação, empreendedorismo e fomentadora da economia compartilhada, criativa e coletiva. Formada em Direito e pós graduada em Direito Tributário",
+    title: "Empresária",
+	companyTitle: "",
+    social_media: {
+      instagram: "https://www.instagram.com/",
+      twitter: "https://twitter.com/",
+      linkedIn: "https://www.linkedin.com/in/lorenacarvalho/",
+      github: "https://github.com/",
+      website: "",
+    },
+   },
 ];
 
 export default speakers;
