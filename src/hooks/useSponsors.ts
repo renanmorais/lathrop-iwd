@@ -23,7 +23,7 @@ const sponsors = {
                 url: 'https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~'
             },
             {name: 'Happy', logo: 'patrocinio/logoHappy.jpg', url: 'https://www.vemserhappy.com.br/'},
-            {name: 'Sebrae', logo: 'sebraeLogo.jpeg', url: 'https://vitrine.sebraego.com.br/'},
+            {name: 'Sebrae', logo: 'patrocinio/sebraeLogo.jpeg', url: 'https://vitrine.sebraego.com.br/'},
         ]
     },
     silver: {
