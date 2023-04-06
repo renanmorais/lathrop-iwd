@@ -173,7 +173,7 @@ const speakers = [
     photo:
       "/speakers/thielle.jpg",
     name: "Thielle Cathia de Paula dos Santos",
-    tech: "Gestão e metodologias ágeis, Carreira e desenvolvimento pessoal",
+    tech: "Gestão e metodologias ágeis, Carreira",
     topic: "Gestão do Tempo: O dia tem 24 horas para todos você que não sabe administrar. Será?",
     mini_bio:
       " Gerente de Projetos no Governo do Estado de Goiás. Diretora do projeto social Programa Donizetti. Catequista na igreja católica.",
