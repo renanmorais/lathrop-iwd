@@ -22,8 +22,8 @@ const NavbarHome = () => {
     const menu = [
         {name: "Sobre", ref: "#about"},
         {name: "Inscreva-se", ref: '#tickets'},
-        // { name: "Palestrantes", ref: '#speakers' },
-        // { name: "Agenda", ref: '#schedule' },
+        { name: "Palestrantes", ref: '#speakers' },
+        { name: "Agenda", ref: '#schedule' },
         { name: "Patrocinadores", ref: '#sponsors' },
     ]
 

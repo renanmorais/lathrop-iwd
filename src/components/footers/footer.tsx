@@ -23,22 +23,22 @@ const Footer: React.FC<FooterProps> = ({ }) => {
               <LogoGDG />
             </NavLink>
           </NavItem>
-          {/*<NavItem>*/}
-          {/*  <NavLink href={generateRef("#speakers")}>Palestrantes</NavLink>*/}
-          {/*</NavItem>*/}
+          <NavItem>
+            <NavLink href={generateRef("#speakers")}>Palestrantes</NavLink>
+          </NavItem>
           <NavItem>
             <NavLink href={generateRef("#sponsors")}>Patrocinadores</NavLink>
           </NavItem>
           <NavItem className={styles.FooterRegister}>
             <NavLink href={configValues.eventLinkRegistrationUrl}>Se cadastrar</NavLink>
           </NavItem>
-          {/*<NavItem>
+          <NavItem>
             <NavLink href="#">Agenda</NavLink>
           </NavItem>
-          <NavItem>
+          {/*  <NavItem>
             <NavLink href="#">Organizadores</NavLink>
-  </NavItem>
-          */}
+              </NavItem>
+          *!/*/}
         </Nav>
       </Container>
     </>
