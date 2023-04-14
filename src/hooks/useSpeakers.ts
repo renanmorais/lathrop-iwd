@@ -134,7 +134,7 @@ const speakers = [
     id: 8,
     photo:
         "/speakers/vanessa.png",
-    name: "Vanessa Guitta ",
+    name: "Vanessa Guitta",
     tech: "Carreira e desenvolvimento pessoal",
     topic: "Carreira e Posicionamento: competências além do currículo",
     mini_bio:
