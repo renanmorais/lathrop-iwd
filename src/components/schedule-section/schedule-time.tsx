@@ -8,8 +8,8 @@ import {
 import styles from "../../styles/Schedule.module.css";
 
 interface ScheduleTimeProps {
-    initialTime: string;
-    endTime: string;
+    initialTime?: string;
+    endTime?: string;
 }
 
 

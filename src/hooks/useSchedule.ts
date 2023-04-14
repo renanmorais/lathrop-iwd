@@ -34,65 +34,121 @@ const schedule = [
     },
     {
         start: '09:00',
-        end: '09:50:',
+        end: '09:50',
         speeches: [
             {
                 room: 'Arara Canindé',
-                topic: 'Keynote - Giulia',
+                topic: 'Falando sobre desigualdades de gênero: Obstáculos à participação plena das mulheres na tecnologia',
                 speaker_id: 2,
             },
 
         ]
     },
     {
-        start: '10:00',
-        end: '10:50',
         speeches: [
             {
                 room: 'Arara Canindé',
                 topic: 'Ana Neri',
-                speaker_id: 6,
+                speakers: [
+                    {
+                        speaker_id: 6,
+                        start: '10:00',
+                        end: '10:50',
+                    },
+                ]
             },
             {
                 room: 'Araracanga',
                 topic: 'Thielle',
                 speaker_id: 10,
+                speakers: [
+                    {
+                        topic: 'Thielle',
+                        speaker_id: 10,
+                        start: '10:00',
+                        end: '10:50',
+                    },
+                ]
             },
             {
-                room: 'Araraúna',
-                topic: 'Jaqueline',
-                speaker_id: 19,
+                room: 'Arara Azul Grande',
+                topic: 'dupla',
+                speakers: [
+                    {
+                        topic: 'Jaqueline',
+                        speaker_id: 19,
+                        start: '10:30',
+                        end: '11:00',
+                    },
+                ]
             },
             {
                 room: 'Maracanã',
                 topic: 'Tainã',
-                speaker_id: 9,
+                speakers: [
+                    {
+                        topic: 'Tainã',
+                        speaker_id: 9,
+                        start: '10:30',
+                        end: '11:00',
+                    },
+                ]
             },
         ]
     },
     {
-        start: '10:55',
-        end: '11:45',
         speeches: [
             {
                 room: 'Arara Canindé',
                 topic: 'Silvia',
                 speaker_id: 1,
+                speakers: [
+                    {
+                        topic: 'Silvia',
+                        speaker_id: 1,
+                        start: '10:55',
+                        end: '11:45',
+                    },
+                ]
             },
             {
                 room: 'Araracanga',
                 topic: 'Francielly',
                 speaker_id: 18,
+                speakers: [
+                    {
+                        topic: 'Francielly',
+                        speaker_id: 18,
+                        start: '10:55',
+                        end: '11:45',
+                    },
+                ]
             },
             {
-                room: 'Araraúna',
+                room: 'Arara Azul Grande',
                 topic: 'Alyce',
                 speaker_id: 20,
+                speakers: [
+                    {
+                        topic: 'Alyce',
+                        speaker_id: 20,
+                        start: '11:15',
+                        end: '11:45',
+                    },
+                ]
             },
             {
                 room: 'Maracanã',
                 topic: 'Lorena Carvalho',
                 speaker_id: 23,
+                speakers: [
+                    {
+                        topic: 'Lorena Carvalho',
+                        speaker_id: 23,
+                        start: '11:15',
+                        end: '11:45',
+                    },
+                ]
             },
         ]
     },
@@ -108,49 +164,99 @@ const schedule = [
         ]
     },
     {
-        start: '10:55',
-        end: '11:45',
         speeches: [
             {
                 room: 'Arara Canindé',
                 topic: 'Bianca',
                 speaker_id: 5,
+                speakers: [
+                    {
+                        topic: 'Bianca',
+                        speaker_id: 5,
+                        start: '13:15',
+                        end: '14:05',
+                    },
+                ]
             },
             {
                 room: 'Araracanga',
                 topic: 'Amanda',
                 speaker_id: 17,
+                speakers: [
+                    {
+                        topic: 'Amanda',
+                        speaker_id: 17,
+                        start: '13:15',
+                        end: '13:45',
+                    },
+                ]
             },
             {
-                room: 'Araraúna',
+                room: 'Arara Azul Grande',
                 topic: 'Elisabeth',
-                speaker_id: 0,
+                speakers: [
+                    {
+                        topic: 'Elisabeth',
+                        speaker_id: 25,
+                        start: '13:15',
+                        end: '13:45',
+                    },
+                ]
             },
             {
                 room: 'Maracanã',
                 topic: 'Palloma',
                 speaker_id: 16,
+                speakers: [
+                    {
+                        topic: 'Palloma',
+                        speaker_id: 16,
+                        start: '13:15',
+                        end: '13:45',
+                    },
+                ]
             },
         ]
     },
     {
-        start: '14:10',
-        end: '15:00',
         speeches: [
             {
                 room: 'Arara Canindé',
                 topic: 'Letícia Moreira',
                 speaker_id: 7,
+                speakers: [
+                    {
+                        topic: 'Letícia Moreira',
+                        speaker_id: 7,
+                        start: '14:10',
+                        end: '15:00',
+                    },
+                ]
             },
             {
                 room: 'Araracanga',
-                topic: 'Vanessa Souza',
-                speaker_id: 0,
+                topic: 'VanessaSousa',
+                speakers: [
+                    {
+                        topic: 'VanessaSousa',
+                        speaker_id: 24,
+                        start: '13:50',
+                        end: '14:40',
+                    },
+                ]
             },
             {
-                room: 'Araraúna',
+                room: 'Arara Azul Grande',
                 topic: 'Lorena Gonçalves',
                 speaker_id: 14,
+                speakers: [
+                    {
+                        topic: 'Lorena Gonçalves',
+                        speaker_id: 14,
+                        start: '14:00',
+                        end: '14:30',
+                    },
+                ]
             },
             {
                 room: 'Maracanã',
@@ -159,7 +265,7 @@ const schedule = [
                 speakers: [
                     {
                         topic: 'Joyce',
-                        speaker_id: 0,
+                        speaker_id: 26,
                         start: '14:00',
                         end: '14:30',
                     },
@@ -174,23 +280,40 @@ const schedule = [
         ]
     },
     {
-        start: '15:05',
-        end: '15:55',
         speeches: [
             {
                 room: 'Arara Canindé',
-                topic: 'Mikaeri Ohana',
-                speaker_id: 3,
+                topic: 'Mikaeri',
+                speakers: [
+                    {
+                        topic: 'Mikaeri',
+                        speaker_id: 3,
+                        start: '15:05',
+                        end: '15:50',
+                    },
+                ]
             },
             {
                 room: 'Araracanga',
-                topic: 'Jéssica',
-                speaker_id: 11,
+                topic: 'Jessica',
+                speakers: [
+                    {
+                        topic: 'Jessica',
+                        speaker_id: 11,
+                        start: '14:45',
+                        end: '15:35',
+                    },
+                ]
             },
             {
-                room: 'Araraúna',
+                room: 'Arara Azul Grande',
+                topic: 'Vanessa Guitta',
+                speakers: [{
                 topic: 'Vanessa Guitta',
                 speaker_id: 8,
+                start: '14:45',
+                end: '15:35',
+            },]
             },
             {
                 room: 'Maracanã',
@@ -222,20 +345,19 @@ const schedule = [
         end: '17:10',
         speeches: [
             {
-                room: 'Hall',
-                topic: 'Vanessa Camargo',
+                room: 'Arara Canindé',
+                topic: 'O que não te contam sobre transição de carreira',
                 speaker_id: 12,
             },
-
         ]
     },
     {
-        start: '16:20',
-        end: '17:10',
+        start: '17:15',
+        end: '18:05',
         speeches: [
             {
-                room: 'Hall',
-                topic: 'Nina',
+                room: 'Arara Canindé',
+                topic: 'UI/UX Design para pessoas desenvolvedoras',
                 speaker_id: 4,
             },
 
@@ -246,7 +368,7 @@ const schedule = [
         end: '18:15',
         speeches: [
             {
-                room: 'Hall',
+                room: 'Arara Canindé',
                 topic: 'Sorteios & Encerramento ',
             },
 

@@ -16,6 +16,7 @@ const speakers: Array<Speaker> = _speakers;
 
 interface ScheduleCardProps extends Speaker {
     lgValue: number;
+    room?: string,
     speakers?: {
         topic?: string;
         speaker_id?: number;
@@ -26,24 +27,24 @@ interface ScheduleCardProps extends Speaker {
 
 const pathHtml = (name: string, path: string, pathStyle: string) => {
     return <div className={`${styles.path_div} ${pathStyle}`}>
-        <Image
+        {/*<Image
             unoptimized
             className={styles.card_path_icon}
             src={path}
             height="15px"
             width="15px"
-        />
-        <span className={styles.margin_left_10}>{name}</span>
+        />*/}
+        <span>{name}</span>
     </div>
 }
-const renderPath = (path: string) => {
+const renderPath = (path?: string) => {
     switch (path) {
         case "Arara Canindé":
             return pathHtml("Arara Canindé", `/${path}.png`, styles.path_canastra_color);
         case "Araracanga":
             return pathHtml("Araracanga", `/${path}.png`, styles.path_minas_color);
-        case "Araraúna":
-            return pathHtml("Araraúna", `/${path}.png`, styles.path_brain_color);
+        case "Arara Azul Grande":
+            return pathHtml("Arara Azul Grande", `/ararauna.png`, styles.path_ararauna_color);
         default:
             return pathHtml("Maracanã", `/${path}.png`, styles.path_curado_color);
     }
@@ -75,7 +76,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
             case "Araracanga":
                 return "#09CCB1"
             case "Araraúna":
-                return "#46B3DC"
+                return "cornflowerblue"
             case "Maracanã":
                 return "#3392F9"
             default:
@@ -87,6 +88,13 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
             {props.speakers && (
                 <Col xxl={props.lgValue} sm={12} className={styles.card_text}>
                     <Row className={styles.card_content}>
+
+                        <div className={styles.path_wrapper} style={{}}>
+                            {
+                                props.room && renderPath(props.room)
+                            }
+                        </div>
+
                         {
                             props.speakers.map((spk, index) => {
                                 const speak = speakers.find(obj => obj.id === spk.speaker_id);
@@ -94,15 +102,19 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                                 return (
                                     <>
                                         <Row className={styles.card_title}>
-                                            <div>
+                                            {/*<div>
                                                 <span className={styles.margin_right_15}>{spk.topic}</span>
+                                            </div>*/}
+                                        </Row>
+                                        <Row className={styles.card_time} style={{}}>
+                                            <div>
+                                                <span>{spk.start}</span>
+                                                <span className={`${styles.timeSeparator}`}>-</span>
+                                                <span className={styles.opacity50}>{spk.end}</span>
                                             </div>
                                         </Row>
-                                        <Row className={styles.card_time}>
-                                            <span>{spk.start}</span>
-                                            <span className={`${styles.timeSeparator} d-xxl-none d-sm-block`}>-</span>
-                                            <span className={styles.opacity50}>{spk.end}</span>
-                                        </Row>
+
+                                        {(speak) ? <p style={{marginTop: '5px', fontSize: '16px;'}}>{speak.topic}</p> : <></>}
                                         {speak && speak.photo && (
                                             <Row className={styles.display_inline_block}>
                                                 <div className={styles.div_wrapper}>
@@ -115,20 +127,17 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                                                         width="40px"
                                                     />
                                                     <div className={styles.card_speaker_info_content}>
-                                                        <h5>{speak.name}</h5>
+                                                        <p>{speak.name}</p>
+
+
                                                         {speak.community &&
                                                             <p className={styles.gde}>{speak.community}</p>}
                                                         <p className={styles.font_size_14}>{`${speak.companyTitle}`}</p>
-                                                        <div className={styles.path_wrapper}>
-                                                            {
-                                                                speak.path && renderPath(speak.path)
-                                                            }
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </Row>
                                         )}
-                                        <hr style={{width: '100%'}}></hr>
+                                        {(props.speakers && props.speakers.length > 1 && index == 0) ? <hr style={{width: '100%', margin: '10px 0px'}}></hr> : <></>}
                                     </>
                                     )
                                     })
@@ -140,6 +149,11 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                         {!props.speakers && (
                             <Col xxl={props.lgValue} sm={12} className={styles.card_text}>
                         <Row className={styles.card_content}>
+                            <div className={styles.path_wrapper}>
+                                {
+                                    props.path && renderPath(props.path)
+                                }
+                            </div>
                             <Row className={styles.card_title}>
                                 <div>
                                     <span className={styles.margin_right_15}>{props.topic}</span>
@@ -158,13 +172,10 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                                         />
                                         <div className={styles.card_speaker_info_content}>
                                             <h5>{props.name}</h5>
+
                                             {props.community && <p className={styles.gde}>{props.community}</p>}
                                             <p className={styles.font_size_14}>{`${props.companyTitle}`}</p>
-                                            <div className={styles.path_wrapper}>
-                                                {
-                                                    props.path && renderPath(props.path)
-                                                }
-                                            </div>
+
                                         </div>
                                     </div>
                                 </Row>

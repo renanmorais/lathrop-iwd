@@ -1,6 +1,6 @@
 export interface Schedule {
-    start: string;
-    end: string;
+    start?: string;
+    end?: string;
     speeches: {
         room: string;
         topic?: string;

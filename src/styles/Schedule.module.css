@@ -109,9 +109,8 @@
 }
 
 .path_wrapper {
-    display: inline-flex;
-    width: 125%;
-    margin-top: 5px;
+    margin: 5px 0px;
+    width: fit-content;
 }
 
 .path_div {
@@ -123,23 +122,30 @@
 }
 .card_path_icon {
     min-width: 15px !important;
-    min-height: 15px !important;
+    min-height: 25px !important;
     margin-right: 10px;
 }
 
-.path_brain_color{
-    background-color: black;
-    color: white
+.path_ararauna_color{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 14px;
 }
 
 .path_curado_color{
     background-color: #fab49e;
+
+    font-size: 14px;
 }
 
 .path_minas_color{
     background-color: #feff80;
+
+    font-size: 14px;
 }
 
 .path_canastra_color{
     background-color: #ffd664;
+
+    font-size: 14px;
 }
