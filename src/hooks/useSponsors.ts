@@ -37,7 +37,7 @@ const sponsors = {
     bronze: {
         name: 'Neusa Moraes',
         items: [
-            { name: 'Imã', logo: 'patrocinio/ima.jpeg', url: 'https://www.iwdcerrado.com.br' },
+            { name: 'Imã', logo: 'parceiros/ima.jpeg', url: 'https://www.iwdcerrado.com.br' },
             // { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' },
         ]
     },
