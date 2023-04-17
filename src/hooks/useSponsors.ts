@@ -37,7 +37,7 @@ const sponsors = {
     bronze: {
         name: 'Neusa Moraes',
         items: [
-            // { name: 'Zup', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fzup.png?alt=media', url: 'https://www.zup.com.br' },
+            { name: 'Imã', logo: 'patrocinio/ima.jpeg', url: 'https://www.iwdcerrado.com.br' },
             // { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' },
         ]
     },
@@ -47,7 +47,7 @@ const sponsors = {
             {name: 'Acieg', logo: 'patrocinio/acieg.jpg'},
             {name: 'Aliança pela inovação em Goiás', logo: 'patrocinio/sindinformática.jpeg'},
             {name: 'Black Stars', logo: 'patrocinio/blackStars.jpeg'},
-            // { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' },
+            { name: 'Prospere', logo: 'Prospere.jpeg', url: 'http://www.iwdcerrado.com.br/' },
             // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
         ]
     },
@@ -55,7 +55,9 @@ const sponsors = {
         name: 'Empresas que contribuiem com a comunidade local e se preocupa com seus colaboradores',
         items: [
             {name: 'Vólus', logo: 'parceiros/volus.jpeg'},
+            {name: 'Prodata', logo: 'parceiros/prodata.jpeg'},
             {name: 'Easy Crédito', logo: 'parceiros/easyCredito.jpeg'},
+            {name: 'Trinus', logo: 'parceiros/TRINUS.jpeg'},
             // { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' },
             // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
         ]
