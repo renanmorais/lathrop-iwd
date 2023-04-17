@@ -55,7 +55,7 @@ const sponsors = {
         name: 'Empresas que contribuiem com a comunidade local e se preocupa com seus colaboradores',
         items: [
             {name: 'Vólus', logo: 'parceiros/volus.jpeg'},
-            {name: 'Prodata', logo: 'parceiros/prodata.jpeg'},
+            {name: 'Prodata', logo: 'parceiros/logotipo_prodata_372px.png'},
             {name: 'Easy Crédito', logo: 'parceiros/easyCredito.jpeg'},
             {name: 'Trinus', logo: 'parceiros/TRINUS.jpeg'},
             // { name: 'Uberhub', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fuberhub.png?alt=media', url: 'http://www.uberhub.com.br/' },
