@@ -47,7 +47,7 @@ const sponsors = {
             {name: 'Acieg', logo: 'patrocinio/acieg.jpg'},
             {name: 'Aliança pela inovação em Goiás', logo: 'patrocinio/sindinformática.jpeg'},
             {name: 'Black Stars', logo: 'patrocinio/blackStars.jpeg'},
-            { name: 'Prospere', logo: 'Prospere.jpeg', url: 'http://www.iwdcerrado.com.br/' },
+            { name: 'Prospere', logo: 'patrocinio/Prospere.jpeg', url: 'http://www.iwdcerrado.com.br/' },
             // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
         ]
     },
