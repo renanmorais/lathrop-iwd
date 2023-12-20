@@ -3,24 +3,17 @@
 
 :root {
   --green: #09ccb1;
-  --blue: #46B3DC;
-  --orange: #487BD6;
-  --white: #FFF;
+  --blue: #46b3dc;
+  --orange: #487bd6;
+  --white: #ffffff;
   --black: #2be7b6;
 }
-
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Inter var', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter', sans-serif;
-  }
 }
 
 a {
@@ -30,13 +23,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-
-@media only screen and (max-width: 1026px) {
-  .hideSmall {
-    display: none;
-  }
 }
 
 #__next {
@@ -63,7 +49,6 @@ a {
   opacity: 1;
 }
 
-
 .DangerButton {
   padding: 15px 15px;
   background-color: var(--green);
@@ -86,4 +71,16 @@ a {
 .TicketFeatures::before {
   content: url('/check.svg');
   padding-right: 0.5rem;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .hideSmall {
+    display: none;
+  }
 }
