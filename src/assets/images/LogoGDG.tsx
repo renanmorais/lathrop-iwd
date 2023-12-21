@@ -5,7 +5,7 @@ interface LogoProps {
   height?: number;
 }
 
-const LogoIWD = ({ color = "#000000", height = 40 }: LogoProps) => (
+const LogoGDG = ({ color = "#000000", height = 40 }: LogoProps) => (
   <svg
     height={height}
     viewBox="0 0 250 66"
@@ -72,4 +72,4 @@ const LogoIWD = ({ color = "#000000", height = 40 }: LogoProps) => (
   </svg>
 );
 
-export default LogoIWD;
+export default LogoGDG;
