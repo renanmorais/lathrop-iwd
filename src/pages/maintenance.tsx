@@ -6,7 +6,7 @@ const Maintenance = () => {
   return (
     <div className={styles.container}>
       <div className={styles.maintenanceDiv}>
-        <img src="/dareToBe.gif" alt="dare to be" />
+        <img src="/impactTheFuture.gif" alt="dare to be" />
         <h1 className={styles.h1}>Em manutenção</h1>
         <p className={styles.p}>
           Estamos trabalhando para melhorar o site. Por favor, volte mais tarde.

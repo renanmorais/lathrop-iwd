@@ -1,39 +1,16 @@
 .FooterContent {
   width: 100%;
-  margin-bottom: 41px;
-  font-weight: 600;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 240px;
   list-style: none;
+  background-color: #94ecd8;
 }
 
-
-.FooterContent .nav-link {
-  color: var(--black);
-}
-
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 1000px) {
   .FooterContent {
     padding: 10px 10px;
     flex-direction: column;
   }
-
-}
-
-.FooterLogo {
-  width: 155px;
-  height: 33px;
-}
-
-.FooterRegister {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #94ecd8;
-  width: 164px;
-  height: 33px;
-  border-radius: 10px;
 }

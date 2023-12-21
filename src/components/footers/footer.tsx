@@ -15,32 +15,30 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
   return (
     <>
-      <Container fluid>
-        <Nav className={styles.FooterContent}>
-          <NavItem>
-            <NavLink active href={generateRef("#")}>
-              <LogoIWD />
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href={generateRef("#speakers")}>Palestrantes</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href={generateRef("#sponsors")}>Patrocinadores</NavLink>
-          </NavItem>
-          <NavItem className={styles.FooterRegister}>
-            <NavLink href={configValues.eventLinkRegistrationUrl}>
-              Se cadastrar
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Agenda</NavLink>
-          </NavItem>
-          {/* <NavItem>
-            <NavLink href="#">Organizadores</NavLink>
-          </NavItem> */}
-        </Nav>
-      </Container>
+      <Nav className={styles.FooterContent}>
+        <NavItem>
+          <NavLink active href={generateRef("#")}>
+            <LogoIWD />
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href={generateRef("#speakers")}>Palestrantes</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href={generateRef("#sponsors")}>Patrocinadores</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Agenda</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Organizadores</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href={configValues.eventLinkRegistrationUrl}>
+            Se cadastrar
+          </NavLink>
+        </NavItem>
+      </Nav>
     </>
   );
 };

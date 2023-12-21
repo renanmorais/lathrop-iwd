@@ -1,536 +1,254 @@
 .BgWrap {
-    position: absolute;
-    height: 100vh;
-    width: 65%;
-    z-index: -1;
+  position: absolute;
+  height: 100vh;
+  width: 65%;
+  z-index: -1;
 }
 
 .BgWrap2 {
-    position: absolute;
-    height: 14%;
-    width: 170%;
-    z-index: 1;
-    padding-top: 80px;
+  position: absolute;
+  height: 14%;
+  width: 170%;
+  z-index: 1;
+  padding-top: 80px;
 }
 
 .BgWrap3 {
-    position: absolute;
-    height: 50%;
-    width: 96%;
-    z-index: 1;
+  position: absolute;
+  height: 50%;
+  width: 96%;
+  z-index: 1;
 }
 
 .HappyFaceImg {
-    position: absolute;
-    right: 2%;
-    top: 1%;
+  position: absolute;
+  right: 2%;
+  top: 1%;
 }
 
 .ContentImg {
-    position: absolute;
-    right: 50%;
-    top: 35%;
+  position: absolute;
+  right: 50%;
+  top: 35%;
 }
 
 .CommunityImg {
-    position: absolute;
-    right: 35%;
-    top: 10%;
+  position: absolute;
+  right: 35%;
+  top: 10%;
 }
 
 .BellImg {
-    position: absolute;
-    right: 10%;
-    top: 10%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
 }
 
 .GlobalImg {
-    position: absolute;
-    right: 1%;
-    top: 30%;
+  position: absolute;
+  right: 1%;
+  top: 30%;
 }
 
 .ComplexImg {
-    position: absolute;
-    right: 20%;
-    top: 18%;
+  position: absolute;
+  right: 20%;
+  top: 18%;
 }
 
 .BgImageMin {
-    display: none;
+  display: none;
 }
 
 .MainInnerNoteBook {
-    display: none;
+  display: none;
 }
 
 .MainInnerFull {
-    width: 100%;
-    height: 71.4vh;
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 60px;
-    padding-bottom: 2%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  width: 100%;
+  height: 71.4vh;
+  text-align: center;
+  padding-top: 10%;
+  padding-right: 60px;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .MainInnerFullContent {
-    padding: 30px
+  padding: 30px;
 }
 
 .MainInnerFullDescription {
-    background: white;
-    padding: 20px 20px;
+  background: white;
+  padding: 20px 20px;
 }
 
 .Counter {
-    align-items: center;
-    /*//background-color: black;*/
-    /*background: linear-gradient(var(--green), var(--blue) 60%, var(--orange));*/
-    background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 70.71%),
+  align-items: center;
+  /*//background-color: black;*/
+  /*background: linear-gradient(var(--green), var(--blue) 60%, var(--orange));*/
+  background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, var(--blue), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, var(--orange), rgba(0, 0, 255, 0) 70.71%);
 
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-    justify-content: center;
-    padding: 38px 0;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  padding: 38px 0;
 }
 
 .CounterList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .CounterListItem {
-    background: var(--white);
-    border-radius: 10px;
-    border: 3px transparent solid;
-    color: var(--white);
-    cursor: default;
-    display: flex;
-    flex-direction: column;
-    font-size: 32px;
-    font-weight: 600;
-    height: 158px;
-    justify-content: center;
-    padding-top: 20px;
-    text-align: center;
-    transition-property: color, background-color, border-color;
-    transition-duration: 400ms;
-    transition-timing-function: ease-in-out;
-    width: 221px;
+  background: var(--white);
+  border-radius: 10px;
+  border: 3px transparent solid;
+  color: var(--white);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: 600;
+  height: 158px;
+  justify-content: center;
+  padding-top: 20px;
+  text-align: center;
+  transition-property: color, background-color, border-color;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+  width: 221px;
 }
 
 .CounterListItem:nth-child(1) {
-    background: var(--blue);
+  background: var(--blue);
 }
 
 .CounterListItem:nth-child(2) {
-    background: var(--green);
+  background: var(--green);
 }
 
 .CounterListItem:nth-child(3) {
-    background: var(--orange);
+  background: var(--orange);
 }
 
 .CounterListItem:nth-child(4) {
-    color: var(--black);
+  color: var(--black);
 }
 
 .CounterListItem:hover {
-    background: var(--white);
+  background: var(--white);
 }
 
 .CounterListItem:nth-child(1):hover {
-    border-color: var(--blue);
-    color: var(--blue);
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .CounterListItem:nth-child(2):hover {
-    border-color: var(--green);
-    color: var(--green);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 .CounterListItem:nth-child(3):hover {
-    border-color: var(--orange);
-    color: var(--orange);
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 .CounterListItem:nth-child(4):hover {
-    background: var(--black);
-    border-color: var(--white);
-    color: var(--white);
+  background: var(--black);
+  border-color: var(--white);
+  color: var(--white);
 }
 
 .CounterListItem__time {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .logo {
-    height: 1em;
-    margin-left: 0.5rem;
+  height: 1em;
+  margin-left: 0.5rem;
 }
 
 .MainDescriptionMinWrapper {
-    display: none;
+  display: none;
 }
 
 .logoIwdText {
-    width: 360px;
-    height: 46px;
+  width: 360px;
+  height: 46px;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 3000px) {
-    .MainInnerNoteBook {
-        width: 99%;
-        height: 80vh;
-        text-align: center;
-        padding-top: 26%;
-        padding-right: 40px;
-        padding-left: 60px;
-        padding-bottom: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .MainInnerNoteBook {
+    width: 99%;
+    height: 80vh;
+    text-align: center;
+    padding-top: 26%;
+    padding-right: 40px;
+    padding-left: 60px;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .MainInnerFull {
-        display: none;
-    }
+  .MainInnerFull {
+    display: none;
+  }
 
-    .RegisterButton {
-        padding: 15px 30px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
+  .RegisterButton {
+    padding: 15px 30px;
+    background: var(--blue);
+    color: white;
+    width: 164px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
 
-    .headerImg {
-        width: 1701px;
-    }
+  .headerImg {
+    width: 1701px;
+  }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1750px) {
-    .headerImg {
-        width: 1420px;
-    }
+  .headerImg {
+    width: 1420px;
+  }
 
-    .MainInnerNoteBook {
-        width: 99%;
-        height: 70vh;
-        text-align: center;
-        padding-top: 35%;
-        padding-right: 40px;
-        padding-left: 60px;
-        padding-bottom: 1%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .MainInnerNoteBook {
+    width: 99%;
+    height: 70vh;
+    text-align: center;
+    padding-top: 35%;
+    padding-right: 40px;
+    padding-left: 60px;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .MainInnerFull {
-        display: none;
-    }
+  .MainInnerFull {
+    display: none;
+  }
 
-    .MainInnerFullContent {
-        padding: 60px
-    }
+  .MainInnerFullContent {
+    padding: 60px;
+  }
 
-    .RegisterButton {
-        padding: 15px 15px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .RegisterButton:hover {
-        border: 3px var(--green) solid;
-        color: var(--green);
-        background-color: var(--white);
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .BgImageFull {
-        display: none;
-    }
-
-    .MainInnerNoteBook {
-        width: 99%;
-        height: 60vh;
-        text-align: center;
-        padding-top: 35%;
-        padding-right: 40px;
-        padding-left: 60px;
-        padding-bottom: 1%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    .MainInnerFull {
-        display: none;
-    }
-
-    .RegisterButton {
-        padding: 15px 15px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .RegisterButton:hover {
-        border: 3px var(--green) solid;
-        color: var(--green);
-        background-color: var(--white);
-    }
-
-    .logoIwd {
-        width: 225px;
-    }
-}
-
-@media only screen and (min-width: 1026px) and (max-width: 1199px) {
-    .BgImageFull {
-        display: none;
-    }
-
-    .MainInnerFull {
-        width: 78%;
-        height: 95vh;
-        text-align: center;
-        padding-top: 10%;
-        padding-right: 48px;
-        padding-bottom: 1%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-
-    .RegisterButton {
-        padding: 15px 15px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .RegisterButton:hover {
-        border: 3px var(--green) solid;
-        color: var(--green);
-        background-color: var(--white);
-    }
-}
-
-
-@media only screen and (min-width: 601px) and (max-width: 1025px) {
-    .BgImageFull {
-        display: none;
-    }
-
-    .RegisterButton {
-        padding: 15px 15px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .RegisterButton:hover {
-        border: 3px var(--green) solid;
-        color: var(--green);
-        background-color: var(--white);
-    }
-
-    .localDateInfo {
-        display: none;
-    }
-
-    .logoIwd {
-        width: 222px;
-        height: 222px;
-    }
-
-    .logoIwdText {
-        width: 252px;
-        height: 32px;
-    }
-
-    .MainInnerFullDescription {
-        background: white;
-        padding: 35px 20px 20px;
-    }
-
-    .MainInnerFullDescriptionMin {
-        background: white;
-        padding: 35px 20px 20px;
-    }
-
-    .MainInnerFull {
-        width: 71%;
-        height: 52.9vh;
-        text-align: center;
-        padding-top: 6%;
-        padding-right: 35px;
-        padding-bottom: 0%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-
-    .MainDescriptionMinWrapper {
-        display: block;
-        background-color: var(--white);
-        padding: 25px 10px;
-    }
-
-    .MainDescriptionMin {
-        padding: 30px 30px;
-        text-align: center;
-        background-image: radial-gradient(var(--blue) 2px, transparent 0);
-        background-size: 26px 26px;
-        background-position: -10px -10px;
-    }
-
-    .cardCounter {
-        margin: .5rem;
-        padding: 1rem;
-        text-align: center;
-        width: 120px;
-    }
-
-    .cardCounter span {
-        font-size: 30px;
-        font-weight: 400;
-    }
-
-    .CounterList {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-    .BgImageFull {
-        display: none;
-    }
-
-    .RegisterButton {
-        padding: 15px 15px;
-        background: var(--blue);
-        color: white;
-        width: 164px;
-        height: 33px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .RegisterButton:hover {
-        border: 3px var(--green) solid;
-        color: var(--green);
-        background-color: var(--white);
-    }
-
-    .localDateInfo {
-        display: none;
-    }
-
-    .logoIwd {
-        width: 222px;
-        height: 222px;
-    }
-
-    .logoIwdText {
-        width: 252px;
-        height: 32px;
-    }
-
-    .MainInnerFullDescription {
-        background: white;
-        padding: 35px 20px 20px;
-    }
-
-    .MainInnerFullDescriptionMin {
-        background: white;
-        padding: 35px 20px 20px;
-    }
-
-    .MainInnerFull {
-        width: 90%;
-        height: 52.9vh;
-        text-align: center;
-        padding-top: 6%;
-        padding-right: 35px;
-        padding-bottom: 0%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-
-    .MainDescriptionMinWrapper {
-        display: block;
-        background-color: var(--white);
-        padding: 25px 10px;
-    }
-
-    .MainDescriptionMin {
-        padding: 30px 30px;
-        text-align: center;
-        background-image: radial-gradient(var(--blue) 2px, transparent 0);
-        background-size: 26px 26px;
-        background-position: -10px -10px;
-    }
-
-    .cardCounter {
-        margin: .5rem;
-        padding: 1rem;
-        text-align: center;
-        width: 120px;
-    }
-
-    .cardCounter span {
-        font-size: 30px;
-        font-weight: 400;
-    }
-
-    .CounterList {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .grid {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .CounterList {
-        grid-template-columns: 1fr;
-    }
-}
-
-.RegisterButton {
+  .RegisterButton {
     padding: 15px 15px;
     background: var(--blue);
     color: white;
@@ -538,55 +256,336 @@
     height: 33px;
     font-size: 20px;
     border-radius: 10px;
-}
+  }
 
-.RegisterButton:hover {
+  .RegisterButton:hover {
     border: 3px var(--green) solid;
     color: var(--green);
     background-color: var(--white);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .MainInnerNoteBook {
+    width: 99%;
+    height: 60vh;
+    text-align: center;
+    padding-top: 35%;
+    padding-right: 40px;
+    padding-left: 60px;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .MainInnerFull {
+    display: none;
+  }
+
+  .RegisterButton {
+    padding: 15px 15px;
+    background: var(--blue);
+    color: white;
+    width: 164px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .RegisterButton:hover {
+    border: 3px var(--green) solid;
+    color: var(--green);
+    background-color: var(--white);
+  }
+
+  .logoIwd {
+    width: 225px;
+  }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1199px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .MainInnerFull {
+    width: 78%;
+    height: 95vh;
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 48px;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .RegisterButton {
+    padding: 15px 15px;
+    background: var(--blue);
+    color: white;
+    width: 164px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .RegisterButton:hover {
+    border: 3px var(--green) solid;
+    color: var(--green);
+    background-color: var(--white);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .RegisterButton {
+    padding: 15px 15px;
+    background: var(--blue);
+    color: white;
+    width: 164px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .RegisterButton:hover {
+    border: 3px var(--green) solid;
+    color: var(--green);
+    background-color: var(--white);
+  }
+
+  .localDateInfo {
+    display: none;
+  }
+
+  .logoIwd {
+    width: 222px;
+    height: 222px;
+  }
+
+  .logoIwdText {
+    width: 252px;
+    height: 32px;
+  }
+
+  .MainInnerFullDescription {
+    background: white;
+    padding: 35px 20px 20px;
+  }
+
+  .MainInnerFullDescriptionMin {
+    background: white;
+    padding: 35px 20px 20px;
+  }
+
+  .MainInnerFull {
+    width: 71%;
+    height: 52.9vh;
+    text-align: center;
+    padding-top: 6%;
+    padding-right: 35px;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .MainDescriptionMinWrapper {
+    display: block;
+    background-color: var(--white);
+    padding: 25px 10px;
+  }
+
+  .MainDescriptionMin {
+    padding: 30px 30px;
+    text-align: center;
+    background-image: radial-gradient(var(--blue) 2px, transparent 0);
+    background-size: 26px 26px;
+    background-position: -10px -10px;
+  }
+
+  .cardCounter {
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 120px;
+  }
+
+  .cardCounter span {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .CounterList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .BgImageFull {
+    display: none;
+  }
+
+  .RegisterButton {
+    padding: 15px 15px;
+    background: var(--blue);
+    color: white;
+    width: 164px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .RegisterButton:hover {
+    border: 3px var(--green) solid;
+    color: var(--green);
+    background-color: var(--white);
+  }
+
+  .localDateInfo {
+    display: none;
+  }
+
+  .logoIwd {
+    width: 222px;
+    height: 222px;
+  }
+
+  .logoIwdText {
+    width: 252px;
+    height: 32px;
+  }
+
+  .MainInnerFullDescription {
+    background: white;
+    padding: 35px 20px 20px;
+  }
+
+  .MainInnerFullDescriptionMin {
+    background: white;
+    padding: 35px 20px 20px;
+  }
+
+  .MainInnerFull {
+    width: 90%;
+    height: 52.9vh;
+    text-align: center;
+    padding-top: 6%;
+    padding-right: 35px;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .MainDescriptionMinWrapper {
+    display: block;
+    background-color: var(--white);
+    padding: 25px 10px;
+  }
+
+  .MainDescriptionMin {
+    padding: 30px 30px;
+    text-align: center;
+    background-image: radial-gradient(var(--blue) 2px, transparent 0);
+    background-size: 26px 26px;
+    background-position: -10px -10px;
+  }
+
+  .cardCounter {
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 120px;
+  }
+
+  .cardCounter span {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .CounterList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .CounterList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.RegisterButton {
+  padding: 15px 15px;
+  background: var(--blue);
+  color: white;
+  width: 164px;
+  height: 33px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.RegisterButton:hover {
+  border: 3px var(--green) solid;
+  color: var(--green);
+  background-color: var(--white);
 }
 
 .ScrollDown {
-    margin-top: 30px;
-    color: currentColor;
-    user-select: none;
-    cursor: pointer;
+  margin-top: 30px;
+  color: currentColor;
+  user-select: none;
+  cursor: pointer;
 }
 
 .ScrollDownSvg {
-    width: 24px;
-    opacity: 0.6;
+  width: 24px;
+  opacity: 0.6;
 }
 
 .ScrollDownStroke {
-    stroke: currentColor;
+  stroke: currentColor;
 }
 
 .ScrollDownScroller {
-    fill: currentColor;
-    animation: updown 2s infinite;
+  fill: currentColor;
+  animation: updown 2s infinite;
 }
 
 @media (min-height: 500px) {
-    .ScrollDown {
-        position: absolute;
-        bottom: 8px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-    }
+  .ScrollDown {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
 }
 
 @keyframes updown {
-    0% {
-        transform: translate(0, 0)
-    }
+  0% {
+    transform: translate(0, 0);
+  }
 
-    50% {
-        transform: translate(0, 5px)
-    }
+  50% {
+    transform: translate(0, 5px);
+  }
 
-    100% {
-        transform: translate(0, 0)
-    }
+  100% {
+    transform: translate(0, 0);
+  }
 }

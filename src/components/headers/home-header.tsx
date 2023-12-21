@@ -6,10 +6,10 @@ import { changeTimeZone, calcDateDistance } from "helpers/date";
 import styles from "styles/Home.module.css";
 
 const DATE_DISTANCE_LABELS: Record<string, string> = {
-  days: "dias",
-  hours: "horas",
-  minutes: "minutos",
-  seconds: "segundos",
+  days: "Dias",
+  hours: "Horas",
+  minutes: "Minutos",
+  seconds: "Segundos",
 };
 
 const HomeHeader: React.FC = ({}) => {
@@ -49,19 +49,19 @@ const HomeHeader: React.FC = ({}) => {
               <img
                 alt="header"
                 className={styles.headerImg}
-                src="/headerWtmMin.png"
+                src="/wtmHeaderMin.png"
               />
             </Col>
           </Row>
           <Row>
-            <Col>
+            {/* <Col>
               <a
                 className={styles.RegisterButton}
                 href={configValues.eventLinkRegistrationUrl}
               >
                 Inscreva-se
               </a>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </div>
@@ -82,7 +82,7 @@ const HomeHeader: React.FC = ({}) => {
             </Row>
           </Col>
           <Row style={{ marginTop: "15px", textAlign: "center" }}>
-            <Col>
+            {/* <Col>
               {" "}
               <a
                 className={styles.RegisterButton}
@@ -90,7 +90,7 @@ const HomeHeader: React.FC = ({}) => {
               >
                 Inscreva-se
               </a>{" "}
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </div>
@@ -103,14 +103,14 @@ const HomeHeader: React.FC = ({}) => {
               <p>{configValues.place}</p>
             </Col>
             <Row style={{ marginTop: "15px" }}>
-              <Col>
+              {/* <Col>
                 <a
                   className={styles.RegisterButton}
                   href={configValues.eventLinkRegistrationUrl}
                 >
                   Inscreva-se
                 </a>
-              </Col>
+              </Col> */}
             </Row>
           </div>
         </div>
