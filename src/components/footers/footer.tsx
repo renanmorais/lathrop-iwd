@@ -1,18 +1,18 @@
 /*eslint-disable*/
 import React from "react";
-import { useRouter } from 'next/router'
-import LogoGDG from "../../assets/images/LogoGDG";
+import { useRouter } from "next/router";
+import LogoGDG from "../../assets/images/IWDLogo";
 // reactstrap components
 import { Nav, NavItem, NavLink, Container } from "reactstrap";
 import styles from "../../styles/Footer.module.css";
-import configValues from '../../helpers/config'
-interface FooterProps { }
+import configValues from "../../helpers/config";
+interface FooterProps {}
 
-const Footer: React.FC<FooterProps> = ({ }) => {
-  const router = useRouter()
+const Footer: React.FC<FooterProps> = ({}) => {
+  const router = useRouter();
   const generateRef = (ref: string) => {
-    return (router.pathname != '/') ? `/${ref}` : ref;
-  }
+    return router.pathname != "/" ? `/${ref}` : ref;
+  };
 
   return (
     <>
@@ -30,7 +30,9 @@ const Footer: React.FC<FooterProps> = ({ }) => {
             <NavLink href={generateRef("#sponsors")}>Patrocinadores</NavLink>
           </NavItem>
           <NavItem className={styles.FooterRegister}>
-            <NavLink href={configValues.eventLinkRegistrationUrl}>Se cadastrar</NavLink>
+            <NavLink href={configValues.eventLinkRegistrationUrl}>
+              Se cadastrar
+            </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#">Agenda</NavLink>

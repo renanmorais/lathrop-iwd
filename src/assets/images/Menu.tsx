@@ -4,7 +4,7 @@ interface LogoProps {
   color?: string;
 }
 
-const LogoMenu = ({ color = "#13E5B4" }: LogoProps) => (
+const Menu = ({ color = "#13E5B4" }: LogoProps) => (
   <svg
     width="512"
     height="330"
@@ -21,4 +21,4 @@ const LogoMenu = ({ color = "#13E5B4" }: LogoProps) => (
   </svg>
 );
 
-export default LogoMenu;
+export default Menu;
