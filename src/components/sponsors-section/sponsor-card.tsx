@@ -1,35 +1,30 @@
-import React from "react";
-import Image from "next/image";
+/*eslint-disable*/
 import { Sponsor } from "models/sponsor";
-import styles from "../../styles/Sponsors.module.css";
+import React, { useState } from "react";
+import styles from '../../styles/Sponsors.module.css'
+import Image from 'next/image'
+
 
 interface SponsorCardProps extends Sponsor {
-  isStaff?: boolean;
-}
+    isStaff?: boolean;
+ }
 
 const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
-  return (
-    <>
-      <div className={styles.SponsorCard}>
-        <a href={sponsor.url} target="_blank" rel="noreferrer">
-          <div
-            className={
-              sponsor.isStaff ? styles.StaffCardBody : styles.SponsorCardBody
-            }
-          >
-            <Image
-              alt=""
-              unoptimized
-              src={sponsor.logo}
-              className={styles.SponsorCardBodyImage}
-              width={100}
-              height={100}
-            ></Image>
-          </div>
-        </a>
-      </div>
-    </>
-  );
-};
+    return (
+        <>
+            <div className={styles.SponsorCard}>
+                <a href={sponsor.url} target="_blank">
+                    <div className={sponsor.isStaff? styles.StaffCardBody: styles.SponsorCardBody}>
+                        <Image unoptimized src={sponsor.logo} layout="fill"
+                            objectFit="contain"
+
+                            className={styles.SponsorCardBodyImage}></Image>
+                    </div>
+                </a>
+            </div>
+        </>
+    );
+}
 
 export default SponsorCard;
+

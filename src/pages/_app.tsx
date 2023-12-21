@@ -8,7 +8,7 @@ import Maintenance from "./maintenance";
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
   props: AppLayoutProps
 ) => {
-  const isMaintenanceMode = false;
+  const isMaintenanceMode = true;
 
   if (isMaintenanceMode) {
     return <Maintenance />;
