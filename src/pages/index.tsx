@@ -1,31 +1,30 @@
-import React, { useEffect } from 'react';
-import HomeHeader from '../components/headers/home-header';
-import BaseLayout from '../layouts/base-layout';
-import SpeakersSection from '../components/speakers-section/speakers-section';
-import OlderEvenstsSection from 'components/older-events-section/older-events-section';
-import SponsorsSection from 'components/sponsors-section/sponsors-section';
-import TicketsSection from 'components/tickets-section/tickets-section';
-import ScheduleSection from 'components/schedule-section/schedule-section';
-import { Speaker } from 'models/speaker';
-import { Schedule } from 'models/schedule';
-import { getSpeakers } from 'front-features/speakers';
-import { getSponsors } from 'front-features/sponsors';
-import { getSchedule } from 'front-features/schedule'
-import { SponsorLevel } from 'models/sponsor-level';
-
+import React, { useEffect } from "react";
+import HomeHeader from "../components/headers/home-header";
+import BaseLayout from "../layouts/base-layout";
+import OlderEvenstsSection from "components/older-events-section/older-events-section";
+import SpeakersSection from "../components/speakers-section/speakers-section";
+import ScheduleSection from "components/schedule-section/schedule-section";
+import TicketsSection from "components/tickets-section/tickets-section";
+import SponsorsSection from "components/sponsors-section/sponsors-section";
+import { Speaker } from "models/speaker";
+import { Schedule } from "models/schedule";
+import { getSpeakers } from "front-features/speakers";
+import { getSchedule } from "front-features/schedule";
+import { getSponsors } from "front-features/sponsors";
+import { SponsorLevel } from "models/sponsor-level";
 
 // https://alvarotrigo.com/blog/css-animations-scroll/
 
 interface HomePageProps {
-  speakers: Array<Speaker>,
-  sponsors: { [key: string]: SponsorLevel },
-  schedule: Array<Schedule>
+  speakers: Array<Speaker>;
+  sponsors: { [key: string]: SponsorLevel };
+  schedule: Array<Schedule>;
 }
 
 const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
   const sectionStyle = {
-    marginTop: '60px'
-  }
+    marginTop: "60px",
+  };
 
   const reveal = () => {
     var reveals = document.querySelectorAll("section");
@@ -39,37 +38,35 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
         reveals[i].classList.remove("active");
       }
     }
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", reveal);
-  })
+  });
 
   return (
     <>
       <div>
         <HomeHeader></HomeHeader>
-
         <section style={sectionStyle}>
           <OlderEvenstsSection />
         </section>
         <section style={sectionStyle}>
           <SpeakersSection speakers={speakers} />
         </section>
-        <section style={sectionStyle}>
+        {/* <section style={sectionStyle}>
           <TicketsSection />
         </section>
         <section style={sectionStyle}>
           <ScheduleSection speakers={speakers} schedule={schedule} />
-        </section>
+        </section> */}
         <section style={sectionStyle}>
           <SponsorsSection sponsors={sponsors} />
         </section>
-
       </div>
     </>
-  )
-}
+  );
+};
 
 export async function getServerSideProps() {
   try {
@@ -77,19 +74,15 @@ export async function getServerSideProps() {
       props: {
         speakers: await getSpeakers(),
         sponsors: await getSponsors(),
-        schedule: await getSchedule()
-      }
-    }
+        schedule: await getSchedule(),
+      },
+    };
   } catch (error) {
-    console.error(error)
-    return ({ props: { speakers: [], sponsors: [] } });
+    console.error(error);
+    return { props: { speakers: [], sponsors: [] } };
   }
-
 }
-
 
 Home.layout = BaseLayout;
 
-
-
-export default Home
+export default Home;

@@ -1,39 +1,32 @@
-.FooterContent {
+.FooterContainer {
   width: 100%;
-  margin-bottom: 41px;
   font-weight: 600;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 240px;
+  color: var(--white);
+  background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, var(--blue), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, var(--dark-blue), rgba(0, 0, 255, 0) 70.71%);
   list-style: none;
+  padding: 0 10px 0 10px;
 }
 
+.footerNavlink {
+  color: var(--white)
+}
 
-.FooterContent .nav-link {
-  color: var(--black);
+.footerNavlink:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  transition: background-color 0.5s;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 1026px) {
-  .FooterContent {
+  .FooterContainer {
     padding: 10px 10px;
     flex-direction: column;
   }
-
-}
-
-.FooterLogo {
-  width: 155px;
-  height: 33px;
-}
-
-.FooterRegister {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #94ecd8;
-  width: 164px;
-  height: 33px;
-  border-radius: 10px;
 }

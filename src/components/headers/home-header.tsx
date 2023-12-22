@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import { Col, Row } from "reactstrap";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import configValues from "helpers/config";
 import { changeTimeZone, calcDateDistance } from "helpers/date";
 import IWDLogo from "assets/images/IWDLogo";
@@ -24,6 +25,17 @@ const HomeHeader: React.FC = ({}) => {
     seconds: 0,
   } as Record<string, number>);
 
+  const { width, height, isMobile, isTablet, isDesktop } =
+    useWindowDimensions();
+
+  useEffect(() => {
+    console.log(`Largura da tela: ${width}`);
+    console.log(`Altura da tela: ${height}`);
+    console.log(`É um dispositivo móvel? ${isMobile}`);
+    console.log(`É um tablet? ${isTablet}`);
+    console.log(`É um desktop? ${isDesktop}`);
+  }, [width, height, isMobile, isTablet, isDesktop]);
+
   useEffect(() => {
     const _interval = setInterval(function () {
       const _result = calcDateDistance(
@@ -45,17 +57,13 @@ const HomeHeader: React.FC = ({}) => {
 
   return (
     <>
-      <div className={styles.MainInnerNoteBook}>
-        <div className={styles.MainInnerFullContent}>
-          <Row style={{ textAlign: "center" }}>
-            <Col>
-              <img
-                alt="header"
-                className={styles.headerImg}
-                src="/wtmHeaderMin.png"
-              />
-            </Col>
-          </Row>
+      <div className={styles.MainInnerNotebook}>
+        <div className={styles.MainInnerNotebookFullContent}>
+          <img
+            alt="banner"
+            className={styles.headerImg}
+            src="/wtmHeaderMin.png"
+          />
           <Row>
             {/* <Col>
               <a
@@ -72,19 +80,15 @@ const HomeHeader: React.FC = ({}) => {
       <div className={styles.MainInnerFull}>
         <div className={styles.MainInnerFullContent}>
           <Col className={styles.MainInnerFullDescription}>
-            <Row style={{ textAlign: "center", paddingBottom: "20px" }}>
-              <Col>
-                <IWDLogo />
-              </Col>
-            </Row>
-            <Row style={{ textAlign: "center" }}>
+            <Row>
+              <img src="/iwdLogo.svg" alt="" />
               <Col className={styles.localDateInfo}>
                 <h1>{configValues.formattedDate}</h1>
                 <h4>{configValues.place}</h4>
               </Col>
             </Row>
           </Col>
-          <Row style={{ marginTop: "15px", textAlign: "center" }}>
+          <Row>
             {/* <Col>
               <a
                 className={styles.RegisterButton}
@@ -100,11 +104,11 @@ const HomeHeader: React.FC = ({}) => {
       <section>
         <div className={styles.MainDescriptionMinWrapper}>
           <div className={styles.MainDescriptionMin}>
-            <Col className={styles.MainInnerFullDescriptionMin}>
+            <Col className={styles.MainDescriptionMinInnerFull}>
               <h4>{configValues.formattedDate}</h4>
               <p>{configValues.place}</p>
             </Col>
-            <Row style={{ marginTop: "15px" }}>
+            <Row>
               {/* <Col>
                 <a
                   className={styles.RegisterButton}

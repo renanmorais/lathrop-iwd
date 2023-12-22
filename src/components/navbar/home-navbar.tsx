@@ -1,32 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import IWDLogo from "../../assets/images/IWDLogo";
-import Menu from "../../assets/images/Menu";
 import styles from "../../styles/Navbar.module.css";
 
 const NavbarHome = () => {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setScrolling] = useState(false);
 
   const menu = [
     { name: "Sobre", ref: "#about" },
-    { name: "Inscreva-se", ref: "#tickets" },
     { name: "Palestrantes", ref: "#speakers" },
     // { name: "Agenda", ref: "#schedule" },
     { name: "Patrocinadores", ref: "#sponsors" },
+    { name: "Inscreva-se", ref: "#tickets" },
   ];
-
-  const toggle = () => setIsOpen(!isOpen);
 
   const generateRef = (ref: string) => {
     if (ref.includes("https")) {
@@ -54,48 +42,27 @@ const NavbarHome = () => {
         isScrolling ? styles.navbar_fixed_scrolling : styles.navbar_fixed
       }
     >
-      <Navbar className={styles.main_navbar} color="faded" light expand="lg">
+      <Navbar className={styles.main_navbar}>
         <NavbarBrand className={styles.nav_brand}>
-          {isScrolling ? <IWDLogo height={30} color="white" /> : ""}
+          <IWDLogo height={40} color={isScrolling ? "#ffffff" : "#000000"} />
         </NavbarBrand>
-        <NavbarToggler
-          onClick={toggle}
-          className={[
-            "mr-2",
-            styles.toggler_btn,
-            isScrolling ? styles.shadow_scrolling : "",
-          ].join(" ")}
-        >
-          <Menu color={isScrolling ? "white" : "rgba(0,0,0,.55)"} />
-        </NavbarToggler>
-        <Collapse
-          className={[
-            styles.collapse_menu,
-            isOpen ? styles.opened_menu : "",
-          ].join(" ")}
-          isOpen={isOpen}
-          navbar
-        >
-          <Nav className="ms-auto" navbar>
-            {menu.map((menuItems, index) => (
-              <NavItem key={"nav-item-" + index}>
-                <NavLink
-                  className={
-                    isScrolling
-                      ? [styles.nav_link, styles.shadow_scrolling].join(" ")
-                      : styles.nav_link
-                  }
-                  style={{
-                    color: isScrolling || isOpen ? "white" : "rgba(0,0,0,.55)",
-                  }}
-                  href={generateRef(menuItems.ref)}
-                >
-                  {menuItems.name}
-                </NavLink>
-              </NavItem>
-            ))}
-          </Nav>
-        </Collapse>
+        <Nav>
+          {menu.map((menuItems, index) => (
+            <NavItem key={"nav-item-" + index}>
+              <NavLink
+                className={
+                  isScrolling
+                    ? [styles.nav_link, styles.shadow_scrolling].join(" ")
+                    : styles.nav_link
+                }
+                style={{ color: isScrolling ? "#ffffff" : "#000000" }}
+                href={generateRef(menuItems.ref)}
+              >
+                {menuItems.name}
+              </NavLink>
+            </NavItem>
+          ))}
+        </Nav>
       </Navbar>
     </div>
   );

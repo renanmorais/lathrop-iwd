@@ -3,10 +3,11 @@
 
 :root {
   --green: #09ccb1;
+  --green-smooth: #2be7b6;
   --blue: #46b3dc;
-  --orange: #487bd6;
+  --dark-blue: #487bd6;
   --white: #ffffff;
-  --black: #2be7b6;
+  --gray: #cccccc;
 }
 
 html,
@@ -64,8 +65,8 @@ a {
 }
 
 .DisableButton {
-  background-color: #ccc;
-  color: #fff;
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 .TicketFeatures::before {

@@ -1,31 +1,43 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function useWindowDimensions() {
-    useState(typeof window === "undefined");
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
 
-    const hasWindow = typeof window !== 'undefined';
+  function getWindowDimensions() {
+    const width = typeof window !== "undefined" ? window.innerWidth : null;
+    const height = typeof window !== "undefined" ? window.innerHeight : null;
+    return {
+      width,
+      height,
+    };
+  }
 
-    function getWindowDimensions() {
-        const width = hasWindow ? window.innerWidth : null;
-        const height = hasWindow ? window.innerHeight : null;
-        return {
-            width,
-            height,
-        };
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
     }
 
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
 
-    useEffect(() => {
-        if (hasWindow) {
-            const handleResize = () => {
-                setWindowDimensions(getWindowDimensions());
-            }
+  const larguraTela = windowDimensions.width ?? 0;
 
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }
-    }, [hasWindow]);
+  const larguraMobile = 767;
+  const larguraTablet = 1023;
 
-    return windowDimensions;
+  const isMobile = larguraTela <= larguraMobile;
+  const isTablet = larguraTela <= larguraTablet && !isMobile;
+  const isDesktop = larguraTela > larguraTablet;
+
+  return {
+    ...windowDimensions,
+    isMobile,
+    isTablet,
+    isDesktop,
+  };
 }
