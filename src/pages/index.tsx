@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import HomeHeader from "../components/headers/home-header";
 import BaseLayout from "../layouts/base-layout";
-import OlderEvenstsSection from "components/older-events-section/older-events-section";
+import MainSection from "components/main-section/main-section";
 import SpeakersSection from "../components/speakers-section/speakers-section";
 import ScheduleSection from "components/schedule-section/schedule-section";
 import TicketsSection from "components/tickets-section/tickets-section";
@@ -49,7 +49,7 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
       <div>
         <HomeHeader></HomeHeader>
         <section style={sectionStyle}>
-          <OlderEvenstsSection />
+          <MainSection />
         </section>
         <section style={sectionStyle}>
           <SpeakersSection speakers={speakers} />

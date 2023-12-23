@@ -37,7 +37,7 @@ const NavbarHome = () => {
   }, []);
 
   return (
-    <div
+    <nav
       className={
         isScrolling ? styles.navbar_fixed_scrolling : styles.navbar_fixed
       }
@@ -64,7 +64,7 @@ const NavbarHome = () => {
           ))}
         </Nav>
       </Navbar>
-    </div>
+    </nav>
   );
 };
 

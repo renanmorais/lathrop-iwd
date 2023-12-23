@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
   };
 
   return (
-    <>
+    <footer>
       <Nav className={styles.FooterContainer}>
         <NavItem>
           <NavLink href="#">
@@ -54,7 +54,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </NavLink>
         </NavItem>
       </Nav>
-    </>
+    </footer>
   );
 };
 

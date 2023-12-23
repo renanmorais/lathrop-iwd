@@ -1,43 +1,74 @@
-.MainInnerNotebook {
-  display: none;
+.HeaderContainer {
 }
 
-.MainInnerNotebookFullContent {
-  /* padding: 30px; */
-}
-
-.headerImg {}
-
-.MainInnerFull {
+.HeaderContainer img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  /* height: 71.4vh; */
-  text-align: center;
-  /* padding-top: 10%; */
-  /* padding-right: 60px; */
-  /* padding-bottom: 2%; */
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* align-items: flex-end; */
+  object-fit: fill;
+  margin-top: 66px;
 }
 
-.MainInnerFullContent {
-  /* padding: 30px; */
+.HeaderBanner {
 }
 
-.MainInnerFullDescription {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .HeaderBanner {
+  }
+
+  .RegisterContainer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .HeaderBanner {
+  }
+}
+
+@media (max-width: 600px) {
+  .HeaderBanner {
+  }
+}
+
+.RegisterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .RegisterContainer {
+    display: none;
+  }
+}
+
+.RegisterButton {
+  font-size: 20px;
+  border: 3px var(--blue) solid;
+  border-radius: 10px;
+  color: var(--blue);
   background: var(--white);
-  /* padding: 20px 20px; */
+  padding: 10px 10px;
+}
+
+.RegisterButton:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  transition: background-color 0.5s ease;
 }
 
 .Counter {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, var(--blue), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, var(--dark-blue), rgba(0, 0, 255, 0) 70.71%);
-  display: flex;
-  font-family: "Open Sans", sans-serif;
-  justify-content: center;
-  padding: 38px 0;
+  padding: 40px 0;
 }
 
 .CounterList {
@@ -66,7 +97,7 @@
   transition-property: color, background-color, border-color;
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
-  width: 221px;
+  width: 100%;
 }
 
 .CounterListItem:nth-child(1) {
@@ -116,195 +147,9 @@
   line-height: 1;
 }
 
-.MainDescriptionMinWrapper {
-  display: none;
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 3000px) {
-  .MainInnerNotebook {
-    width: 99%;
-    height: 80vh;
-    text-align: center;
-    padding-top: 26%;
-    padding-right: 40px;
-    padding-left: 60px;
-    padding-bottom: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .MainInnerFull {
-    display: none;
-  }
-
-  .RegisterButton {
-    padding: 15px 30px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1750px) {
-  .MainInnerNotebook {
-    width: 99%;
-    height: 70vh;
-    text-align: center;
-    padding-top: 35%;
-    padding-right: 40px;
-    padding-left: 60px;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .MainInnerFull {
-    display: none;
-  }
-
-  .MainInnerFullContent {
-    padding: 60px;
-  }
-
-  .RegisterButton {
-    padding: 15px 15px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  .RegisterButton:hover {
-    border: 3px var(--green) solid;
-    color: var(--green);
-    background-color: var(--white);
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .MainInnerNotebook {
-    width: 99%;
-    height: 60vh;
-    text-align: center;
-    padding-top: 35%;
-    padding-right: 40px;
-    padding-left: 60px;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .MainInnerFull {
-    display: none;
-  }
-
-  .RegisterButton {
-    padding: 15px 15px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  .RegisterButton:hover {
-    border: 3px var(--green) solid;
-    color: var(--green);
-    background-color: var(--white);
-  }
-}
-
-@media only screen and (min-width: 1026px) and (max-width: 1199px) {
-  .MainInnerFull {
-    width: 78%;
-    height: 95vh;
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 48px;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .RegisterButton {
-    padding: 15px 15px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  .RegisterButton:hover {
-    border: 3px var(--green) solid;
-    color: var(--green);
-    background-color: var(--white);
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1025px) {
-  .RegisterButton {
-    padding: 15px 15px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  .RegisterButton:hover {
-    border: 3px var(--green) solid;
-    color: var(--green);
-    background-color: var(--white);
-  }
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .localDateInfo {
     display: none;
-  }
-
-  .MainInnerFullDescription {
-    background: white;
-    padding: 35px 20px 20px;
-  }
-
-  .MainDescriptionMinInnerFull {
-    background: white;
-    padding: 35px 20px 20px;
-  }
-
-  .MainInnerFull {
-    width: 71%;
-    height: 52.9vh;
-    text-align: center;
-    padding-top: 6%;
-    padding-right: 35px;
-    padding-bottom: 0%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .MainDescriptionMinWrapper {
-    display: block;
-    background-color: var(--white);
-    padding: 25px 10px;
-  }
-
-  .MainDescriptionMin {
-    padding: 30px 30px;
-    text-align: center;
   }
 
   .cardCounter {
@@ -324,58 +169,9 @@
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .RegisterButton {
-    padding: 15px 15px;
-    background: var(--blue);
-    color: white;
-    width: 164px;
-    height: 33px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  .RegisterButton:hover {
-    border: 3px var(--green) solid;
-    color: var(--green);
-    background-color: var(--white);
-  }
-
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .localDateInfo {
     display: none;
-  }
-
-  .MainInnerFullDescription {
-    background: white;
-    padding: 35px 20px 20px;
-  }
-
-  .MainInnerFullDescriptionMin {
-    background: white;
-    padding: 35px 20px 20px;
-  }
-
-  .MainInnerFull {
-    width: 90%;
-    height: 52.9vh;
-    text-align: center;
-    padding-top: 6%;
-    padding-right: 35px;
-    padding-bottom: 0%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .MainDescriptionMinWrapper {
-    display: block;
-    background-color: var(--white);
-    padding: 25px 10px;
-  }
-
-  .MainDescriptionMin {
-    padding: 30px 30px;
-    text-align: center;
   }
 
   .cardCounter {
@@ -395,7 +191,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -404,22 +200,6 @@
   .CounterList {
     grid-template-columns: 1fr;
   }
-}
-
-.RegisterButton {
-  padding: 15px 15px;
-  background: var(--blue);
-  color: white;
-  width: 164px;
-  height: 33px;
-  font-size: 20px;
-  border-radius: 10px;
-}
-
-.RegisterButton:hover {
-  border: 3px var(--green) solid;
-  color: var(--green);
-  background-color: var(--white);
 }
 
 @keyframes updown {

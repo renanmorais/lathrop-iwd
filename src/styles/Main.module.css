@@ -1,12 +1,27 @@
-.Description {
-  padding-right: 100px;
-  text-align: justify;
-  margin-top: 60px;
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-@media only screen and (max-width: 1026px) {
+.Title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.Description {
+  text-align: justify;
+  text-align-last: center;
+}
+
+@media only screen and (max-width: 991px) {
   .Description {
-    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .MediaContainer {
+    display: none;
   }
 }
 
@@ -27,25 +42,9 @@
   height: 100%;
 }
 
-.MarqueeOuter {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5rem;
-  overflow: hidden;
-}
-
-.MarqueeInner {
-  animation-name: marquee;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: relative;
-  z-index: -1;
-}
-
 @keyframes marquee {
   0% {
-    left: -11%;
+    left: -15%;
   }
 
   50% {
@@ -53,14 +52,29 @@
   }
 
   100% {
-    left: -11%;
+    left: -15%;
   }
+}
+
+.MarqueeOuter {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.MarqueeInner {
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  z-index: -1;
 }
 
 .ConstructItems {
   display: flex;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .ConstructItem {
