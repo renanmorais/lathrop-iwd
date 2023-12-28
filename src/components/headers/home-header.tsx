@@ -49,17 +49,12 @@ const HomeHeader: React.FC = ({}) => {
   return (
     <header>
       <section className={styles.HeaderContainer}>
-        <img
-          alt="banner"
-          className={styles.HeaderBanner}
-          src={
-            isDesktop
-              ? "/iwdHero.png"
-              : isTablet
-              ? "/iwdHero.png"
-              : "/iwdHero.png"
-          }
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet="wtmHeaderMinNew.png" />
+          <source media="(min-width: 768px)" srcSet="/iwdHero.png" />
+          <source media="(max-width: 767px)" srcSet="impactTheFuture.png" />
+          <img src="wtmHeaderMin.png" alt="" />
+        </picture>
         <Row>
           <Col className={styles.RegisterContainer}>
             <a

@@ -113,18 +113,18 @@
 }
 
 .button_container a {
-  background: #298ae4;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 0.6rem 1rem;
-  border-radius: 0.7rem;
-  border: 3px solid #298ae4;
+  font-size: 20px;
+  border: 3px var(--blue) solid;
+  border-radius: 10px;
+  color: var(--blue);
+  background: var(--white);
+  padding: 10px 10px;
 }
 
 .button_container a:hover {
-  background: transparent;
-  color: #298ae4;
-  border: 3px solid #298ae4;
+  color: var(--white);
+  background-color: var(--blue);
+  transition: background-color 0.5s ease;
 }
 
 .modal_header {
