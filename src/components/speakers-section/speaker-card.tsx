@@ -1,10 +1,8 @@
-/*eslint-disable*/
-import { Speaker } from "models/speaker";
-import Image from "next/image";
 import React, { useState } from "react";
-
-import styles from "../../styles/Speakers.module.css";
+import Image from "next/image";
+import { Speaker } from "models/speaker";
 import SpeakerModal from "./speaker-modal";
+import styles from "../../styles/Speakers.module.css";
 
 interface SpeakerCardProps extends Speaker {}
 
@@ -19,7 +17,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
           unoptimized
           className={styles.card_image}
           src={speaker.photo ? speaker.photo : ""}
-          alt={`Foto ${speaker.name}`}
+          alt={`Foto de ${speaker.name}`}
           width="100%"
           height="100%"
         />

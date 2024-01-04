@@ -50,10 +50,10 @@ const HomeHeader: React.FC = ({}) => {
     <header>
       <section className={styles.HeaderContainer}>
         <picture>
-          <source media="(min-width: 1024px)" srcSet="wtmHeaderMinNew.png" />
-          <source media="(min-width: 768px)" srcSet="/iwdHero.png" />
-          <source media="(max-width: 767px)" srcSet="impactTheFuture.png" />
-          <img src="wtmHeaderMin.png" alt="" />
+          <source media="(min-width: 1024px)" srcSet="/iwd2024Banner.png" />
+          <source media="(min-width: 768px)" srcSet="/iwd2024EmailHeader.png" />
+          <source media="(max-width: 767px)" srcSet="iwd2024Hero.png" />
+          <img src="/iwd2024Banner.png" alt="" />
         </picture>
         <Row>
           <Col className={styles.RegisterContainer}>
@@ -61,7 +61,7 @@ const HomeHeader: React.FC = ({}) => {
               className={styles.RegisterButton}
               href={configValues.eventLinkRegistrationUrl}
             >
-              Inscreva-se
+              <span>Inscreva-se</span>
             </a>
           </Col>
         </Row>

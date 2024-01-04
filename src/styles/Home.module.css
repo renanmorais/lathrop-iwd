@@ -33,18 +33,38 @@
 }
 
 .RegisterButton {
-  font-size: 20px;
-  border: 3px var(--blue) solid;
-  border-radius: 10px;
-  color: var(--blue);
-  background: var(--white);
-  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(
+    32deg,
+    var(--green),
+    var(--blue),
+    var(--green-smooth),
+    var(--dark-blue)
+  );
+  transition: all 0.2s ease;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0;
 }
 
-.RegisterButton:hover {
+.RegisterButton span {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 17px;
+  border-radius: 20px;
+  background: #ffffff10;
+  backdrop-filter: blur(20px);
+  transition: 0.2s ease-in-out;
+  transition-property: color;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.RegisterButton span:hover {
+  backdrop-filter: blur(0px);
   color: var(--white);
-  background-color: var(--blue);
-  transition: background-color 0.5s ease;
 }
 
 .Counter {
@@ -84,7 +104,7 @@
   transition-property: color, background-color, border-color;
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
-  width: 100%;
+  width: 200px;
 }
 
 .CounterListItem:nth-child(1) {
