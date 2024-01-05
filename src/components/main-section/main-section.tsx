@@ -50,17 +50,38 @@ const MainSection: React.FC = ({}) => {
         </Row>
       </Container>
 
-      <div className={styles.MarqueeOuter}>
-        <div className={styles.MarqueeInner}>
-          <div className={styles.ConstructItems}>
-            {items.map((item, index) => (
-              <div key={index} className={styles.ConstructItem}>
-                {item}
-              </div>
-            ))}
+      {/* subir quando pegar as fotos do evento */}
+
+      {/* <section>
+        <div className={styles.sliderContainer}>
+          <div className={styles.slide}>
+            <img src="/fotoEncontroWtm.jpeg" alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/fotoEncontroWtm.jpeg" alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/fotoEncontroWtm.jpeg" alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/fotoEncontroWtm.jpeg" alt="" />
           </div>
         </div>
-      </div>
+      </section> */}
+
+      <section>
+        <div className={styles.MarqueeOuter}>
+          <div className={styles.MarqueeInner}>
+            <div className={styles.ConstructItems}>
+              {items.map((item, index) => (
+                <div key={index} className={styles.ConstructItem}>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

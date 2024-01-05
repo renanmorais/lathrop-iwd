@@ -7,13 +7,15 @@
   --blue: #46b3dc;
   --dark-blue: #487bd6;
   --white: #ffffff;
+  --gainsboro: #c7c7c7;
+  --link-color: #0d6efd;
   --antiflesh: #fAfAfA;
   --off-white: #fbfbfb;
   --alice-blue: #f0f8ff;
   --ivory: #fffff0;
   --snow: #fffafa;
   --ghost-white: #f8f8ff;
-  --gainsboro: #c7c7c7;
+  --black: #313131;
 }
 
 html,

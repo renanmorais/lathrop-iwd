@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useState } from "react";
 import {
   Col,
@@ -67,7 +68,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
     <>
       <Container>
         <div id="speakers" className={styles.container}>
-          <h1 style={{ textAlign: "center" }}>Palestrantes</h1>
+          <h1 className={styles.Title}>Palestrantes</h1>
           <p style={{ textAlign: "justify", textAlignLast: "center" }}>
             O time de palestrantes do IWD Cerrado 2023 traz grandes nomes da
             área técnica e referências em liderança de comunidades. Reunimos em
@@ -104,7 +105,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
             </Carousel>
           </div>
           <div className={styles.button_container}>
-            <a color="info" href="/speakers">
+            <a className={styles.button} href="/speakers">
               Ver todos
             </a>
           </div>

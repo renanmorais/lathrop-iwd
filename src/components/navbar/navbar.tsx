@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import { useEffect, useRef, useState } from "react";
 import IWDLogo from "../../assets/images/IWDLogo";
 import styles from "styles/Nav.module.css";
@@ -28,16 +29,18 @@ export const Navbar = () => {
       className={`${styles.navbar} ${isNavbarVisible ? styles.visible : ""}`}
     >
       <div className={styles.logoContainer}>
-        <IWDLogo height={40} color="#ffffff" />
+        <a href="/">
+          <IWDLogo height={40} color="#ffffff" />
+        </a>
       </div>
       <ul className={styles.navItems}>
         <li>
-          <a className={styles.navItem} href="#about">
+          <a className={styles.navItem} href="/about">
             Sobre
           </a>
         </li>
         <li>
-          <a className={styles.navItem} href="#speakers">
+          <a className={styles.navItem} href="/speakers">
             Palestrantes
           </a>
         </li>
@@ -47,7 +50,7 @@ export const Navbar = () => {
           </a>
         </li> */}
         <li>
-          <a className={styles.navItem} href="#sponsors">
+          <a className={styles.navItem} href="/sponsors">
             Patrocinadores
           </a>
         </li>

@@ -15,6 +15,8 @@ const nextConfig = {
     return {
       "/": { page: "/" },
       "/home": { page: "/" },
+      "/about": { page: "/about" },
+      "/speakers": { page: "/speakers" },
       "/sponsors": { page: "/sponsors" },
       "/speakers": { page: "/speakers" },
       "/campaigns": { page: "/campaigns" },

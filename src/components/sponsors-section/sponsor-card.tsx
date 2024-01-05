@@ -23,7 +23,7 @@ const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
               layout="fill"
               objectFit="contain"
               className={styles.SponsorCardBodyImage}
-              alt=""
+              alt={sponsor.name}
             ></Image>
           </div>
         </a>

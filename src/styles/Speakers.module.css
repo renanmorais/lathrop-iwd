@@ -1,3 +1,25 @@
+.Title {
+  text-align: center;
+}
+
+.Title::after {
+  background: linear-gradient(
+    90deg,
+    var(--green),
+    var(--blue) 10%,
+    var(--green-smooth) 30%,
+    var(--dark-blue) 40%,
+    var(--green) 70%,
+    var(--blue)
+  );
+  content: "";
+  display: flex;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  width: 30%;
+}
+
 .cards {
   width: 100%;
   height: 50%;
@@ -112,19 +134,59 @@
   margin-top: 2rem;
 }
 
-.button_container a {
-  font-size: 20px;
-  border: 3px var(--blue) solid;
-  border-radius: 10px;
-  color: var(--blue);
-  background: var(--white);
-  padding: 10px 10px;
+.button {
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  z-index: 1;
 }
 
-.button_container a:hover {
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--dark-blue);
+  transition: 1s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
   color: var(--white);
-  background-color: var(--blue);
-  transition: background-color 0.5s ease;
+}
+
+.button:active {
+  filter: brightness(0.8);
 }
 
 .modal_header {
@@ -219,4 +281,29 @@
     padding: 0.6rem;
     cursor: pointer;
   }
+}
+
+/* page speaker */
+
+.pageDiv {
+  margin: 100px 50px 30px;
+  height: 90vh; /* remover quando add o conteúdo */
+}
+
+.pageCol {
+  margin: 0 10px 20px;
+}
+
+.pageRow {
+  justify-content: center;
+  text-align: center;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.pageDescription {
+  text-align: justify;
+  text-align-last: center;
 }

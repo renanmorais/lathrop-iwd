@@ -1,3 +1,30 @@
+.Container {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.Title::after {
+  background: linear-gradient(
+    90deg,
+    var(--green),
+    var(--blue) 10%,
+    var(--green-smooth) 30%,
+    var(--dark-blue) 40%,
+    var(--green) 70%,
+    var(--blue)
+  );
+  content: "";
+  display: flex;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  width: 30%;
+}
+
+.Paragraph {
+  margin: 30px 0;
+}
+
 .SponsorWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -106,6 +133,29 @@
   padding: 0px 10px !important;
 }
 
-#sponsors {
-  margin: 10px 0px;
+/* page sponsor */
+
+.pageDiv {
+  margin: 100px 0 30px;
+  height: 90vh; /* remover quando add o conteúdo */
+  text-align: center;
+}
+
+.pageRow {
+  margin-top: 60px;
+}
+
+.pageP a {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.sponsorCard {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }

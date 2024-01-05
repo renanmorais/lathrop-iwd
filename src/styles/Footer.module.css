@@ -2,7 +2,8 @@
   width: 100%;
   font-weight: 600;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
   color: var(--white);
@@ -10,11 +11,11 @@
     linear-gradient(127deg, var(--blue), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, var(--dark-blue), rgba(0, 0, 255, 0) 70.71%);
   list-style: none;
-  padding: 0 10px 0 10px;
+  padding: 20px 0 0;
 }
 
 .footerNavlink {
-  color: var(--white)
+  color: var(--white);
 }
 
 .footerNavlink:hover {
@@ -24,9 +25,81 @@
   border-radius: 0.5rem;
 }
 
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.facebook {
+  padding: 10px;
+}
+
+.facebook:hover {
+  background-color: #3a5998;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.instagram {
+  padding: 10px;
+}
+
+.instagram:hover {
+  background-color: #e1306c;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.xtwitter {
+  padding: 10px;
+}
+
+.xtwitter:hover {
+  background-color: #040000;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.linkedin {
+  padding: 10px;
+}
+
+.linkedin:hover {
+  background-color: #0084bf;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 1023px) {
   .FooterContainer {
-    padding: 10px 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .FooterContainer {
+    gap: 5px;
+  }
+
+  .footerSocial {
     flex-direction: column;
   }
 }

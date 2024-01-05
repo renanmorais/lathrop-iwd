@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  object-fit: fill;
-  margin-top: 66px;
+  object-fit: cover;
+  margin-top: 72px;
+  min-height: 135px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -29,42 +30,71 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 20px;
+  margin: -50px auto;
 }
 
 .RegisterButton {
-  border: none;
-  border-radius: 20px;
+  display: block;
+  cursor: pointer;
+  color: var(--white);
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.RegisterButton:hover {
+  color: var(--white);
+}
+
+.RegisterButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
   background: linear-gradient(
-    32deg,
+    115deg,
     var(--green),
     var(--blue),
     var(--green-smooth),
-    var(--dark-blue)
+    var(--dark-blue),
+    var(--green-smooth)
   );
-  transition: all 0.2s ease;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  padding: 0;
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop
+    0.75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.RegisterButton:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
 }
 
 .RegisterButton span {
-  display: inline-block;
-  padding: 15px 35px;
-  font-size: 17px;
-  border-radius: 20px;
-  background: #ffffff10;
-  backdrop-filter: blur(20px);
-  transition: 0.2s ease-in-out;
-  transition-property: color;
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: var(--black);
+  border-radius: 3px;
   height: 100%;
-  width: 100%;
-  text-transform: uppercase;
-}
-
-.RegisterButton span:hover {
-  backdrop-filter: blur(0px);
-  color: var(--white);
+  letter-spacing: 0.3rem;
 }
 
 .Counter {
@@ -83,7 +113,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   list-style-type: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
 }
 
@@ -105,6 +135,21 @@
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
   width: 200px;
+  animation-name: scaleAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .CounterListItem:nth-child(1) {

@@ -1,12 +1,22 @@
 .Container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .Title {
   text-align: center;
   font-weight: 600;
+}
+
+.Title::after {
+  background: linear-gradient(90deg, var(--green), var(--blue) 10%, var(--green-smooth) 30%, var(--dark-blue) 40%, var(--green) 70%, var(--blue));
+  content: "";
+  display: flex;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  width: 50%;
 }
 
 .Description {
@@ -93,4 +103,24 @@
 
 .ConstructItem:nth-child(3n + 2) {
   background-color: var(--blue);
+}
+
+.sliderContainer {
+  margin-top: 60px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.sliderContainer img {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  scroll-snap-align: start;
 }

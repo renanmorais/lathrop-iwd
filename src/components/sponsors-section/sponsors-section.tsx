@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "reactstrap";
-import { Sponsor } from "models/sponsor";
 import _sponsors from "../../hooks/useSponsors";
 import _supports from "../../hooks/userSupports";
-import SponsorCard from "./sponsor-card";
+import { Sponsor } from "models/sponsor";
 import { SponsorLevel } from "models/sponsor-level";
+import SponsorCard from "./sponsor-card";
 import styles from "../../styles/Sponsors.module.css";
 
 interface StringMap {
@@ -60,10 +60,10 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
 
   return (
     <>
-      <Container style={{ marginBottom: "60px", textAlign: "center" }}>
+      <Container className={styles.Container}>
         <div id="sponsors">
-          <h1>Patrocinadores</h1>
-          <p style={{ margin: "30px 0px" }}>
+          <h1 className={styles.Title}>Patrocinadores</h1>
+          <p className={styles.Paragraph}>
             Estas são as empresas que nos ajudaram a fazer este evento
             acontecer!
           </p>
@@ -72,8 +72,8 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
             mapSponsorLevel(sponsors[el], el === "staff")
           )}
 
-          <h1>Organização</h1>
-          <p>...</p>
+          <h1 className={styles.Title}>Organização</h1>
+          <p className={styles.Paragraph}>...</p>
 
           <div>
             <Row>

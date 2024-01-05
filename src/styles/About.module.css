@@ -1,0 +1,18 @@
+.pageDiv {
+  margin: 100px 50px 30px;
+  height: 90vh; /* remover quando add o conteúdo */
+}
+
+.pageRow {
+  justify-content: center;
+  text-align: center;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.pageDescription {
+  text-align: justify;
+  text-align-last: center;
+}
