@@ -60,6 +60,8 @@ const HomeHeader: React.FC = ({}) => {
             <a
               className={styles.RegisterButton}
               href={configValues.eventLinkRegistrationUrl}
+              target="_blank"
+              rel="noreferrer"
             >
               <span>&lt; INSCREVA-SE &gt;</span>
             </a>

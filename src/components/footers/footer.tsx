@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import IWDLogo from "../../assets/images/IWDLogo";
 import styles from "../../styles/Footer.module.css";
@@ -14,44 +13,30 @@ import {
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = ({}) => {
-  const router = useRouter();
-  const generateRef = (ref: string) => {
-    return router.pathname != "/" ? `/${ref}` : ref;
-  };
-
   return (
     <footer>
       <Nav className={styles.FooterContainer}>
         <div className={styles.footerLinks}>
           <NavItem>
-            <NavLink
-              href={generateRef("/about")}
-              className={styles.footerNavlink}
-            >
+            <NavLink href="/about" className={styles.footerNavlink}>
               Sobre
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              href={generateRef("/speakers")}
-              className={styles.footerNavlink}
-            >
+            <NavLink href="/speakers" className={styles.footerNavlink}>
               Palestrantes
             </NavLink>
           </NavItem>
           {/* <NavItem>
           <NavLink
-            href={generateRef("#schedule")}
+            href="/schedule"
             className={styles.footerNavlink}
           >
             Agenda
           </NavLink>
         </NavItem> */}
           <NavItem>
-            <NavLink
-              href={generateRef("/sponsors")}
-              className={styles.footerNavlink}
-            >
+            <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
             </NavLink>
           </NavItem>

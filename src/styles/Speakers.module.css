@@ -286,8 +286,7 @@
 /* page speaker */
 
 .pageDiv {
-  margin: 100px 50px 30px;
-  height: 90vh; /* remover quando add o conteúdo */
+  margin: 100px 0 30px;
 }
 
 .pageCol {
