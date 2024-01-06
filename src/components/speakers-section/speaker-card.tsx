@@ -12,19 +12,18 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
 
   return (
     <>
-      <div className={styles.card_content} onClick={modalToggle}>
-        <Image
-          unoptimized
-          className={styles.card_image}
-          src={speaker.photo ? speaker.photo : ""}
-          alt={`Foto de ${speaker.name}`}
-          width="100%"
-          height="100%"
-        />
-        <h2 className={styles.card_name}>{speaker.name}</h2>
-        <p className={styles.card_topic}>{speaker.tech}</p>
-        <p className={styles.card_profile}>{speaker.title}</p>
-      </div>
+      <Image
+        className={styles.card_image}
+        src={speaker.photo ? speaker.photo : ""}
+        alt={`Foto de ${speaker.name}`}
+        width="270px"
+        height="270px"
+        unoptimized
+        onClick={modalToggle}
+      />
+      <h2 className={styles.card_name}>{speaker.name}</h2>
+      <p className={styles.card_topic}>{speaker.tech}</p>
+      <p className={styles.card_profile}>{speaker.title}</p>
       <SpeakerModal
         speaker={speaker}
         modalOpen={modalOpen}

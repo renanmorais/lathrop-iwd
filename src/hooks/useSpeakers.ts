@@ -1,7 +1,7 @@
 const speakers = [
   {
     id: 1,
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",
@@ -19,7 +19,7 @@ const speakers = [
   {
     id: 2,
     path: "",
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",
@@ -36,7 +36,7 @@ const speakers = [
   },
   {
     id: 3,
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",
@@ -53,7 +53,7 @@ const speakers = [
   },
   {
     id: 4,
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",
@@ -71,7 +71,7 @@ const speakers = [
   {
     id: 5,
     path: "",
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",
@@ -88,7 +88,7 @@ const speakers = [
   },
   {
     id: 6,
-    photo: "/speakers/aDefinir.jpeg",
+    photo: "/speakers/aDefinir.png",
     name: "A definir",
     tech: "",
     topic: "",

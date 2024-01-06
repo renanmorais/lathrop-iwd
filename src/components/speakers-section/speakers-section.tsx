@@ -1,14 +1,8 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useState } from "react";
-import {
-  Col,
-  Container,
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-} from "reactstrap";
-import { Speaker } from "models/speaker";
+import { Container, Carousel, CarouselItem, CarouselControl } from "reactstrap";
 import _speakers from "../../hooks/useSpeakers";
+import { Speaker } from "models/speaker";
 import SpeakerCard from "./speaker-card";
 import styles from "../../styles/Speakers.module.css";
 
@@ -50,12 +44,12 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
             {speakersList.map((speaker: Speaker) => {
               const _itemId: number | undefined = speaker.id;
               return (
-                <Col
+                <div
                   key={`${_itemId}-carousel-col`}
                   className={styles.card_container}
                 >
                   <SpeakerCard {...speaker} />
-                </Col>
+                </div>
               );
             })}
           </div>
