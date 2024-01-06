@@ -97,8 +97,15 @@
   letter-spacing: 0.3rem;
 }
 
+@media (max-width: 550px) {
+  .RegisterButton span {
+    padding: 1.1rem 1.1rem;
+    font-size: 0.6rem;
+  }
+}
+
 .Counter {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Inter var', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;

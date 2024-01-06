@@ -30,22 +30,14 @@
   margin: 2rem 0 0 0;
 }
 
-.carousel_prev a {
-  background-color: transparent !important;
-  left: -7rem !important;
-}
-
-.carousel_next a {
-  background-color: transparent !important;
-  right: -6rem !important;
-}
-
 .carousel_prev a span {
-  background-image: url(https://cdn-icons-png.flaticon.com/512/154/154692.png?w=826&t=st=1664232308~exp=1664232908~hmac=2292da8fee0559a1696c89ed327b6769c6b24bac5ad9cd7c16a17fa9187041cc) !important;
+  background-color: var(--black);
+  border-radius: 50%;
 }
 
 .carousel_next a span {
-  background-image: url(https://cdn-icons-png.flaticon.com/512/154/154697.png?w=826&t=st=1664232307~exp=1664232907~hmac=9d79e104c8814a8c9d283e222ca1301e876c0626b93e926dedb5b9bc430c4808) !important;
+  background-color: var(--black);
+  border-radius: 50%;
 }
 
 .card_container {

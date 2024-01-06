@@ -13,13 +13,16 @@ const nextConfig = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      "/": { page: "/" },
-      "/home": { page: "/" },
-      "/about": { page: "/about" },
-      "/speakers": { page: "/speakers" },
-      "/sponsors": { page: "/sponsors" },
-      "/speakers": { page: "/speakers" },
-      "/campaigns": { page: "/campaigns" },
+      "/": { page: "/", query: { __nextDefaultLocale: "en" } },
+      "/home": { page: "/", query: { __nextDefaultLocale: "en" } },
+      "/about": { page: "/about", query: { __nextDefaultLocale: "en" } },
+      "/speakers": { page: "/speakers", query: { __nextDefaultLocale: "en" } },
+      "/sponsors": { page: "/sponsors", query: { __nextDefaultLocale: "en" } },
+      "/speakers": { page: "/speakers", query: { __nextDefaultLocale: "en" } },
+      "/campaigns": {
+        page: "/campaigns",
+        query: { __nextDefaultLocale: "en" },
+      },
     };
   },
 };
