@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/base-layout";
 import MainSection from "components/main-section/main-section";
 import SpeakersSection from "../components/speakers-section/speakers-section";
 import ScheduleSection from "components/schedule-section/schedule-section";
+import LocationSection from "components/location-section/location-section";
 import TicketsSection from "components/tickets-section/tickets-section";
 import SponsorsSection from "components/sponsors-section/sponsors-section";
 import { Speaker } from "models/speaker";
@@ -60,6 +61,9 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
         <section style={sectionStyle}>
           <ScheduleSection speakers={speakers} schedule={schedule} />
         </section> */}
+        <section style={sectionStyle}>
+          <LocationSection />
+        </section>
         <section style={sectionStyle}>
           <SponsorsSection sponsors={sponsors} />
         </section>

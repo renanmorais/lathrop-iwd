@@ -33,11 +33,13 @@
 .carousel_prev a span {
   background-color: var(--black);
   border-radius: 50%;
+  margin-left: -4.5rem; /* não sei se vale a pena manter essa margem */
 }
 
 .carousel_next a span {
   background-color: var(--black);
   border-radius: 50%;
+  margin-right: -3rem; /* não sei se vale a pena manter essa margem */
 }
 
 .card_container {

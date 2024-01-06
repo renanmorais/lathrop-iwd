@@ -1,0 +1,29 @@
+.Container {
+  text-align: center;
+}
+
+.h2 {
+  text-align: left;
+}
+
+.paragraph {
+  text-align: left;
+}
+
+.Title::after {
+  background: linear-gradient(
+    90deg,
+    var(--green),
+    var(--blue) 10%,
+    var(--green-smooth) 30%,
+    var(--dark-blue) 40%,
+    var(--green) 70%,
+    var(--blue)
+  );
+  content: "";
+  display: flex;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  width: 30%;
+}
