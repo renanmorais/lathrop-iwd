@@ -101,13 +101,11 @@
 .carousel_prev a span {
   background-color: var(--black);
   border-radius: 50%;
-  margin-left: -4.5rem; /* não sei se vale a pena manter essa margem */
 }
 
 .carousel_next a span {
   background-color: var(--black);
   border-radius: 50%;
-  margin-right: -3rem; /* não sei se vale a pena manter essa margem */
 }
 
 .button_container {
@@ -234,16 +232,6 @@
 }
 
 @media (max-width: 360px) {
-  .carousel_prev a {
-    background-color: transparent !important;
-    left: -2.5rem !important;
-  }
-
-  .carousel_next a {
-    background-color: transparent !important;
-    right: -1.8rem !important;
-  }
-
   .modal_footer a {
     padding: 0.5rem;
     cursor: pointer;
@@ -251,16 +239,6 @@
 }
 
 @media (max-width: 414px) {
-  .carousel_prev a {
-    background-color: transparent !important;
-    left: -3rem !important;
-  }
-
-  .carousel_next a {
-    background-color: transparent !important;
-    right: -2rem !important;
-  }
-
   .modal_footer a {
     padding: 0.6rem;
     cursor: pointer;

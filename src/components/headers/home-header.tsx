@@ -51,8 +51,8 @@ const HomeHeader: React.FC = ({}) => {
       <section className={styles.HeaderContainer}>
         <picture>
           <source media="(min-width: 1024px)" srcSet="/bannerTest.png" />
-          <source media="(min-width: 768px)" srcSet="/bannerTest.png" />
-          <source media="(max-width: 767px)" srcSet="/bannerTest.png" />
+          <source media="(max-width: 768px)" srcSet="/impactTheFuture.png" />
+          {/* <source media="(max-width: 480px)" srcSet="/impactTheFuture.png" /> */}
           <img src="/bannerTest.png" alt="" />
         </picture>
         <Row noGutters>
