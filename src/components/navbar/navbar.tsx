@@ -56,7 +56,7 @@ export const Navbar = () => {
         </li>
         <li>
           <a
-            className={styles.navItem}
+            className={`${styles.navItem} ${styles.navItemRegister}`}
             href={configValues.eventLinkRegistrationUrl}
             target="_blank"
             rel="noreferrer"
