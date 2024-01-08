@@ -87,6 +87,12 @@ ul, li  {
   padding-right: 0.5rem;
 }
 
+/* This is only for the modal of reactstrap */
+body.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter', sans-serif;

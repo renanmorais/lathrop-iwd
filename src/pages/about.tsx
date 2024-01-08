@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Row, Container } from "reactstrap";
 import BaseLayout from "../layouts/base-layout";
@@ -21,9 +22,30 @@ const About = ({}: AboutProps) => {
           Front-End, Inteligência Artificial, Machine Learning, APIs do Google,
           Segurança da Informação (LGPD).
         </p>
+
         <section>
           <Row className={styles.pageRow}></Row>
         </section>
+
+        {/* <section>
+          <div className={styles.sliderContainer}>
+            <div className={styles.slide}>
+              <img src="/photos/iwd2023StaffSpeakers.JPG" alt="" />
+            </div>
+            <div className={styles.slide}>
+              <img src="/photos/iwd2023StaffSpeakersFull.jpg" alt="" />
+            </div>
+            <div className={styles.slide}>
+              <img src="/photos/iwd2023StaffSpeakersFullBright.JPG" alt="" />
+            </div>
+            <div className={styles.slide}>
+              <img src="/photos/iwd2023Outside1.JPG" alt="" />
+            </div>
+            <div className={styles.slide}>
+              <img src="/photos/iwd2023Outside2.JPG" alt="" />
+            </div>
+          </div>
+        </section> */}
       </Container>
     </div>
   );

@@ -16,3 +16,28 @@
   text-align: justify;
   text-align-last: center;
 }
+
+.sliderContainer {
+  margin-top: 60px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.sliderContainer img {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderContainer img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.slide {
+  scroll-snap-align: start;
+}

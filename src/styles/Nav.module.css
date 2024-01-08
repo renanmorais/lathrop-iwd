@@ -46,8 +46,9 @@
   position: relative;
 }
 
-.navItem:last-child:hover {
-  color: var(--antiflesh);
+.navItemRegister {
+  font-weight: 600;
+  /* text-transform: uppercase; */
 }
 
 .navItem.navItemRegister::before,
@@ -59,10 +60,21 @@
   background-color: var(--antiflesh);
   transform: scaleX(0);
   transition: all 0.6s ease;
+  border-radius: 0%;
+}
+
+.navItem.navItemRegister {
+  padding: 12px 12px;
+}
+
+.navItem:last-child:hover {
+  color: var(--antiflesh);
 }
 
 .navItems li:last-child {
   background-color: var(--dark-blue);
+  padding: 8px 0;
+  border-radius: 5px;
 }
 
 .navItem:hover {

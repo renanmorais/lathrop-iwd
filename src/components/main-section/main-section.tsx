@@ -44,30 +44,11 @@ const MainSection: React.FC = ({}) => {
           <Col lg={6} className={styles.MediaContainer}>
             {/*<div className={styles.VideoContainer}><iframe src='https://www.youtube.com/embed/8VbKty9jtdM' allowFullScreen></iframe></div>*/}
             <div className={styles.FotoContainer}>
-              <img src="fotoEncontroWtm.jpeg" width="100%" alt="" />
+              <img src="/photos/iwd2023AllPeople.jpg" width="100%" alt="" />
             </div>
           </Col>
         </Row>
       </Container>
-
-      {/* subir quando pegar as fotos do evento */}
-
-      {/* <section>
-        <div className={styles.sliderContainer}>
-          <div className={styles.slide}>
-            <img src="/fotoEncontroWtm.jpeg" alt="" />
-          </div>
-          <div className={styles.slide}>
-            <img src="/fotoEncontroWtm.jpeg" alt="" />
-          </div>
-          <div className={styles.slide}>
-            <img src="/fotoEncontroWtm.jpeg" alt="" />
-          </div>
-          <div className={styles.slide}>
-            <img src="/fotoEncontroWtm.jpeg" alt="" />
-          </div>
-        </div>
-      </section> */}
 
       <section>
         <div className={styles.MarqueeOuter}>
