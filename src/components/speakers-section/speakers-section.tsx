@@ -4,6 +4,7 @@ import { Container, Carousel, CarouselItem, CarouselControl } from "reactstrap";
 import _speakers from "../../hooks/useSpeakers";
 import { Speaker } from "models/speaker";
 import SpeakerCard from "./speaker-card";
+import Bubble from "components/bubble";
 import styles from "../../styles/Speakers.module.css";
 
 interface SpeakersSectionProps {
@@ -105,6 +106,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
           </div>
         </div>
       </Container>
+      <Bubble text="International Women's Day 2024" />
     </>
   );
 };

@@ -1,0 +1,36 @@
+.Text {
+  color: rgb(199, 210, 254);
+  background-color: var(--black);
+  text-align: center;
+  /* text-transform: uppercase; */
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.hoverText {
+  cursor: pointer;
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.hoverText:hover {
+  font-weight: 900;
+  color: var(--green);
+}
+
+.hoverText:hover + .hoverText {
+  font-weight: 500;
+  color: var(--alice-blue);
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+  font-weight: 300;
+}
+
+.hoverText:has(+ .hoverText:hover) {
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  font-weight: 300;
+}

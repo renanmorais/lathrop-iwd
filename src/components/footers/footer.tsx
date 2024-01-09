@@ -1,7 +1,5 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
-import IWDLogo from "../../assets/images/IWDLogo";
-import styles from "../../styles/Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -9,6 +7,9 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import configValues from "helpers/config";
+import IWDLogo from "../../assets/images/IWDLogo";
+import styles from "../../styles/Footer.module.css";
 
 interface FooterProps {}
 
@@ -38,6 +39,15 @@ const Footer: React.FC<FooterProps> = ({}) => {
           <NavItem>
             <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              href={configValues.eventLinkRegistrationUrl}
+              className={`${styles.footerNavlink} ${styles.registerButton}`}
+              target="_blank"
+            >
+              <span>Inscreva-se</span>
             </NavLink>
           </NavItem>
         </div>

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { useEffect, useRef, useState } from "react";
+import configValues from "helpers/config";
 import IWDLogo from "../../assets/images/IWDLogo";
 import styles from "styles/Nav.module.css";
-import configValues from "helpers/config";
 
 export const Navbar = () => {
   const lastScrollTop = useRef(0);

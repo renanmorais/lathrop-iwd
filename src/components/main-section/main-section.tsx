@@ -12,22 +12,40 @@ const items = [
   "Ouse ser independente",
   "Ouse ser resiliente",
   "Ouse ser destemida",
-  "Ouse ser feliz",
-  "Ouse ser única",
-  "Ouse ser diferente",
-  "Ouse ser você mesma",
-  "Ouse ser sonhadora",
-  "Ouse ser independente",
-  "Ouse ser resiliente",
-  "Ouse ser destemida",
 ];
+
+const marqueeItems = [...items, ...items];
+
+const marqueeItemsReverse = Array(16).fill("Impact the Future");
+
+const MarqueeSection = ({
+  items,
+  innerStyle,
+}: {
+  items: string[];
+  innerStyle: string;
+}) => (
+  <section>
+    <div className={styles.MarqueeOuter}>
+      <div className={innerStyle}>
+        <div className={styles.ConstructItems}>
+          {items.map((item, index) => (
+            <div key={index} className={styles.ConstructItem}>
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 const MainSection: React.FC = ({}) => {
   return (
     <main>
-      <Container id="about" fluid>
+      <Container id="about" className={styles.Container} fluid>
         <Row>
-          <Col lg={6} className={styles.Container}>
+          <Col lg={6} className={styles.Col}>
             <h1 className={styles.Title}> O que é IWD?</h1>
             <p className={styles.Description}>
               O IWD é um evento anual realizado pelas WTMs de todo o mundo em
@@ -51,17 +69,11 @@ const MainSection: React.FC = ({}) => {
       </Container>
 
       <section>
-        <div className={styles.MarqueeOuter}>
-          <div className={styles.MarqueeInner}>
-            <div className={styles.ConstructItems}>
-              {items.map((item, index) => (
-                <div key={index} className={styles.ConstructItem}>
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <MarqueeSection items={marqueeItems} innerStyle={styles.MarqueeInner} />
+        <MarqueeSection
+          items={marqueeItemsReverse}
+          innerStyle={styles.MarqueeInnerReverse}
+        />
       </section>
     </main>
   );

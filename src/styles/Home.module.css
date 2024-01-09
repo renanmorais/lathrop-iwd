@@ -105,7 +105,7 @@
 }
 
 .Counter {
-  font-family: 'Inter var', sans-serif;
+  font-family: "Inter var", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,10 +138,10 @@
   justify-content: center;
   padding-top: 20px;
   text-align: center;
+  width: 200px;
   transition-property: color, background-color, border-color;
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
-  width: 200px;
   animation-name: scaleAnimation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -152,7 +152,7 @@
 }
 
 .CounterListItem:nth-child(3) {
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 
 .CounterListItem:nth-child(4) {

@@ -1,4 +1,8 @@
 .Container {
+  margin-bottom: 60px;
+}
+
+.Col {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,12 +41,6 @@
   }
 }
 
-/* @media only screen and (max-width: 991px) {
-  .MediaContainer {
-    display: none;
-  }
-} */
-
 .FotoContainer img {
   background-size: cover;
 }
@@ -64,20 +62,6 @@
   height: 100%;
 }
 
-@keyframes marquee {
-  0% {
-    left: -15%;
-  }
-
-  50% {
-    left: -5%;
-  }
-
-  100% {
-    left: -15%;
-  }
-}
-
 .MarqueeOuter {
   width: 100%;
   box-sizing: border-box;
@@ -85,10 +69,25 @@
 }
 
 .MarqueeInner {
-  animation-name: marquee;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  transform: translateX(0);
+  animation: marquee 35s linear infinite;
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.MarqueeInnerReverse {
+  transform: translateX(0);
+  animation: marquee 35s linear infinite;
+  animation-direction: reverse;
   position: relative;
   z-index: -1;
 }
@@ -96,7 +95,6 @@
 .ConstructItems {
   display: flex;
   align-items: center;
-  margin-top: 50px;
 }
 
 .ConstructItem {
