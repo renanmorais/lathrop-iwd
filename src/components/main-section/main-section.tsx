@@ -1,44 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
+import Marquee, { marqueeItems, marqueeItemsReverse } from "components/marquee";
 import styles from "styles/Main.module.css";
-
-const items = [
-  "Ouse ser feliz",
-  "Ouse ser única",
-  "Ouse ser diferente",
-  "Ouse ser você mesma",
-  "Ouse ser sonhadora",
-  "Ouse ser independente",
-  "Ouse ser resiliente",
-  "Ouse ser destemida",
-];
-
-const marqueeItems = [...items, ...items];
-
-const marqueeItemsReverse = Array(16).fill("Impact the Future");
-
-const MarqueeSection = ({
-  items,
-  innerStyle,
-}: {
-  items: string[];
-  innerStyle: string;
-}) => (
-  <section>
-    <div className={styles.MarqueeOuter}>
-      <div className={innerStyle}>
-        <div className={styles.ConstructItems}>
-          {items.map((item, index) => (
-            <div key={index} className={styles.ConstructItem}>
-              {item}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-);
 
 const MainSection: React.FC = ({}) => {
   return (
@@ -69,11 +33,8 @@ const MainSection: React.FC = ({}) => {
       </Container>
 
       <section>
-        <MarqueeSection items={marqueeItems} innerStyle={styles.MarqueeInner} />
-        <MarqueeSection
-          items={marqueeItemsReverse}
-          innerStyle={styles.MarqueeInnerReverse}
-        />
+        <Marquee items={marqueeItems} />
+        <Marquee items={marqueeItemsReverse} reverse />
       </section>
     </main>
   );
