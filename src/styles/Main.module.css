@@ -1,16 +1,42 @@
 .Container {
   margin-bottom: 60px;
-}
-
-.Col {
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/photos/iwd2023AllPeople.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.Title {
-  text-align: center;
-  font-weight: 600;
+.TextContainer {
+  width: 50%;
+  padding: 15px;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 40px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.8;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.TextContainer:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .TextContainer {
+    width: 98%;
+  }
+
+  .TextContainer:hover {
+    transform: none;
+  }
 }
 
 .Title::after {
@@ -29,24 +55,6 @@
   margin: 0 auto;
   margin-top: 0.45rem;
   width: 50%;
-}
-
-.Description {
-  text-align: justify;
-  text-align-last: center;
-}
-
-@media only screen and (max-width: 991px) {
-  .Description {
-  }
-}
-
-.FotoContainer img {
-  background-size: cover;
-}
-
-.FotoContainer img:hover {
-  /* transform: scale(1.1); */
 }
 
 .VideoContainer {

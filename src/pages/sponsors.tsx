@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "reactstrap";
+import { Row, Container } from "reactstrap";
 import _sponsors from "../hooks/useSponsors";
 import BaseLayout from "../layouts/base-layout";
 import { getSponsors } from "front-features/sponsors";
@@ -12,7 +12,15 @@ interface SponsorsPageProps {
 }
 
 const SponsorsPage = ({}: SponsorsPageProps) => {
-  const sponsors: Array<SponsorLevel> = Object.values(_sponsors);
+  const sponsors: Array<SponsorLevel> = Object.values(_sponsors).map(
+    (sponsor) => ({
+      ...sponsor,
+      items: sponsor.items.map((item) => ({
+        ...item,
+        url: item.url || "",
+      })),
+    })
+  );
 
   const constructSponsorCol = (_sponsor: SponsorLevel) => {
     const sponsorCards = _sponsor.items.map((item, index) => (
@@ -39,7 +47,7 @@ const SponsorsPage = ({}: SponsorsPageProps) => {
         </section>
         <Row className={styles.pageRow}>
           <h4>Que tal colocar sua marca neste evento?</h4>
-          <p className={styles.pageP}>
+          <p className={styles.pageParagraph}>
             <a href="https://docs.google.com/">
               Clique aqui e acesse nosso mídia kit
             </a>

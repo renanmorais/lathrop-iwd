@@ -49,7 +49,7 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
     <>
       <div>
         <HomeHeader></HomeHeader>
-        <section style={sectionStyle}>
+        <section>
           <MainSection />
         </section>
         <section style={sectionStyle}>
