@@ -44,11 +44,6 @@ const SpeakersPage = ({}: SpeakersPageProps) => {
           </Row>
         </section>
       </Container>
-      <Container fluid>
-        <Row className={styles.pageRow}>
-          <h4>Mais palestrantes a confirmar...</h4>
-        </Row>
-      </Container>
     </div>
   );
 };

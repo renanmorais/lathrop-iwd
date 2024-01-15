@@ -61,7 +61,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
 
   return (
     <>
-      <Container>
+      <Container fluid>
         <div id="speakers" className={styles.container}>
           <h1 className={styles.Title}>Palestrantes</h1>
           <p style={{ textAlign: "justify", textAlignLast: "center" }}>

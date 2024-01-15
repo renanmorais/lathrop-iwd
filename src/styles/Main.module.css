@@ -1,16 +1,44 @@
 .Container {
-  margin-bottom: 60px;
-}
-
-.Col {
+  /* margin-bottom: 60px; */
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/photos/iwd2023AllPeople.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.Title {
-  text-align: center;
-  font-weight: 600;
+.TextContainer {
+  width: 50%;
+  padding: 15px;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.8;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.TextContainer:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .TextContainer {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .TextContainer:hover {
+    transform: none;
+  }
 }
 
 .Title::after {
@@ -31,24 +59,6 @@
   width: 50%;
 }
 
-.Description {
-  text-align: justify;
-  text-align-last: center;
-}
-
-@media only screen and (max-width: 991px) {
-  .Description {
-  }
-}
-
-.FotoContainer img {
-  background-size: cover;
-}
-
-.FotoContainer img:hover {
-  /* transform: scale(1.1); */
-}
-
 .VideoContainer {
   position: relative;
   padding-bottom: 56.25%;
@@ -64,4 +74,33 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.shining {
+  background-color: var(--black);
+  padding: 20px;
+}
+
+.shiningText {
+  font-size: clamp(2rem, 0.7rem, 10px);
+  text-align: center;
+  user-select: none;
+  background: linear-gradient(90deg, var(--black), var(--white), var(--black));
+  letter-spacing: 30px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
 }

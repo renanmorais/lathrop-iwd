@@ -38,7 +38,7 @@
   background: transparent;
 }
 
-  /* transição de imagem para testar */
+/* transição de imagem para testar */
 .card_image:hover {
   transform: scale(1) rotateZ(-6deg);
   transition: all 0.5s ease-in-out;

@@ -12,9 +12,9 @@ export const items = [
   "Ouse ser destemida",
 ];
 
-export const marqueeItems = [...items, ...items];
+export const marqueeItems = [...items, ...items, ...items];
 
-export const marqueeItemsReverse = Array(16).fill("Impact the Future");
+export const marqueeItemsReverse = Array(20).fill("Impact the Future");
 
 const Marquee = ({
   items,

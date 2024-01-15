@@ -37,6 +37,7 @@
   padding: 20px 30px;
   white-space: nowrap;
   color: var(--white);
+  user-select: none;
 }
 
 .ConstructItem:nth-child(3n + 0) {

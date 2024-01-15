@@ -27,7 +27,7 @@ const About = ({}: AboutProps) => {
           <Row className={styles.pageRow}></Row>
         </section>
 
-        {/* <section>
+        <section>
           <div className={styles.sliderContainer}>
             <div className={styles.slide}>
               <img src="/photos/iwd2023StaffSpeakers.JPG" alt="" />
@@ -45,7 +45,12 @@ const About = ({}: AboutProps) => {
               <img src="/photos/iwd2023Outside2.JPG" alt="" />
             </div>
           </div>
-        </section> */}
+        </section>
+
+        <div className={styles.toastContainer}>
+          <span>Impact the Future</span>
+          <span className={styles.toastContent}></span>
+        </div>
       </Container>
     </div>
   );

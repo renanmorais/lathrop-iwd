@@ -1,4 +1,5 @@
-import { Container, Row, Col } from "reactstrap";
+/* eslint-disable @next/next/no-img-element */
+import { Col } from "reactstrap";
 import _sponsors from "../../hooks/useSponsors";
 import _supports from "../../hooks/userSupports";
 import { Sponsor } from "models/sponsor";
@@ -44,49 +45,40 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
   const mapSponsorLevel = (sponsorLevel: SponsorLevel, isStaff: boolean) => {
     if (sponsorLevel?.items?.length > 0)
       return (
-        <div className={styles.marginTop50}>
+        <div className={styles.SponsorContainer}>
           <h3>{sponsorLevel.name}</h3>
-          <Row>
-            <div
-              className={isStaff ? styles.StaffWrapper : styles.SponsorWrapper}
-            >
-              {sponsorLevel.items.map((item) => mapSponsorCard(item, isStaff))}
-            </div>
-          </Row>
+          <div
+            className={isStaff ? styles.StaffWrapper : styles.SponsorWrapper}
+          >
+            {sponsorLevel.items.map((item) => mapSponsorCard(item, isStaff))}
+          </div>
         </div>
       );
     return <></>;
   };
 
   return (
-    <>
-      <Container className={styles.Container}>
-        <div id="sponsors">
-          <h1 className={styles.Title}>Patrocinadores</h1>
-          <p className={styles.Paragraph}>
-            Estas são as empresas que nos ajudaram a fazer este evento
-            acontecer!
-          </p>
+    <div className={styles.Container}>
+      <div id="sponsors">
+        <h1 className={styles.Title}>Patrocinadores</h1>
+        <p className={styles.Paragraph}>
+          Estas são as empresas que nos ajudaram a fazer este evento acontecer!
+        </p>
 
-          {SPONSORS_LIST.map((el) =>
-            mapSponsorLevel(sponsors[el], el === "staff")
-          )}
+        {SPONSORS_LIST.map((el) =>
+          mapSponsorLevel(sponsors[el], el === "staff")
+        )}
 
-          <h1 className={styles.Title}>Organização</h1>
-          <p className={styles.Paragraph}>...</p>
+        <h1 className={styles.Title}>Organização</h1>
+        <p className={styles.Paragraph}>...</p>
 
-          <div>
-            <Row>
-              <div className={styles.SponsorWrapper}>
-                {supports.items.map((item: Sponsor) =>
-                  mapSponsorCard(item, false)
-                )}
-              </div>
-            </Row>
-          </div>
+        <div
+          className={`${styles.SponsorWrapper} ${styles.SponsorWrapperStyle}`}
+        >
+          {supports.items.map((item: Sponsor) => mapSponsorCard(item, false))}
         </div>
-      </Container>
-    </>
+      </div>
+    </div>
   );
 };
 
