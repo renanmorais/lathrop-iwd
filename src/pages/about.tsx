@@ -30,10 +30,10 @@ const About = ({}: AboutProps) => {
         <section>
           <div className={styles.sliderContainer}>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023StaffSpeakers.JPG" alt="" />
+              <img src="/photos/iwd2023StaffSpeakers.jpg" alt="" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023StaffSpeakersFull.jpg" alt="" />
+              <img src="/photos/iwd2023StaffSpeakersFull.JPG" alt="" />
             </div>
             <div className={styles.slide}>
               <img src="/photos/iwd2023StaffSpeakersFullBright.JPG" alt="" />
