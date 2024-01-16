@@ -5,7 +5,7 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     loader: "akamai",
-    path: "",
+    path: "/public",
     domains: ["firebasestorage.googleapis.com"],
   },
   exportPathMap: async function (

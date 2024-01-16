@@ -9,10 +9,10 @@ const CampaignPage = ({}) => {
   const [url, setUrl] = useState("");
   const [name, setName] = useState("");
 
-  useEffect(() => {
-    const _name = router.query?.ogName?.toString() || "";
-    setName(_name);
-  });
+  // useEffect(() => {
+  //   const _name = router.query?.ogName?.toString() || "";
+  //   setName(_name);
+  // });
 
   return (
     <div style={{ marginTop: "120px" }}>
