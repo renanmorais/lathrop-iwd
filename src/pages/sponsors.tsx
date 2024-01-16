@@ -12,15 +12,7 @@ interface SponsorsPageProps {
 }
 
 const SponsorsPage = ({}: SponsorsPageProps) => {
-  const sponsors: Array<SponsorLevel> = Object.values(_sponsors).map(
-    (sponsor) => ({
-      ...sponsor,
-      items: sponsor.items.map((item) => ({
-        ...item,
-        url: item.url || "",
-      })),
-    })
-  );
+  const sponsors: Array<SponsorLevel> = Object.values(_sponsors);
 
   const constructSponsorCol = (_sponsor: SponsorLevel) => {
     const sponsorCards = _sponsor.items.map((item, index) => (
