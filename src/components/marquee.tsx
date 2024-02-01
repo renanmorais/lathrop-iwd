@@ -1,20 +1,8 @@
 import React from "react";
 import styles from "styles/Marquee.module.css";
 
-export const items = [
-  "Ouse ser feliz",
-  "Ouse ser única",
-  "Ouse ser diferente",
-  "Ouse ser você mesma",
-  "Ouse ser sonhadora",
-  "Ouse ser independente",
-  "Ouse ser resiliente",
-  "Ouse ser destemida",
-];
-
-export const marqueeItems = [...items, ...items, ...items];
-
-export const marqueeItemsReverse = Array(20).fill("Impact the Future");
+export const marqueeItems = Array(20).fill("Impact the Future");
+export const marqueeItemsBr = Array(20).fill("Impacte o Futuro");
 
 const Marquee = ({
   items,

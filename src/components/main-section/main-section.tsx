@@ -1,8 +1,18 @@
-import React from "react";
-import Marquee, { marqueeItems, marqueeItemsReverse } from "components/marquee";
+import React, { useEffect, useState } from "react";
+import Marquee, { marqueeItems, marqueeItemsBr } from "components/marquee";
 import styles from "styles/Main.module.css";
 
 const MainSection: React.FC = ({}) => {
+  const [isFirstText, setIsFirstText] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsFirstText((prev) => !prev);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <main>
       <div id="about" className={styles.Container}>
@@ -25,9 +35,16 @@ const MainSection: React.FC = ({}) => {
       <section>
         <Marquee items={marqueeItems} />
         <div className={styles.shining}>
-          <h1 className={styles.shiningText}>🚀Impact the Future🚀</h1>
+          <h1 className={styles.shiningText}>
+            {isFirstText ? "🚀Impact the Future🚀" : "🚀Impacte o Futuro🚀"}
+          </h1>
         </div>
-        <Marquee items={marqueeItemsReverse} reverse />
+        <Marquee items={marqueeItemsBr} reverse />
+        {/* <div className={styles.shining}>
+          <h1 className={`${styles.shiningText} ${styles.delayedText}`}>
+            🚀Impacte o Futuro🚀
+          </h1>
+        </div> */}
       </section>
     </main>
   );

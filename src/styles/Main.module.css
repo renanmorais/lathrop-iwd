@@ -96,6 +96,10 @@
   position: relative;
 }
 
+/* .delayedText {
+  animation-delay: 2.5s;
+} */
+
 @keyframes shine {
   0% {
     background-position-x: -500%;
@@ -104,3 +108,4 @@
     background-position-x: 500%;
   }
 }
+

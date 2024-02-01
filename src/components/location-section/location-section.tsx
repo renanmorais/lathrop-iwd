@@ -23,7 +23,7 @@ const LocationSection: React.FC = () => {
           </Col>
         </div>
       </Container>
-      <Bubble text="<> Impact the Future <> Impact the Future <>" />
+      <Bubble text="<> Impact the Future <> Impacte o Futuro <>" />
     </>
   );
 };
