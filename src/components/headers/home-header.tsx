@@ -50,10 +50,10 @@ const HomeHeader: React.FC = ({}) => {
     <header>
       <section className={styles.HeaderContainer}>
         <picture>
-          <source media="(min-width: 1024px)" srcSet="/bannerTest.png" />
+          <source media="(min-width: 1024px)" srcSet="/bannerDateTest.png" />
           <source media="(max-width: 768px)" srcSet="/impactTheFuture.png" />
           {/* <source media="(max-width: 480px)" srcSet="/impactTheFuture.png" /> */}
-          <img src="/bannerTest.png" alt="" />
+          <img src="/bannerDateTest.png" alt="" />
         </picture>
         <Row noGutters>
           <Col className={styles.RegisterContainer}>

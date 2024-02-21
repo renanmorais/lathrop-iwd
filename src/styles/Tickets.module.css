@@ -1,104 +1,198 @@
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: var(--black);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content:hover {
+  color: var(--white);
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.para {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.content .btn {
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(217deg, #09ccb1, rgba(255, 0, 0, 0) 90.71%),
+    linear-gradient(127deg, #487bd6, rgba(0, 255, 0, 0) 90.71%),
+    linear-gradient(336deg, #46b3dc, rgba(0, 0, 255, 0) 90.71%);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(217deg, #09ccb1, rgba(255, 0, 0, 0) 90.71%),
+    linear-gradient(127deg, #487bd6, rgba(0, 255, 0, 0) 90.71%),
+    linear-gradient(336deg, #46b3dc, rgba(0, 0, 255, 0) 90.71%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card:hover .btn {
+  color: var(--black);
+  background: var(--white);
+}
+
+.content .btn:hover {
+  outline: 2px solid var(--white);
+  background: transparent;
+  color: var(--white);
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
 .TicketsList {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    padding-top: 2.5em;
-    display: flex;
-    overflow-x: scroll;
+  list-style: none;
+}
+
+/* .TicketsList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 2.5em;
+  display: flex;
+  overflow-x: scroll;
 }
 
 .TicketItem {
-    position: relative;
-    padding: 2em 2em 0em 2em;
-    -webkit-flex-basis: 250px;
-    -ms-flex-basis: 250px;
-    flex-basis: 250px;
-    margin-right: 3em;
-    overflow: hidden;
-    margin-bottom: 2em;
-    max-width: 210px;
-    max-height: 300px;
-    min-width: 210px;
-    height: 280px;
-    width: 210px;
-    border: 1px solid #dedede;
-    border-radius: 5%;
+  position: relative;
+  padding: 2em 2em 0em 2em;
+  -webkit-flex-basis: 250px;
+  -ms-flex-basis: 250px;
+  flex-basis: 250px;
+  margin-right: 3em;
+  overflow: hidden;
+  margin-bottom: 2em;
+  max-width: 210px;
+  max-height: 300px;
+  min-width: 210px;
+  height: 280px;
+  width: 210px;
+  border: 1px solid #dedede;
+  border-radius: 5%;
 }
 
 .TicketItemPrice {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 
 .TicketItem:before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-    background: #dedede;
-    top: 50%;
-    right: -25px;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background: #dedede;
+  top: 50%;
+  right: -25px;
 }
 
 .TicketItemTitle {
-    font-size: 1.8rem;
-    padding-bottom: 0.1em;
+  font-size: 1.8rem;
+  padding-bottom: 0.1em;
 }
 
 .TicketItemDescription {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 30px
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
 }
 
 .TicketNotInitiadedDate {
-    color: #ccc;
+  color: #ccc;
 }
 
 .TicketItemOff {
-    pointer-events: none;
-    background-color: rgba(204, 204, 204, 0.428);
+  pointer-events: none;
+  background-color: rgba(204, 204, 204, 0.428);
 }
 
 .TicketItemOff:after {
-    content: 'Esgotado';
-    display: block;
-    position: absolute;
-    width: 400px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    left: -90px;
-    top: 90px;
-    background: rgb(240, 141, 126);
-    text-align: center;
-    color: #fff;
-    padding: 0.3em 0;
-    font-size: 2rem;
-    text-transform: uppercase;
+  content: "Esgotado";
+  display: block;
+  position: absolute;
+  width: 400px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: -90px;
+  top: 90px;
+  background: rgb(240, 141, 126);
+  text-align: center;
+  color: #fff;
+  padding: 0.3em 0;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-
 
 @media only screen and (max-width: 580px) {
+  .TicketsList {
+    margin-left: 20px;
+  }
 
-    .TicketsList {
-        margin-left: 20px;
-    }
-
-    .TicketItem {
-        margin-bottom: 2em;
-        max-width: 260px;
-    }
+  .TicketItem {
+    margin-bottom: 2em;
+    max-width: 260px;
+  }
 }
 
-
 .TicketsDisclaimer {
-    color: rgba(89, 89, 89);
+  color: rgba(89, 89, 89);
 }
 
 .TicketsDisclaimer a {
-    color: rgba(0, 0, 255, .6)
-}
+  color: rgba(0, 0, 255, 0.6);
+} */

@@ -1,6 +1,6 @@
 .pageDiv {
   margin: 100px 0 30px;
-  height: 90vh; /* remover quando add o conteúdo */
+  min-height: 90vh;
 }
 
 .pageRow {

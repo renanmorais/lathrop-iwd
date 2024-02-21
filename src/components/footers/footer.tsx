@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import configValues from "helpers/config";
 import IWDLogo from "../../assets/images/IWDLogo";
 import styles from "../../styles/Footer.module.css";
@@ -52,7 +53,24 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </NavItem>
         </div>
         <div className={styles.footerSocial}>
-          <NavItem>
+          <h6>
+            27 de Abril de 2024 | HUB Goiás - Centro de Excelência em
+            Empreendedorismo Inovador
+          </h6>
+        </div>
+        <div className={styles.footerSocial}>
+          <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
+          <a
+            href="https://maps.app.goo.gl/77nVpkFsNg38qsrS6"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.linkHover}
+          >
+            Localização Google Maps
+          </a>
+        </div>
+        <div className={styles.footerSocial}>
+          {/* <NavItem>
             <NavLink
               href="https://facebook.com/"
               target="_blank"
@@ -60,17 +78,17 @@ const Footer: React.FC<FooterProps> = ({}) => {
             >
               <FontAwesomeIcon icon={faFacebook} size="xl" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink
-              href="https://instagram.com/"
+              href="https://www.instagram.com/wtmgoiania/"
               target="_blank"
               className={`${styles.footerNavlink} ${styles.instagram}`}
             >
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               href="https://twitter.com/"
               target="_blank"
@@ -78,10 +96,10 @@ const Footer: React.FC<FooterProps> = ({}) => {
             >
               <FontAwesomeIcon icon={faXTwitter} size="xl" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/company/wtmgoiania/"
               target="_blank"
               className={`${styles.footerNavlink} ${styles.linkedin}`}
             >
@@ -89,13 +107,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
             </NavLink>
           </NavItem>
         </div>
-        <div className={styles.footerLogo}>
+        {/* <div className={styles.footerLogo}>
           <NavItem>
             <NavLink href="/">
               <IWDLogo color="white" height={50} />
             </NavLink>
           </NavItem>
-        </div>
+        </div> */}
       </Nav>
     </footer>
   );

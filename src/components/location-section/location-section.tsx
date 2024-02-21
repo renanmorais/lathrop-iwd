@@ -1,4 +1,6 @@
 import { Container, Col } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import Bubble from "components/bubble";
 import styles from "../../styles/Location.module.css";
 
@@ -9,10 +11,17 @@ const LocationSection: React.FC = () => {
         <div>
           <h1 className={styles.Title}>Local</h1>
           <Col>
-            <h2 className={styles.h2}>A definir</h2>
-            <p className={styles.paragraph}>Algum lugar</p>
+            
+            <h4 className={styles.title}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} size="sm" color="var(--blue)" />
+              HUB Goiás - Centro de Excelência em Empreendedorismo Inovador
+            </h4>
+            <p className={styles.paragraph}>
+              <FontAwesomeIcon icon={faCalendar} size="sm" color="var(--blue)" />
+              27 de abril de 2024, 08h00 - 18h00
+            </p>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.085672945721!2d-48.54724452403411!3d-16.112868430879356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935be3bbcb15b59b%3A0x502565924144034e!2sAlgum%20lugar!5e0!3m2!1spt-BR!2sbr!4v1704504934317!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.013371936541!2d-49.240207325354476!3d-16.67621428409475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef19144104a85%3A0x17df488ca2d42621!2sHUB%20Goi%C3%A1s%20-%20Centro%20de%20Excel%C3%AAncia%20em%20Empreendedorismo%20Inovador!5e0!3m2!1spt-BR!2sbr!4v1708457370582!5m2!1spt-BR!2sbr"
               width="100%"
               height="450"
               style={{ border: 0 }}
