@@ -2,20 +2,6 @@
   text-align: center;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 0.5rem;
-}
-
-.paragraph {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 0.5rem;
-}
-
 .Title::after {
   background: linear-gradient(
     90deg,
@@ -32,4 +18,19 @@
   margin: 0 auto;
   margin-top: 0.45rem;
   width: 30%;
+}
+
+.Subtitle {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+.Paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
 }

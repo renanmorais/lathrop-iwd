@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 320px;
+  height: 320px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 32px;
   overflow: hidden;
@@ -54,6 +55,19 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.content .btnEnd {
+  color: var(--black);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: var(--gainsboro);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
 .card::before {
   content: "";
   position: absolute;
@@ -93,18 +107,23 @@
 
 .TicketsList {
   list-style: none;
-}
-
-/* .TicketsList {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 2.5em;
+  padding: 1rem;
   display: flex;
-  overflow-x: scroll;
+  gap: 20px;
 }
 
-.TicketItem {
+@media only screen and (max-width: 767px) {
+  .TicketsList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* .TicketItem {
   position: relative;
   padding: 2em 2em 0em 2em;
   -webkit-flex-basis: 250px;
@@ -153,14 +172,13 @@
 
 .TicketNotInitiadedDate {
   color: #ccc;
-}
+} */
 
-.TicketItemOff {
+/* .TicketItemOff {
   pointer-events: none;
-  background-color: rgba(204, 204, 204, 0.428);
 }
 
-.TicketItemOff:after {
+.TicketItemOff::after {
   content: "Esgotado";
   display: block;
   position: absolute;
@@ -176,9 +194,9 @@
   padding: 0.3em 0;
   font-size: 2rem;
   text-transform: uppercase;
-}
+} */
 
-@media only screen and (max-width: 580px) {
+/* @media only screen and (max-width: 580px) {
   .TicketsList {
     margin-left: 20px;
   }

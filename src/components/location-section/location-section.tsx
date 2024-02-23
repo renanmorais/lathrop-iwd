@@ -12,11 +12,11 @@ const LocationSection: React.FC = () => {
           <h1 className={styles.Title}>Local</h1>
           <Col>
             
-            <h4 className={styles.title}>
+            <h4 className={styles.Subtitle}>
               <FontAwesomeIcon icon={faMapMarkerAlt} size="sm" color="var(--blue)" />
               HUB Goiás - Centro de Excelência em Empreendedorismo Inovador
             </h4>
-            <p className={styles.paragraph}>
+            <p className={styles.Paragraph}>
               <FontAwesomeIcon icon={faCalendar} size="sm" color="var(--blue)" />
               27 de abril de 2024, 08h00 - 18h00
             </p>

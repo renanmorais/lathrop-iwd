@@ -30,6 +30,9 @@ const About = ({}: AboutProps) => {
         <section>
           <div className={styles.sliderContainer}>
             <div className={styles.slide}>
+              <img src="/photos/iwd2023AllPeople.jpg" alt="" />
+            </div>
+            <div className={styles.slide}>
               <img src="/photos/iwd2023StaffSpeakers.jpg" alt="" />
             </div>
             <div className={styles.slide}>

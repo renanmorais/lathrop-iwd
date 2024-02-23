@@ -27,11 +27,11 @@ const TicketCard: React.FC<TicketProps> = ({ ticket }) => {
         <div>
           <a
             target="_blank"
-            className={styles.btn}
+            className={ticket.isOutOfSale() ? styles.btnEnd : styles.btn}
             rel="noreferrer"
             href={ticket.link}
           >
-            Comprar
+            {ticket.isOutOfSale() ? "Encerrado" : "Comprar"}
           </a>
         </div>
       );
