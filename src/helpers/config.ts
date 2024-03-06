@@ -1,9 +1,9 @@
 const configValues = {
   name: "IWD Cerrado 2024",
-  eventDate: "2024-04-15T08:00:00",
+  eventDate: "2024-04-27T08:00:00",
   eventLinkRegistrationUrl: "https://doity.com.br/iwd-cerrado-2024",
   place: "A definir",
-  formattedDate: "Dia 15 de Abril de 2024",
+  formattedDate: "Dia 27 de Abril de 2024",
   email: "gdggoiania@gmail.com",
 };
 
