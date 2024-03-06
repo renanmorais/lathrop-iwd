@@ -10,7 +10,7 @@ const ticketBatches: Array<TicketBatch> = [
     value: 65,
   }),
   new TicketBatch({
-    description: "Kit + Inscrição (Inclui camiseta)",
+    description: "Kit + Inscrição",
     firstSaleDate: new Date("2024-02-22"),
     finalSaleDate: new Date("2024-03-16"),
     title: "1º Lote",
