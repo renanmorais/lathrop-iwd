@@ -1,5 +1,15 @@
 const supports = {
   items: [
+    {
+      name: "Google Developer Groups",
+        logo: "/googleDeveloperGroups.svg",
+        url: "https://developers.google.com",
+    },
+    {
+      name: "Women Techmakers",
+      logo: "/wtm.png",
+      url: "https://developers.google.com/womentechmakers",
+    },
     // {
     //   name: "GDG Goiânia",
     //   logo: "/supports/gdgGoiania.png",

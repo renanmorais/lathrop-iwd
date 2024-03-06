@@ -65,7 +65,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
         <div id="speakers" className={styles.container}>
           <h1 className={styles.Title}>Palestrantes</h1>
           <p style={{ textAlign: "justify", textAlignLast: "center" }}>
-            O time de palestrantes do IWD Cerrado 2023 traz grandes nomes da
+            O time de palestrantes do IWD Cerrado 2024 traz grandes nomes da
             área técnica e referências em liderança de comunidades. Reunimos em
             um só evento Google Developer Experts (GDEs), Tech Leads, pessoas
             desenvolvedoras e principalmente pessoas resolvedoras de problemas.

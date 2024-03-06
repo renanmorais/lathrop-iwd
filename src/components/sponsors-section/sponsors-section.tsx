@@ -69,14 +69,13 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
           mapSponsorLevel(sponsors[el], el === "staff")
         )}
 
-        <h1 className={styles.Title}>Organização</h1>
-        <p className={styles.Paragraph}>...</p>
+        {/* <h1 className={styles.Title}>Organização</h1>
 
         <div
           className={`${styles.SponsorWrapper} ${styles.SponsorWrapperStyle}`}
         >
           {supports.items.map((item: Sponsor) => mapSponsorCard(item, false))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -38,7 +38,11 @@ const SponsorsPage = ({}: SponsorsPageProps) => {
         <Row className={styles.pageRow}>
           <h4>Que tal colocar sua marca neste evento?</h4>
           <p className={styles.pageParagraph}>
-            <a href="https://docs.google.com/">
+            <a
+              href="/slides/Midia Kit IWD 2024 Goiânia.pptx.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               Clique aqui e acesse nosso mídia kit
             </a>
           </p>

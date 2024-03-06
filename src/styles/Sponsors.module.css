@@ -28,10 +28,14 @@
   margin: 0 auto;
   margin-top: 0.45rem;
   width: 30%;
+  margin-bottom: 50px;
 }
 
 .Paragraph {
   margin: 30px 0;
+}
+
+.SponsorCardBodyImage {
 }
 
 .SponsorWrapper {
