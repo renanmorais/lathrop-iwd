@@ -14,22 +14,22 @@ const sponsors = {
       },
     ],
   },
-  // diamond: {
-  //   name: "Diamond",
-  //   items: [
-  //     {
-  //       name: "Unialfa",
-  //       logo: "/patrocinio/unialfa.jpeg",
-  //       url: "https://www.unialfa.com.br/",
-  //     },
-  //     {
-  //       name: "Pod Café da Ti",
-  //       logo: "/parceiros/podCafe.png",
-  //       url: "https://podcafeti.com.br/",
-  //     },
-  //     { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
-  //   ],
-  // },
+  diamond: {
+    name: "Marília Mendonça",
+    items: [
+      {
+        name: "Máxima Tech",
+        logo: "/patrocinio/maximaTech.png",
+        url: "https://maximatech.com.br/",
+      },
+      // {
+      //   name: "Pod Café da Ti",
+      //   logo: "/parceiros/podCafe.png",
+      //   url: "https://podcafeti.com.br/",
+      // },
+      // { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
+    ],
+  },
   // golden: {
   //   name: "Golden",
   //   items: [
