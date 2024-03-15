@@ -73,6 +73,20 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
             além de conhecimento técnico, contando com muita interatividade,
             conexões e diversidade.
           </p>
+          <div className={styles.call4Papers}>
+            <button className={styles.call4PapersButton}>
+              <a
+                className={styles.call4PapersLink}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe6NywB6rWfRrDYYCw1wWxEOSQ9cZSMSCSVpzXvkZmvYPi_3A/viewform?usp=sf_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={styles.call4PapersSpan}>
+                  Quero palestrar no IWD Cerrado 2024
+                </span>
+              </a>
+            </button>
+          </div>
           <div className={styles.cards}>
             <Carousel
               activeIndex={activeIndex}
