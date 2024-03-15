@@ -10,11 +10,11 @@ const supports = {
       logo: "/wtm.png",
       url: "https://developers.google.com/womentechmakers",
     },
-    {
-      name: "GDG Goiânia",
-      logo: "/supports/gdgGoiania.png",
-      url: "https://gdg.community.dev/gdg-goiania/",
-    },
+    // {
+    //   name: "GDG Goiânia",
+    //   logo: "/supports/gdgGoiania.png",
+    //   url: "https://gdg.community.dev/gdg-goiania/",
+    // },
     // {
     //   name: "GDG Rio Verde",
     //   logo: "/supports/gdgRioVerde.png",

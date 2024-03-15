@@ -43,20 +43,6 @@ const SpeakersPage = ({}: SpeakersPageProps) => {
             {speakers.map((speaker) => constructSpeakerCol(speaker))}
           </Row>
         </section>
-        <div className={styles.call4Papers}>
-          <button className={styles.call4PapersButton}>
-            <a
-              className={styles.call4PapersLink}
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe6NywB6rWfRrDYYCw1wWxEOSQ9cZSMSCSVpzXvkZmvYPi_3A/viewform?usp=sf_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={styles.call4PapersSpan}>
-                Quero palestrar no IWD Cerrado 2024
-              </span>
-            </a>
-          </button>
-        </div>
       </Container>
     </div>
   );

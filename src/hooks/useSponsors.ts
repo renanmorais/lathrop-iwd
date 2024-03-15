@@ -69,24 +69,23 @@ const sponsors = {
   //     { name: 'CI&T', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Fciet.png?alt=media', url: 'https://ciandt.com/br' },
   //   ],
   // },
-  support: {
-    name: "Apoio",
-    items: [
-      // { name: "Acieg", logo: "/patrocinio/acieg.jpg" },
-      // {
-      //   name: "Aliança pela inovação em Goiás",
-      //   logo: "/patrocinio/sindInformatica.jpeg",
-      // },
-      { name: "Hub Goiás", logo: "/patrocinio/hubGoias.png", url: "https://hubgoias.org/" },
-      { name: "Black Stars", logo: "/patrocinio/blackStars.jpeg",  url: "https://blackstarsbr.com/" },
-      // {
-      //   name: "Prospere",
-      //   logo: "/patrocinio/prospere.jpeg",
-      //   url: "http://www.iwdcerrado.com.br/",
-      // },
-      // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
-    ],
-  },
+  // support: {
+  //   name: "Apoio",
+  //   items: [
+  //     { name: "Acieg", logo: "/patrocinio/acieg.jpg" },
+  //     {
+  //       name: "Aliança pela inovação em Goiás",
+  //       logo: "/patrocinio/sindInformatica.jpeg",
+  //     },
+  //     { name: "Black Stars", logo: "/patrocinio/blackStars.jpeg" },
+  //     {
+  //       name: "Prospere",
+  //       logo: "/patrocinio/prospere.jpeg",
+  //       url: "http://www.iwdcerrado.com.br/",
+  //     },
+  //     // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
+  //   ],
+  // },
   // companies: {
   //   name: "Empresas que contribuem com a comunidade local e se preocupam com seus colaboradores",
   //   items: [

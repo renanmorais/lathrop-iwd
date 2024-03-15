@@ -20,11 +20,6 @@ const Footer: React.FC<FooterProps> = ({}) => {
       <Nav className={styles.FooterContainer}>
         <div className={styles.footerLinks}>
           <NavItem>
-            <NavLink href="/" className={styles.footerNavlink}>
-              Home
-            </NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink href="/about" className={styles.footerNavlink}>
               Sobre
             </NavLink>

@@ -35,11 +35,6 @@ export const Navbar = () => {
       </div>
       <ul className={styles.navItems}>
         <li>
-          <a className={styles.navItem} href="/">
-            Home
-          </a>
-        </li>
-        <li>
           <a className={styles.navItem} href="/about">
             Sobre
           </a>
