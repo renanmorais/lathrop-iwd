@@ -77,8 +77,8 @@ const sponsors = {
       //   name: "Aliança pela inovação em Goiás",
       //   logo: "/patrocinio/sindInformatica.jpeg",
       // },
-      { name: "Hub Goiás", logo: "/patrocinio/hubGoias.png" },
-      { name: "Black Stars", logo: "/patrocinio/blackStars.jpeg" },
+      { name: "Hub Goiás", logo: "/patrocinio/hubGoias.png", url: "https://hubgoias.org/", },
+      { name: "Black Stars", logo: "/patrocinio/blackStars.jpeg", url: "hhttps://blackstarsbr.com/", },
       // {
       //   name: "Prospere",
       //   logo: "/patrocinio/prospere.jpeg",
