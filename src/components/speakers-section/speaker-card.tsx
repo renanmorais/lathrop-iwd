@@ -23,7 +23,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
       />
       <h2 className={styles.card_name}>{speaker.name}</h2>
       <p className={styles.card_topic}>{speaker.tech}</p>
-      <p className={styles.card_profile}>{speaker.title}</p>
+      {/* <p className={styles.card_profile}>{speaker.title}</p> */}
       <SpeakerModal
         speaker={speaker}
         modalOpen={modalOpen}
