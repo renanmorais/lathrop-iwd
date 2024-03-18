@@ -17,30 +17,44 @@ const TicketsSection: React.FC = ({}) => {
     );
   };
 
-  const mailTo = `mailto:{configValues.email}`;
+  const mailTo = `mailto:${configValues.email}`;
 
   return (
-      <Container>
+    <Container>
+      <div>
+        <h2 className={styles.title}>Ingressos</h2>
         <div>
-          <h2 className={styles.title}>Ingressos</h2>
-          <div>
-            <Row>
-              <ul className={styles.TicketsList}>
-                {ticketList.map(mapTicketsBatch)}
-              </ul>
-            </Row>
-            <Row>
-              <span className={styles.TicketsDisclaimer}>
-                ** Temos condições especiais para caravanas e grupos de empresas
-                a cada 5 pessoas. Para saber mais envie um email para
-                <a target="_blank" href={mailTo} rel="noreferrer" className={styles.link}>
-                {" "}{configValues.email}
-                </a>
-              </span>
-            </Row>
-          </div>
+          <Row>
+            <ul className={styles.TicketsList}>
+              {ticketList.map(mapTicketsBatch)}
+            </ul>
+          </Row>
+          <Row>
+            <span className={styles.TicketsDisclaimer}>
+              ** Temos condições especiais para caravanas e grupos de empresas a
+              cada 5 pessoas. Para saber mais envie um email para
+              <a
+                target="_blank"
+                href={mailTo}
+                rel="noreferrer"
+                className={styles.link}
+              >
+                {" "}
+                {configValues.email}
+              </a>
+            </span>
+            <details>
+              <summary>Clique para saber mais</summary>
+              <p>
+                Reúna um grupo de pelo menos 5 pessoas e garanta descontos nas
+                inscrições. Os descontos são validos para pagamento via Pix ou
+                transferência.
+              </p>
+            </details>
+          </Row>
         </div>
-      </Container>
+      </div>
+    </Container>
   );
 };
 
