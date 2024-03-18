@@ -58,10 +58,17 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </NavItem>
         </div>
         <div className={styles.footerSocial}>
-          <h6>
+          <ruby>
+            HUB Goiás - Centro de Excelência em Empreendedorismo Inovador
+            <rp>(</rp>
+            <rt className={styles.rt}>27 de Abril de 2024</rt>
+            <rp>)</rp>
+          </ruby>
+
+          {/* <h6>
             27 de Abril de 2024 | HUB Goiás - Centro de Excelência em
             Empreendedorismo Inovador
-          </h6>
+          </h6> */}
         </div>
         <div className={styles.footerSocial}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
@@ -74,6 +81,17 @@ const Footer: React.FC<FooterProps> = ({}) => {
             Localização Google Maps
           </a>
         </div>
+
+        {/* <details>
+          <summary>Click to view</summary>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+            perferendis saepe porro facilis vitae autem sequi voluptate alias
+            facere cum animi architecto magnam ipsam error accusantium
+            perspiciatis eos, illo esse!
+          </p>
+        </details> */}
+
         <div className={styles.footerSocial}>
           {/* <NavItem>
             <NavLink

@@ -3,6 +3,10 @@
   margin-bottom: 50px;
 }
 
+.link {
+  color: var(--link-color);
+}
+
 .card {
   position: relative;
   display: flex;

@@ -168,3 +168,7 @@
 .linkHover:hover {
   color: var(--dark-blue);
 }
+
+.rt{
+  font-size: 1.2rem;
+}

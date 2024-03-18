@@ -12,7 +12,7 @@ const About = ({}: AboutProps) => {
       <Container fluid>
         <h1 className={styles.pageTitle}>Sobre o IWD</h1>
         <p className={styles.pageDescription}>
-          O IWD é um evento anual realizado pelas WTMs de todo o mundo em
+          O <abbr title="International Women's Day">IWD</abbr> é um evento anual realizado pelas <abbr title="Women Techmakers">WTMs</abbr> de todo o mundo em
           homenagem ao Dia Internacional da Mulher. O programa Women Techmakers
           reuniu mais de 200 eventos globais, em 52 países, para trazer
           visibilidade, comunidade e recursos para as mulheres em tecnologia.

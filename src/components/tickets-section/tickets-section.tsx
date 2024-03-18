@@ -29,15 +29,15 @@ const TicketsSection: React.FC = ({}) => {
                 {ticketList.map(mapTicketsBatch)}
               </ul>
             </Row>
-            {/* <Row>
+            <Row>
               <span className={styles.TicketsDisclaimer}>
                 ** Temos condições especiais para caravanas e grupos de empresas
-                a cada 5 pessoas.
-                <a target="_blank" href={mailTo} rel="noreferrer">
-                  Para saber mais envie um e-mail para {configValues.email}
+                a cada 5 pessoas. Para saber mais envie um email para
+                <a target="_blank" href={mailTo} rel="noreferrer" className={styles.link}>
+                {" "}{configValues.email}
                 </a>
               </span>
-            </Row> */}
+            </Row>
           </div>
         </div>
       </Container>
