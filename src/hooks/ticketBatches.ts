@@ -17,14 +17,14 @@ const ticketBatches: Array<TicketBatch> = [
     link: "https://doity.com.br/iwd-cerrado-2024#registration",
     value: 70,
   }),
-  // new TicketBatch({
-  //   description: "Entrada + Kit",
-  //   firstSaleDate: new Date("2024-04-15"),
-  //   finalSaleDate: new Date("2024-04-15"),
-  //   title: "3º Lote",
-  //   link: "https://doity.com.br/iwd-cerrado-2024#registration",
-  //   value: 75,
-  // }),
+  new TicketBatch({
+    description: "Kit + Inscrição",
+    firstSaleDate: new Date("2024-03-21"),
+    finalSaleDate: new Date("2024-04-26"),
+    title: "2º Lote",
+    link: "https://doity.com.br/iwd-cerrado-2024#registration",
+    value: 85,
+  }),
 ];
 
 export default ticketBatches;
