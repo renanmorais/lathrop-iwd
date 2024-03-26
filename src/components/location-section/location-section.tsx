@@ -11,7 +11,6 @@ const LocationSection: React.FC = () => {
         <div>
           <h1 className={styles.Title}>Local</h1>
           <Col>
-            
             <h4 className={styles.Subtitle}>
               <FontAwesomeIcon icon={faMapMarkerAlt} size="sm" color="var(--blue)" />
               HUB Goiás - Centro de Excelência em Empreendedorismo Inovador
