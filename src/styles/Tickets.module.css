@@ -116,10 +116,11 @@
   list-style: none;
   padding: 1rem;
   display: flex;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 840px) {
   .TicketsList {
     flex-direction: column;
     align-items: center;
