@@ -23,9 +23,9 @@ const speakers = [
     photo: "/speakers/andressaFreires.png",
     name: "Andressa Freires",
     tech: "IA Generativa",
-    topic: "Eu trago a vocês um aspecto fundamental do nosso cenário digital em rápida evolução – a importância da alfabetização digital no contexto da Inteligência Artificial (IA). Numa era em que a tecnologia permeia todas as facetas das nossas vidas, garantir que pessoas de diversas origens estejam equipadas com as competências necessárias para navegar e compreender a IA não é apenas uma opção; é uma necessidade.",
+    topic: "Eu trago a vocês um aspecto fundamental do nosso cenário digital em rápida evolução: a importância da alfabetização digital no contexto da Inteligência Artificial (IA). Numa era em que a tecnologia permeia todas as facetas das nossas vidas, garantir que pessoas de diversas origens estejam equipadas com as competências necessárias para navegar e compreender a IA não é apenas uma opção, é uma necessidade.",
     mini_bio: "Negra, periférica, cientista e professora. Sr Data Scientist. Professora de pós e cursos livres. Fundadora da diversiData. Voluntária e ativista em comunidades que inserem diversidade em tech. Palestrante sobre ética, AI, Data Science e Diversidade, Equidade e Inclusão. Valuable Young Leader pelo Instituto Anga e MIT Sloan Review. 1o lugar no reconhecimento Global Ada Lovelace para mulheres em tech. 50 to follow na Gama Academy em Data & BI. Especialista em Data Science convidada para inclusão da profissão de Data Science na CBO (Classificação Brasileira de Ocupações) pelo Ministério do Trabalho e USP. Integrante do Global Shapers do Fórum Econômico Mundial.",
-    title: "O Papel Crucial da Alfabetização Digital em IA",
+    title: "O papel crucial da alfabetização digital em IA",
     companyTitle: "diversiData",
     social_media: {
       instagram: "https://www.instagram.com/dessafreires/",
@@ -43,7 +43,7 @@ const speakers = [
     tech: "Tecnologias web",
     topic: "Uma das habilidades que mais foi responsável por eu crescer na carreira foi o conhecimento em arquitetura e system design, nessa palestra irei te ensinar quais os tópicos voce precisa se preocupar quando falamos de system design e inclusive ensinar na prática como seria a arquitetura de um backend de ecommerce, vamos cobrir assuntos como : requisitos, banco de dados, cache, arquitetura orientada a eventos, monitoramento, observabilidade, e muito mais!",
     mini_bio: "Desenvolvedora especialista que estuda programação desde 2013, especialista na stack: Java, Spring, AWS e Microsserviços. Vasta experiências em empresas do setor financeiro, atuando tanto como consultora e como funcionária. Também crio conteúdo desde 2018, somos mais de 3000 alunos em cursos e mentorias, já palestrei em grandes conferências internacionais como Java Global Summit, We are devs - Java developer day, Jlove conference e em grandes eventos nacionais como Codecon, The Developers Conference e Campus Party. Premiada pela Microsoft como Microsoft MVP há 3 anos , co-autora de 3 livros e criadora de conteúdo no YouTube e Instagram kamila_code.",
-    title: "System design 101: Tudo que voce precisa saber ao definir arquiteturas",
+    title: "System Design 101: Tudo que você precisa saber ao definir arquiteturas",
     companyTitle: "Zup Innovation",
     social_media: {
       instagram: "https://www.instagram.com/kamila_code/",
@@ -61,7 +61,7 @@ const speakers = [
     tech: "UX/UI",
     topic: "Você já se perguntou como os dados podem transformar a maneira como projetamos experiências para os usuários? Nesta palestra, exploramos o papel fundamental dos dados no design de experiência do usuário (UX). Desde os fundamentos dos dados até sua aplicação prática no processo de design, mergulhamos em como os dados podem informar e aprimorar cada etapa do ciclo de vida de um produto ou serviço digital.",
     mini_bio: "UX Writer, Designer, Desenvolvedora e Curadora de IAs Conversacionais, Tutora, Palestrante e Voluntária. Formada em Análise e Desenvolvimento de Sistemas e fruto de transição de carreira. Casada, mãe de pet, aquariana, geek, techmaromba, ama shows, comida e Coca Cola.",
-    title: "Fundamentos de Dados no Contexto de UX Design",
+    title: "Fundamentos de dados no contexto de UX Design",
     companyTitle: "Capgemini",
     social_media: {
       instagram: "https://www.instagram.com/vua_nessa/",
@@ -79,7 +79,7 @@ const speakers = [
     tech: "Carreira e desenvolvimento pessoal",
     topic: "Na palestra 'Liderança Feminina na Tecnologia: Conquistando Espaço e Inspirando Transformação', compartilho minha própria jornada como exemplo vivo dos desafios e oportunidades enfrentados pelas mulheres na indústria da tecnologia. Ao longo da minha carreira, enfrentei barreiras e preconceitos, mas também encontrei apoio e mentoria que me ajudaram a superar esses obstáculos.",
     mini_bio: "Sou Kamilla Cerqueira, profissional apaixonada pela área de Customer Success e comprometida em criar experiências excepcionais para os clientes. Com 15 anos de experiência na indústria, atuo em uma área Cross de Customer Success, onde colaboro com equipes multidisciplinares para garantir o sucesso dos clientes. Minha jornada profissional tem sido marcada por desafios e conquistas, que me ensinaram a importância da resiliência, da colaboração e do desenvolvimento contínuo. Ao longo dos anos, tive a oportunidade de trabalhar em diferentes contextos e empresas, sempre buscando agregar valor aos clientes e promover um ambiente de trabalho saudável. Fora do ambiente de trabalho, gosto de viajar, assistir séries, ter momentos de lazer com minha família. Estou sempre em busca de novas formas de aprender e crescer, tanto pessoal quanto profissionalmente.",
-    title: "Liderança Feminina na Tecnologia: Conquistando Espaço e Inspirando Transformação",
+    title: "Liderança feminina na tecnologia: conquistando espaço e inspirando transformação",
     companyTitle: "MáximaTech",
     social_media: {
       instagram: "https://www.instagram.com/kamilla.cerqueira/",
@@ -115,7 +115,7 @@ const speakers = [
     tech: "Diversidade e inclusão",
     topic: "Nós planejamos abordar a sub-representação de grupos étnicos minoritários em espaços e posições da área de TI. Temos em mente um tempo médio de 30 minutos, mas se o público presente estiver engajado, acreditamos que em no máximo 50 minutos a palestra chegue ao fim. O tópico de embasamento de todo o desenrolar da palestra é: Quantas líderes pretas você já teve? Quantas estão no seu time?",
     mini_bio: "Sou uma mulher preta. Uma mulher preta com coragem, sabe? Que é graduada em Estatística pela UFG, 'brincou' de fazer mestrado em Ciências da Computação pela mesma universidade, mas que acabou indo trabalhar na área da saúde e iniciou o mestrado em Sistemas Inteligentes e suas Aplicações na Saúde pela UFCSPA. Também sou fundadora de um capítulo da organização mundial R-Ladies e faço parte do time global da organização AI Inclusive. E sabe o que é bom nisso tudo? É que caminho caminho ao lado de grandes mulheres.",
-    title: " Observar e absorver, em qual momento a diversidade atinge você?",
+    title: "Observar e absorver, em qual momento a diversidade atinge você?",
     companyTitle: "Fundação Getulio Vargas",
     social_media: {
       instagram: "https://www.instagram.com/fernandakellyrs",
@@ -151,7 +151,7 @@ const speakers = [
     tech: "IoT, Acessibilidade",
     topic: "A palestra que explora como a combinação da Internet das Coisas (IoT) e da tecnologia assistiva está revolucionando a acessibilidade para pessoas com deficiência. Nesta apresentação envolvente, destacamos como dispositivos conectados à IoT e tecnologias assistivas estão sendo integrados para criar soluções inovadoras que melhoram a qualidade de vida e a independência desses indivíduos. Exploramos exemplos práticos de como a IoT está sendo aplicada em diversas áreas, como casas inteligentes, mobilidade urbana e saúde, para proporcionar uma experiência mais acessível e inclusiva.",
     mini_bio: "Professora e pesquisadora no IF Goiano Campus Ceres. Se dedica na pesquisa, ensino e extensão com temas relacionados a Internet das Coisas (IOT), Inovação e Tecnologia assistiva. Graduada em Ciência da Computação (PUC-GO), Mestre em Ciências (UFU) e Doutora em Engenharia de Sistemas Eletrônicos e Automação (UnB). Coordenadora dos cursos técnicos em Informática e do Núcleo de tecnologia e Inovação do Campus Ceres. No ensino ministra disciplinas no ensino técnico, graduação e pós -graduação. Founder da Comunidade MulheresGo, Líder da Comunidade StartupGO, Mentora voluntária da Techstars startup weekend, Campus Party, Latinoware e Nasa. Mentora de Inovação de Goiás.",
-    title: "Acessibilidade Ampliada: Desvendando o Potencial da IoT e Tecnologia Assistiva",
+    title: "Acessibilidade ampliada: desvendando o potencial da IoT e tecnologia assistiva",
     companyTitle: "IF Goiano",
     social_media: {
       instagram: "",
@@ -203,7 +203,7 @@ const speakers = [
     photo: "/speakers/alexiaKattah.png",
     name: "Alexia Kattah",
     tech: "Tecnologias web, Infra/DevOps",
-    topic: "Nessa palestra, irei apresentar outras possibilidades de implementações serverless sem necessariamente usar aws lambda. Aqui, vou mostrar como implementar os microserviços com uma arquitetura serverless, como analisar e metrificar o funcionamento das apis. A talk terá em torno de 45 min",
+    topic: "Nessa palestra, irei apresentar outras possibilidades de implementações serverless sem necessariamente usar AWS Lambda. Aqui, vou mostrar como implementar os microserviços com uma arquitetura serverless, como analisar e metrificar o funcionamento das APIs.",
     mini_bio: "Senior software engineer com mais de 8 anos de experiência, mineira, criou os primeiros códigos com 11 anos, mãe de pet e viciada em friends.",
     title: "Implementando seus microserviços serverless ",
     companyTitle: "Khipo",
@@ -223,7 +223,7 @@ const speakers = [
     tech: "Cibersegurança",
     topic: "Na palestra, abordarei diversos aspectos para desmistificar a área de cibersegurança, desde a explicação das subáreas tecnológicas até detalhes sobre o que estudar e como ingressar nesse mundo do hacking. Vou discutir as diferenças entre cibersegurança defensiva e ofensiva, esclarecendo o que fazem aqueles que defendem sistemas e os que os atacam. Além disso, apresentarei exemplos práticos para ilustrar conceitos importantes. Também destacarei como o conhecimento em cibersegurança pode beneficiar profissionais de desenvolvimento de software e como a cibersegurança está sendo aplicada em diversas outras áreas além da tecnologia.",
     mini_bio: "Sou a Alyce Suza, Analista de Cibersegurança Ofensiva - Red Team. Adoro explorar os cantos mais sombrios da internet... tudo em nome da segurança, é claro! Com habilidades afiadas em hacking em ambientes web e mobile, e uma sólida experiência em gestão de vulnerabilidades, mantenho a segurança digital em alta enquanto mantenho o bom humor. Desde a infância, a tecnologia é minha paixão, e estou sempre em eventos e palestras, compartilhando conhecimento de forma divertida e informativa. Então, se você quer aprender sobre segurança cibernética enquanto se diverte, é só dar uma passada! Estou sempre pronta para uma boa conversa sobre o mundo digital.",
-    title: "Desmistificando a Área de Cibersegurança: Como Funciona e Como Entrar Neste Mundo do Hacking",
+    title: "Desmistificando a área de Cibersegurança: como funciona e como entrar neste mundo do Hacking",
     companyTitle: "ALLOS",
     social_media: {
       instagram: "",
