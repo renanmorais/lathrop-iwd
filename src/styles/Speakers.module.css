@@ -224,6 +224,10 @@
 
 .modal_header {
   padding: 1rem 1.5rem 0 1.5rem;
+  background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 90.71%),
+    linear-gradient(127deg, var(--dark-blue), rgba(0, 255, 0, 0) 90.71%),
+    linear-gradient(336deg, var(--blue), rgba(0, 0, 255, 0) 90.71%);
+    color: var(--ghost-white);
 }
 
 .modal_header button {

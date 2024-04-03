@@ -48,13 +48,12 @@ const SpeakerModal: React.FC<ModalProps> = ({
           <div className={styles.modal_speaker_info_content}>
             <h1>{speaker.name}</h1>
             <p>{speaker.tech}</p>
-            <p>{speaker.title}</p>
           </div>
         </div>
       </ModalHeader>
       <ModalBody className={styles.modal_body}>
-        <h2>{speaker.topic}</h2>
-        <p>{speaker.content}</p>
+        <h2>{speaker.title}</h2>
+        <p>{speaker.topic}</p>
 
         <h2>Mini bio</h2>
         <p>{speaker.mini_bio}</p>
