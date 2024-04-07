@@ -22,6 +22,11 @@ const sponsors = {
         logo: "/patrocinio/maximaTech.png",
         url: "https://maximatech.com.br/",
       },
+      {
+        name: "ACSoftware",
+        logo: "/patrocinio/acSoftware.png",
+        url: "https://acsoftware.com.br/",
+      },
       // {
       //   name: "Pod Café da Ti",
       //   logo: "/parceiros/podCafe.png",
@@ -87,6 +92,16 @@ const sponsors = {
       // { name: 'Techers', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftechers.png?alt=media', url: 'https://www.techers.com.br/' }
     ],
   },
+  // partners: {
+  //   name: "Parceiros",
+  //   items: [
+  //     { name: "Mulheres GO", logo: "/parceiros/mulheresGo.png", url: "https://sites.google.com/view/comunidademulheresgo/p%C3%A1gina-inicial?authuser=3", },
+  //     { name: "Join Community", logo: "/parceiros/joinCommunity.png", url: "https://www.joincommunity.com.br/", },
+  //     { name: "Portera Tech", logo: "/parceiros/porteraTech.png", url: "https://www.instagram.com/porteratech", },
+  //     { name: "Hub Cerrado", logo: "/parceiros/hubCerrado.png", url: "https://hubcerrado.com.br/", },
+  //     { name: "Startup GO", logo: "/parceiros/startupGO.png", url: "https://startupgo.org/", },
+  //   ],
+  // },
   // companies: {
   //   name: "Empresas que contribuem com a comunidade local e se preocupam com seus colaboradores",
   //   items: [

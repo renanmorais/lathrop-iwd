@@ -73,7 +73,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
             além de conhecimento técnico, contando com muita interatividade,
             conexões e diversidade.
           </p>
-          <div className={styles.call4Papers}>
+          {/* <div className={styles.call4Papers}>
             <button className={styles.call4PapersButton}>
               <a
                 className={styles.call4PapersLink}
@@ -86,7 +86,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
                 </span>
               </a>
             </button>
-          </div>
+          </div> */}
           <div className={styles.cards}>
             <Carousel
               activeIndex={activeIndex}
