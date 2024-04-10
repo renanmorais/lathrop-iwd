@@ -14,7 +14,23 @@ const sponsors = {
       },
     ],
   },
-  diamond: {
+  // diamond: {
+  //   name: "Cora Coralina",
+  //   items: [
+  //     {
+  //       name: "Senac Infinite",
+  //       logo: "/patrocinio/senacInfinite.png",
+  //       url: "https://www.go.senac.br/senacInfinite",
+  //     },
+  //     {
+  //       name: "Pod Café da Ti",
+  //       logo: "/parceiros/podCafe.png",
+  //       url: "https://podcafeti.com.br/",
+  //     },
+  //     { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
+  //   ],
+  // },
+  golden: {
     name: "Marília Mendonça",
     items: [
       {
@@ -28,33 +44,22 @@ const sponsors = {
         url: "https://acsoftware.com.br/",
       },
       // {
-      //   name: "Pod Café da Ti",
-      //   logo: "/parceiros/podCafe.png",
-      //   url: "https://podcafeti.com.br/",
+      //   name: "Globo",
+      //   logo: "/patrocinio/globo.png",
+      //   url: "https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~",
       // },
-      // { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
+      // {
+      //   name: "Happy",
+      //   logo: "/patrocinio/happy.jpg",
+      //   url: "https://www.vemserhappy.com.br/",
+      // },
+      // {
+      //   name: "Sebrae",
+      //   logo: "/patrocinio/sebrae.jpeg",
+      //   url: "https://vitrine.sebraego.com.br/",
+      // },
     ],
   },
-  // golden: {
-  //   name: "Golden",
-  //   items: [
-  //     {
-  //       name: "Globo",
-  //       logo: "/patrocinio/globo.png",
-  //       url: "https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~",
-  //     },
-  //     {
-  //       name: "Happy",
-  //       logo: "/patrocinio/happy.jpg",
-  //       url: "https://www.vemserhappy.com.br/",
-  //     },
-  //     {
-  //       name: "Sebrae",
-  //       logo: "/patrocinio/sebrae.jpeg",
-  //       url: "https://vitrine.sebraego.com.br/",
-  //     },
-  //   ],
-  // },
   // silver: {
   //   name: "Silver",
   //   items: [
@@ -82,8 +87,9 @@ const sponsors = {
       //   name: "Aliança pela inovação em Goiás",
       //   logo: "/patrocinio/sindInformatica.jpeg",
       // },
-      { name: "Hub Goiás", logo: "/patrocinio/hubGoias.png", url: "https://hubgoias.org/", },
-      { name: "Black Stars", logo: "/patrocinio/blackStars.png", url: "hhttps://blackstarsbr.com/", },
+      { name: "Hub Goiás", logo: "/parceiros/hubGoias.png", url: "https://hubgoias.org/", },
+      { name: "Black Stars", logo: "/parceiros/blackStars.png", url: "https://blackstarsbr.com/", },
+      { name: "PodCafé da TI", logo: "/parceiros/podCafe.png", url: "https://podcafe.com.br/", },
       // {
       //   name: "Prospere",
       //   logo: "/patrocinio/prospere.jpeg",
