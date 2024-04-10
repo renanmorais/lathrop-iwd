@@ -20,7 +20,6 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
         height="270px"
         unoptimized
         onClick={modalToggle}
-        loading="lazy"
       />
       <h2 className={styles.card_name}>{speaker.name}</h2>
       <p className={styles.card_topic}>{speaker.tech}</p>
