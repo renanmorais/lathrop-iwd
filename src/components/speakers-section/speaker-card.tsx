@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import Image from "next/image";
 import { Speaker } from "models/speaker";
@@ -23,7 +24,11 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
       />
       <h2 className={styles.card_name}>{speaker.name}</h2>
       <p className={styles.card_topic}>{speaker.tech}</p>
-      {/* <p className={styles.card_profile}>{speaker.title}</p> */}
+      {speaker.gde && (
+        <div className={styles.badge_content}>
+          <img src="/gdeExperts.png" alt="GDE badge" />
+        </div>
+      )}
       <SpeakerModal
         speaker={speaker}
         modalOpen={modalOpen}

@@ -11,6 +11,7 @@ export interface Speaker {
   community?: string;
   company?: string;
   companyTitle?: string;
+  gde?: boolean;
   social_media?: {
     instagram: string;
     twitter: string;

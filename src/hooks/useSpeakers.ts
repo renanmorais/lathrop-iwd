@@ -9,6 +9,7 @@ const speakers = [
     mini_bio: "Karol é engenheira de software especialista em aplicativos e games, com mais de 13 anos de experiência e 5 prêmios de reconhecimento nacional. Foi eleita LinkedIn Top Voice 2023 pelo seu trabalho de criação de conteúdo para a comunidade de tecnologia. Em 2022 esteve na lista dos 50 hackers to follow e foi indicada para o prêmio internacional 'Women that build'. Atuou por quase 10 anos como freelancer para equipes multinacionais e possui mais de 20 aplicativos e jogos publicados na App Store. Atualmente é Engenheira iOS na Riot Games (pela X-team) e compartilha conteúdo no canal Attekita Dev onde impacta em suas redes sociais mais de 240 mil pessoas. Acredita que podemos mudar o mundo com o poder da informação!",
     title: "",
     companyTitle: "Riot Games (via X-team)",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/attekitadev/",
       twitter: "https://twitter.com/AttekitaBullas",
@@ -27,6 +28,7 @@ const speakers = [
     mini_bio: "Negra, periférica, cientista e professora. Sr Data Scientist. Professora de pós e cursos livres. Fundadora da diversiData. Voluntária e ativista em comunidades que inserem diversidade em tech. Palestrante sobre ética, AI, Data Science e Diversidade, Equidade e Inclusão. Valuable Young Leader pelo Instituto Anga e MIT Sloan Review. 1o lugar no reconhecimento Global Ada Lovelace para mulheres em tech. 50 to follow na Gama Academy em Data & BI. Especialista em Data Science convidada para inclusão da profissão de Data Science na CBO (Classificação Brasileira de Ocupações) pelo Ministério do Trabalho e USP. Integrante do Global Shapers do Fórum Econômico Mundial.",
     title: "O papel crucial da alfabetização digital em IA",
     companyTitle: "diversiData",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/dessafreires/",
       twitter: "",
@@ -45,6 +47,7 @@ const speakers = [
     mini_bio: "Desenvolvedora especialista que estuda programação desde 2013, especialista na stack: Java, Spring, AWS e Microsserviços. Vasta experiências em empresas do setor financeiro, atuando tanto como consultora e como funcionária. Também crio conteúdo desde 2018, somos mais de 3000 alunos em cursos e mentorias, já palestrei em grandes conferências internacionais como Java Global Summit, We are devs - Java developer day, Jlove conference e em grandes eventos nacionais como Codecon, The Developers Conference e Campus Party. Premiada pela Microsoft como Microsoft MVP há 3 anos , co-autora de 3 livros e criadora de conteúdo no YouTube e Instagram kamila_code.",
     title: "System Design 101: Tudo que você precisa saber ao definir arquiteturas",
     companyTitle: "Zup Innovation",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/kamila_code/",
       twitter: "https://twitter.com/kamila_code",
@@ -63,6 +66,7 @@ const speakers = [
     mini_bio: "UX Writer, Designer, Desenvolvedora e Curadora de IAs Conversacionais, Tutora, Palestrante e Voluntária. Formada em Análise e Desenvolvimento de Sistemas e fruto de transição de carreira. Casada, mãe de pet, aquariana, geek, techmaromba, ama shows, comida e Coca Cola.",
     title: "Fundamentos de dados no contexto de UX Design",
     companyTitle: "Capgemini",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/vua_nessa/",
       twitter: "",
@@ -81,6 +85,7 @@ const speakers = [
     mini_bio: "Sou Kamilla Cerqueira, profissional apaixonada pela área de Customer Success e comprometida em criar experiências excepcionais para os clientes. Com 15 anos de experiência na indústria, atuo em uma área Cross de Customer Success, onde colaboro com equipes multidisciplinares para garantir o sucesso dos clientes. Minha jornada profissional tem sido marcada por desafios e conquistas, que me ensinaram a importância da resiliência, da colaboração e do desenvolvimento contínuo. Ao longo dos anos, tive a oportunidade de trabalhar em diferentes contextos e empresas, sempre buscando agregar valor aos clientes e promover um ambiente de trabalho saudável. Fora do ambiente de trabalho, gosto de viajar, assistir séries, ter momentos de lazer com minha família. Estou sempre em busca de novas formas de aprender e crescer, tanto pessoal quanto profissionalmente.",
     title: "Liderança feminina na tecnologia: conquistando espaço e inspirando transformação",
     companyTitle: "MáximaTech",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/kamilla.cerqueira/",
       twitter: "",
@@ -99,6 +104,7 @@ const speakers = [
     mini_bio: "Profissional com mais de 20 anos de experiência na área de gestão de projetos, negócios e educação. Especialista em Planejamento & Gestão de Projetos. Gestora com ênfase em Turismo & Hotelaria. Licenciada em Letras Português - Inglês. Certificada Scrum Master, White Belt e em Gestão Neurocomportamental de Projetos. Fluente em Inglês e Espanhol. Iniciou sua carreira como professora de idiomas (Inglês e Espanhol) na Educação Básica, EJA e Ensino Superiour. Atuou no Sistema S (Sesi, FIEG e Senac) como líder de projetos. Voluntária pelo PMI DF (gerente de projetos do programa de mentoring) e pelo PMI GO (membro do time do PM Thanks Mulher). Membro do Elas Projetam e do Mulheres GO.",
     title: "Inglês & TI: eleve a sua carreira a outro nível",
     companyTitle: "Ipasgo",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/adriennecmendes/",
       twitter: "",
@@ -117,6 +123,7 @@ const speakers = [
     mini_bio: "Sou uma mulher preta. Uma mulher preta com coragem, sabe? Que é graduada em Estatística pela UFG, 'brincou' de fazer mestrado em Ciências da Computação pela mesma universidade, mas que acabou indo trabalhar na área da saúde e iniciou o mestrado em Sistemas Inteligentes e suas Aplicações na Saúde pela UFCSPA. Também sou fundadora de um capítulo da organização mundial R-Ladies e faço parte do time global da organização AI Inclusive. E sabe o que é bom nisso tudo? É que caminho caminho ao lado de grandes mulheres.",
     title: "Observar e absorver, em qual momento a diversidade atinge você?",
     companyTitle: "Fundação Getulio Vargas",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/fernandakellyrs",
       twitter: "",
@@ -135,6 +142,7 @@ const speakers = [
     mini_bio: "Camis é uma pessoa não binária, palestrante, educadora, líder de comunidade e especialista em E-commerce e Frontend. Atua como analista sênior na Object Edge e possui certificação Google Project Management, além de desempenhar um papel crucial na liderança de times e no desenvolvimento de pessoas na área tech, participando ativamente em projetos de grande escala nacionais e internacionais.",
     title: "Testemunhos de TI: Estratégias de carreira para quem é da área de tecnologia",
     companyTitle: "Object Edge",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/camiiismoreira",
       twitter: "",
@@ -153,6 +161,7 @@ const speakers = [
     mini_bio: "Professora e pesquisadora no IF Goiano Campus Ceres. Se dedica na pesquisa, ensino e extensão com temas relacionados a Internet das Coisas (IOT), Inovação e Tecnologia assistiva. Graduada em Ciência da Computação (PUC-GO), Mestre em Ciências (UFU) e Doutora em Engenharia de Sistemas Eletrônicos e Automação (UnB). Coordenadora dos cursos técnicos em Informática e do Núcleo de tecnologia e Inovação do Campus Ceres. No ensino ministra disciplinas no ensino técnico, graduação e pós -graduação. Founder da Comunidade MulheresGo, Líder da Comunidade StartupGO, Mentora voluntária da Techstars startup weekend, Campus Party, Latinoware e Nasa. Mentora de Inovação de Goiás.",
     title: "Acessibilidade ampliada: desvendando o potencial da IoT e tecnologia assistiva",
     companyTitle: "IF Goiano",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -171,6 +180,7 @@ const speakers = [
     mini_bio: "Eu sou deste milênio. Sou potiguar e aos 7 anos, comecei a vender chocolates na escola em Natal/RN. Aos 12 anos desenvolvi meu primeiro aplicativo, aos 15 ingressei na Faculdade de Ciência da Computação e aos 19 iniciei a pós-graduação em Engenharia de Dados na PUC. Atualmente tenho 21 anos e trabalho como Engenheira de Qualidade. Sempre busquei criar oportunidades, tive uma startup, trabalhei como desenvolvedora freelancer e também atuei em empresas de tecnologia desde software house até startups, além de coordenar o projeto W3E - Women Winning the World with Equity, que visa instigar e apoiar as mulheres a alcançarem o lugar que desejam. Já lecionei em diversos eventos como Campus Party, FLISOL, PhP Experience, RubyConf, DevFest, Festival Path, OAB/RN e outros, inspirando e instigando jovens e adultos a se desenvolverem como cidadãos, tornando-se protagonistas de suas próprias histórias, como incentivá-los a ter uma atitude empreendedora e protagonista. Mostrando também que programar é uma atividade divertida e fascinante.",
     title: "Quality Assurance: Mais do que apenas busca de bugs na interface.",
     companyTitle: "Gradus",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -189,6 +199,7 @@ const speakers = [
     mini_bio: "Oie! Eu sou a Elisiane, mas todo mundo me chama de Lise, tenho 24 anos sou analista de suporte na ACSoftware e na finalzinho do ano passado fui convidada pra ser sócia dos meus chefes na nossa nova holding que é a ACSMSP que presta serviços gerenciados dos softwares que vendemos. Tenho bem pouco tempo de carreira e estou aprendendo a olhar pra TI como um todo e gerenciar minha própria carreira. Hoje meu objetivo é me desenvolver mais na área de governança e partes estratégicas de negócios. ",
     title: "Como começar na área de TI",
     companyTitle: "ACSoftware",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -207,6 +218,7 @@ const speakers = [
     mini_bio: "Senior software engineer com mais de 8 anos de experiência, mineira, criou os primeiros códigos com 11 anos, mãe de pet e viciada em friends.",
     title: "Implementando seus microserviços serverless ",
     companyTitle: "Khipo",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -225,6 +237,7 @@ const speakers = [
     mini_bio: "Sou a Alyce Suza, Analista de Cibersegurança Ofensiva - Red Team. Adoro explorar os cantos mais sombrios da internet... tudo em nome da segurança, é claro! Com habilidades afiadas em hacking em ambientes web e mobile, e uma sólida experiência em gestão de vulnerabilidades, mantenho a segurança digital em alta enquanto mantenho o bom humor. Desde a infância, a tecnologia é minha paixão, e estou sempre em eventos e palestras, compartilhando conhecimento de forma divertida e informativa. Então, se você quer aprender sobre segurança cibernética enquanto se diverte, é só dar uma passada! Estou sempre pronta para uma boa conversa sobre o mundo digital.",
     title: "Desmistificando a área de Cibersegurança: como funciona e como entrar neste mundo do Hacking",
     companyTitle: "ALLOS",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -243,6 +256,7 @@ const speakers = [
     mini_bio: "Uma goianinha do pé rachado, daquelas ama um pequi, com mais de 10 anos de experiêncica em desenvolvimento, e hoje, Dev Android no LuizaLabs, que é o braço tecnológico da Magazine Luiza. Compartilhar conhecimento é comigo mesma, já ajudei e ainda ajudo muitas pessoas com mentoria de carreira.  No meu tempo livre gosto muito de beber um vinho jogando um boardgame ou lendo um livro (não pode faltar a parte nerd né ;) ).",
     title: "Android e Modularização: quando modularizar vira um problema",
     companyTitle: "LuizaLabs",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -261,6 +275,7 @@ const speakers = [
     mini_bio: "Jordânia Bispo é mestra em Comunicação pela Universidade Federal de Goiás (UFG) e graduada em Comunicação Social com Habilitação em Jornalismo pela Pontifícia Universidade Católica de Goiás (PUC Goiás). Possui experiência profissional em Comunicação Integrada, Assessoria de Imprensa e produção de conteúdo para web. Atualmente, é professora universitária, palestrante e mentora em Comunicação. Sua missão é ajudar profissionais autônomos, lideranças empresariais e times corporativos a se comunicarem de forma assertiva e estratégica.",
     title: "Comunicação assertiva e estratégica para líderes inovadoras",
     companyTitle: "UNA",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -279,6 +294,7 @@ const speakers = [
     mini_bio: "UX Researcher Sênior na TOTVS, formada em Design de Moda, graduanda em MBA de Gestão da Inovação, líder de comunidade Mulheres GO e PCampo GO. Há 8 anos atua no mercado de tecnologia com foco em experiência do usuário, pesquisa e design. É palestrante e mentora em eventos de tecnologia.",
     title: "Concepção de produto através de pesquisa de mercado",
     companyTitle: "TOTVS",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -297,6 +313,7 @@ const speakers = [
     mini_bio: "Fernanda é formada em Ciência da Computação e Mestre em Inteligência Artificial pela UFRJ, Doutora em Inteligência Computacional pela UFMG e Google Developer Expert em Machine Learning. É líder do time de Visão Computacional da NeuralMed, trabalhando com detecção de patologias em imagens médicas. Sua marca registrada são os cabelos coloridos, gosta de tocar tamborim no carnaval e contribuir com projetos que incentivam grupos minorizados na tecnologia, sendo co-fundadora da MIA, embaixadora do WiDS Rio e colaboradora da PrograMaria.",
     title: "A definir",
     companyTitle: "NeuralMed",
+    gde: true,
     social_media: {
       instagram: "https://www.instagram.com/maryyfe",
       twitter: "https://twitter.com/nandaw",
@@ -315,6 +332,7 @@ const speakers = [
     mini_bio: "Formada em Gestão de TI, Letícia atua como QA há 8 anos, estando na Oracle há quase 5! Usa suas redes sociais para compartilhar seu conhecimento na área de qualidade e tecnologia, influenciando positivamente mulheres a ingressarem cada vez mais neste mercado.",
     title: "A diferença entre Software e Software de Qualidade",
     companyTitle: "Oracle",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/lelemaine/",
       twitter: "https://twitter.com/lelemaine",
@@ -333,6 +351,7 @@ const speakers = [
     mini_bio: "Jéssica é Cientista de Dados no Rio de Janeiro, GDE em Machine Learning e Mestre em Ciência da Computação. Desde 2016 atua nas comunidades compartilhando aquilo que sabe e despertando a mentalidade crítica das pessoas.",
     title: "Usar ou não usar IA: eis a questão",
     companyTitle: "CEFET/RJ",
+    gde: true,
     social_media: {
       instagram: "",
       twitter: "https://twitter.com/jessicacostadev",
@@ -351,6 +370,7 @@ const speakers = [
     mini_bio: "Kamilla ou simplesmente Kah, sou uma goiana de 31 anos, mãe de um casal, cristã e ganhadora do reality largados e pelados (Discovery). Filha de pescador e mãe aventureira, que herdou a experiência e o amor pela natureza e pelo mundo outdoor. Sou trilheira, aventureira, montanhista, mateira, admiradora e apaixonada pelo universo de esportes radicais. Empresaria do ramo de ecoturismo e esportes radicais, tendo serviços que se dedicam somente a mulheres, com uma proposta que envolve vivência e experiência no meio da natureza, além de ser instrutora de rapel e condutora de canionismo, Bombeira Militar e Resgatista em altura. Me considero uma mulher forte e guerreira que precisou passar por muitas lutas e desafios na vida. Isso me fez construir uma personalidade forte, destemida e pronta para inspirar outras pessoas a viverem novas experiências, com muita resiliência tive que aprender a liderar pessoas e ambientes com pouco recursos.",
     title: "O despertar da resiliência",
     companyTitle: "",
+    gde: false,
     social_media: {
       instagram: "https://www.instagram.com/kamilla.monteiro/",
       twitter: "",
@@ -369,6 +389,7 @@ const speakers = [
     mini_bio: "",
     title: "",
     companyTitle: "",
+    gde: false,
     social_media: {
       instagram: "",
       twitter: "",
@@ -387,6 +408,7 @@ const speakers = [
   //   mini_bio: "",
   //   title: "",
   //   companyTitle: "",
+  //   gde: false,
   //   social_media: {
   //     instagram: "",
   //     twitter: "",
@@ -405,6 +427,7 @@ const speakers = [
   //   mini_bio: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur officiis architecto dignissimos sed, consequuntur magnam, praesentium dicta voluptates nulla libero ut harum placeat reiciendis nobis velit, sequi facilis. Temporibus, sunt.",
   //   title: "Título da minha palestra",
   //   companyTitle: "Nome da minha empresa",
+  //   gde: false,
   //   social_media: {
   //     instagram: "https://www.instagram.com/gdggoiania/",
   //     twitter: "https://twitter.com/gdggoiania",

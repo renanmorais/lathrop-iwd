@@ -95,13 +95,13 @@
 
 .card_container {
   cursor: pointer;
+  min-width: 112px;
 }
 
 .card_image {
   background: transparent;
 }
 
-/* transição de imagem para testar */
 .card_image:hover {
   transform: scale(1) rotateZ(-6deg);
   transition: all 0.5s ease-in-out;
@@ -111,18 +111,6 @@
   width: 100%;
   font-size: 16px;
   text-align: center;
-
-  /* transição de texto para testar */
-  /* background: right / 0% 100% no-repeat
-    linear-gradient(var(--green), var(--green));
-  transition: background-size 500ms ease-in-out; */
-}
-
-/* transição de texto para testar */
-.card_name:hover {
-  /* background: left / 100% 100% no-repeat
-    linear-gradient(var(--green), var(--green)); */
-  /* color: var(--white); */
 }
 
 .card_topic {
@@ -137,6 +125,21 @@
   font-size: 14px;
   text-align: center;
   color: var(--link-color);
+}
+
+.badge_content img {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 75px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .badge_content img {
+    width: 50px;
+    height: 35px;
+  }
 }
 
 .carousel {
@@ -227,7 +230,7 @@
   background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 90.71%),
     linear-gradient(127deg, var(--dark-blue), rgba(0, 255, 0, 0) 90.71%),
     linear-gradient(336deg, var(--blue), rgba(0, 0, 255, 0) 90.71%);
-    color: var(--ghost-white);
+  color: var(--ghost-white);
 }
 
 .modal_header button {

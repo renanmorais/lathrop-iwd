@@ -6,6 +6,7 @@ interface SpeakerPayload {
   key: string;
   id: string;
   companyTitle: string;
+  gde: boolean;
   mini_bio: string;
   name: string;
   photo: string;
@@ -19,6 +20,7 @@ const createSpeaker = async ({
   key,
   id,
   companyTitle,
+  gde,
   mini_bio,
   name,
   photo,
@@ -30,6 +32,7 @@ const createSpeaker = async ({
   const data = {
     id,
     companyTitle,
+    gde,
     mini_bio,
     name,
     photo,
