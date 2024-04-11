@@ -22,6 +22,7 @@ const SPONSORS_LIST: string[] = [
   "support",
   "staff",
   "companies",
+  "partners"
 ];
 
 interface SponsorsSectionProps {
