@@ -23,6 +23,7 @@ const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
             objectFit="contain"
             className={styles.SponsorCardBodyImage}
             alt={sponsor.name}
+            loading="lazy"
           ></Image>
         </div>
       </a>

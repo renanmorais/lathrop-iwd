@@ -132,6 +132,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                           alt={`Foto ${speak.name}`}
                           height="40px"
                           width="40px"
+                          loading="lazy"
                         />
                         <div className={styles.card_speaker_info_content}>
                           <p>{speak.name}</p>
@@ -178,6 +179,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                     alt={`Foto ${props.name}`}
                     height="40px"
                     width="40px"
+                    loading="lazy"
                   />
                   <div className={styles.card_speaker_info_content}>
                     <h5>{props.name}</h5>

@@ -21,12 +21,13 @@ const SpeakerCard: React.FC<SpeakerCardProps> = (speaker) => {
         height="270px"
         unoptimized
         onClick={modalToggle}
+        loading="lazy"
       />
       <h2 className={styles.card_name}>{speaker.name}</h2>
       <p className={styles.card_topic}>{speaker.tech}</p>
       {speaker.gde && (
         <div className={styles.badge_content}>
-          <img src="/gdeExperts.png" alt="GDE badge" />
+          <img src="/gdeExperts.png" alt="GDE badge" loading="lazy" />
         </div>
       )}
       <SpeakerModal

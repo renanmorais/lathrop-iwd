@@ -30,22 +30,22 @@ const About = ({}: AboutProps) => {
         <section>
           <div className={styles.sliderContainer}>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023AllPeople.jpg" alt="" />
+              <img src="/photos/iwd2023AllPeople.jpg" alt="" loading="lazy" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023StaffSpeakers.jpg" alt="" />
+              <img src="/photos/iwd2023StaffSpeakers.jpg" alt="" loading="lazy" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023StaffSpeakersFull.JPG" alt="" />
+              <img src="/photos/iwd2023StaffSpeakersFull.JPG" alt="" loading="lazy" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023StaffSpeakersFullBright.JPG" alt="" />
+              <img src="/photos/iwd2023StaffSpeakersFullBright.JPG" alt="" loading="lazy" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023Outside1.JPG" alt="" />
+              <img src="/photos/iwd2023Outside1.JPG" alt="" loading="lazy" />
             </div>
             <div className={styles.slide}>
-              <img src="/photos/iwd2023Outside2.JPG" alt="" />
+              <img src="/photos/iwd2023Outside2.JPG" alt="" loading="lazy" />
             </div>
           </div>
         </section>

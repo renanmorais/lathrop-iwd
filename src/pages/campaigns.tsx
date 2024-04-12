@@ -50,7 +50,7 @@ const CampaignPage = ({}) => {
         </Row>
         <Row>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img alt="imagem sorteio" width="600" height="300" src="/" />
+            <img alt="imagem sorteio" width="600" height="300" src="/" loading="lazy" />
           </div>
         </Row>
       </Container>

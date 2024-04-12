@@ -11,13 +11,13 @@
 }
 
 .TextContainer {
-  width: 50%;
+  width: 75%;
   padding: 15px;
   text-align: justify;
   text-align-last: center;
   line-height: 40px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 0.5828rem + 0.7643vw, 1.5rem);
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 0.8;
   color: var(--white);

@@ -1,5 +1,3 @@
-/*eslint-disable*/
-
 import speakers from "hooks/useSpeakers";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -44,6 +42,7 @@ const SpeakerModal: React.FC<ModalProps> = ({
             alt={`Foto ${speaker.name}`}
             width="100%"
             height="100%"
+            loading="lazy"
           />
           <div className={styles.modal_speaker_info_content}>
             <h1>{speaker.name}</h1>
@@ -62,27 +61,27 @@ const SpeakerModal: React.FC<ModalProps> = ({
         {speaker.social_media && (
           <>
             {speaker.social_media.twitter && (
-              <a target="_blank" href={speaker.social_media.twitter}>
+              <a target="_blank" href={speaker.social_media.twitter} rel="noreferrer">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             )}
             {speaker.social_media.instagram && (
-              <a target="_blank" href={speaker.social_media.instagram}>
+              <a target="_blank" href={speaker.social_media.instagram} rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             )}
             {speaker.social_media.github && (
-              <a target="_blank" href={speaker.social_media.github}>
+              <a target="_blank" href={speaker.social_media.github} rel="noreferrer">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             )}
             {speaker.social_media.linkedIn && (
-              <a target="_blank" href={speaker.social_media.linkedIn}>
+              <a target="_blank" href={speaker.social_media.linkedIn} rel="noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             )}
             {speaker.social_media.website && (
-              <a target="_blank" href={speaker.social_media.website}>
+              <a target="_blank" href={speaker.social_media.website} rel="noreferrer">
                 <FontAwesomeIcon icon={faArrowPointer} size="2x" />
               </a>
             )}
