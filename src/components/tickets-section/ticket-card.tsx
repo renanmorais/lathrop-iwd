@@ -16,9 +16,8 @@ const TicketCard: React.FC<TicketProps> = ({ ticket }) => {
       return (
         <>
           <span>* Não iniciado </span>
-          <br />
           <span className={styles.TicketNotInitiadedDate}>
-            {ticket.firstSaleDate.toLocaleDateString("pt-br")}
+            {ticket.firstSaleDate.toLocaleDateString("pt-br") + ' às 20h00'}
           </span>
         </>
       );
