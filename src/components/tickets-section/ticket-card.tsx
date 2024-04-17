@@ -30,7 +30,7 @@ const TicketCard: React.FC<TicketProps> = ({ ticket }) => {
             rel="noreferrer"
             href={ticket.link}
           >
-            {ticket.isOutOfSale() ? "Encerrado" : "Comprar"}
+            {ticket.isOutOfSale() ? "Esgotado" : "Comprar"}
           </a>
         </div>
       );

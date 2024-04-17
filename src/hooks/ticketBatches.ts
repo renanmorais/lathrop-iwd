@@ -28,7 +28,7 @@ const ticketBatches: Array<TicketBatch> = [
   new TicketBatch({
     description: "Inscrição (Sem Kit de participante)",
     firstSaleDate: new Date("2024-04-17"),
-    finalSaleDate: new Date("2024-04-26"),
+    finalSaleDate: new Date("2024-04-17"),
     title: "3º Lote",
     link: "https://doity.com.br/iwd-cerrado-2024#registration",
     value: 90,
