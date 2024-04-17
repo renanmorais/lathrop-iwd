@@ -59,16 +59,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </div>
         <div className={styles.footerSocial}>
           <ruby>
-            HUB Goiás - Centro de Excelência em Empreendedorismo Inovador
+            {configValues.place}
             <rp>(</rp>
-            <rt className={styles.rt}>27 de Abril de 2024</rt>
+            <rt className={styles.rt}>{configValues.formattedDate}</rt>
             <rp>)</rp>
           </ruby>
 
-          {/* <h6>
-            27 de Abril de 2024 | HUB Goiás - Centro de Excelência em
-            Empreendedorismo Inovador
-          </h6> */}
+          {/* <h6>{configValues.formattedDate}</h6> */}
         </div>
         <div className={styles.footerSocial}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
