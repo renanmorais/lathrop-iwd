@@ -90,7 +90,7 @@ const sponsors = {
       { name: "Hub Goiás", logo: "/parceiros/hubGoias.png", url: "https://hubgoias.org/", },
       { name: "Black Stars", logo: "/parceiros/blackStars.png", url: "https://blackstarsbr.com/", },
       { name: "PodCafé da TI", logo: "/parceiros/podCafe.png", url: "https://podcafe.com.br/", },
-      { name: "PorteraTech", logo: "/parceiros/porteraTech.png", },
+      { name: "PorteraTech", logo: "/parceiros/porteraTech.png", url: "", },
       // {
       //   name: "Prospere",
       //   logo: "/patrocinio/prospere.jpeg",
