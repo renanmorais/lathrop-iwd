@@ -42,10 +42,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-flow: column;
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
   align-items: center;
   justify-content: center;
-  padding: 20px 40px;
+  padding: 15px 15px;
   border: 1px solid #eff0f6;
   border-radius: 14px;
   background-color: var(--white);
