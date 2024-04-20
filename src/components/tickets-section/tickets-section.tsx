@@ -22,7 +22,7 @@ const TicketsSection: React.FC = ({}) => {
   return (
     <Container>
       <div>
-        <h2 className={styles.title}>Ingressos</h2>
+        <h1 className={styles.Title}>Ingressos</h1>
         <div>
           <Row>
             <ul className={styles.TicketsList}>
