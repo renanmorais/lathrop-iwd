@@ -22,7 +22,7 @@ const SPONSORS_LIST: string[] = [
   "support",
   "staff",
   "companies",
-  "partners"
+  "partners",
 ];
 
 interface SponsorsSectionProps {
@@ -36,9 +36,9 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
   const mapSponsorCard = (sponsor: Sponsor, isStaff: boolean) => {
     if (sponsor.logo)
       return (
-        <Col key={sponsor.id}>
+        <div key={sponsor.id}>
           <SponsorCard {...sponsor} isStaff={isStaff}></SponsorCard>
-        </Col>
+        </div>
       );
     return <Col></Col>;
   };

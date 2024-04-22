@@ -2,7 +2,7 @@ const supports = {
   items: [
     {
       name: "Google Developer Groups",
-        logo: "/googleDeveloperGroups.svg",
+        logo: "/supports/googleDevelopers.png",
         url: "https://developers.google.com",
     },
     {
