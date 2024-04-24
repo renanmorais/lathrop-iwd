@@ -1,14 +1,13 @@
 /*eslint-disable*/
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
+import _speakers from "../../hooks/useSpeakers";
+import _schedule from "../../hooks/useSchedule";
 import ScheduleCard from "./schedule-card";
 import ScheduleTime from "./schedule-time";
 import { Speaker } from "models/speaker";
-
-import styles from "../../styles/Schedule.module.css";
 import { Schedule } from "models/schedule";
-import _speakers from "../../hooks/useSpeakers";
-import _schedule from "../../hooks/useSchedule";
+import styles from "../../styles/Schedule.module.css";
 
 interface SpeakersSectionProps {
   speakers: Array<Speaker>;
@@ -24,22 +23,21 @@ const ScheduleSection: React.FC<SpeakersSectionProps> = ({}) => {
       {speakers.length && (
         <Container>
           <div id="schedule">
-            <h4>Agenda</h4>
+            <h1 className={styles.Title}>Agenda</h1>
           </div>
           {schedule.map((schedule, index) => {
             return (
-              <Row key={`schedule-${index}`} className={styles.row_content}>
+              <Row key={`schedule-${index}`} className={styles.rowContent}>
                 <ScheduleTime
                   initialTime={schedule.start}
                   endTime={schedule.end}
                 />
                 <Col xxl={11} sm={12}>
-                  <Row className={styles.height100p}>
+                  <Row className={styles.height}>
                     {schedule.speeches?.map((speech, index) => {
                       const speaker = speakers.find(
                         (speakerObj) => speakerObj.id === speech.speaker_id
                       );
-                      // console.log("speaker: " + JSON.stringify(speaker))
                       if (speech?.topic) {
                         return (
                           <ScheduleCard
