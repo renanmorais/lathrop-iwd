@@ -1,12 +1,9 @@
-/*eslint-disable*/
-import { Speaker } from "models/speaker";
+import React from "react";
 import Image from "next/image";
-import React, { useState } from "react";
-import { Badge, Col, Row } from "reactstrap";
-
-import styles from "../../styles/Schedule.module.css";
+import { Col, Row } from "reactstrap";
 import _speakers from "../../hooks/useSpeakers";
-import ScheduleTime from "./schedule-time";
+import { Speaker } from "models/speaker";
+import styles from "../../styles/Schedule.module.css";
 
 const speakers: Array<Speaker> = _speakers;
 
@@ -21,175 +18,111 @@ interface ScheduleCardProps extends Speaker {
   }[];
 }
 
-const pathHtml = (name: string, path: string, pathStyle: string) => {
+const pathHtml = (name: string, pathStyle: string) => {
   return (
-    <div className={`${styles.path_div} ${pathStyle}`}>
-      {/*<Image
-            unoptimized
-            className={styles.card_path_icon}
-            src={path}
-            height="15px"
-            width="15px"
-        />*/}
+    <div className={`${styles.pathDiv} ${pathStyle}`}>
       <span>{name}</span>
     </div>
   );
 };
+
 const renderPath = (path?: string) => {
   switch (path) {
-    case "Arara Canindé":
-      return pathHtml(
-        "Arara Canindé",
-        `/${path}.png`,
-        styles.path_canastra_color
-      );
-    case "Araracanga":
-      return pathHtml("Araracanga", `/${path}.png`, styles.path_minas_color);
-    case "Arara Azul Grande":
-      return pathHtml(
-        "Arara Azul Grande",
-        `/ararauna.png`,
-        styles.path_ararauna_color
-      );
+    case "Katherine Johnson":
+      return pathHtml("Katherine Johnson", styles.trilha1);
+    case "Cora Coralina":
+      return pathHtml("Cora Coralina", styles.trilha2);
     default:
-      return pathHtml("Maracanã", `/${path}.png`, styles.path_curado_color);
+      return pathHtml("Marília Mendonça", styles.trilha3);
   }
 };
 
 const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
-  const getPillColor = (tech: string) => {
-    switch (tech) {
-      case "Carreira":
-        return "primary";
-      case "Machine Learning":
-        return "secondary";
-      case "Web":
-        return "danger";
-      case "UI/UX":
-        return "info";
-      case "Infra/Devops":
-        return "warning";
-      default:
-        return "success";
-    }
-  };
-
-  const getBoderColor = (tech: string) => {
-    switch (tech) {
-      case "Arara Canindé":
-        return "#46B3DC";
-      case "Araracanga":
-        return "#09CCB1";
-      case "Araraúna":
-        return "cornflowerblue";
-      case "Maracanã":
-        return "#3392F9";
-      default:
-        return "#FFFFFF";
-    }
-  };
   return (
     <>
       {props.speakers && (
-        <Col xxl={props.lgValue} sm={12} className={styles.card_text}>
-          <Row className={styles.card_content}>
-            <div className={styles.path_wrapper} style={{}}>
+        <Col xxl={props.lgValue} className={styles.principalCol}>
+          <div className={styles.cardContent}>
+            <div className={styles.pathWrapper} style={{}}>
               {props.room && renderPath(props.room)}
             </div>
 
             {props.speakers.map((spk, index) => {
               const speak = speakers.find((obj) => obj.id === spk.speaker_id);
-              // console.log("speaker: " + JSON.stringify(speak))
               return (
                 <>
-                  <Row className={styles.card_title}>
-                    {/*<div>
-                                                <span className={styles.margin_right_15}>{spk.topic}</span>
-                                            </div>*/}
-                  </Row>
-                  <Row className={styles.card_time} style={{}}>
+                  <div className={styles.cardTime} style={{}}>
                     <div>
                       <span>{spk.start}</span>
                       <span className={`${styles.timeSeparator}`}>-</span>
-                      <span className={styles.opacity50}>{spk.end}</span>
+                      <span className={styles.opacity}>{spk.end}</span>
                     </div>
-                  </Row>
+                  </div>
 
-                  {speak ? (
-                    <p style={{ marginTop: "5px", fontSize: "16px;" }}>
-                      {speak.topic}
-                    </p>
-                  ) : (
-                    <></>
-                  )}
                   {speak && speak.photo && (
-                    <Row className={styles.display_inline_block}>
-                      <div className={styles.div_wrapper}>
+                    <div>
+                      <div className={styles.divWrapper}>
                         <Image
                           unoptimized
-                          className={styles.card_image}
                           src={speak.photo}
-                          alt={`Foto ${speak.name}`}
-                          height="40px"
+                          alt={`Foto de ${speak.name}`}
                           width="40px"
+                          height="40px"
                           loading="lazy"
                         />
-                        <div className={styles.card_speaker_info_content}>
+                        <div className={styles.cardSpeakerInfoContent}>
                           <p>{speak.name}</p>
-
-                          {speak.community && (
-                            <p className={styles.gde}>{speak.community}</p>
-                          )}
-                          <p
-                            className={styles.font_size_14}
-                          >{`${speak.companyTitle}`}</p>
+                          <p>{speak.title}</p>
                         </div>
                       </div>
-                    </Row>
+                    </div>
                   )}
+
+                  <div className={styles.cardTitle}>
+                    <div>
+                      <span>{spk.topic}</span>
+                    </div>
+                  </div>
+
+                  {speak ? <p>{speak.topic}</p> : <></>}
+
                   {props.speakers && props.speakers.length > 1 && index == 0 ? (
-                    <hr style={{ width: "100%", margin: "10px 0px" }}></hr>
+                    <hr></hr>
                   ) : (
                     <></>
                   )}
                 </>
               );
             })}
-          </Row>
+          </div>
         </Col>
       )}
+
       {!props.speakers && (
-        <Col xxl={props.lgValue} sm={12} className={styles.card_text}>
-          <Row className={styles.card_content}>
-            <div className={styles.path_wrapper}>
+        <Col xxl={props.lgValue} className={styles.principalCol}>
+          <Row className={styles.cardContent}>
+            <div className={styles.pathWrapper}>
               {props.path && renderPath(props.path)}
             </div>
-            <Row className={styles.card_title}>
+            <Row className={styles.cardTitle}>
               <div>
-                <span className={styles.margin_right_15}>{props.topic}</span>
+                <span>{props.topic}</span>
               </div>
             </Row>
             {props.photo && (
-              <Row className={styles.display_inline_block}>
-                <div className={styles.div_wrapper}>
+              <Row>
+                <div className={styles.divWrapper}>
                   <Image
                     unoptimized
-                    className={styles.card_image}
                     src={props.photo}
-                    alt={`Foto ${props.name}`}
+                    alt={`Foto de ${props.name}`}
                     height="40px"
                     width="40px"
                     loading="lazy"
                   />
-                  <div className={styles.card_speaker_info_content}>
+                  <div className={styles.cardSpeakerInfoContent}>
                     <h5>{props.name}</h5>
-
-                    {props.community && (
-                      <p className={styles.gde}>{props.community}</p>
-                    )}
-                    <p
-                      className={styles.font_size_14}
-                    >{`${props.companyTitle}`}</p>
+                    <p>{props.companyTitle}</p>
                   </div>
                 </div>
               </Row>

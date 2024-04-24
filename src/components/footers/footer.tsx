@@ -1,15 +1,9 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import configValues from "helpers/config";
-import IWDLogo from "../../assets/images/IWDLogo";
 import styles from "../../styles/Footer.module.css";
 
 interface FooterProps {}
@@ -34,14 +28,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
               Palestrantes
             </NavLink>
           </NavItem>
-          {/* <NavItem>
-          <NavLink
-            href="/schedule"
-            className={styles.footerNavlink}
-          >
-            Agenda
-          </NavLink>
-        </NavItem> */}
+          <NavItem>
+            <NavLink href="#schedule" className={styles.footerNavlink}>
+              Agenda
+            </NavLink>
+          </NavItem>
           <NavItem>
             <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
@@ -64,8 +55,6 @@ const Footer: React.FC<FooterProps> = ({}) => {
             <rt className={styles.rt}>{configValues.formattedDate}</rt>
             <rp>)</rp>
           </ruby>
-
-          {/* <h6>{configValues.formattedDate}</h6> */}
         </div>
         <div className={styles.footerSocial}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
@@ -79,26 +68,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </a>
         </div>
 
-        {/* <details>
-          <summary>Click to view</summary>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-            perferendis saepe porro facilis vitae autem sequi voluptate alias
-            facere cum animi architecto magnam ipsam error accusantium
-            perspiciatis eos, illo esse!
-          </p>
-        </details> */}
-
         <div className={styles.footerSocial}>
-          {/* <NavItem>
-            <NavLink
-              href="https://facebook.com/"
-              target="_blank"
-              className={`${styles.footerNavlink} ${styles.facebook}`}
-            >
-              <FontAwesomeIcon icon={faFacebook} size="xl" />
-            </NavLink>
-          </NavItem> */}
           <NavItem>
             <NavLink
               href="https://www.instagram.com/wtmgoiania/"
@@ -108,15 +78,6 @@ const Footer: React.FC<FooterProps> = ({}) => {
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </NavLink>
           </NavItem>
-          {/* <NavItem>
-            <NavLink
-              href="https://twitter.com/"
-              target="_blank"
-              className={`${styles.footerNavlink} ${styles.xtwitter}`}
-            >
-              <FontAwesomeIcon icon={faXTwitter} size="xl" />
-            </NavLink>
-          </NavItem> */}
           <NavItem>
             <NavLink
               href="https://www.linkedin.com/company/wtmgoiania/"
@@ -127,13 +88,6 @@ const Footer: React.FC<FooterProps> = ({}) => {
             </NavLink>
           </NavItem>
         </div>
-        {/* <div className={styles.footerLogo}>
-          <NavItem>
-            <NavLink href="/">
-              <IWDLogo color="white" height={50} />
-            </NavLink>
-          </NavItem>
-        </div> */}
       </Nav>
     </footer>
   );

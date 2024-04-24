@@ -290,9 +290,9 @@ const speakers = [
     photo: "/speakers/fernandaWanderley.png",
     name: "Fernanda Wanderley",
     tech: "Machine learning/TensorFlow",
-    topic: "A definir",
+    topic: "Prepare-se para uma imersão no fascinante mundo do Gemini API! Nesta palestra, você dará seus primeiros passos nessa ferramenta poderosa e versátil, explorando o potencial que ela oferece. Você irá descobrir os prompts básicos, como gerar códigos que te ajudem no dia a dia e explorar a capacidade do gemini de interpretação e análise de imagens",
     mini_bio: "Fernanda é formada em Ciência da Computação e Mestre em Inteligência Artificial pela UFRJ, Doutora em Inteligência Computacional pela UFMG e Google Developer Expert em Machine Learning. É líder do time de Visão Computacional da NeuralMed, trabalhando com detecção de patologias em imagens médicas. Sua marca registrada são os cabelos coloridos, gosta de tocar tamborim no carnaval e contribuir com projetos que incentivam grupos minorizados na tecnologia, sendo co-fundadora da MIA, embaixadora do WiDS Rio e colaboradora da PrograMaria.",
-    title: "A definir",
+    title: "Primeiros passos com Gemini e Gemini Pro Vision",
     companyTitle: "NeuralMed",
     gde: true,
     social_media: {

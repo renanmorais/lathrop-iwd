@@ -1,151 +1,130 @@
-.time_row{
-    font-family: NAMU-Pro,sans-serif;
-    font-size: 2.0rem;
-    color: #858585;
-    letter-spacing: .05rem;
-    display: inline-flex;
-    max-height: 100px;
-    margin-top: 20px;
+.Title {
+  text-align: center;
 }
 
-.font_size_14 {
-    font-size: 14px !important;
+.Title::after {
+  background: linear-gradient(
+    90deg,
+    var(--green),
+    var(--blue) 10%,
+    var(--green-smooth) 30%,
+    var(--dark-blue) 40%,
+    var(--green) 70%,
+    var(--blue)
+  );
+  content: "";
+  display: flex;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  width: 30%;
 }
 
-.margin_right_15 {
-    margin-right: 15px;
+.timeRow {
+  display: inline-flex;
+  margin-top: 20px;
+  max-height: 100px;
+  font-size: 2rem;
+  color: var(--dark-blue);
+  letter-spacing: 0.05rem;
 }
 
-.margin_left_10 {
-    margin-left: 10px;
+.principalCol {
+  margin-bottom: 10px;
 }
 
-.gde {
-    font-size: 14px !important;
-    color: #1b1bb7;
-    font-weight: 600;
+.rowContent {
+  margin: 20px 0;
 }
 
-.row_content {
-    margin: 20px 0px;
+.opacity {
+  opacity: 0.6;
 }
 
-.opacity50 {
-    opacity: 0.5;
-}
-
-.height100p {
-    height: 100%;
+.height {
+  height: 100%;
 }
 
 .timeSeparator {
-    opacity: 0.7;
-    margin: 0px 10px;
+  opacity: 0.7;
+  margin: 0px 10px;
 }
 
-.card_content {
-    background-color: #Fff;
-    min-height: 80px;
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    padding: 13px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  min-height: 80px;
+  padding: 13px;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 10%);
 }
 
-
-
-.card_text{
-    font-family: NAMU-Pro, sans-serif;
-    justify-content: space-between;
-    line-height: 24px;
-    font-size: 18px;
-    color: #565656;
-    letter-spacing: .05rem;
-    margin-top: 20px;
+.cardSpeakerInfoContent {
+  margin-left: 1rem;
 }
 
-.card_image {
-    border-radius: 50%;
-    min-width: 40px !important;
-    min-height: 40px !important;
-
+.cardSpeakerInfoContent h5 {
+  font-size: 1.2rem;
 }
 
-.card_speaker_info_content {
-    margin-left: 1rem;
+.cardSpeakerInfoContent p:not(:first-child) {
+  margin: 0;
+  font-size: 14px;
 }
 
-.card_speaker_info_content h1 {
-    font-size: 1.6rem;
-    margin: 0;
+.divWrapper {
+  display: flex;
+  align-items: center;
 }
 
-.card_speaker_info_content p {
-    margin: 0;
-    font-size: 1rem;
+.divWrapper > span {
+  min-width: 40px;
 }
 
-.div_wrapper {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
+.cardTitle {
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.div_wrapper > span {
-    min-width: 40px;
+.cardTime {
+  display: inline;
+  font-weight: 700;
+  background: linear-gradient(217deg, var(--green), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, var(--blue), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, var(--dark-blue), rgba(0, 0, 255, 0) 70.71%);;
+  border-radius: 50px;
+  padding: 0 15px;
 }
 
-.card_title {
-    font-weight: 600;
-    font-size: 16px;
+.pathDiv {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 25px;
 }
 
-.card_time {
-    font-weight: 600;
-    font-size: 16px;
-    display: inline;
+.pathWrapper {
+  width: fit-content;
 }
 
-.path_wrapper {
-    margin: 5px 0px;
-    width: fit-content;
+.trilha1 {
+  color: white;
+  background-color: var(--blue);
+  font-size: 14px;
 }
 
-.path_div {
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-}
-.card_path_icon {
-    min-width: 15px !important;
-    min-height: 25px !important;
-    margin-right: 10px;
+.trilha2 {
+  color: white;
+  background-color: var(--green);
+  font-size: 14px;
 }
 
-.path_ararauna_color{
-    background-color: cornflowerblue;
-    color: white;
-    font-size: 14px;
-}
-
-.path_curado_color{
-    background-color: #fab49e;
-
-    font-size: 14px;
-}
-
-.path_minas_color{
-    background-color: #feff80;
-
-    font-size: 14px;
-}
-
-.path_canastra_color{
-    background-color: #ffd664;
-
-    font-size: 14px;
+.trilha3 {
+  color: white;
+  background-color: var(--dark-blue);
+  font-size: 14px;
 }
