@@ -269,10 +269,10 @@ const schedule = [
     speeches: [
       {
         room: "Katherine Johnson",
-        topic: "Kamila Santos",
+        topic: "Thielle Cathia",
         speakers: [
           {
-            speaker_id: 2,
+            speaker_id: 24,
             start: "14:40",
             end: "15:15",
           },
@@ -280,10 +280,10 @@ const schedule = [
       },
       {
         room: "Cora Coralina",
-        topic: "Thielle Cathia",
+        topic: "Kamila Santos",
         speakers: [
           {
-            speaker_id: 24,
+            speaker_id: 2,
             start: "14:40",
             end: "15:15",
           },
