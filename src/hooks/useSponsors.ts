@@ -108,6 +108,16 @@ const sponsors = {
     name: "Apoio estratégico",
     items: [
       {
+        name: "Hub Goiás",
+        logo: "/parceiros/hubGoias.png",
+        url: "https://hubgoias.org/",
+      },
+      {
+        name: "Hub Cerrado",
+        logo: "/parceiros/hubCerrado.png",
+        url: "https://hubcerrado.com.br/",
+      },
+      {
         name: "Black Stars",
         logo: "/parceiros/blackStars.png",
         url: "https://blackstarsbr.com/",
