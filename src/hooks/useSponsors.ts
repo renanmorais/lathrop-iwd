@@ -118,6 +118,11 @@ const sponsors = {
         logo: "/parceiros/startupGO.png",
         url: "https://startupgo.org/",
       },
+      {
+        name: "MulheresGO",
+        logo: "/parceiros/mulheresGo.png",
+        url: "https://sites.google.com/view/comunidademulheresgo/p%C3%A1gina-inicial?authuser=3",
+      },
       // { name: "Acieg", logo: "/patrocinio/acieg.jpg" },
       // {
       //   name: "Aliança pela inovação em Goiás",
