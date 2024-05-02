@@ -66,6 +66,18 @@ const ScheduleSection: React.FC<SpeakersSectionProps> = ({}) => {
           })}
         </Container>
       )}
+
+      <Container>
+        <h1 className={styles.Title}>Álbum de fotos</h1>
+        <a href="https://photos.app.goo.gl/SePZEJQSdYiFuqui8" target="_blank">
+          <img
+            src="albumIWD.jpeg"
+            alt="Álbum de fotos"
+            width="100%"
+            loading="lazy"
+          />
+        </a>
+      </Container>
     </>
   );
 };
