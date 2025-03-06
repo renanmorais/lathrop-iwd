@@ -51,7 +51,7 @@ const About = ({}: AboutProps) => {
         </section>
 
         <div className={styles.toastContainer}>
-          <span>Impact the Future</span>
+          <span>Redefine Possible</span>
           <span className={styles.toastContent}></span>
         </div>
       </Container>

@@ -120,7 +120,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
           </div>
         </div>
       </Container>
-      <Bubble text="International Women's Day 2024" />
+      <Bubble text="International Women's Day 2025" />
     </>
   );
 };

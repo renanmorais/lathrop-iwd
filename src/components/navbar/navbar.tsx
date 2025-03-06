@@ -44,7 +44,7 @@ export const Navbar = () => {
             Sobre
           </a>
         </li>
-        <li>
+        {/* <li>
           <a className={styles.navItem} href="/speakers">
             Palestrantes
           </a>
@@ -58,7 +58,7 @@ export const Navbar = () => {
           <a className={styles.navItem} href="/sponsors">
             Patrocinadores
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             className={`${styles.navItem} ${styles.navItemRegister}`}

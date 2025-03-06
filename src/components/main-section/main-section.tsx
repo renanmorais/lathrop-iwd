@@ -36,13 +36,13 @@ const MainSection: React.FC = ({}) => {
         <Marquee items={marqueeItems} />
         <div className={styles.shining}>
           <h1 className={styles.shiningText}>
-            {isFirstText ? "🚀Impact the Future🚀" : "🚀Impacte o Futuro🚀"}
+            {isFirstText ? "Redefine Possible" : "Redefine Possible"}
           </h1>
         </div>
         <Marquee items={marqueeItemsBr} reverse />
         {/* <div className={styles.shining}>
           <h1 className={`${styles.shiningText} ${styles.delayedText}`}>
-            🚀Impacte o Futuro🚀
+            Redefine Possible
           </h1>
         </div> */}
       </section>

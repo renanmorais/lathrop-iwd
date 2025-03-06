@@ -1,9 +1,9 @@
 const configValues = {
-  name: "IWD Cerrado 2024",
-  eventDate: "2024-04-27T08:00:00",
-  eventLinkRegistrationUrl: "https://doity.com.br/iwd-cerrado-2024",
-  place: "HUB Goiás - Centro de Excelência em Empreendedorismo Inovador",
-  formattedDate: "27 de Abril de 2024, 08h00 - 18h00",
+  name: "IWD Cerrado 2025",
+  eventDate: "2025-04-26T08:00:00",
+  eventLinkRegistrationUrl: "https://doity.com.br/iwd-cerrado-2025",
+  place: "À definir",
+  formattedDate: "26 de Abril de 2025, 08h00 - 18h00",
   email: "gdggoiania@gmail.com",
 };
 

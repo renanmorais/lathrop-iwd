@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               Sobre
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink href="/speakers" className={styles.footerNavlink}>
               Palestrantes
             </NavLink>
@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
             <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink
               href={configValues.eventLinkRegistrationUrl}
@@ -50,13 +50,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </div>
         <div className={styles.footerSocial}>
           <ruby>
-            {configValues.place}
+            {/* {configValues.place} */}
             <rp>(</rp>
             <rt className={styles.rt}>{configValues.formattedDate}</rt>
             <rp>)</rp>
           </ruby>
         </div>
-        <div className={styles.footerSocial}>
+        {/* <div className={styles.footerSocial}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
           <a
             href="https://maps.app.goo.gl/77nVpkFsNg38qsrS6"
@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           >
             Localização Google Maps
           </a>
-        </div>
+        </div> */}
 
         <div className={styles.footerSocial}>
           <NavItem>

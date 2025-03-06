@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "styles/Marquee.module.css";
 
-export const marqueeItems = Array(20).fill("Impact the Future");
-export const marqueeItemsBr = Array(20).fill("Impacte o Futuro");
+export const marqueeItems = Array(20).fill("Redefine Possible");
+export const marqueeItemsBr = Array(20).fill("Redefine Possible");
 
 const Marquee = ({
   items,
