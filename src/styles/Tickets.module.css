@@ -20,6 +20,23 @@
   width: 30%;
 }
 
+.summaryDoity {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.summaryDoity:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 .link {
   color: var(--link-color);
 }
@@ -108,7 +125,7 @@
 }
 
 .card:hover {
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 .card:hover .btn {
@@ -237,3 +254,142 @@
 .TicketsDisclaimer a {
   color: rgba(0, 0, 255, 0.6);
 } */
+
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  /* background-color: var(--red); */
+  color: var(--black);
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: var(--blue);
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--green);
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.plan .pricing small {
+  color: var(--white);
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--black);
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: var(--green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.iconNoTShirt {
+  background-color: var(--red) !important;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.plan .button {
+  background-color: var(--green);
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .buttonEnd {
+  background-color: var(--red);
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.plan .button:hover,
+.plan .button:focus {
+  background-color: var(--green-smooth);
+}

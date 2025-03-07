@@ -58,9 +58,9 @@ const Home = ({ speakers, sponsors, schedule }: HomePageProps) => {
         {/* <section style={sectionStyle}>
           <ScheduleSection speakers={speakers} schedule={schedule} />
         </section> */}
-        {/* <section style={sectionStyle}>
+        <section style={sectionStyle}>
           <TicketsSection />
-        </section> */}
+        </section>
         {/* <section style={sectionStyle}>
           <LocationSection />
         </section>
