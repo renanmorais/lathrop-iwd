@@ -15,6 +15,14 @@ const MainSection: React.FC = ({}) => {
 
   return (
     <main>
+      <section>
+        {/* <Marquee items={marqueeItems} /> */}
+        <div className={styles.shining}>
+          <h1 className={styles.shiningText}>
+            {isFirstText ? "<>Redefine Possible</>" : "<>Redefine Possible</>"}
+          </h1>
+        </div>
+      </section>
       <div id="about" className={styles.Container}>
         <div className={styles.TextContainer}>
           <h1 className={styles.Title}> O que é IWD?</h1>
@@ -33,18 +41,12 @@ const MainSection: React.FC = ({}) => {
       </div>
 
       <section>
-        <Marquee items={marqueeItems} />
+        {/* <Marquee items={marqueeItems} /> */}
         <div className={styles.shining}>
           <h1 className={styles.shiningText}>
-            {isFirstText ? "Redefine Possible" : "Redefine Possible"}
+            {isFirstText ? "<>Redefine Possible</>" : "<>Redefine Possible</>"}
           </h1>
         </div>
-        <Marquee items={marqueeItemsBr} reverse />
-        {/* <div className={styles.shining}>
-          <h1 className={`${styles.shiningText} ${styles.delayedText}`}>
-            Redefine Possible
-          </h1>
-        </div> */}
       </section>
     </main>
   );

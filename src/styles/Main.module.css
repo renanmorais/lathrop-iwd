@@ -22,6 +22,7 @@
   opacity: 0.8;
   color: var(--white);
   transition: all 0.5s ease-in-out;
+  border-radius: 20px;
 }
 
 .TextContainer:hover {

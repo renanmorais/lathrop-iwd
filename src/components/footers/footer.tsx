@@ -40,9 +40,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </NavItem> */}
           <NavItem>
             <NavLink
-              href={configValues.eventLinkRegistrationUrl}
+              href="#tickets"
               className={`${styles.footerNavlink} ${styles.registerButton}`}
-              target="_blank"
             >
               <span>Inscreva-se</span>
             </NavLink>
@@ -50,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </div>
         <div className={styles.footerSocial}>
           <ruby>
-            {/* {configValues.place} */}
+            {configValues.place}
             <rp>(</rp>
             <rt className={styles.rt}>{configValues.formattedDate}</rt>
             <rp>)</rp>

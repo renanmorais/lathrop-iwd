@@ -62,9 +62,7 @@ export const Navbar = () => {
         <li>
           <a
             className={`${styles.navItem} ${styles.navItemRegister}`}
-            href={configValues.eventLinkRegistrationUrl}
-            target="_blank"
-            rel="noreferrer"
+            href="#tickets"
           >
             Inscreva-se
           </a>

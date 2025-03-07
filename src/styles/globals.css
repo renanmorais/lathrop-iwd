@@ -25,6 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter var', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
