@@ -3,8 +3,8 @@ const sponsors = {
     name: "Realização",
     items: [
       {
-        name: "Google Developers",
-        logo: "/googleDeveloperGroups.svg",
+        name: "Google Developer Groups",
+        logo: "/supports/googleDevelopers.png",
         url: "https://developers.google.com",
       },
       {
@@ -17,62 +17,67 @@ const sponsors = {
   diamond: {
     name: "Cora Coralina",
     items: [
-      {
-        name: "Porto Digital",
-        logo: "/patrocinio/portoDigital.svg",
-        url: "https://www.portodigital.org/",
-      },
-      {
-        name: "Hub Goiás",
-        logo: "/parceiros/hubGoias.png",
-        url: "https://hubgoias.org/",
-      },
-      {
-        name: "SECTI",
-        logo: "/patrocinio/secti.png",
-        url: "https://goias.gov.br/inovacao/",
-      },
-      {
-        name: "Senac Infinite",
-        logo: "/patrocinio/senacInfinite.png",
-        url: "https://www.go.senac.br/senacInfinite",
-      },
+      // {
+      //   name: "Porto Digital",
+      //   logo: "/patrocinio/portoDigital.svg",
+      //   url: "https://www.portodigital.org/",
+      // },
+      // {
+      //   name: "Hub Goiás",
+      //   logo: "/parceiros/hubGoias.png",
+      //   url: "https://hubgoias.org/",
+      // },
+      // {
+      //   name: "SECTI",
+      //   logo: "/patrocinio/secti.png",
+      //   url: "https://goias.gov.br/inovacao/",
+      // },
+      // {
+      //   name: "Senac Infinite",
+      //   logo: "/patrocinio/senacInfinite.png",
+      //   url: "https://www.go.senac.br/senacInfinite",
+      // },
       // { name: 'TQI', logo: 'https://firebasestorage.googleapis.com/v0/b/devfestcerrado2022.appspot.com/o/sponsors%2Ftqi.png?alt=media', url: 'https://www.tqi.com.br/' },
     ],
   },
   golden: {
-    name: "Marília Mendonça",
+    name: "Patrocinador",
     items: [
-      {
-        name: "Máxima Tech",
-        logo: "/patrocinio/maximaTech.png",
-        url: "https://maximatech.com.br/",
-      },
-      {
-        name: "ACSoftware",
-        logo: "/patrocinio/acSoftware.png",
-        url: "https://acsoftware.com.br/",
-      },
-      {
-        name: "PodCafé da TI",
-        logo: "/parceiros/podCafe.png",
-        url: "https://podcafe.com.br/",
-      },
-      {
-        name: "Sebrae",
-        logo: "/patrocinio/sebrae.jpeg",
-        url: "https://vitrine.sebraego.com.br/",
-      },
-      {
-        name: "Intertech",
-        logo: "/patrocinio/intertech.png",
-        url: "https://internationalidiomas.com.br/",
-      },
-      {
-        name: "International",
-        logo: "/patrocinio/international.png",
-        url: "https://internationalidiomas.com.br/",
-      },
+      // {
+      //   name: "Cilia Digital",
+      //   logo: "/patrocinio/cilia.svg",
+      //   url: "https://www.cilia.com.br/",
+      // },
+      // {
+      //   name: "Máxima Tech",
+      //   logo: "/patrocinio/maximaTech.png",
+      //   url: "https://maximatech.com.br/",
+      // },
+      // {
+      //   name: "ACSoftware",
+      //   logo: "/patrocinio/acSoftware.png",
+      //   url: "https://acsoftware.com.br/",
+      // },
+      // {
+      //   name: "PodCafé da TI",
+      //   logo: "/parceiros/podCafe.png",
+      //   url: "https://podcafe.com.br/",
+      // },
+      // {
+      //   name: "Sebrae",
+      //   logo: "/patrocinio/sebrae.jpeg",
+      //   url: "https://vitrine.sebraego.com.br/",
+      // },
+      // {
+      //   name: "Intertech",
+      //   logo: "/patrocinio/intertech.png",
+      //   url: "https://internationalidiomas.com.br/",
+      // },
+      // {
+      //   name: "International",
+      //   logo: "/patrocinio/international.png",
+      //   url: "https://internationalidiomas.com.br/",
+      // },
       // {
       //   name: "Globo",
       //   logo: "/patrocinio/globo.png",
@@ -107,32 +112,32 @@ const sponsors = {
   support: {
     name: "Apoio estratégico",
     items: [
-      {
-        name: "Hub Goiás",
-        logo: "/parceiros/hubGoias.png",
-        url: "https://hubgoias.org/",
-      },
-      {
-        name: "Hub Cerrado",
-        logo: "/parceiros/hubCerrado.png",
-        url: "https://hubcerrado.com.br/",
-      },
-      {
-        name: "Black Stars",
-        logo: "/parceiros/blackStars.png",
-        url: "https://blackstarsbr.com/",
-      },
-      { name: "PorteraTech", logo: "/parceiros/porteraTech.png", url: "" },
-      {
-        name: "StartupGO",
-        logo: "/parceiros/startupGO.png",
-        url: "https://startupgo.org/",
-      },
-      {
-        name: "MulheresGO",
-        logo: "/parceiros/mulheresGo.png",
-        url: "https://sites.google.com/view/comunidademulheresgo/p%C3%A1gina-inicial?authuser=3",
-      },
+      // {
+      //   name: "Hub Goiás",
+      //   logo: "/parceiros/hubGoias.png",
+      //   url: "https://hubgoias.org/",
+      // },
+      // {
+      //   name: "Hub Cerrado",
+      //   logo: "/parceiros/hubCerrado.png",
+      //   url: "https://hubcerrado.com.br/",
+      // },
+      // {
+      //   name: "Black Stars",
+      //   logo: "/parceiros/blackStars.png",
+      //   url: "https://blackstarsbr.com/",
+      // },
+      // { name: "PorteraTech", logo: "/parceiros/porteraTech.png", url: "" },
+      // {
+      //   name: "StartupGO",
+      //   logo: "/parceiros/startupGO.png",
+      //   url: "https://startupgo.org/",
+      // },
+      // {
+      //   name: "MulheresGO",
+      //   logo: "/parceiros/mulheresGo.png",
+      //   url: "https://sites.google.com/view/comunidademulheresgo/p%C3%A1gina-inicial?authuser=3",
+      // },
       // { name: "Acieg", logo: "/patrocinio/acieg.jpg" },
       // {
       //   name: "Aliança pela inovação em Goiás",

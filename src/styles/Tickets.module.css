@@ -260,7 +260,6 @@
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
     0 1px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 10px;
-  /* background-color: var(--red); */
   color: var(--black);
   max-width: 300px;
 }
@@ -277,6 +276,7 @@
   background-color: var(--blue);
   border-radius: 12px;
   position: relative;
+  color: var(--white);
 }
 
 .plan .pricing {
@@ -302,7 +302,7 @@
 .plan .title {
   font-weight: 600;
   font-size: 1.25rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .plan .title + * {

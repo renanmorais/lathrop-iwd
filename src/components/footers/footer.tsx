@@ -27,17 +27,17 @@ const Footer: React.FC<FooterProps> = ({}) => {
             <NavLink href="/speakers" className={styles.footerNavlink}>
               Palestrantes
             </NavLink>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLink href="#schedule" className={styles.footerNavlink}>
               Agenda
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
             </NavLink>
-          </NavItem> */}
+          </NavItem>
           <NavItem>
             <NavLink
               href="#tickets"

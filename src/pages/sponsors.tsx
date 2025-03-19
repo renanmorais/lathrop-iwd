@@ -36,7 +36,7 @@ const SponsorsPage = ({}: SponsorsPageProps) => {
           {sponsors.map((sponsor) => constructSponsorCol(sponsor))}
         </section>
         <Row className={styles.pageRow}>
-          <h4>Que tal colocar sua marca neste evento?</h4>
+          {/* <h4>Que tal colocar sua marca neste evento?</h4>
           <p className={styles.pageParagraph}>
             <a
               href="/slides/Midia Kit IWD 2024 Goiânia.pptx.pdf"
@@ -45,7 +45,7 @@ const SponsorsPage = ({}: SponsorsPageProps) => {
             >
               Clique aqui e acesse nosso mídia kit
             </a>
-          </p>
+          </p> */}
           <p className={styles.pageParagraph}>
             Fale conosco pelo e-mail:{" "}
             <a

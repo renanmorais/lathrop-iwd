@@ -30,9 +30,9 @@
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  border: 2px solid var(--black);
+  border: 2px solid var(--blue);
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--blue);
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;

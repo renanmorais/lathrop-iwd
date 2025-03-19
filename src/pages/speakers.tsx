@@ -43,7 +43,7 @@ const SpeakersPage = ({}: SpeakersPageProps) => {
             {speakers.map((speaker) => constructSpeakerCol(speaker))}
           </Row>
         </section>
-        {/* <div className={styles.call4Papers}>
+        <div className={styles.call4Papers}>
           <button className={styles.call4PapersButton}>
             <a
               className={styles.call4PapersLink}
@@ -56,7 +56,7 @@ const SpeakersPage = ({}: SpeakersPageProps) => {
               </span>
             </a>
           </button>
-        </div> */}
+        </div>
       </Container>
     </div>
   );
