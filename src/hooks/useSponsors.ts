@@ -24,7 +24,7 @@ const sponsors = {
       // },
       // {
       //   name: "Hub Goiás",
-      //   logo: "/parceiros/hubGoias.png",
+      //   logo: "/parceiros/hub.png",
       //   url: "https://hubgoias.org/",
       // },
       // {
@@ -41,13 +41,13 @@ const sponsors = {
     ],
   },
   golden: {
-    name: "Patrocinador",
+    name: "Patrocinadores",
     items: [
-      // {
-      //   name: "Cilia Digital",
-      //   logo: "/patrocinio/cilia.svg",
-      //   url: "https://www.cilia.com.br/",
-      // },
+      {
+        name: "Cilia Digital",
+        logo: "/patrocinio/cilia.png",
+        url: "https://www.cilia.com.br/",
+      },
       // {
       //   name: "Máxima Tech",
       //   logo: "/patrocinio/maximaTech.png",
@@ -78,11 +78,11 @@ const sponsors = {
       //   logo: "/patrocinio/international.png",
       //   url: "https://internationalidiomas.com.br/",
       // },
-      // {
-      //   name: "Globo",
-      //   logo: "/patrocinio/globo.png",
-      //   url: "https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~",
-      // },
+      {
+        name: "Globo",
+        logo: "/patrocinio/globo.png",
+        url: "https://globo.gupy.io/#xd_co_f=YWNiOTIyMTctYjU3Zi00NDk2LTgwMGEtYWE3N2E3NDhlMmUz~",
+      },
       // {
       //   name: "Happy",
       //   logo: "/patrocinio/happy.jpg",
@@ -112,11 +112,11 @@ const sponsors = {
   support: {
     name: "Apoio estratégico",
     items: [
-      // {
-      //   name: "Hub Goiás",
-      //   logo: "/parceiros/hubGoias.png",
-      //   url: "https://hubgoias.org/",
-      // },
+      {
+        name: "Hub Goiás",
+        logo: "/parceiros/hub.png",
+        url: "https://hubgoias.org/",
+      },
       // {
       //   name: "Hub Cerrado",
       //   logo: "/parceiros/hubCerrado.png",
