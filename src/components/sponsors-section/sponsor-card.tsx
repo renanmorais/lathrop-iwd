@@ -3,29 +3,21 @@ import Image from "next/image";
 import { Sponsor } from "models/sponsor";
 import styles from "../../styles/Sponsors.module.css";
 
-interface SponsorCardProps extends Sponsor {
-  isStaff?: boolean;
-}
+interface SponsorCardProps extends Sponsor {}
 
 const SponsorCard: React.FC<SponsorCardProps> = (sponsor) => {
   return (
     <div className={styles.SponsorCard}>
       <a href={sponsor.url} target="_blank" rel="noreferrer">
-        <div
-          className={
-            sponsor.isStaff ? styles.StaffCardBody : styles.SponsorCardBody
-          }
-        >
-          <Image
-            unoptimized
-            src={sponsor.logo}
-            layout="fill"
-            objectFit="contain"
-            className={styles.SponsorCardBodyImage}
-            alt={sponsor.name}
-            loading="lazy"
-          ></Image>
-        </div>
+        <Image
+          unoptimized
+          src={sponsor.logo}
+          width={150}
+          height={150}
+          className={styles.SponsorCardBodyImage}
+          alt={sponsor.name}
+          loading="lazy"
+        ></Image>
       </a>
     </div>
   );

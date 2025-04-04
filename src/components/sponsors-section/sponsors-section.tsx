@@ -20,7 +20,6 @@ const SPONSORS_LIST: string[] = [
   "ruby",
   "ametista",
   "support",
-  "staff",
   "companies",
   "partners",
 ];
@@ -37,21 +36,19 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
     if (sponsor.logo)
       return (
         <div key={sponsor.id}>
-          <SponsorCard {...sponsor} isStaff={isStaff}></SponsorCard>
+          <SponsorCard {...sponsor}></SponsorCard>
         </div>
       );
     return <Col></Col>;
   };
 
-  const mapSponsorLevel = (sponsorLevel: SponsorLevel, isStaff: boolean) => {
+  const mapSponsorLevel = (sponsorLevel: SponsorLevel) => {
     if (sponsorLevel?.items?.length > 0)
       return (
         <div className={styles.SponsorContainer}>
           <h3>{sponsorLevel.name}</h3>
-          <div
-            className={isStaff ? styles.StaffWrapper : styles.SponsorWrapper}
-          >
-            {sponsorLevel.items.map((item) => mapSponsorCard(item, isStaff))}
+          <div className={styles.SponsorWrapper}>
+            {sponsorLevel.items.map((item) => mapSponsorCard(item, false))}
           </div>
         </div>
       );
@@ -66,15 +63,11 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = () => {
           Estas são as empresas que nos ajudaram a fazer este evento acontecer!
         </p>
 
-        {SPONSORS_LIST.map((el) =>
-          mapSponsorLevel(sponsors[el], el === "staff")
-        )}
+        {SPONSORS_LIST.map((el) => mapSponsorLevel(sponsors[el]))}
 
         <h1 className={styles.Title}>Organização</h1>
 
-        <div
-          className={`${styles.SponsorWrapper} ${styles.SponsorWrapperStyle}`}
-        >
+        <div className={`${styles.SponsorWrapper} ${styles.SponsorWrapperStyle}`}>
           {supports.items.map((item: Sponsor) => mapSponsorCard(item, false))}
         </div>
       </div>

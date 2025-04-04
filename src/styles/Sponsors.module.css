@@ -67,8 +67,10 @@
 
 .SponsorCardBody {
   position: relative;
-  width: 200px;
-  height: 100px;
+}
+
+.SponsorCardBodyImage {
+  object-fit: contain;
 }
 
 /* page sponsor */

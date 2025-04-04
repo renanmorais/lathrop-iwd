@@ -66,8 +66,8 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                           unoptimized
                           src={speak.photo}
                           alt={`Foto de ${speak.name}`}
-                          width="40px"
-                          height="40px"
+                          width="40"
+                          height="40"
                           loading="lazy"
                         />
                         <div className={styles.cardSpeakerInfoContent}>
@@ -116,8 +116,8 @@ const ScheduleCard: React.FC<ScheduleCardProps> = (props) => {
                     unoptimized
                     src={props.photo}
                     alt={`Foto de ${props.name}`}
-                    height="40px"
-                    width="40px"
+                    height="40"
+                    width="40"
                     loading="lazy"
                   />
                   <div className={styles.cardSpeakerInfoContent}>
