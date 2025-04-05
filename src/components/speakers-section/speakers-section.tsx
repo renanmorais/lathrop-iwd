@@ -95,6 +95,7 @@ const SpeakersSection: React.FC<SpeakersSectionProps> = ({}) => {
               ride="carousel"
               className={styles.carousel}
               style={{ width: "100%" }}
+              enableTouch
             >
               {displaySpeakers}
               <div className={styles.carousel_prev}>
