@@ -364,7 +364,7 @@ const speakers = [
   //   id: 20,
   //   path: "",
   //   photo: "/speakers/2025/jessikaHannder.png",
-  //   name: "Jessika Hannder",
+  //   name: "Jessika Hannder",  // CANCELOU
   //   tech: "Carreira e desenvolvimento pessoal",
   //   topic: "Estilo pessoal é a nossa marca, reflete o que somos e o que pensamos. Ter um estilo pessoal é fazer opções de uma forma consciente, estratégica e planeada, com o objetivo de comunicar uma mensagem e obter um determinado resultado, nesta palestra apontaremos caminhos para uma comunicação assertiva no ambiente de trabalho.",
   //   mini_bio: "Multiartista Goiana/afroempreendedora - doutoranda em arte, cultura e tecnologia (UFG), Mestre em Artes da Cena por esta mesma universidade. Pós graduada em Psicopedagogia institucional e clinica e Ensino de artes: técnicas e procedimentos , especialista em maquiagem, consultoria de imagem e Personal Stylist.",
