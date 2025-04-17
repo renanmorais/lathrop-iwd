@@ -55,7 +55,7 @@ const HomeHeader: React.FC = ({}) => {
           {/* <source media="(max-width: 480px)" srcSet="/SocialBannersTwitter.png" /> */}
           <img src="/SocialBannersTwitter.png" alt="" loading="lazy" />
         </picture>
-        <Row noGutters>
+        <Row>
           <Col className={styles.RegisterContainer}>
             <a
               className={styles.RegisterButton}
