@@ -49,11 +49,11 @@ export const Navbar = () => {
             Palestrantes
           </a>
         </li>
-        {/* <li>
+        <li>
           <a className={styles.navItem} href="#schedule">
             Agenda
           </a>
-        </li> */}
+        </li>
         <li>
           <a className={styles.navItem} href="/sponsors">
             Patrocinadores

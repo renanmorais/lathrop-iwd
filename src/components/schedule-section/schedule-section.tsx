@@ -67,7 +67,7 @@ const ScheduleSection: React.FC<SpeakersSectionProps> = ({}) => {
         </Container>
       )}
 
-      <Container>
+      {/* <Container>
         <h1 className={styles.Title}>Álbum de fotos</h1>
         <a href="https://photos.app.goo.gl/SePZEJQSdYiFuqui8" target="_blank">
           <img
@@ -77,7 +77,7 @@ const ScheduleSection: React.FC<SpeakersSectionProps> = ({}) => {
             loading="lazy"
           />
         </a>
-      </Container>
+      </Container> */}
     </>
   );
 };

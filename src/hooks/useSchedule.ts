@@ -1,7 +1,7 @@
 const schedule = [
   {
     start: "07:40",
-    end: "08:40",
+    end: "08:30",
     speeches: [
       {
         room: "Arena",
@@ -10,8 +10,8 @@ const schedule = [
     ],
   },
   {
-    start: "08:40",
-    end: "09:00",
+    start: "08:30",
+    end: "08:55",
     speeches: [
       {
         room: "Arena",
@@ -19,89 +19,96 @@ const schedule = [
       },
     ],
   },
-//   {
-//     start: "09:00",
-//     end: "09:05",
-//     speeches: [
-//       {
-//         room: "Arena",
-//         topic: "Espaço SEBRAE",
-//       },
-//     ],
-//   },
+  // {
+  //   start: "08:45",
+  //   end: "08:50",
+  //   speeches: [
+  //     {
+  //       room: "Arena",
+  //       topic: "HUG Goiás - Karol Fernandes",
+  //     },
+  //   ],
+  // },
+  // {
+  //   start: "08:50",
+  //   end: "08:55",
+  //   speeches: [
+  //     {
+  //       room: "Arena",
+  //       topic: "Hora da foto",
+  //     },
+  //   ],
+  // },
   {
-    start: "09:05",
-    end: "09:10",
+    start: "08:55",
+    end: "09:50",
     speeches: [
       {
         room: "Arena",
-        topic: "Espaço comunidade",
+        topic: "Empreendendo um futuro melhor: Desafios e lições da minha jornada",
+        speaker_id: 2,
       },
     ],
   },
-//   {
-//     start: "09:10",
-//     end: "09:20",
-//     speeches: [
-//       {
-//         room: "Arena",
-//         topic: "International - sorteios",
-//       },
-//     ],
-//   },
-  {
-    start: "09:20",
-    end: "09:55",
-    speeches: [
-      {
-        room: "Arena",
-        topic: "Palestra: O despertar da resiliência",
-        speaker_id: 19,
-      },
-    ],
-  },
-//   {
-//     start: "09:55",
-//     end: "10:05",
-//     speeches: [
-//       {
-//         room: "Arena",
-//         topic: "Deslocamento e vídeos",
-//       },
-//     ],
-//   },
   {
     speeches: [
       {
-        room: "Katherine Johnson",
-        topic: "Fernanda Kelly",
+        room: "Auditorio",
+        topic: "Dupla",
+        speaker_id: 0,
         speakers: [
           {
-            speaker_id: 6,
-            start: "10:05",
-            end: "10:40",
+            topic: "Mika Fran e Flora Cavalcante",
+            speaker_id: 12,
+            start: "10:00",
+            end: "10:30",
+          },
+          {
+            topic: "Karolline Fernandes",
+            speaker_id: 22,
+            start: "10:30",
+            end: "11:00",
           },
         ],
       },
       {
-        room: "Cora Coralina",
-        topic: "Emmanuelle Richard",
-        speakers: [
-          {
-            speaker_id: 9,
-            start: "10:05",
-            end: "10:40",
-          },
-        ],
-      },
-      {
-        room: "Marilia Mendonça",
-        topic: "Adrienne Mendes",
+        room: "Miniauditorio",
+        topic: "Aline Ayres",
         speakers: [
           {
             speaker_id: 5,
-            start: "10:05",
-            end: "10:40",
+            start: "10:00",
+            end: "11:00",
+          },
+        ],
+      },
+      {
+        room: "Coworking 1",
+        topic: "Dupla",
+        speaker_id: 0,
+        speakers: [
+          {
+            topic: "Fernanda Bufon",
+            speaker_id: 19,
+            start: "10:00",
+            end: "10:30",
+          },
+          {
+            topic: "Vanessa Mota",
+            speaker_id: 8,
+            start: "10:30",
+            end: "11:00",
+          },
+        ],
+      },
+      {
+        room: "Workshop",
+        topic: "Thielle Cathia",
+        speakers: [
+          {
+            speaker_id: 24,
+            start: "10:00",
+            end: "11:00",
           },
         ],
       },
@@ -110,80 +117,70 @@ const schedule = [
   {
     speeches: [
       {
-        room: "Katherine Johnson",
-        topic: "Karol Attekita",
+        room: "Auditorio",
+        topic: "Sulamita Dantas",
         speakers: [
           {
-            speaker_id: 1,
-            start: "10:40",
-            end: "11:15",
+            speaker_id: 3,
+            start: "11:00",
+            end: "12:00",
           },
         ],
       },
       {
-        room: "Cora Coralina",
-        topic: "Fabiana Harami",
+        room: "Miniauditorio",
+        topic: "Dupla",
+        speaker_id: 0,
         speakers: [
           {
-            speaker_id: 21,
-            start: "10:40",
-            end: "11:15",
+            topic: "Ana Ribeiro",
+            speaker_id: 28,
+            start: "11:00",
+            end: "11:30",
+          },
+          {
+            topic: "Brena Paiva",
+            speaker_id: 7,
+            start: "11:30",
+            end: "12:00",
           },
         ],
       },
       {
-        room: "Marilia Mendonça",
-        topic: "Samara Nunes",
+        room: "Coworking 1",
+        topic: "Dupla",
+        speaker_id: 0,
         speakers: [
           {
-            speaker_id: 15,
-            start: "10:40",
-            end: "11:15",
+            topic: "Francielly de Moraes",
+            speaker_id: 30,
+            start: "11:00",
+            end: "11:30",
+          },
+          {
+            topic: "Vanessa Sousa",
+            speaker_id: 26,
+            start: "11:30",
+            end: "12:00",
+          },
+        ],
+      },
+      {
+        room: "Workshop",
+        topic: "Anna e só",
+        speakers: [
+          {
+            speaker_id: 14,
+            start: "11:00",
+            end: "12:00",
           },
         ],
       },
     ],
   },
   {
-    speeches: [
-      {
-        room: "Katherine Johnson",
-        topic: "Jéssica Costa",
-        speakers: [
-          {
-            speaker_id: 18,
-            start: "11:15",
-            end: "12:10",
-          },
-        ],
-      },
-      {
-        room: "Cora Coralina",
-        topic: "Alexia Kattah",
-        speakers: [
-          {
-            speaker_id: 11,
-            start: "11:15",
-            end: "12:10",
-          },
-        ],
-      },
-      {
-        room: "Marilia Mendonça",
-        topic: "Kamilla Cerqueira",
-        speakers: [
-          {
-            speaker_id: 4,
-            start: "11:15",
-            end: "12:10",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    start: "12:10",
-    end: "13:10",
+    start: "12:00",
+    end: "13:00",
     speeches: [
       {
         room: "",
@@ -194,35 +191,62 @@ const schedule = [
   {
     speeches: [
       {
-        room: "Katherine Johnson",
-        topic: "Camis Moreira",
+        room: "Auditorio",
+        topic: "Maria Luize",
         speakers: [
           {
-            speaker_id: 7,
-            start: "13:10",
-            end: "13:45",
+            speaker_id: 6,
+            start: "13:05",
+            end: "14:05",
           },
         ],
       },
       {
-        room: "Cora Coralina",
-        topic: "Débora Silva",
+        room: "Miniauditorio",
+        topic: "Dupla",
+        speaker_id: 0,
         speakers: [
           {
-            speaker_id: 22,
-            start: "13:10",
-            end: "13:45",
+            topic: "Bruna Michelly",
+            speaker_id: 9,
+            start: "13:05",
+            end: "13:35",
+          },
+          {
+            topic: "Catarine Sales",
+            speaker_id: 15,
+            start: "13:35",
+            end: "14:05",
           },
         ],
       },
       {
-        room: "Marilia Mendonça",
-        topic: "Francielly Santos",
+        room: "Coworking 1",
+        topic: "Dupla",
+        speaker_id: 0,
+        speakers: [
+          // {
+          //   topic: "BB - Radar de Tendências Tecnologicas",
+          //   speaker_id: 0,
+          //   start: "13:05",
+          //   end: "13:35",
+          // },
+          {
+            topic: "Geovana Correia",
+            speaker_id: 18,
+            start: "13:35",
+            end: "14:05",
+          },
+        ],
+      },
+      {
+        room: "Workshop",
+        topic: "Larissa Rosa",
         speakers: [
           {
-            speaker_id: 13,
-            start: "13:10",
-            end: "13:45",
+            speaker_id: 21,
+            start: "13:05",
+            end: "14:05",
           },
         ],
       },
@@ -231,79 +255,77 @@ const schedule = [
   {
     speeches: [
       {
-        room: "Cora Coralina",
-        topic: "Fernanda Wanderley",
+        room: "Auditorio",
+        topic: "Dupla",
+        speaker_id: 0,
         speakers: [
           {
+            topic: "Mariana Lemes",
+            speaker_id: 23,
+            start: "14:05",
+            end: "14:35",
+          },
+          {
+            topic: "Vanessa Marques",
+            speaker_id: 27,
+            start: "14:35",
+            end: "15:05",
+          },
+        ],
+      },
+      {
+        room: "Miniauditorio",
+        topic: "Dupla",
+        speaker_id: 0,
+        speakers: [
+          {
+            topic: "Christianne Pimenta",
+            speaker_id: 17,
+            start: "14:05",
+            end: "14:35",
+          },
+          {
+            topic: "Nina Soraya",
+            speaker_id: 25,
+            start: "14:35",
+            end: "15:05",
+          },
+        ],
+      },
+      {
+        room: "Coworking 1",
+        topic: "Dupla",
+        speaker_id: 0,
+        speakers: [
+          {
+            topic: "Suellen Bastos",
+            speaker_id: 31,
+            start: "14:05",
+            end: "14:35",
+          },
+          {
+            topic: "Anny Ribeiro",
             speaker_id: 16,
-            start: "13:45",
-            end: "14:40",
+            start: "14:35",
+            end: "15:05",
           },
         ],
       },
-      {
-        room: "Katherine Johnson",
-        topic: "Jordânia Bispo",
-        speakers: [
-          {
-            speaker_id: 14,
-            start: "13:45",
-            end: "14:40",
-          },
-        ],
-      },
-      {
-        room: "Marilia Mendonça",
-        topic: "Alyce Suza",
-        speakers: [
-          {
-            speaker_id: 12,
-            start: "13:45",
-            end: "14:40",
-          },
-        ],
-      },
+      // {
+      //   room: "Mentoria",
+      //   topic: "",
+      //   speakers: [
+      //     {
+      //       speaker_id: 0,
+      //       start: "14:05",
+      //       end: "15:05",
+      //     },
+      //   ],
+      // },
     ],
   },
   {
-    speeches: [
-      {
-        room: "Katherine Johnson",
-        topic: "Thielle Cathia",
-        speakers: [
-          {
-            speaker_id: 24,
-            start: "14:40",
-            end: "15:15",
-          },
-        ],
-      },
-      {
-        room: "Cora Coralina",
-        topic: "Kamila Santos",
-        speakers: [
-          {
-            speaker_id: 2,
-            start: "14:40",
-            end: "15:15",
-          },
-        ],
-      },
-      {
-        room: "Marilia Mendonça",
-        topic: "Elisiane Souza",
-        speakers: [
-          {
-            speaker_id: 10,
-            start: "14:40",
-            end: "15:15",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    start: "15:15",
+    start: "15:05",
     end: "15:50",
     speeches: [
       {
@@ -315,91 +337,65 @@ const schedule = [
   {
     speeches: [
       {
-        room: "Katherine Johnson",
-        topic: "Letícia Moreira",
+        room: "Auditorio",
+        topic: "Atekkita Dev",
         speakers: [
           {
-            speaker_id: 17,
-            start: "15:50",
-            end: "16:25",
+            speaker_id: 1,
+            start: "15:55",
+            end: "16:55",
           },
         ],
       },
-      {
-        room: "Cora Coralina",
-        topic: "Christiane Borges",
-        speakers: [
-          {
-            speaker_id: 20,
-            start: "15:50",
-            end: "16:25",
-          },
-        ],
-      },
-      {
-        room: "Marilia Mendonça",
-        topic: "Jaqueline Ribeiro",
-        speakers: [
-          {
-            speaker_id: 8,
-            start: "15:50",
-            end: "16:25",
-          },
-        ],
-      },
+      // {
+      //   room: "Miniauditorio",
+      //   topic: "Globo",
+      //   speakers: [
+      //     {
+      //       speaker_id: 0,
+      //       start: "15:55",
+      //       end: "16:55",
+      //     },
+      //   ],
+      // },
+      // {
+      //   room: "Coworking 1",
+      //   topic: "Samara - MulheresGO",
+      //   speakers: [
+      //     {
+      //       speaker_id: 32,
+      //       start: "15:55",
+      //       end: "16:25",
+      //     },
+      //   ],
+      // },
+      // {
+      //   room: "Mentoria",
+      //   topic: "",
+      //   speakers: [
+      //     {
+      //       speaker_id: 0,
+      //       start: "15:55",
+      //       end: "16:25",
+      //     },
+      //   ],
+      // },
     ],
   },
   {
-    start: "16:25",
-    end: "17:10",
+    start: "16:55",
+    end: "17:50",
     speeches: [
       {
         room: "Arena",
-        topic: "Painel de discussão: Uma reflexão do papel de gênero na tecnologia entre o passado, presente e futuro",
-        speaker_id: 9,
+        topic: "GenAI Serverless: Gemini no Cloud Run",
+        speaker_id: 4,
       },
     ],
   },
   {
-    speeches: [
-    //   {
-    //     room: "Katherine Johnson",
-    //     topic: "Painel de discussão: Uma reflexão do papel de gênero na tecnologia entre o passado, presente e futuro",
-    //     speakers: [
-    //       {
-    //         speaker_id: 0,
-    //         start: "16:25",
-    //         end: "17:10",
-    //       },
-    //     ],
-    //   },
-      {
-        room: "Cora Coralina",
-        topic: "Vanessa Sousa",
-        speakers: [
-          {
-            speaker_id: 3,
-            start: "16:25",
-            end: "17:10",
-          },
-        ],
-      },
-    //   {
-    //     room: "Marilia Mendonça",
-    //     topic: "",
-    //     speakers: [
-    //       {
-    //         speaker_id: 0,
-    //         start: "16:25",
-    //         end: "17:10",
-    //       },
-    //     ],
-    //   },
-    ],
-  },
-  {
-    start: "17:10",
-    end: "17:40",
+    start: "17:50",
+    end: "18:10",
     speeches: [
       {
         room: "Arena",

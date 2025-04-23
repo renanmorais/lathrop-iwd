@@ -28,12 +28,16 @@ const pathHtml = (name: string, pathStyle: string) => {
 
 const renderPath = (path?: string) => {
   switch (path) {
-    case "Katherine Johnson":
-      return pathHtml("Katherine Johnson", styles.trilha1);
-    case "Cora Coralina":
-      return pathHtml("Cora Coralina", styles.trilha2);
+    case "Coworking 1":
+      return pathHtml("Coworking 1", styles.trilha1);
+    case "Miniauditorio":
+      return pathHtml("Miniauditório", styles.trilha2);
+    case "Workshop":
+      return pathHtml("Workshop", styles.trilha2);
+    case "Mentoria":
+      return pathHtml("Mentoria", styles.trilha2);
     default:
-      return pathHtml("Marília Mendonça", styles.trilha3);
+      return pathHtml("Auditório", styles.trilha3);
   }
 };
 

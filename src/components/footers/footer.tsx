@@ -28,11 +28,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
               Palestrantes
             </NavLink>
           </NavItem>
-          {/* <NavItem>
+          <NavItem>
             <NavLink href="#schedule" className={styles.footerNavlink}>
               Agenda
             </NavLink>
-          </NavItem> */}
+          </NavItem>
           <NavItem>
             <NavLink href="/sponsors" className={styles.footerNavlink}>
               Patrocinadores
@@ -55,17 +55,17 @@ const Footer: React.FC<FooterProps> = ({}) => {
             <rp>)</rp>
           </ruby>
         </div>
-        {/* <div className={styles.footerSocial}>
+        <div className={styles.footerSocial}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="xl" color="#e1306c" />
           <a
-            href="https://maps.app.goo.gl/77nVpkFsNg38qsrS6"
+            href="https://maps.app.goo.gl/znYbTNP3GJi1y4q37"
             target="_blank"
             rel="noreferrer"
             className={styles.linkHover}
           >
             Localização Google Maps
           </a>
-        </div> */}
+        </div>
 
         <div className={styles.footerSocial}>
           <NavItem>
