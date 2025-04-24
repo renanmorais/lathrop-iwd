@@ -112,6 +112,18 @@ const schedule = [
           },
         ],
       },
+      {
+        room: "Mentoria",
+        topic: "Claudia Malta Santos (Desenvolvimento)",
+        speakers: [
+          {
+            topic: "Claudia Malta Santos (Desenvolvimento)",
+            speaker_id: 0,
+            start: "10:00",
+            end: "11:00",
+          },
+        ],
+      },
     ],
   },
   {
@@ -176,6 +188,20 @@ const schedule = [
           },
         ],
       },
+      {
+        room: "Mentoria",
+        topic:
+          "Sanmya Thatila Borges de Noronha e Angela Grochenisk de Lima Leal (UX/AGILIDADE)",
+        speakers: [
+          {
+            topic:
+              "Sanmya Thatila Borges de Noronha e Angela Grochenisk de Lima Leal (UX/AGILIDADE)",
+            speaker_id: 0,
+            start: "11:00",
+            end: "12:00",
+          },
+        ],
+      },
     ],
   },
   {
@@ -225,12 +251,13 @@ const schedule = [
         topic: "Dupla",
         speaker_id: 0,
         speakers: [
-          // {
-          //   topic: "BB - Radar de Tendências Tecnologicas",
-          //   speaker_id: 0,
-          //   start: "13:05",
-          //   end: "13:35",
-          // },
+          {
+            topic:
+              "Radar de Tendências Tecnológicas (Larissa Vieira Rabelo e Claudia Malta Santos)",
+            speaker_id: 0,
+            start: "13:05",
+            end: "13:35",
+          },
           {
             topic: "Geovana Correia",
             speaker_id: 18,
@@ -240,11 +267,13 @@ const schedule = [
         ],
       },
       {
-        room: "Workshop",
-        topic: "Larissa Rosa",
+        room: "Mentoria",
+        topic: "Paola Rodrigues Santos e Barbara Silva Cabral (CIBER/INFRA)",
         speakers: [
           {
-            speaker_id: 21,
+            topic:
+              "Paola Rodrigues Santos e Barbara Silva Cabral (CIBER/INFRA)",
+            speaker_id: 0,
             start: "13:05",
             end: "14:05",
           },
@@ -311,17 +340,29 @@ const schedule = [
           },
         ],
       },
-      // {
-      //   room: "Mentoria",
-      //   topic: "",
-      //   speakers: [
-      //     {
-      //       speaker_id: 0,
-      //       start: "14:05",
-      //       end: "15:05",
-      //     },
-      //   ],
-      // },
+      {
+        room: "Workshop",
+        topic: "Larissa Rosa",
+        speakers: [
+          {
+            speaker_id: 21,
+            start: "14:05",
+            end: "15:05",
+          },
+        ],
+      },
+      {
+        room: "Mentoria",
+        topic: "Jaqueline Damacena Duarte e Camila Maestrelli Leobons (IA)",
+        speakers: [
+          {
+            topic: "Jaqueline Damacena Duarte e Camila Maestrelli Leobons (IA)",
+            speaker_id: 0,
+            start: "14:05",
+            end: "15:05",
+          },
+        ],
+      },
     ],
   },
   {
@@ -358,28 +399,20 @@ const schedule = [
       //     },
       //   ],
       // },
-      // {
-      //   room: "Coworking 1",
-      //   topic: "Samara - MulheresGO",
-      //   speakers: [
-      //     {
-      //       speaker_id: 32,
-      //       start: "15:55",
-      //       end: "16:25",
-      //     },
-      //   ],
-      // },
-      // {
-      //   room: "Mentoria",
-      //   topic: "",
-      //   speakers: [
-      //     {
-      //       speaker_id: 0,
-      //       start: "15:55",
-      //       end: "16:25",
-      //     },
-      //   ],
-      // },
+      {
+        room: "Coworking 1",
+        topic:
+          "Jaqueline e Welma - Mulheres que Fazem: Construindo o Futuro Econômico de Goiás (MulheresGo)",
+        speakers: [
+          {
+            topic:
+              "[Jaqueline e Welma] Mulheres que Fazem: Construindo o Futuro Econômico de Goiás (MulheresGo)",
+            speaker_id: 32,
+            start: "15:55",
+            end: "16:25",
+          },
+        ],
+      },
     ],
   },
   {
@@ -388,7 +421,8 @@ const schedule = [
     speeches: [
       {
         room: "Arena",
-        topic: "Empreendendo  um futuro melhor: Desafios e lições da minha jornada",
+        topic:
+          "Empreendendo  um futuro melhor: Desafios e lições da minha jornada",
         speaker_id: 2,
       },
     ],

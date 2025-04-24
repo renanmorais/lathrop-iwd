@@ -29,15 +29,15 @@ const pathHtml = (name: string, pathStyle: string) => {
 const renderPath = (path?: string) => {
   switch (path) {
     case "Coworking 1":
-      return pathHtml("Coworking 1", styles.trilha1);
+      return pathHtml("(Celia Câmara) Coworking Térreo", styles.trilha1);
     case "Miniauditorio":
-      return pathHtml("Miniauditório", styles.trilha2);
+      return pathHtml("(Chica Machado) Miniauditório 1º Andar", styles.trilha2);
     case "Workshop":
-      return pathHtml("Workshop", styles.trilha2);
+      return pathHtml("(Damiana da Cunha) Workshop - Coworking 1º Andar", styles.trilha2);
     case "Mentoria":
-      return pathHtml("Mentoria", styles.trilha2);
+      return pathHtml("(Consuelo Nasser) Mentoria 1º Andar", styles.trilha2);
     default:
-      return pathHtml("Auditório", styles.trilha3);
+      return pathHtml("(Leodegária de Jesus) Auditório principal", styles.trilha3);
   }
 };
 
