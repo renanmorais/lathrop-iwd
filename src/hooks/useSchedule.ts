@@ -45,8 +45,8 @@ const schedule = [
     speeches: [
       {
         room: "Arena",
-        topic: "Empreendendo um futuro melhor: Desafios e lições da minha jornada",
-        speaker_id: 2,
+        topic: "GenAI Serverless: Gemini no Cloud Run",
+        speaker_id: 4,
       },
     ],
   },
@@ -388,8 +388,8 @@ const schedule = [
     speeches: [
       {
         room: "Arena",
-        topic: "GenAI Serverless: Gemini no Cloud Run",
-        speaker_id: 4,
+        topic: "Empreendendo  um futuro melhor: Desafios e lições da minha jornada",
+        speaker_id: 2,
       },
     ],
   },
