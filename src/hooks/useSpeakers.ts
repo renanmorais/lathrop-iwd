@@ -5,9 +5,12 @@ const speakers = [
     photo: "/speakers/2025/karolAttekita.png",
     name: "Atekkita Dev",
     tech: "Desenvolvimento de Jogos",
-    topic: "Nesta palestra, vamos explorar o cenário do desenvolvimento de jogos no Brasil, revelando as principais áreas de atuação, os tipos de profissionais mais procurados e as oportunidades reais dentro e fora do país. Vamos conversar sobre como é o dia a dia de quem trabalha na indústria, os caminhos de entrada para iniciantes, e mercado independente.",
-    mini_bio: "Engenheira de Software especialista em aplicativos e games, com mais de 13 anos de experiência e cinco prêmios de reconhecimento nacional. Eleita LinkedIn Top Voice 2023 por sua contribuição na criação de conteúdo para a comunidade de tecnologia, foi, em 2022, listada entre os 50 hackers a seguir e indicada ao prêmio internacional 'Women That Build'. Com quase uma década atuando como freelancer, possui mais de 20 aplicativos e jogos publicados na App Store. Atuou por três anos na Riot Games e atualmente atua como Engenheira iOS na Backtrack AI (EUA) além compartilhar conteúdo em seu canal Attekita Dev, impactando mais de 400 mil pessoas em suas redes sociais.",
-    title: "Carreira em Desenvolvimento de Jogos: Mercado e oportunidades no Brasil",
+    topic:
+      "Nesta palestra, vamos explorar o cenário do desenvolvimento de jogos no Brasil, revelando as principais áreas de atuação, os tipos de profissionais mais procurados e as oportunidades reais dentro e fora do país. Vamos conversar sobre como é o dia a dia de quem trabalha na indústria, os caminhos de entrada para iniciantes, e mercado independente.",
+    mini_bio:
+      "Engenheira de Software especialista em aplicativos e games, com mais de 13 anos de experiência e cinco prêmios de reconhecimento nacional. Eleita LinkedIn Top Voice 2023 por sua contribuição na criação de conteúdo para a comunidade de tecnologia, foi, em 2022, listada entre os 50 hackers a seguir e indicada ao prêmio internacional 'Women That Build'. Com quase uma década atuando como freelancer, possui mais de 20 aplicativos e jogos publicados na App Store. Atuou por três anos na Riot Games e atualmente atua como Engenheira iOS na Backtrack AI (EUA) além compartilhar conteúdo em seu canal Attekita Dev, impactando mais de 400 mil pessoas em suas redes sociais.",
+    title:
+      "Carreira em Desenvolvimento de Jogos: Mercado e oportunidades no Brasil",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -24,8 +27,10 @@ const speakers = [
     photo: "/speakers/2025/ianaChan.png",
     name: "Iana Chan",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "A jornada de empreender, por vezes, é muito solitária e recheada de desafios. Nessa palestra, Iana Chan, fundadora da PrograMaria, compartilha sua trajetória, ressaltando aprendizados, reflexões sobre empreendedorismo, síndrome da pessoa impostora e como lidou com esses desafios para fundar e liderar a PrograMaria, negócio de impacto social com a missão de aumentar a diversidade na tecnologia, referência brasileira no tema que completa 10 anos em 2025.",
-    mini_bio: "Jornalista formada pela ECA/USP, apaixonada por tecnologia e educação. Lidera a PrograMaria, negócio de impacto social premiado, incluindo o World Summit Awards 2023 na categoria 'Aprendizagem e Educação'. Com passagem por empresas como Editora Abril e Liga Ventures, foi reconhecida pela Wired entre as 50 pessoas que expandiram a criatividade no Brasil e recebeu prêmios como Profissional Tech do Ano (Mulheres Que Transformam) e Protagonista Digital (ABES).",
+    topic:
+      "A jornada de empreender, por vezes, é muito solitária e recheada de desafios. Nessa palestra, Iana Chan, fundadora da PrograMaria, compartilha sua trajetória, ressaltando aprendizados, reflexões sobre empreendedorismo, síndrome da pessoa impostora e como lidou com esses desafios para fundar e liderar a PrograMaria, negócio de impacto social com a missão de aumentar a diversidade na tecnologia, referência brasileira no tema que completa 10 anos em 2025.",
+    mini_bio:
+      "Jornalista formada pela ECA/USP, apaixonada por tecnologia e educação. Lidera a PrograMaria, negócio de impacto social premiado, incluindo o World Summit Awards 2023 na categoria 'Aprendizagem e Educação'. Com passagem por empresas como Editora Abril e Liga Ventures, foi reconhecida pela Wired entre as 50 pessoas que expandiram a criatividade no Brasil e recebeu prêmios como Profissional Tech do Ano (Mulheres Que Transformam) e Protagonista Digital (ABES).",
     title: "Empreendendo  um futuro melhor: Desafios e lições da minha jornada",
     companyTitle: "",
     gde: false,
@@ -43,9 +48,12 @@ const speakers = [
     photo: "/speakers/2025/sulamitaDantas.png",
     name: "Sulamita Dantas",
     tech: "Infra/DevOps",
-    topic: "Apresentar como a IA está sendo aplicada no ciclo de vida do desenvolvimento de software — desde a análise de requisitos até testes e manutenção — com exemplos práticos e tendências.",
-    mini_bio: "Minha trajetória tem sido uma emocionante busca pelo equilíbrio entre dados e inovação. Iniciei minha carreira com uma paixão por compreender como a informação pode capacitar organizações e torná-las mais ágeis em um mundo movido por dados. Continuo em constante evolução e estou entusiasmada para continuar contribuindo com o sucesso das empresas e pessoas. Atualmente sou: MVP Data Plataform (Microsoft Most Valuable Professional); Líder do Capítulo SQL BH; Co-Organizadora GDG; WTM Ambassador; Separei abaixo um breve resumo dos trajetos que trilhei até aqui!; Database Engineer Pic Pay; Professora Pos Tech ML; Database Administrator; Analyst Totvs; Analyst Business Intelligence; Programadora; Pós em Ciência da computação em Cybersecurity and Data Governance; Poes em Saude e Tecnologia; Formada em Ciência da computação; Mentora em diversos projetos de TI; Líder do Capítulo SQL BH; Palestrante e Voluntária em vários eventos de TI pelo Mundo.",
-    title: "Engenharia de Software + IA: Como a Inteligência Artificial Está Transformando o Desenvolvimento de Sistemas",
+    topic:
+      "Apresentar como a IA está sendo aplicada no ciclo de vida do desenvolvimento de software — desde a análise de requisitos até testes e manutenção — com exemplos práticos e tendências.",
+    mini_bio:
+      "Minha trajetória tem sido uma emocionante busca pelo equilíbrio entre dados e inovação. Iniciei minha carreira com uma paixão por compreender como a informação pode capacitar organizações e torná-las mais ágeis em um mundo movido por dados. Continuo em constante evolução e estou entusiasmada para continuar contribuindo com o sucesso das empresas e pessoas. Atualmente sou: MVP Data Plataform (Microsoft Most Valuable Professional); Líder do Capítulo SQL BH; Co-Organizadora GDG; WTM Ambassador; Separei abaixo um breve resumo dos trajetos que trilhei até aqui!; Database Engineer Pic Pay; Professora Pos Tech ML; Database Administrator; Analyst Totvs; Analyst Business Intelligence; Programadora; Pós em Ciência da computação em Cybersecurity and Data Governance; Poes em Saude e Tecnologia; Formada em Ciência da computação; Mentora em diversos projetos de TI; Líder do Capítulo SQL BH; Palestrante e Voluntária em vários eventos de TI pelo Mundo.",
+    title:
+      "Engenharia de Software + IA: Como a Inteligência Artificial Está Transformando o Desenvolvimento de Sistemas",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -62,8 +70,10 @@ const speakers = [
     photo: "/speakers/2025/simaraNascimento.png",
     name: "Simara Nascimento",
     tech: "IA",
-    topic: "Explore o poder da Inteligência Artificial Generativa (GenAI) com o modelo Gemini, implementado de forma eficiente e escalável no Cloud Run! Descubra como a arquitetura serverless simplifica o desenvolvimento e a gestão de aplicações GenAI, permitindo que você foque na criação de experiências inovadoras sem se preocupar com a infraestrutura.",
-    mini_bio: "Simara Nascimento é desenvolvedora de software sênior, apaixonada por inovação, educação e arquitetura de sistemas. Atualmente, está como TechLead num Laboratório de Inovação na Thoughtworks. É reconhecida como LinkedIn Top Voice em Tecnologia e Inovação, Google Cloud Champion Serverless e Google Developer Expert, ela se dedica a formar e incluir mulheres diversas no mercado de tecnologia no Brasil, contribuindo para reduzir a lacuna de representatividade no setor.",
+    topic:
+      "Explore o poder da Inteligência Artificial Generativa (GenAI) com o modelo Gemini, implementado de forma eficiente e escalável no Cloud Run! Descubra como a arquitetura serverless simplifica o desenvolvimento e a gestão de aplicações GenAI, permitindo que você foque na criação de experiências inovadoras sem se preocupar com a infraestrutura.",
+    mini_bio:
+      "Simara Nascimento é desenvolvedora de software sênior, apaixonada por inovação, educação e arquitetura de sistemas. Atualmente, está como TechLead num Laboratório de Inovação na Thoughtworks. É reconhecida como LinkedIn Top Voice em Tecnologia e Inovação, Google Cloud Champion Serverless e Google Developer Expert, ela se dedica a formar e incluir mulheres diversas no mercado de tecnologia no Brasil, contribuindo para reduzir a lacuna de representatividade no setor.",
     title: "GenAI Serverless: Gemini no Cloud Run",
     companyTitle: "",
     gde: true,
@@ -81,9 +91,12 @@ const speakers = [
     photo: "/speakers/2025/alineAyres.png",
     name: "Aline Ayres",
     tech: "Mobile",
-    topic: "O desenvolvimento Android está em constante evolução, e a pressão por entregas mais rápidas e eficientes nunca foi tão alta. No entanto, muitos desenvolvedores enfrentam desafios como builds lentos, processos manuais repetitivos e dificuldades em manter um código organizado e sustentável. Nesta palestra, exploraremos estratégias e ferramentas que podem transformar sua rotina de desenvolvimento, tornando-a mais ágil sem comprometer a qualidade. Vamos abordar desde otimizações no Android Studio e automação com Gradle, até boas práticas para CI/CD e gerenciamento eficiente de dependências. Além disso, veremos como assistentes de código baseados em IA, como Gemini por exemplo, podem acelerar a escrita e refatoração de código, reduzindo tempo e esforço. Se você deseja aprimorar sua produtividade e tornar o desenvolvimento Android mais eficiente, esta palestra trará insights práticos e atualizados para você aplicar imediatamente no seu dia a dia",
-    mini_bio: "Android Google Developer Expert e Embaixadora Women Techmakers, Aline Ayres é desenvolvedora Android desde 2012, onde descobriu sua principal vocação. Atualmente, ocupa a posição de Lead Mobile Developer na Thoughtworks. Ela atua como líder técnica especialista em Android, com expertise em práticas avançadas, como automação, qualidade e construção de pipelines para Integração Contínua e Entrega Contínua (CI/CD). Sua paixão por compartilhar conhecimento e aprender com a comunidade Android a motivou a palestrar em conferências de destaque como The Developer's Conference, XConf, Mobile DevOps Summit, DevFests e Android Worldwide.",
-    title: "Acelerando o Desenvolvimento Android: Estratégias para Impulsionar seu Fluxo de Trabalho",
+    topic:
+      "O desenvolvimento Android está em constante evolução, e a pressão por entregas mais rápidas e eficientes nunca foi tão alta. No entanto, muitos desenvolvedores enfrentam desafios como builds lentos, processos manuais repetitivos e dificuldades em manter um código organizado e sustentável. Nesta palestra, exploraremos estratégias e ferramentas que podem transformar sua rotina de desenvolvimento, tornando-a mais ágil sem comprometer a qualidade. Vamos abordar desde otimizações no Android Studio e automação com Gradle, até boas práticas para CI/CD e gerenciamento eficiente de dependências. Além disso, veremos como assistentes de código baseados em IA, como Gemini por exemplo, podem acelerar a escrita e refatoração de código, reduzindo tempo e esforço. Se você deseja aprimorar sua produtividade e tornar o desenvolvimento Android mais eficiente, esta palestra trará insights práticos e atualizados para você aplicar imediatamente no seu dia a dia",
+    mini_bio:
+      "Android Google Developer Expert e Embaixadora Women Techmakers, Aline Ayres é desenvolvedora Android desde 2012, onde descobriu sua principal vocação. Atualmente, ocupa a posição de Lead Mobile Developer na Thoughtworks. Ela atua como líder técnica especialista em Android, com expertise em práticas avançadas, como automação, qualidade e construção de pipelines para Integração Contínua e Entrega Contínua (CI/CD). Sua paixão por compartilhar conhecimento e aprender com a comunidade Android a motivou a palestrar em conferências de destaque como The Developer's Conference, XConf, Mobile DevOps Summit, DevFests e Android Worldwide.",
+    title:
+      "Acelerando o Desenvolvimento Android: Estratégias para Impulsionar seu Fluxo de Trabalho",
     companyTitle: "",
     gde: true,
     social_media: {
@@ -100,9 +113,12 @@ const speakers = [
     photo: "/speakers/2025/mariaLuize.png",
     name: "Maria Luize",
     tech: "IA",
-    topic: "A inteligência artificial está transformando a análise de geodados, permitindo a criação de sistemas mais dinâmicos e interativos. Nesta palestra, exploraremos como o Google Gemini, LangChain e Earth Engine podem ser integrados em um sistema multiagente para acessar e processar informações espaciais. O sistema conta com agentes especializados que consultam bancos de dados, executam análises no Earth Engine e respondem perguntas com base em documentos. Além disso, os dados disponíveis no Earth Engine são obtidos por meio de deep learning com TensorFlow e Keras, ampliando as possibilidades de análise e detecção de padrões. Discutiremos os desafios e benefícios dessa abordagem, mostrando como a IA generativa pode potencializar a interpretação de dados geoespaciais. Se você quer entender como unir IA e geodados para criar soluções inovadoras, esta palestra é para você!",
-    mini_bio: "Engenheira de Inteligência Artificial, mestre em Ciência da Computação pela Universidade Federal de Santa Catarina (UFSC) e bacharela em Engenharia da Computação pela Universidade Federal do Pará (UFPA). Atua no desenvolvimento de modelos de deep learning para segmentação de imagens de satélite e processamento geoespacial, com experiência em dados Landsat, Sentinel-2 e Planet. Como Google Developer Expert (GDE) em Google Earth Engine e IA, contribui com a comunidade por meio de mentorias e conteúdos técnicos. Atualmente, trabalha na Solved e no projeto MapBiomas, desenvolvendo sistemas de alerta e modelos multi-agente para análise de dados geoespaciais.",
-    title: "IA e Geodados: Construindo Sistemas Inteligentes com Keras, Google Gemini e Earth Engine",
+    topic:
+      "A inteligência artificial está transformando a análise de geodados, permitindo a criação de sistemas mais dinâmicos e interativos. Nesta palestra, exploraremos como o Google Gemini, LangChain e Earth Engine podem ser integrados em um sistema multiagente para acessar e processar informações espaciais. O sistema conta com agentes especializados que consultam bancos de dados, executam análises no Earth Engine e respondem perguntas com base em documentos. Além disso, os dados disponíveis no Earth Engine são obtidos por meio de deep learning com TensorFlow e Keras, ampliando as possibilidades de análise e detecção de padrões. Discutiremos os desafios e benefícios dessa abordagem, mostrando como a IA generativa pode potencializar a interpretação de dados geoespaciais. Se você quer entender como unir IA e geodados para criar soluções inovadoras, esta palestra é para você!",
+    mini_bio:
+      "Engenheira de Inteligência Artificial, mestre em Ciência da Computação pela Universidade Federal de Santa Catarina (UFSC) e bacharela em Engenharia da Computação pela Universidade Federal do Pará (UFPA). Atua no desenvolvimento de modelos de deep learning para segmentação de imagens de satélite e processamento geoespacial, com experiência em dados Landsat, Sentinel-2 e Planet. Como Google Developer Expert (GDE) em Google Earth Engine e IA, contribui com a comunidade por meio de mentorias e conteúdos técnicos. Atualmente, trabalha na Solved e no projeto MapBiomas, desenvolvendo sistemas de alerta e modelos multi-agente para análise de dados geoespaciais.",
+    title:
+      "IA e Geodados: Construindo Sistemas Inteligentes com Keras, Google Gemini e Earth Engine",
     companyTitle: "",
     gde: true,
     social_media: {
@@ -119,8 +135,10 @@ const speakers = [
     photo: "/speakers/2025/brenaPaiva.png",
     name: "Brena Paiva",
     tech: "Tecnologias Web",
-    topic: "Descubra como design patterns específicos podem ser aplicados em projetos reais para resolver problemas comuns de arquitetura e desenvolvimento de software. Além disso, aprenda a identificar e evitar antipadrões (antipatterns) que podem comprometer a escalabilidade e a manutenção do seu código.",
-    mini_bio: "Desenvolvedora de Software | JavaScript & .NET Apaixonada por inovação, tecnologia e desafios, escolhi essa área para transformar ideias em soluções. Formada em Análise e Desenvolvimento de Sistemas, aos 24 anos sigo explorando novas possibilidades no mundo do desenvolvimento. E claro, sempre acompanhada de um bom café! ",
+    topic:
+      "Descubra como design patterns específicos podem ser aplicados em projetos reais para resolver problemas comuns de arquitetura e desenvolvimento de software. Além disso, aprenda a identificar e evitar antipadrões (antipatterns) que podem comprometer a escalabilidade e a manutenção do seu código.",
+    mini_bio:
+      "Desenvolvedora de Software | JavaScript & .NET Apaixonada por inovação, tecnologia e desafios, escolhi essa área para transformar ideias em soluções. Formada em Análise e Desenvolvimento de Sistemas, aos 24 anos sigo explorando novas possibilidades no mundo do desenvolvimento. E claro, sempre acompanhada de um bom café! ",
     title: "Design Patterns: Equilibrando Princípios e Pragmatismo",
     companyTitle: "",
     gde: false,
@@ -138,8 +156,10 @@ const speakers = [
     photo: "/speakers/2025/vanessaMota.png",
     name: "Vanessa Mota",
     tech: "Gestão e Metodologias Ágeis",
-    topic: "Como planejar um produto de forma estratégica sem comprometer a flexibilidade do time? Nesta palestra, vamos explorar como criar roadmaps estratégicos adaptáveis, que equilibram visão de longo prazo e entregas iterativas. Você aprenderá técnicas para construir um roadmap que realmente impulsiona o produto, garantindo alinhamento com stakeholders, priorização eficiente e foco no impacto real para o negócio. Vamos discutir como conciliar planejamento e agilidade, usando frameworks, métricas e boas práticas para evitar que o roadmap se torne apenas um 'checklist de entregas'.",
-    mini_bio: "Product Owner apaixonada por construir e evoluir produtos digitais! Com 7 anos de experiência, lidero times de desenvolvimento para entregar soluções, conectando estratégia, tecnologia e experiência do usuário. Foco em agilidade, discovery e entrega de valor para impulsionar negócios.",
+    topic:
+      "Como planejar um produto de forma estratégica sem comprometer a flexibilidade do time? Nesta palestra, vamos explorar como criar roadmaps estratégicos adaptáveis, que equilibram visão de longo prazo e entregas iterativas. Você aprenderá técnicas para construir um roadmap que realmente impulsiona o produto, garantindo alinhamento com stakeholders, priorização eficiente e foco no impacto real para o negócio. Vamos discutir como conciliar planejamento e agilidade, usando frameworks, métricas e boas práticas para evitar que o roadmap se torne apenas um 'checklist de entregas'.",
+    mini_bio:
+      "Product Owner apaixonada por construir e evoluir produtos digitais! Com 7 anos de experiência, lidero times de desenvolvimento para entregar soluções, conectando estratégia, tecnologia e experiência do usuário. Foco em agilidade, discovery e entrega de valor para impulsionar negócios.",
     title: "Roadmaps e Agilidade: Como Planejar sem Engessar o Produto",
     companyTitle: "",
     gde: false,
@@ -157,9 +177,12 @@ const speakers = [
     photo: "/speakers/2025/brunaMichelly.png",
     name: "Bruna Michelly",
     tech: "IoT",
-    topic: "Você já parou para pensar na qualidade do ar que respira todos os dias? Nesta palestra, compartilho como uso a Internet das Coisas (IoT) para desenvolver soluções acessíveis que ajudam a monitorar e melhorar o ar que nos cerca — especialmente em ambientes fechados como escolas, escritórios e nossas próprias casas. Vou apresentar o AirPure, um projeto que desenvolvi com foco em impacto social, conectando sensores, dispositivos inteligentes e computação em nuvem para criar um sistema de monitoramento da qualidade do ar interno. Tudo isso de forma prática, descomplicada e com um propósito real. Durante a apresentação, você verá na prática como a tecnologia pode “respirar” conosco: farei uma demonstração ao vivo com os dados sendo captados e exibidos em tempo real. Meu objetivo é te inspirar a enxergar a tecnologia como uma aliada na construção de soluções simples, porém poderosas.",
-    mini_bio: "Professora universitária e líder em TI, conecta teoria e prática com projetos de IoT e computação em nuvem. Desenvolve soluções acessíveis que monitoram a qualidade do ar com inovação e propósito.",
-    title: "Tecnologia que Respira: Como a IoT Pode Cuidar do Nosso Ar e da Nossa Vida",
+    topic:
+      "Você já parou para pensar na qualidade do ar que respira todos os dias? Nesta palestra, compartilho como uso a Internet das Coisas (IoT) para desenvolver soluções acessíveis que ajudam a monitorar e melhorar o ar que nos cerca — especialmente em ambientes fechados como escolas, escritórios e nossas próprias casas. Vou apresentar o AirPure, um projeto que desenvolvi com foco em impacto social, conectando sensores, dispositivos inteligentes e computação em nuvem para criar um sistema de monitoramento da qualidade do ar interno. Tudo isso de forma prática, descomplicada e com um propósito real. Durante a apresentação, você verá na prática como a tecnologia pode “respirar” conosco: farei uma demonstração ao vivo com os dados sendo captados e exibidos em tempo real. Meu objetivo é te inspirar a enxergar a tecnologia como uma aliada na construção de soluções simples, porém poderosas.",
+    mini_bio:
+      "Professora universitária e líder em TI, conecta teoria e prática com projetos de IoT e computação em nuvem. Desenvolve soluções acessíveis que monitoram a qualidade do ar com inovação e propósito.",
+    title:
+      "Tecnologia que Respira: Como a IoT Pode Cuidar do Nosso Ar e da Nossa Vida",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -177,7 +200,8 @@ const speakers = [
     name: "Michelle Santos",
     tech: "Desenvolvimento de Jogos",
     topic: "A definir",
-    mini_bio: "Sou artista, produtora e criadora de jogos premiada, com mais de uma década de experiência em desenvolvimento de jogos, animação e cinema. Ao mesmo tempo, co-fundei a Funbites Game Studio, uma empresa indie pioneira em Goiânia. Através da Funbites, desenvolvemos quatro jogos sérios premiados, além dos jogos mobile Starving Dead e Pizza Mania - Cheese Moon Chase. Também desenvolvemos Wish Us Luck, produzido pela Black Moluska, no qual atuei como game designer, co-roteirista e artista 2D. O jogo venceu o prêmio de 'Melhor Jogo Mobile' no BIG Festival Brasil 2022. Em 2024, fundei a Ritus, um estúdio de desenvolvimento de jogos e audiovisual. Entre outros projetos, estamos desenvolvendo Neve, um jogo narrativo que foi finalista na categoria 'Melhor Narrativa' no SBGames 2022, selecionado para a vitrine 'Panorama Brasil' no BIG Festival 2023, e finalista no A.Maze Festival/Berlim 2024. Sou embaixadora local da Women in Games, uma organização global sem fins lucrativos que apoia, empodera e celebra mulheres talentosas na indústria de jogos.",
+    mini_bio:
+      "Sou artista, produtora e criadora de jogos premiada, com mais de uma década de experiência em desenvolvimento de jogos, animação e cinema. Ao mesmo tempo, co-fundei a Funbites Game Studio, uma empresa indie pioneira em Goiânia. Através da Funbites, desenvolvemos quatro jogos sérios premiados, além dos jogos mobile Starving Dead e Pizza Mania - Cheese Moon Chase. Também desenvolvemos Wish Us Luck, produzido pela Black Moluska, no qual atuei como game designer, co-roteirista e artista 2D. O jogo venceu o prêmio de 'Melhor Jogo Mobile' no BIG Festival Brasil 2022. Em 2024, fundei a Ritus, um estúdio de desenvolvimento de jogos e audiovisual. Entre outros projetos, estamos desenvolvendo Neve, um jogo narrativo que foi finalista na categoria 'Melhor Narrativa' no SBGames 2022, selecionado para a vitrine 'Panorama Brasil' no BIG Festival 2023, e finalista no A.Maze Festival/Berlim 2024. Sou embaixadora local da Women in Games, uma organização global sem fins lucrativos que apoia, empodera e celebra mulheres talentosas na indústria de jogos.",
     title: "A definir",
     companyTitle: "",
     gde: false,
@@ -196,14 +220,16 @@ const speakers = [
     name: "Flora Cavalcante",
     tech: "Desenvolvimento de Jogos",
     topic: "A definir",
-    mini_bio: "Desenvolvedora de jogos tentando crescer a cena de jogos digitais em Goiânia",
+    mini_bio:
+      "Desenvolvedora de jogos tentando crescer a cena de jogos digitais em Goiânia",
     title: "A definir",
     companyTitle: "",
     gde: false,
     social_media: {
       instagram: "",
       twitter: "",
-      linkedIn: "https://www.linkedin.com/in/flora-cavalcante-meireles-500734223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      linkedIn:
+        "https://www.linkedin.com/in/flora-cavalcante-meireles-500734223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       github: "",
       website: "",
     },
@@ -214,15 +240,18 @@ const speakers = [
     photo: "/speakers/2025/mikaFran.png",
     name: "Mika Fran",
     tech: "Desenvolvimento de Jogos",
-    topic: "Qual o processo de dar estrelato a um recurso de acessibilidade como contexto e como isso afeta arte e produção dos jogos sem cair em estigmas e falta de desejabilidade",
-    mini_bio: "CEO da Purãga Studio, Game designer pela EBAC, intérprete de Libras e embaixadora de acessibilidade na GAMEGO (Associação de desenvolvedores de jogos de Goiás)",
+    topic:
+      "Qual o processo de dar estrelato a um recurso de acessibilidade como contexto e como isso afeta arte e produção dos jogos sem cair em estigmas e falta de desejabilidade",
+    mini_bio:
+      "CEO da Purãga Studio, Game designer pela EBAC, intérprete de Libras e embaixadora de acessibilidade na GAMEGO (Associação de desenvolvedores de jogos de Goiás)",
     title: "Sabrila e a aventura da acessibilidade em jogos",
     companyTitle: "",
     gde: false,
     social_media: {
       instagram: "",
       twitter: "",
-      linkedIn: "https://www.linkedin.com/in/mika-fran-de-souza-loureiro-5692a8251/",
+      linkedIn:
+        "https://www.linkedin.com/in/mika-fran-de-souza-loureiro-5692a8251/",
       github: "",
       website: "",
     },
@@ -252,9 +281,12 @@ const speakers = [
     photo: "/speakers/2025/anna.png",
     name: "Anna e só",
     tech: "Segurança digital",
-    topic: "A gente ouve muito que precisamos cuidar da nossa vida online, mas por onde a gente começa? Tem como fazer um check-up da nossa vida digital? Neste workshop livre, eu vou ouvir de você quais são os seus maiores medos e preocupações, e a gente vai explorar juntas quais são as melhores opções pra você se proteger. Aqui, a ideia não é te empurrar pra uma caixinha fechada de noções de segurança digital, mas sim procurar soluções que se encaixam no seu jeito de viver!",
-    mini_bio: "Anna e só é uma hacker cibernética que une justiça social e tecnologia. Ela é a organizadora-líder do Outreachy, programa de estágios abertos para grupos marginalizados na tecnologia. Ela veste muitos chapéus, mas o seu coração está na prática sistêmica. Na última década, ela trabalhou (e aprendeu) com a Wikimedia Foundation, MediaLab/UFG, Software Freedom Conservancy, LAPPIS/UnB, Open Collective, e Internews Network.",
-    title: "Clínica de segurança digital: Como está a saúde da sua vida online?",
+    topic:
+      "A gente ouve muito que precisamos cuidar da nossa vida online, mas por onde a gente começa? Tem como fazer um check-up da nossa vida digital? Neste workshop livre, eu vou ouvir de você quais são os seus maiores medos e preocupações, e a gente vai explorar juntas quais são as melhores opções pra você se proteger. Aqui, a ideia não é te empurrar pra uma caixinha fechada de noções de segurança digital, mas sim procurar soluções que se encaixam no seu jeito de viver!",
+    mini_bio:
+      "Anna e só é uma hacker cibernética que une justiça social e tecnologia. Ela é a organizadora-líder do Outreachy, programa de estágios abertos para grupos marginalizados na tecnologia. Ela veste muitos chapéus, mas o seu coração está na prática sistêmica. Na última década, ela trabalhou (e aprendeu) com a Wikimedia Foundation, MediaLab/UFG, Software Freedom Conservancy, LAPPIS/UnB, Open Collective, e Internews Network.",
+    title:
+      "Clínica de segurança digital: Como está a saúde da sua vida online?",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -271,9 +303,12 @@ const speakers = [
     photo: "/speakers/2025/catarineSales.png",
     name: "Catarine Sales",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Nesta formação dinâmica e prática, você vai aprender como dar os primeiros passos rumo ao mercado de trabalho. Vamos explorar como construir um currículo que destaque suas habilidades e experiências; além disso, abordaremos as melhores formas de buscar oportunidades, seja através de estágios, programas de trainee ou networking. Você também vai aprender como se preparar para entrevistas, com dicas sobre postura e comunicação. Tudo pensado para que você tenha mais segurança e destaque na hora de conquistar uma vaga e começar sua carreira.",
-    mini_bio: "Head de Gestão e Gestão na Cilia Tecnologia, psicóloga Organizacional, pós-graduada em Gestão de Pessoas por Competências e especializada em atração e desenvolvimento de talentos em empresas tech, trabalhando no setor desde 2017, palestrante e também mentora de carreira e perfil profissional.",
-    title: "Do Campus ao Mercado: Estratégias para startar sua carreira já na universidade.",
+    topic:
+      "Nesta formação dinâmica e prática, você vai aprender como dar os primeiros passos rumo ao mercado de trabalho. Vamos explorar como construir um currículo que destaque suas habilidades e experiências; além disso, abordaremos as melhores formas de buscar oportunidades, seja através de estágios, programas de trainee ou networking. Você também vai aprender como se preparar para entrevistas, com dicas sobre postura e comunicação. Tudo pensado para que você tenha mais segurança e destaque na hora de conquistar uma vaga e começar sua carreira.",
+    mini_bio:
+      "Head de Gestão e Gestão na Cilia Tecnologia, psicóloga Organizacional, pós-graduada em Gestão de Pessoas por Competências e especializada em atração e desenvolvimento de talentos em empresas tech, trabalhando no setor desde 2017, palestrante e também mentora de carreira e perfil profissional.",
+    title:
+      "Do Campus ao Mercado: Estratégias para startar sua carreira já na universidade.",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -290,8 +325,10 @@ const speakers = [
     photo: "/speakers/2025/annyRibeiro.png",
     name: "Anny Ribeiro",
     tech: "Cibersegurança",
-    topic: "O que você precisa saber para proteger seus dados e sua privacidade no mundo digital. Vamos descomplicar a segurança digital, trazendo dicas práticas para você assumir o controle da sua proteção online e evitar cair em golpes e ameaças cibernéticas.",
-    mini_bio: "Uma nerd apaixonada por tecnologia e segurança cibernética, com cerca de 9 anos de experiência em TI. Atualmente, sou Analista Plena de Segurança da Informação, responsável por toda a frente de defesa cibernética na empresa onde atuo. Além de proteger redes e caçar ameaças, amo compartilhar conhecimento e estou sempre envolvida em comunidades de tecnologia, incluindo a coordenação do PyLadies Goiânia. Fora do mundo digital, sou praticante de yoga, mãe de pet e encontro equilíbrio cozinhando para relaxar, acompanhada de um bom café ou vinho.",
+    topic:
+      "O que você precisa saber para proteger seus dados e sua privacidade no mundo digital. Vamos descomplicar a segurança digital, trazendo dicas práticas para você assumir o controle da sua proteção online e evitar cair em golpes e ameaças cibernéticas.",
+    mini_bio:
+      "Uma nerd apaixonada por tecnologia e segurança cibernética, com cerca de 9 anos de experiência em TI. Atualmente, sou Analista Plena de Segurança da Informação, responsável por toda a frente de defesa cibernética na empresa onde atuo. Além de proteger redes e caçar ameaças, amo compartilhar conhecimento e estou sempre envolvida em comunidades de tecnologia, incluindo a coordenação do PyLadies Goiânia. Fora do mundo digital, sou praticante de yoga, mãe de pet e encontro equilíbrio cozinhando para relaxar, acompanhada de um bom café ou vinho.",
     title: "Você no Controle da Sua Segurança Digital",
     companyTitle: "",
     gde: false,
@@ -309,8 +346,10 @@ const speakers = [
     photo: "/speakers/2025/christiannePimenta.png",
     name: "Christianne Pimenta",
     tech: "IA",
-    topic: "A palestra “Inteligência Artificial, Ética e o Futuro das Profissões” explora como a IA está transformando o mercado de trabalho, destacando oportunidades e desafios éticos. O debate abrange a automação de tarefas, o impacto na qualificação profissional e a necessidade de regulamentações para garantir um uso responsável da tecnologia. O público será convidado a refletir sobre como adaptar-se a essas mudanças e desenvolver habilidades alinhadas ao futuro do trabalho.",
-    mini_bio: "Christianne Pimenta é Superintendente de Inovação e Transformação Digital na Prefeitura Municipal de Goiânia e Chief Innovation Officer na B-IA07. Com mais de 15 anos de experiência, sua atuação integra liderança em projetos estratégicos, governança em Inteligência Artificial e transformação digital, com foco em modernizar processos e gerar resultados sustentáveis. Possui expertise em gestão da qualidade, privacidade de dados, gerenciamento de projetos e definição de estratégias de negócios, sempre alinhando tecnologia às demandas organizacionais. Sua formação acadêmica inclui mestrado em Planejamento e Desenvolvimento Territorial (PUC Goiás) e especializações em Processamento de Linguagem Natural (UFG) e Gerenciamento de Projetos (FGV). Como docente, ministra cursos sobre Inteligência Artificial, disrupção digital e inovação.",
+    topic:
+      "A palestra “Inteligência Artificial, Ética e o Futuro das Profissões” explora como a IA está transformando o mercado de trabalho, destacando oportunidades e desafios éticos. O debate abrange a automação de tarefas, o impacto na qualificação profissional e a necessidade de regulamentações para garantir um uso responsável da tecnologia. O público será convidado a refletir sobre como adaptar-se a essas mudanças e desenvolver habilidades alinhadas ao futuro do trabalho.",
+    mini_bio:
+      "Christianne Pimenta é Superintendente de Inovação e Transformação Digital na Prefeitura Municipal de Goiânia e Chief Innovation Officer na B-IA07. Com mais de 15 anos de experiência, sua atuação integra liderança em projetos estratégicos, governança em Inteligência Artificial e transformação digital, com foco em modernizar processos e gerar resultados sustentáveis. Possui expertise em gestão da qualidade, privacidade de dados, gerenciamento de projetos e definição de estratégias de negócios, sempre alinhando tecnologia às demandas organizacionais. Sua formação acadêmica inclui mestrado em Planejamento e Desenvolvimento Territorial (PUC Goiás) e especializações em Processamento de Linguagem Natural (UFG) e Gerenciamento de Projetos (FGV). Como docente, ministra cursos sobre Inteligência Artificial, disrupção digital e inovação.",
     title: "Inteligência Artificial, Ética e o Futuro das Profissões ",
     companyTitle: "",
     gde: false,
@@ -328,8 +367,10 @@ const speakers = [
     photo: "/speakers/2025/geovanaCorreia.png",
     name: "Geovana Correia",
     tech: "Comunicação",
-    topic: "A tecnologia pode resolver problemas complexos, mas um simples erro de comunicação pode comprometer todo um projeto. Na área de TI, onde times multidisciplinares trabalham juntos para construir soluções inovadoras, saber se expressar com clareza é tão essencial quanto escrever um bom código. Nesta palestra, vamos explorar como a comunicação impacta o trabalho em tecnologia, os desafios comuns que geram ruídos e como desenvolver habilidades para transmitir ideias de forma clara e eficiente. Você vai descobrir estratégias práticas para melhorar a colaboração entre equipes técnicas e não técnicas, evitar retrabalho e fazer da comunicação uma aliada para o sucesso profissional. Se você já enfrentou reuniões confusas, especificações mal interpretadas ou dificuldades em convencer stakeholders, essa palestra é para você!",
-    mini_bio: "Sou Geovana Correia, apaixonada por inovação, tecnologia e informação. Como Analista de STI no Senai HUB Goiás, minha missão é conectar pessoas, ideias e soluções para impulsionar o ecossistema goiano, principalmente as indústrias. Com formação em Gestão da Informação e mestrado em andamento em Comunicação pela UFG, atuo na interseção entre dados, estratégia, inovação, comunicação e tecnologia, sempre buscando novas formas de gerar impacto e fortalecer o meu país Goiás.",
+    topic:
+      "A tecnologia pode resolver problemas complexos, mas um simples erro de comunicação pode comprometer todo um projeto. Na área de TI, onde times multidisciplinares trabalham juntos para construir soluções inovadoras, saber se expressar com clareza é tão essencial quanto escrever um bom código. Nesta palestra, vamos explorar como a comunicação impacta o trabalho em tecnologia, os desafios comuns que geram ruídos e como desenvolver habilidades para transmitir ideias de forma clara e eficiente. Você vai descobrir estratégias práticas para melhorar a colaboração entre equipes técnicas e não técnicas, evitar retrabalho e fazer da comunicação uma aliada para o sucesso profissional. Se você já enfrentou reuniões confusas, especificações mal interpretadas ou dificuldades em convencer stakeholders, essa palestra é para você!",
+    mini_bio:
+      "Sou Geovana Correia, apaixonada por inovação, tecnologia e informação. Como Analista de STI no Senai HUB Goiás, minha missão é conectar pessoas, ideias e soluções para impulsionar o ecossistema goiano, principalmente as indústrias. Com formação em Gestão da Informação e mestrado em andamento em Comunicação pela UFG, atuo na interseção entre dados, estratégia, inovação, comunicação e tecnologia, sempre buscando novas formas de gerar impacto e fortalecer o meu país Goiás.",
     title: "Comunicação na TI: O Bug Invisível que Pode Travar Seu Sucesso",
     companyTitle: "",
     gde: false,
@@ -347,9 +388,12 @@ const speakers = [
     photo: "/speakers/2025/fernandaBufon.png",
     name: "Fernanda Bufon",
     tech: "IA",
-    topic: "Como fazer um computador entender a linguagem humana? Nesta palestra, vamos explorar como palavras e frases são transformadas em representações que os modelos de inteligência artificial conseguem processar — desde codificações categóricas até vetores densos usados em modelos modernos. Discutiremos os fundamentos das representações linguísticas em PLN, por que representações importam e como elas influenciam a forma como máquinas “compreendem” a linguagem. Uma introdução acessível e conceitual sobre como a linguagem se torna códigos no mundo da inteligência artificial.",
-    mini_bio: "Pesquisadora no Centro de Excelência em Inteligência Artificial e no Centro Avançado de Tecnologias Imersivas, com foco em Processamento de Linguagem Natural (NLP). Graduanda em Inteligência Artificial pela Universidade Federal de Goiás (UFG), atualmente no último ano do curso. Atua no desenvolvimento de soluções que integram linguagem e inteligência artificial, com ênfase em Large Language Models, agentes conversacionais e aplicações de NLP em contextos reais. Possui experiência em pesquisa acadêmica, participando do desenvolvimento de estudos voltados à publicação científica e à investigação de aplicações inovadoras com potencial de impacto social e tecnológico.",
-    title: "De Palavras a Padrões: A Base do Entendimento de Linguagem Natural na Inteligência Artificial",
+    topic:
+      "Como fazer um computador entender a linguagem humana? Nesta palestra, vamos explorar como palavras e frases são transformadas em representações que os modelos de inteligência artificial conseguem processar — desde codificações categóricas até vetores densos usados em modelos modernos. Discutiremos os fundamentos das representações linguísticas em PLN, por que representações importam e como elas influenciam a forma como máquinas “compreendem” a linguagem. Uma introdução acessível e conceitual sobre como a linguagem se torna códigos no mundo da inteligência artificial.",
+    mini_bio:
+      "Pesquisadora no Centro de Excelência em Inteligência Artificial e no Centro Avançado de Tecnologias Imersivas, com foco em Processamento de Linguagem Natural (NLP). Graduanda em Inteligência Artificial pela Universidade Federal de Goiás (UFG), atualmente no último ano do curso. Atua no desenvolvimento de soluções que integram linguagem e inteligência artificial, com ênfase em Large Language Models, agentes conversacionais e aplicações de NLP em contextos reais. Possui experiência em pesquisa acadêmica, participando do desenvolvimento de estudos voltados à publicação científica e à investigação de aplicações inovadoras com potencial de impacto social e tecnológico.",
+    title:
+      "De Palavras a Padrões: A Base do Entendimento de Linguagem Natural na Inteligência Artificial",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -385,9 +429,12 @@ const speakers = [
     photo: "/speakers/2025/larissaRosa.png",
     name: "Larissa Rosa",
     tech: "IA",
-    topic: "Nesse workshop, serão ensinadas técnicas de visão computacional para identificar e classificar placas de trânsito, utilizando Python e modelos de Inteligência Artificial. A atividade guiará os participantes no desenvolvimento de um pipeline completo, desde a obtenção dos dados até a criação de um modelo para fazer predições em imagens, com aplicações práticas.",
-    mini_bio: "Graduanda em Engenharia de Computação pela UFG, fez parte da primeira turma do Programa de Capacitação 4.0 CEIA/EMBRAPII.  Atualmente, é pesquisadora no CEIA e Cientista de Dados na Cilia Tecnologia, com foco em Visão Computacional. ",
-    title: "Visão Computacional Aplicada: Reconhecimento de Placas de Trânsito com IA",
+    topic:
+      "Nesse workshop, serão ensinadas técnicas de visão computacional para identificar e classificar placas de trânsito, utilizando Python e modelos de Inteligência Artificial. A atividade guiará os participantes no desenvolvimento de um pipeline completo, desde a obtenção dos dados até a criação de um modelo para fazer predições em imagens, com aplicações práticas.",
+    mini_bio:
+      "Graduanda em Engenharia de Computação pela UFG, fez parte da primeira turma do Programa de Capacitação 4.0 CEIA/EMBRAPII.  Atualmente, é pesquisadora no CEIA e Cientista de Dados na Cilia Tecnologia, com foco em Visão Computacional. ",
+    title:
+      "Visão Computacional Aplicada: Reconhecimento de Placas de Trânsito com IA",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -404,8 +451,10 @@ const speakers = [
     photo: "/speakers/2025/karollineFernandes.png",
     name: "Karolline Fernandes",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Nessa atividade interativa, vamos explorar como as mulheres estão quebrando barreiras e liderando inovações, compartilhando histórias inspiradoras, ferramentas práticas e ideias para transformar o setor. Juntas, vamos criar soluções, formar parcerias e reprogramar o futuro, com mais diversidade e inclusão.",
-    mini_bio: "Conectando para inovar! Eng. de Alimentos (PUC-GO) | MBA em Gestão de Projetos (IPOG) | Líder de inovação no HUB GOIÁS 💡 quase 15 anos em P&D, tecnologia e ecossistemas de inovação. Mentora InovAtiva, especialista em articulação de parcerias e transformação de negócios! #Inovação #Impacto",
+    topic:
+      "Nessa atividade interativa, vamos explorar como as mulheres estão quebrando barreiras e liderando inovações, compartilhando histórias inspiradoras, ferramentas práticas e ideias para transformar o setor. Juntas, vamos criar soluções, formar parcerias e reprogramar o futuro, com mais diversidade e inclusão.",
+    mini_bio:
+      "Conectando para inovar! Eng. de Alimentos (PUC-GO) | MBA em Gestão de Projetos (IPOG) | Líder de inovação no HUB GOIÁS 💡 quase 15 anos em P&D, tecnologia e ecossistemas de inovação. Mentora InovAtiva, especialista em articulação de parcerias e transformação de negócios! #Inovação #Impacto",
     title: "Hackeando o Futuro: Mulheres que Inovam, Criam e Transformam",
     companyTitle: "",
     gde: false,
@@ -423,9 +472,12 @@ const speakers = [
     photo: "/speakers/2025/marianaLemes.png",
     name: "Mariana Lemes",
     tech: "UX/UI / QA",
-    topic: "O que UX Design, QA e molhos de pimenta têm em comum? Mais do que você imagina! Nesta palestra, vou compartilhar como minha trajetória na tecnologia me ajudou a empreender, criando soluções que equilibram usabilidade, qualidade e um toque de ousadia. Vamos falar sobre os desafios e aprendizados de ser mulher na área de tecnologia, como a mentalidade de teste e design thinking pode transformar negócios, e por que apimentar sua carreira com novas oportunidades pode ser a chave do sucesso. Vem comigo nessa jornada cheia de sabor e inovação!",
-    mini_bio: "Mariana Lemes é QA na App Facilita, especialista em UX Design e Inteligência Artificial, com MBA em UX e Banco de Dados. Já palestrou na Campus Party e no DevFest Cerrado, abordando tecnologia e inovação. Com experiência em Product Design, pesquisa e prototipação, hoje também empreende no ramo de molhos de pimenta artesanais. Apaixonada por criar soluções que unem usabilidade, qualidade e impacto, Mariana inspira outras mulheres a explorarem tecnologia e empreendedorismo.",
-    title: "Design, Testes e Pimenta: O Empreendedorismo Feminino na Tecnologia",
+    topic:
+      "O que UX Design, QA e molhos de pimenta têm em comum? Mais do que você imagina! Nesta palestra, vou compartilhar como minha trajetória na tecnologia me ajudou a empreender, criando soluções que equilibram usabilidade, qualidade e um toque de ousadia. Vamos falar sobre os desafios e aprendizados de ser mulher na área de tecnologia, como a mentalidade de teste e design thinking pode transformar negócios, e por que apimentar sua carreira com novas oportunidades pode ser a chave do sucesso. Vem comigo nessa jornada cheia de sabor e inovação!",
+    mini_bio:
+      "Mariana Lemes é QA na App Facilita, especialista em UX Design e Inteligência Artificial, com MBA em UX e Banco de Dados. Já palestrou na Campus Party e no DevFest Cerrado, abordando tecnologia e inovação. Com experiência em Product Design, pesquisa e prototipação, hoje também empreende no ramo de molhos de pimenta artesanais. Apaixonada por criar soluções que unem usabilidade, qualidade e impacto, Mariana inspira outras mulheres a explorarem tecnologia e empreendedorismo.",
+    title:
+      "Design, Testes e Pimenta: O Empreendedorismo Feminino na Tecnologia",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -442,8 +494,10 @@ const speakers = [
     photo: "/speakers/2025/thielleCathia.png",
     name: "Thielle Cathia",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Neste workshop dinâmico e interativo, vamos explorar os princípios da Engenharia de Equipes para transformar grupos de trabalho em times altamente produtivos. Você aprenderá estratégias práticas para melhorar a comunicação, engajamento e eficiência, garantindo que sua equipe atinja resultados extraordinários. Seja você um líder, gestor ou membro de equipe, este workshop fornecerá insights valiosos para potencializar sua atuação e transformar sua equipe em um motor de alto desempenho. Venha descobrir como aplicar a Engenharia de Equipes na prática e levar sua produtividade para o próximo nível!",
-    mini_bio: "Sou mentora certificada em engenharia de equipes, palestrante e especialista em gestão. Com mais de 10 anos de experiência na gestão de pessoas, projetos e processos, já apoiei a transformação de centenas de vidas. Sou uma amante radical de pessoas e minha missão é conduzir indivíduos a se tornarem sua melhor versão, vivendo uma vida inexplicável. Acredito no poder da transformação humana e estou comprometida em ajudar cada pessoa a conquistar resultados sólidos e sustentáveis.",
+    topic:
+      "Neste workshop dinâmico e interativo, vamos explorar os princípios da Engenharia de Equipes para transformar grupos de trabalho em times altamente produtivos. Você aprenderá estratégias práticas para melhorar a comunicação, engajamento e eficiência, garantindo que sua equipe atinja resultados extraordinários. Seja você um líder, gestor ou membro de equipe, este workshop fornecerá insights valiosos para potencializar sua atuação e transformar sua equipe em um motor de alto desempenho. Venha descobrir como aplicar a Engenharia de Equipes na prática e levar sua produtividade para o próximo nível!",
+    mini_bio:
+      "Sou mentora certificada em engenharia de equipes, palestrante e especialista em gestão. Com mais de 10 anos de experiência na gestão de pessoas, projetos e processos, já apoiei a transformação de centenas de vidas. Sou uma amante radical de pessoas e minha missão é conduzir indivíduos a se tornarem sua melhor versão, vivendo uma vida inexplicável. Acredito no poder da transformação humana e estou comprometida em ajudar cada pessoa a conquistar resultados sólidos e sustentáveis.",
     title: "Engenharia de Equipes: Como aumentar a produtividade?",
     companyTitle: "",
     gde: false,
@@ -461,15 +515,18 @@ const speakers = [
     photo: "/speakers/2025/ninaSoraya.png",
     name: "Nina Soraya",
     tech: "Análise de dados",
-    topic: "Nesta palestra, 'Darwin vai às compras no século XXI', exploraremos a fascinante intersecção entre neurociência, consumo, marketing e inteligência artificial. Desvendaremos como os mecanismos cerebrais que moldaram o comportamento de nossos ancestrais pré-históricos ainda influenciam nossas decisões de compra na era digital. Veremos como o marketing moderno utiliza insights da neurociência para engajar nossos impulsos primitivos, e como a inteligência artificial, dominando o mercado atual, refina e escala essa influência, prevendo e direcionando o comportamento do consumidor com precisão algorítmica. Estabeleceremos um paralelo entre os desafios de sobrevivência de nossos antepassados e a complexidade do consumo no século XXI, onde a IA atua como uma força poderosa. Refletiremos sobre os desafios futuros, tanto éticos quanto práticos, que emergem dessa simbiose entre nossa natureza humana fundamental e a tecnologia avançada. Para as programadoras Python, esta palestra oferecerá uma visão inovadora sobre como a tecnologia que desenvolvem se conecta diretamente à compreensão da mente humana e à evolução do comportamento do consumidor, desde os primórdios da nossa espécie até o cenário tecnológico contemporâneo.",
-    mini_bio: "Mercadóloga, cientista de dados, pesquisadora em neurociências, IA e comportamento do consumidor. Coordenadora das PyLadies Goiânia, mãe de duas meninas, empresária e nas horas vagas, Scout de um time feminino de Flag Football.",
+    topic:
+      "Nesta palestra, 'Darwin vai às compras no século XXI', exploraremos a fascinante intersecção entre neurociência, consumo, marketing e inteligência artificial. Desvendaremos como os mecanismos cerebrais que moldaram o comportamento de nossos ancestrais pré-históricos ainda influenciam nossas decisões de compra na era digital. Veremos como o marketing moderno utiliza insights da neurociência para engajar nossos impulsos primitivos, e como a inteligência artificial, dominando o mercado atual, refina e escala essa influência, prevendo e direcionando o comportamento do consumidor com precisão algorítmica. Estabeleceremos um paralelo entre os desafios de sobrevivência de nossos antepassados e a complexidade do consumo no século XXI, onde a IA atua como uma força poderosa. Refletiremos sobre os desafios futuros, tanto éticos quanto práticos, que emergem dessa simbiose entre nossa natureza humana fundamental e a tecnologia avançada. Para as programadoras Python, esta palestra oferecerá uma visão inovadora sobre como a tecnologia que desenvolvem se conecta diretamente à compreensão da mente humana e à evolução do comportamento do consumidor, desde os primórdios da nossa espécie até o cenário tecnológico contemporâneo.",
+    mini_bio:
+      "Mercadóloga, cientista de dados, pesquisadora em neurociências, IA e comportamento do consumidor. Coordenadora das PyLadies Goiânia, mãe de duas meninas, empresária e nas horas vagas, Scout de um time feminino de Flag Football.",
     title: "Darwin vai às compras no séc. XXI",
     companyTitle: "",
     gde: false,
     social_media: {
       instagram: "",
       twitter: "",
-      linkedIn: "https://www.linkedin.com/in/nina-soraya-zayit-08a758241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedIn:
+        "https://www.linkedin.com/in/nina-soraya-zayit-08a758241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "",
       website: "",
     },
@@ -480,9 +537,12 @@ const speakers = [
     photo: "/speakers/2025/vanessaSousa.png",
     name: "Vanessa Sousa",
     tech: "UX/UI",
-    topic: "Descubra como o UX Writing pode ser aprimorado através da compreensão dos vieses cognitivos. Nesta palestra, exploraremos como a psicologia influencia a percepção dos usuários e como podemos utilizar esses insights para criar interfaces mais intuitivas e envolventes.",
-    mini_bio: "UX Writer, Dev e Designer Conversacional de IAs | Formada em ADS | Voluntária | Casada, mãe de pet, aquariana raiz, maluca por shows, comida e Coca Cola.",
-    title: "UX Writing e Vieses Cognitivos: Transformando Experiências Digitais",
+    topic:
+      "Descubra como o UX Writing pode ser aprimorado através da compreensão dos vieses cognitivos. Nesta palestra, exploraremos como a psicologia influencia a percepção dos usuários e como podemos utilizar esses insights para criar interfaces mais intuitivas e envolventes.",
+    mini_bio:
+      "UX Writer, Dev e Designer Conversacional de IAs | Formada em ADS | Voluntária | Casada, mãe de pet, aquariana raiz, maluca por shows, comida e Coca Cola.",
+    title:
+      "UX Writing e Vieses Cognitivos: Transformando Experiências Digitais",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -499,8 +559,10 @@ const speakers = [
     photo: "/speakers/2025/vanessaMarques.png",
     name: "Vanessa Marques",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Nesta palestra interativa, vamos explorar os sinais da síndrome da impostora, seu impacto na carreira e, principalmente, estratégias práticas para superá-la. Através de reflexões, exercícios e exemplos inspiradores, você aprenderá a reconhecer seu valor, fortalecer sua confiança e iniciar a mudança de mentalidade para assumir o protagonismo da sua trajetória na tecnologia.",
-    mini_bio: "Sou Engenheira de Software, mestranda e apaixonada por tecnologia. Líder de projetos na UniRV e boto a mão na massa como dev Back-end. Sempre envolvida na comunidade tech e topei o convite para ser organizadora do GDG Rio Verde e embaixadora WTM Rio Verde, para me manter ainda mais por dentro dos eventos, inovação além de fortalecer comunidades tech!",
+    topic:
+      "Nesta palestra interativa, vamos explorar os sinais da síndrome da impostora, seu impacto na carreira e, principalmente, estratégias práticas para superá-la. Através de reflexões, exercícios e exemplos inspiradores, você aprenderá a reconhecer seu valor, fortalecer sua confiança e iniciar a mudança de mentalidade para assumir o protagonismo da sua trajetória na tecnologia.",
+    mini_bio:
+      "Sou Engenheira de Software, mestranda e apaixonada por tecnologia. Líder de projetos na UniRV e boto a mão na massa como dev Back-end. Sempre envolvida na comunidade tech e topei o convite para ser organizadora do GDG Rio Verde e embaixadora WTM Rio Verde, para me manter ainda mais por dentro dos eventos, inovação além de fortalecer comunidades tech!",
     title: "Síndrome da Impostora e Autoconfiança: Como Redefinir Seus Limites",
     companyTitle: "",
     gde: false,
@@ -518,9 +580,12 @@ const speakers = [
     photo: "/speakers/2025/anaRibeiro.png",
     name: "Ana Ribeiro",
     tech: "Práticas de CodeReview",
-    topic: "Enquanto algumas pessoas amam, outras gostariam de cancelar imediatamente as code reviews ou pelo menos mudar a forma que são realizadas. Mas para além destas perspectivas pessoais, o processo é aplicado com frequência nas organizações e devs precisam ter conhecimento desta prática. Neste contexto, conversaremos sobre como tornar code reviews uma etapa estratégica e eficiente para times de desenvolvimento. Abordaremos boas práticas para revisões produtivas, explorando recursos como a pirâmide do code review para gerar uma estrutura de priorização e otimização de tempo, assim como evitar a ocorrência de bikeshedding. Discutiremos também a importância do code review para o crescimento e maturidade na carreira, reforçando o valor da aplicação de princípios SOLID e clean code para revisões mais assertivas para garantir qualidade, consistência no código e alinhamento entre devs.",
-    mini_bio: "Em sua formação acadêmica e profissional, Ana Ribeiro conectou seus dois maiores interesses: pessoas e tecnologia. Ex-dev e atual especialista em RH, gestão e inovação, é formada como técnica em informática, bacharel em ciência e tecnologia, analista comportamental, gestora de RH e também é Neurocientista pela Universidade Federal do ABC. Movida pelo aprendizado contínuo, não parou por aí e cursou o MBA em gestão de TI pela FIAP e como uma boa curiosa antenada, estuda sobre IA e suas aplicações em áreas estratégicas do negócio. Apaixonada por ensinar e aprender, produz conteúdos para treinamentos corporativos, cursos livres, pós-graduações e para a comunidade tech.",
-    title: "Revisando boas práticas: o que acontece nos bastidores de Code Reviews",
+    topic:
+      "Enquanto algumas pessoas amam, outras gostariam de cancelar imediatamente as code reviews ou pelo menos mudar a forma que são realizadas. Mas para além destas perspectivas pessoais, o processo é aplicado com frequência nas organizações e devs precisam ter conhecimento desta prática. Neste contexto, conversaremos sobre como tornar code reviews uma etapa estratégica e eficiente para times de desenvolvimento. Abordaremos boas práticas para revisões produtivas, explorando recursos como a pirâmide do code review para gerar uma estrutura de priorização e otimização de tempo, assim como evitar a ocorrência de bikeshedding. Discutiremos também a importância do code review para o crescimento e maturidade na carreira, reforçando o valor da aplicação de princípios SOLID e clean code para revisões mais assertivas para garantir qualidade, consistência no código e alinhamento entre devs.",
+    mini_bio:
+      "Em sua formação acadêmica e profissional, Ana Ribeiro conectou seus dois maiores interesses: pessoas e tecnologia. Ex-dev e atual especialista em RH, gestão e inovação, é formada como técnica em informática, bacharel em ciência e tecnologia, analista comportamental, gestora de RH e também é Neurocientista pela Universidade Federal do ABC. Movida pelo aprendizado contínuo, não parou por aí e cursou o MBA em gestão de TI pela FIAP e como uma boa curiosa antenada, estuda sobre IA e suas aplicações em áreas estratégicas do negócio. Apaixonada por ensinar e aprender, produz conteúdos para treinamentos corporativos, cursos livres, pós-graduações e para a comunidade tech.",
+    title:
+      "Revisando boas práticas: o que acontece nos bastidores de Code Reviews",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -556,9 +621,12 @@ const speakers = [
     photo: "/speakers/2025/franciellyMoraes.png",
     name: "Francielly de Moraes",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Nesta palestra, vamos conversar sobre os caminhos possíveis para crescer na carreira de tecnologia — desde o estágio até cargos de liderança. Com base em experiências reais, vou compartilhar os desafios, aprendizados técnicos e escolhas de carreira que me levaram a me tornar Tech Lead em uma das maiores empresas do Brasil. Se você está começando na área ou já atua e sonha em liderar, essa conversa é um convite para refletir sobre o que realmente importa ao construir uma carreira com propósito em tech",
-    mini_bio: "Desenvolvedora Android com mais de 12 anos de experiência. Hoje atuo como Especialista em Engenharia de Software no LuizaLabs, que é o braço tecnológico da Magazine Luiza. Compartilhar conhecimento é comigo mesma, já ajudei e ainda ajudo muitas pessoas com mentoria de carreira. Como não pode faltar a parte nerd, fora do digital, posso meu tempo lendo um livro ou jogando boardgame, tomando um bom vinho.",
-    title: "De Estagiária a Especialista: não é sobre ser a melhor Dev, é sobre liderar",
+    topic:
+      "Nesta palestra, vamos conversar sobre os caminhos possíveis para crescer na carreira de tecnologia — desde o estágio até cargos de liderança. Com base em experiências reais, vou compartilhar os desafios, aprendizados técnicos e escolhas de carreira que me levaram a me tornar Tech Lead em uma das maiores empresas do Brasil. Se você está começando na área ou já atua e sonha em liderar, essa conversa é um convite para refletir sobre o que realmente importa ao construir uma carreira com propósito em tech",
+    mini_bio:
+      "Desenvolvedora Android com mais de 12 anos de experiência. Hoje atuo como Especialista em Engenharia de Software no LuizaLabs, que é o braço tecnológico da Magazine Luiza. Compartilhar conhecimento é comigo mesma, já ajudei e ainda ajudo muitas pessoas com mentoria de carreira. Como não pode faltar a parte nerd, fora do digital, posso meu tempo lendo um livro ou jogando boardgame, tomando um bom vinho.",
+    title:
+      "De Estagiária a Especialista: não é sobre ser a melhor Dev, é sobre liderar",
     companyTitle: "",
     gde: false,
     social_media: {
@@ -575,8 +643,10 @@ const speakers = [
     photo: "/speakers/2025/suellenBastos.png",
     name: "Suellen Bastos",
     tech: "Carreira e desenvolvimento pessoal",
-    topic: "Grandes transformações começam em pequenas conexões. Nessa palestra você aprenderá como mapear oportunidades para enriquecer seu currículo e carreira em inovação.",
-    mini_bio: "Líder Black Stars e Gestora de Comunidades no Hub Goiás. Graduada em Artes Visuais pela UFG e pós-graduada em Gestão de Projetos Educacionais e Tecnologias Digitais Aplicadas à Educação. Possui uma trajetória multifacetada, conectando pessoas, comunidades e negócios a oportunidades de inovação.",
+    topic:
+      "Grandes transformações começam em pequenas conexões. Nessa palestra você aprenderá como mapear oportunidades para enriquecer seu currículo e carreira em inovação.",
+    mini_bio:
+      "Líder Black Stars e Gestora de Comunidades no Hub Goiás. Graduada em Artes Visuais pela UFG e pós-graduada em Gestão de Projetos Educacionais e Tecnologias Digitais Aplicadas à Educação. Possui uma trajetória multifacetada, conectando pessoas, comunidades e negócios a oportunidades de inovação.",
     title: "Do Cafezinho ao Match: Estratégias para Conectar-se com Inovação",
     companyTitle: "",
     gde: false,
@@ -588,27 +658,171 @@ const speakers = [
       website: "",
     },
   },
+  {
+    id: 32,
+    path: "",
+    photo: "/speakers/2025/sanmyaNoronha.png",
+    name: "Sanmya Noronha",
+    tech: "UX/Agilidade",
+    topic: "",
+    mini_bio:
+      "Gestora de TI no Banco do Brasil, é uma das fundadoras do Movimento Mulheres na TI - MMTI. Graduada em Administração de Empresas, com especialização em Finanças e Banking, TI para Estratégias de Negócios e Gestão da Governança em TI, atualmente trabalha no Centro de Excelência em Agilidade. É Educadora Corporativa de diversos cursos, entre eles, Diversidade, Equidade e Inclusão, além de mentora para transição de carreira. É coautora dos Livros 'Mulheres na Tecnologia vol.1' e 'Mulheres na Tecnologia - O Poder de uma Mentoria'.",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn:
+        "https://www.linkedin.com/in/sanmya-noronha-95b15265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 33,
+    path: "",
+    photo: "/speakers/2025/paolaRodrigues.png",
+    name: "Paola Rodrigues",
+    tech: "Cyber/Infra",
+    topic: "",
+    mini_bio:
+      "Paola, mãe de 2 adolescentes, casada, formada em Publicidade e propaganda e em Análise e desenvolvimento de sistemas, pós graduada em UX e Cyber segurança, trabalha com Design e experiência do cliente ha mais de 15 anos, com 10 anos de Banco do Brasil, adora viajar, estar com a família, assistir series e vira gammer nas horas livres.",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "https://www.linkedin.com/in/paola-rodrigues-santos-8476b647",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 34,
+    path: "",
+    photo: "/speakers/2025/jaquelineDuarte.png",
+    name: "Jaqueline Duarte",
+    tech: "IA",
+    topic: "",
+    mini_bio:
+      "Atuo em TI desde 2020, com experiência em Data Analytics, Threat Hunting,  Cyber Threat Intelligence. Transformando dados em insights acionáveis para proteger empresas contra ameaças cibernéticas e garantir a continuidade dos negócios. Hoje atuo como Red Teamer no Banco do Brasil. Sou responsável por prestar assessoria sobre ameaças,  vulnerabilidades e riscos, e executar testes de penetração em sistemas. Graduada em Informática,  Especialista em Data Analytics,  Psicologia do Trabalho, Auditoria Bancária e Compliance. Atualmente cursando Mestrado em Engenharia Elétrica na UnB, atuando em pesquisas de IA em Cibersegurança e cadeia de suprimentos. Certificada em Resposta a Incidentes pela GIAC, GCIH, 2023. Certificada em AI Risk Management pela certiprof, AIRMPC , 2025. Certificada em ISO/IEC 23894 AI Risk Management, ISO/IEC 38507 AI Governance, ISO/IEC 42001 AI Management Systems - ITCerts, 2025. Cofundadora do grupo de ação Voluntária CyBBer Mulheres https://br.linkedin.com/in/cybbermulheres, que tem por objetivo incentivar e apoiar mulheres que atuam ou desejam atuar nas áreas relacionadas à Segurança Digital. Mentora Voluntária no projeto ISemear. Que visa apoiar o progresso de jovens universitários: https://www.linkedin.com/company/isemear/. Mentora Voluntária de reskilling no Movimento Mulheres na TI: https://www.linkedin.com/company/movimentomulheresnati/",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "http://linkedin.com/in/jaqueline-d",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 35,
+    path: "",
+    photo: "/speakers/2025/larissaRabelo.png",
+    name: "Larissa Rabelo",
+    tech: "Carreira e desenvolvimento pessoal",
+    topic:
+      "O RTT é uma ferramenta aberta a sociedade e é um direcionador prático e acessível do que é mais relevante em Tecnológicas emergentes, considerando o horizonte temporal de aplicabilidade e o impacto para o futuro. Ter um radar ao seu alcance é essencial para buscar posicionamento à frente no cenário de inovação 💡",
+    mini_bio:
+      "Sou uma jornalista e mãe apaixonada por arte, cultura e fotografia, com uma trajetória sólida no setor bancário. Ao longo dos anos, desenvolvi um forte senso de relacionamento em minhas atuações como gerente de atendimento, sempre buscando oferecer soluções personalizadas e estratégicas. Atualmente, na Diretoria de Tec do BB, dedico-me à gestão e comunicação do co.nectaBB, onde promovo conexões inovadoras e estratégicas no Porto Digital, um dos maiores polos de tecnologia e inovação do Brasil, em Recife.",
+    title: "RTT - Radar de Tendências Tecnológicas",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "http://www.linkedin.com/in/lari-rabelo",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 36,
+    path: "",
+    photo: "/speakers/2025/barbaraSilva.png",
+    name: "Barbara Silva",
+    tech: "Cyber/Infra",
+    topic: "",
+    mini_bio:
+      "Analista Sênior de segurança da informação, com experiência nas áreas de cibersegurança, privacidade e proteção de dados e antifraudes, atua no Centro de Excelência em Segurança(COE) na linha de Canais Digitais do Banco do Brasil. Possui formação em Análise e desenvolvimento de sistemas, com MBA em Cyber Security pelo IBMEC e mestrado em segurança cibernética na UNB. Também é cofundadora do grupo CyBBer Mulheres, grupo voluntário formado por funcionárias da área de segurança digital do Banco do Brasil. Mentora no Movimento Mulheres na TI, CyBBer Mulheres e no IBMEC.",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "http://linkedin.com/in/bárbara-cabral-9102b1188",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 37,
+    path: "",
+    photo: "/speakers/2025/camilaMaestrelli.png",
+    name: "Camila Maestrelli",
+    tech: "IA",
+    topic: "",
+    mini_bio:
+      "Cientista de dados no Banco do Brasil com graduação em engenharia civil, mestrado em engenharia de transporte e pós em ciência de dados",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "https://br.linkedin.com/in/camila-maestrelli-leobons",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 38,
+    path: "",
+    photo: "/speakers/2025/claudiaMalta.png",
+    name: "Claudia Malta",
+    tech: "Desenvolvimento",
+    topic: "",
+    mini_bio:
+      "Claudia Malta Santos, formada em Administração de Empresas e pós graduação em Gestão de Projetos. Atualmente está na Diretoria de Tecnologia do BB(Ditec) coordenando o *Programa de Estágio no Cliente* junto a Gerência de Evolução Tecnológica(Gevol). É agilista, certificada em CSM(Certified Scrum Master), A-CSM (Advanced Certified Scrum Master) e CSPO(Certified Scrum Product). Coofundadora do *Movimento Mulheres na TI* e Conselheira Deliberativa da AABB-DF. Mãe de gêmeas, Larissa e Luana, sua inspiração para ser uma pessoa melhor a cada dia. Apaixonada por esportes e tem como pilar a qualidade de vida. Suas características: adaptabilidade, bom humor,  dinamismo, responsabilidade, excelência na execução e  dedicação.",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn: "www.linkedin.com/in/ claudia-malta-santos",
+      github: "",
+      website: "",
+    },
+  },
+  {
+    id: 39,
+    path: "",
+    photo: "/speakers/2025/angelaGrochenisk.png",
+    name: "Angela Grochenisk",
+    tech: "UX/Agilidade",
+    topic: "",
+    mini_bio:
+      "Especialista em ASG no Banco do Brasil, com quase 20 anos de experiência em gestão de pessoas. Atua com diversidade, cultura organizacional e transformação estratégica. Tem formação em Direito, MBA em Sustentabilidade e certificações em agilidade. Acredita que UX e agilidade se encontram na escuta, na empatia e na coragem de mudar o que não funciona.",
+    title: "",
+    companyTitle: "",
+    gde: false,
+    social_media: {
+      instagram: "",
+      twitter: "",
+      linkedIn:
+        "https://www.linkedin.com/in/angela-glima?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "",
+      website: "",
+    },
+  },
   // {
-  //   id: 32,
-  //   path: "",
-  //   photo: "/speakers/2025/aDefinir.png",
-  //   name: "Samara - MulheresGO",
-  //   tech: "",
-  //   topic: "",
-  //   mini_bio: "",
-  //   title: "",
-  //   companyTitle: "",
-  //   gde: false,
-  //   social_media: {
-  //     instagram: "",
-  //     twitter: "",
-  //     linkedIn: "",
-  //     github: "",
-  //     website: "",
-  //   },
-  // },
-  // {
-  //   id: 33,
+  //   id: 0,
   //   path: "",
   //   photo: "/speakers/2025/aDefinir.png",
   //   name: "A definir",

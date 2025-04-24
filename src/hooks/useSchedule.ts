@@ -29,16 +29,6 @@ const schedule = [
   //     },
   //   ],
   // },
-  // {
-  //   start: "08:50",
-  //   end: "08:55",
-  //   speeches: [
-  //     {
-  //       room: "Arena",
-  //       topic: "Hora da foto",
-  //     },
-  //   ],
-  // },
   {
     start: "08:55",
     end: "09:50",
@@ -117,8 +107,8 @@ const schedule = [
         topic: "Claudia Malta Santos (Desenvolvimento)",
         speakers: [
           {
-            topic: "Claudia Malta Santos (Desenvolvimento)",
-            speaker_id: 0,
+            topic: "Desenvolvimento",
+            speaker_id: 38,
             start: "10:00",
             end: "11:00",
           },
@@ -194,9 +184,8 @@ const schedule = [
           "Sanmya Thatila Borges de Noronha e Angela Grochenisk de Lima Leal (UX/AGILIDADE)",
         speakers: [
           {
-            topic:
-              "Sanmya Thatila Borges de Noronha e Angela Grochenisk de Lima Leal (UX/AGILIDADE)",
-            speaker_id: 0,
+            topic: "UX/AGILIDADE",
+            speaker_id: 32,
             start: "11:00",
             end: "12:00",
           },
@@ -253,8 +242,8 @@ const schedule = [
         speakers: [
           {
             topic:
-              "Radar de Tendências Tecnológicas (Larissa Vieira Rabelo e Claudia Malta Santos)",
-            speaker_id: 0,
+              "Larissa Vieira Rabelo e Claudia Malta Santos",
+            speaker_id: 35,
             start: "13:05",
             end: "13:35",
           },
@@ -271,9 +260,8 @@ const schedule = [
         topic: "Paola Rodrigues Santos e Barbara Silva Cabral (CIBER/INFRA)",
         speakers: [
           {
-            topic:
-              "Paola Rodrigues Santos e Barbara Silva Cabral (CIBER/INFRA)",
-            speaker_id: 0,
+            topic: "CYBER/INFRA",
+            speaker_id: 33,
             start: "13:05",
             end: "14:05",
           },
@@ -356,8 +344,8 @@ const schedule = [
         topic: "Jaqueline Damacena Duarte e Camila Maestrelli Leobons (IA)",
         speakers: [
           {
-            topic: "Jaqueline Damacena Duarte e Camila Maestrelli Leobons (IA)",
-            speaker_id: 0,
+            topic: "IA",
+            speaker_id: 34,
             start: "14:05",
             end: "15:05",
           },
@@ -407,7 +395,7 @@ const schedule = [
           {
             topic:
               "[Jaqueline e Welma] Mulheres que Fazem: Construindo o Futuro Econômico de Goiás (MulheresGo)",
-            speaker_id: 32,
+            speaker_id: 0,
             start: "15:55",
             end: "16:25",
           },
